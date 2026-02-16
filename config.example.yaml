@@ -1,0 +1,55 @@
+# Backlink Pilot Configuration
+# Copy this to config.yaml and fill in your details
+
+product:
+  name: "My Cool App"
+  url: "https://mycoolapp.com"
+  description: "Short one-line description (under 160 chars for SEO)"
+  long_description: |
+    Detailed description for directory sites that need more text.
+    Include key features, what makes it unique, and who it's for.
+    Can be multiple lines. Some sites support markdown, others don't.
+  email: "hello@mycoolapp.com"
+  categories:
+    - developer-tools
+    - productivity
+  pricing: free  # free | freemium | paid
+
+  # Optional fields (used by some sites)
+  logo_url: ""
+  github_url: ""
+  twitter: ""
+  features:
+    - "Feature 1"
+    - "Feature 2"
+    - "Feature 3"
+
+# Credentials for sites that require login
+# ⚠️ Keep this file private! It's gitignored by default.
+credentials:
+  saashub:
+    email: ""
+    password: ""
+  uneed:
+    email: ""
+    password: ""
+  # Google OAuth sites (bai.tools, dokeyai, etc.)
+  # require manual first login — no credentials needed here
+
+# UTM tracking (auto-appended to submitted URLs)
+utm:
+  base_url: "https://mycoolapp.com"
+  medium: "directory"
+  campaign: "backlink"
+
+# Browser settings
+browser:
+  headless: true
+  slow_mo: 100        # ms between actions (rate limiting)
+  timeout: 30000      # page load timeout (ms)
+  screenshot_dir: "./screenshots"
+
+# Submission pacing (ms)
+pacing:
+  min_interval_ms: 60000       # 1 min between different sites
+  same_site_interval_ms: 3600000  # 1 hour between same site retries

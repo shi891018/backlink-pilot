@@ -1,0 +1,38 @@
+{
+  "name": "backlink-pilot",
+  "version": "0.1.0",
+  "description": "Automated backlink submission toolkit for indie hackers",
+  "main": "src/cli.js",
+  "bin": {
+    "backlink-pilot": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test tests/"
+  },
+  "keywords": [
+    "backlinks",
+    "seo",
+    "directory-submission",
+    "awesome-lists",
+    "indie-hacker",
+    "automation",
+    "playwright",
+    "rebrowser"
+  ],
+  "author": "sagasu",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/s87343472/backlink-pilot.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "rebrowser-playwright": "^1.52.0",
+    "yaml": "^2.4.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  }
+}
