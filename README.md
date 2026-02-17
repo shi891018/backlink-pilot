@@ -4,7 +4,7 @@
 
 给独立开发者用的。配置一次你的产品信息，然后自动提交到目录站、awesome-list、搜索引擎。
 
-> 这个工具是 AI Agent（[OpenClaw](https://openclaw.ai)）在实际外链推广中写出来的，20+ 个站点实战验证。
+> 这个工具是 AI Agent（[OpenClaw](https://openclaw.ai)）在实际外链推广中写出来的，30+ 个站点实战验证，8 个站点适配器。
 
 ---
 
@@ -42,13 +42,18 @@ AI 工具目录、SaaS 目录、独立开发者导航站。填个表就能提交
 
 **实测好用的：**
 
-| 站点 | 说明 | 审核速度 |
-|------|------|---------|
-| SaaSHub | SaaS 目录 | 当天批准 |
-| submitaitools.org | AI 工具目录 | 1-3 天 |
-| toolverto.com | 工具目录 | 1-3 天 |
-| uneed.best | 工具目录 | 排队中 |
-| bai.tools | AI 工具目录 | ~30 天 |
+| 站点 | 说明 | 审核速度 | 适配器 |
+|------|------|---------|--------|
+| SaaSHub | SaaS 目录 | 当天批准 | ✅ `saashub` |
+| submitaitools.org | AI 工具目录 (DA 73) | 1-3 天 | ✅ `submitaitools` |
+| toolverto.com | 工具目录 | 1-3 天 | ✅ `toolverto` |
+| uneed.best | 工具目录 (DR 72) | 排队中 | ✅ `uneed` |
+| bai.tools | AI 工具目录 | ~30 天 | ✅ `baitools` |
+| 600.tools | 工具目录，3 dofollow | 1-3 天 | ✅ `600tools` |
+| Dang.ai | AI 目录 (DA 35) | 3-4 周 | ✅ `dangai` |
+| Startup88 | 创业目录 (DA 34) | 1-2 周 | ✅ `startup88` |
+| StartupStash | 创业资源目录 | 1-2 周 | ⚡ Typeform |
+| CurateClick | 精选工具目录 | 1 周 | ⚡ 手动 |
 
 ### 🥉 社区（必须手动）
 
