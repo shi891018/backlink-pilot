@@ -154,6 +154,75 @@ credentials:
 
 **就这样。你说中文，Agent 执行。**
 
+## 批量博客评论提交
+
+除了目录站，还支持批量在博客评论区留下网站链接（通过评论表单的 Website 字段）。
+
+### 原理
+
+很多博客（WordPress 等）的评论表单有 4 个字段：名字、邮箱、网站、评论内容。
+**网站字段** 会被渲染成评论者名字的超链接 —— 这就是外链。
+
+### 准备资源文件
+
+把目标 URL 放到 `resources/backlink-resources.json`：
+
+```json
+[
+  {
+    "type": "blog_comment",
+    "url": "https://some-blog.com/great-article/",
+    "has_captcha": false,
+    "has_url_field": true,
+    "link_strategy": "url_field"
+  }
+]
+```
+
+> 💡 可以用 Ahrefs/Semrush 导出竞品外链，筛选 blog_comment 类型，批量导入。
+
+### 运行
+
+```bash
+# 试跑（不真正提交）
+node src/batch-submit.js --dry-run --limit 5
+
+# 真跑 10 条，指定站点（0=第一个, 1=第二个...）
+node src/batch-submit.js --limit 10 --site 0
+
+# 随机站点（不传 --site 就随机）
+node src/batch-submit.js --limit 10
+```
+
+### 设计要点
+
+- **URL 放 Website 字段**，不放评论正文 —— 评论看起来更自然
+- **20 条评论模板随机轮换** —— 避免千篇一律被识别
+- **5 个 Persona 轮换** —— 不同名字和邮箱
+- **全局去重** —— 同一 URL 不会重复提交（`logs/global-history.json`）
+- **优先级排序** —— tech/game/education 类博客优先
+- **自动跳过** —— 有验证码、评论已关闭、找不到表单的自动跳过
+
+### 配合 Cron 定时跑
+
+```bash
+# 示例：每天 10:00 提交 10 条
+# 在 OpenClaw 里配 cron，或系统 crontab：
+0 10 * * * cd ~/Downloads/backlink-pilot && node src/batch-submit.js --limit 10
+```
+
+### 效果预期
+
+老实说，博客评论外链是 **量产低质量策略**。单条价值不高，但：
+- 零成本
+- 全自动
+- 积少成多
+- 早期项目做 domain authority 基础够用
+
+**不要指望靠这个排名，只是外链多样性的补充。真正有价值的还是目录站和 awesome-list。**
+
+---
+
 ## 也可以手动跑命令
 
 不想通过 Agent 也行，直接跑 CLI：
@@ -174,6 +243,9 @@ node src/cli.js awesome awesome-cloudflare
 # 通知搜索引擎
 node src/cli.js indexnow https://你的网站.com
 
+# 批量博客评论
+node src/batch-submit.js --limit 10
+
 # 看提交记录
 node src/cli.js status
 ```
@@ -189,8 +261,11 @@ backlink-pilot/
 ├── config.example.yaml    ← 配置模板
 ├── SKILL.md               ← OpenClaw 调用指南
 ├── TROUBLESHOOTING.md     ← 20+ 站点踩坑记录
+├── resources/
+│   └── sites.json         ← 你的站点列表（批量提交用）
 ├── src/
 │   ├── cli.js             ← CLI 入口
+│   ├── batch-submit.js    ← 批量博客评论提交（v2）
 │   ├── browser.js         ← 隐身浏览器（rebrowser-playwright）
 │   ├── captcha.js         ← 验证码自动解
 │   ├── config.js          ← 配置加载 + UTM 生成

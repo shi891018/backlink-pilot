@@ -5,3 +5,7 @@ config.yaml
 screenshots/
 *.log
 .DS_Store
+logs/
+tmp_*
+test_*
+resources/backlink-resources.json
