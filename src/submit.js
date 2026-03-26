@@ -1,4 +1,4 @@
-// submit.js — Dispatch submissions to site-specific adapters
+// submit.js — Dispatch submissions to site-specific or generic adapters
 
 import { readdirSync } from 'fs';
 import { utmUrl } from './config.js';
@@ -6,6 +6,12 @@ import { recordSubmission } from './tracker.js';
 
 // Dynamic import of site adapters
 async function loadAdapter(site) {
+  // URL as site → use generic bb-browser adapter
+  if (site.startsWith('http')) {
+    const generic = await import('./sites/generic.js');
+    return { ...generic.default, _targetUrl: site };
+  }
+
   try {
     const mod = await import(`./sites/${site}.js`);
     return mod.default || mod;
@@ -25,8 +31,16 @@ export async function submit(site, opts) {
     for (const f of files) {
       if (f.endsWith('.js')) console.log(`  - ${f.replace('.js', '')}`);
     }
+    console.log('\nOr pass a URL directly for generic submission:');
+    console.log('  node src/cli.js submit https://example.com/submit --engine bb');
     process.exit(1);
   }
+
+  // Adapter-level engine override
+  if (adapter.engine) config._engine = adapter.engine;
+
+  // Pass target URL for generic adapter
+  if (adapter._targetUrl) config._targetUrl = adapter._targetUrl;
 
   const product = {
     ...config.product,

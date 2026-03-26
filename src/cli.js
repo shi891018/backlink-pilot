@@ -8,31 +8,36 @@ import { submit } from './submit.js';
 import { generateAwesomeIssue } from './awesome/templates.js';
 import { pingIndexNow } from './indexnow.js';
 import { showStatus } from './tracker.js';
+import { forceUpdate } from './bb-update.js';
 
 const program = new Command();
 
 program
   .name('backlink-pilot')
   .description('Automated backlink submission toolkit for indie hackers')
-  .version('0.1.0');
+  .version('0.2.0');
 
 program
   .command('scout <url>')
   .description('Discover submit pages and form fields on a site')
   .option('--deep', 'Follow links to find hidden submit pages')
   .option('--screenshot <path>', 'Save screenshot of submit page')
+  .option('--engine <engine>', 'Browser engine: bb or playwright')
   .action(async (url, opts) => {
     const config = await loadConfig();
+    if (opts.engine) config._engine = opts.engine;
     await scout(url, { ...opts, config });
   });
 
 program
   .command('submit <site>')
-  .description('Submit your product to a directory site')
+  .description('Submit to a directory site (name or URL for generic)')
   .option('--dry-run', 'Show what would be submitted without actually doing it')
   .option('--screenshot <path>', 'Save screenshot after submission')
+  .option('--engine <engine>', 'Browser engine: bb or playwright')
   .action(async (site, opts) => {
     const config = await loadConfig();
+    if (opts.engine) config._engine = opts.engine;
     await submit(site, { ...opts, config });
   });
 
@@ -59,6 +64,13 @@ program
   .option('--json', 'Output as JSON')
   .action(async (opts) => {
     await showStatus(opts);
+  });
+
+program
+  .command('bb-update')
+  .description('Update bb-browser community site adapters')
+  .action(() => {
+    forceUpdate();
   });
 
 program.parse();

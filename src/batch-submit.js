@@ -4,7 +4,7 @@
 // v2: Natural comments, URL in website field only, site rotation, priority ordering
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
-import { launchBrowser, delay, humanType } from './browser.js';
+import { createSession, delay, humanType } from './browser.js';
 
 const TIMEOUT_MS = 30000;
 const MIN_DELAY = 15000;  // 15-45s between submissions
@@ -361,7 +361,11 @@ async function batchSubmit(opts = {}) {
   }
 
   const toProcess = actionable.slice(0, limit);
-  const { browser, page } = await launchBrowser({ browser: { headless: true } });
+
+  // Resolve engine from CLI args
+  const sessionConfig = { browser: { headless: true } };
+  if (opts.engine) sessionConfig._engine = opts.engine;
+  const { page, close } = await createSession(sessionConfig);
 
   try {
     for (let i = 0; i < toProcess.length; i++) {
@@ -385,7 +389,7 @@ async function batchSubmit(opts = {}) {
       }
     }
   } finally {
-    await browser.close();
+    await close();
   }
 
   // Summary
@@ -408,6 +412,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--limit' || args[i] === '-l') { opts.limit = parseInt(args[++i], 10); }
     else if (args[i] === '--site' || args[i] === '-s') { opts.siteIndex = parseInt(args[++i], 10); }
+    else if (args[i] === '--engine') { opts.engine = args[++i]; }
     else if (args[i] === '--dry-run') { opts.dryRun = true; }
   }
 

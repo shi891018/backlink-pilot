@@ -44,10 +44,17 @@ utm:
 
 # Browser settings
 browser:
-  headless: true
-  slow_mo: 100        # ms between actions (rate limiting)
-  timeout: 30000      # page load timeout (ms)
+  engine: playwright   # bb | playwright (bb = real Chrome via bb-browser)
+  headless: true       # playwright only
+  slow_mo: 100         # ms between actions (playwright only)
+  timeout: 30000       # page load timeout (ms)
   screenshot_dir: "./screenshots"
+
+# bb-browser settings (only used when engine: bb)
+# Requires: npm install -g bb-browser + Chrome extension loaded
+bb_browser:
+  auto_update: true            # auto-run 'bb-browser site update' on startup
+  update_interval_hours: 24    # how often to pull new community adapters
 
 # Submission pacing (ms)
 pacing:
