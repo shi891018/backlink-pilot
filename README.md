@@ -1,46 +1,279 @@
 # 🔗 Backlink Pilot
 
+**One config, one command. Automated backlink submission for indie products.**
+
+[English](#english) · [中文](#中文)
+
+---
+
+<a id="english"></a>
+
+## What is this?
+
+Backlink Pilot automates submitting your product to directory sites, awesome-lists, and search engines. Built by an AI Agent during real-world link building campaigns — battle-tested on 30+ sites.
+
+**v2.0: Now supports [bb-browser](https://github.com/epiral/bb-browser) as execution engine — uses your real Chrome browser, bypasses anti-bot detection, Cloudflare, and OAuth issues.**
+
+## Who is this for?
+
+| You | How to use | Section |
+|-----|-----------|---------|
+| 🎯 Non-technical, want link building strategy | Read the strategy section, submit manually | [Strategy](#strategy) |
+| 🤖 Have OpenClaw, want AI agent to auto-submit | Install skill, talk to Agent | [Agent](#agent-openclaw-users) |
+| 🔧 Developer, want to customize | Modify source, write new adapters | [Developer](#developer) |
+
+---
+
+## Strategy
+
+### Why backlinks matter
+
+Google ranking logic: **other sites linking to you = votes for you**. More votes from authoritative sources = higher ranking.
+
+### Best channels (by ROI)
+
+#### 🥇 GitHub awesome-lists — highest ROI
+
+Curated resource lists with thousands of stars. Submit an Issue, get permanently listed.
+
+**Cost:** $0. **Time:** 5 min each.
+
+#### 🥈 Free directory sites
+
+| Site | Notes | Review time | Adapter |
+|------|-------|-------------|---------|
+| SaaSHub | SaaS directory | Same day | ✅ `saashub` |
+| submitaitools.org | AI tools (DA 73) | 1-3 days | ✅ `submitaitools` |
+| toolverto.com | Tools directory | 1-3 days | ✅ `toolverto` |
+| uneed.best | Tools (DR 72) | Queued | ✅ `uneed` |
+| 600.tools | 3 dofollow links | 1-3 days | ✅ `600tools` |
+| Dang.ai | AI directory (DA 35) | 3-4 weeks | ✅ `dangai` |
+| Startup88 | Startup directory | 1-2 weeks | ✅ `startup88` |
+
+#### ❌ Avoid
+
+| Site | Issue |
+|------|-------|
+| IndieHub | Looks free, costs $4.9 to publish |
+| OpenHunts | Free queue is 51 weeks |
+| toolify.ai | $99 to submit |
+| Product Hunt | Anti-bot, manual only |
+
+### Submission pace
+
+- 1-3 min between different sites
+- 5-10 submissions per day
+- **Never submit the same product to the same site twice**
+
+---
+
+## Agent (OpenClaw users)
+
+### Install
+
+```bash
+cd ~/Downloads
+git clone https://github.com/s87343472/backlink-pilot.git
+cd backlink-pilot && npm install
+ln -s ~/Downloads/backlink-pilot ~/.openclaw/skills/backlink-pilot
+```
+
+### Configure
+
+```bash
+cp config.example.yaml config.yaml
+# Edit config.yaml with your product details
+```
+
+### Talk to Agent
+
+- "Submit to submitaitools" → auto-submits
+- "Scout https://some-directory.com" → discovers form fields
+- "Generate awesome-cloudflare submission" → creates Issue body
+- "Show backlink status" → shows progress
+
+---
+
+## Developer
+
+### Engine Options (v2.0)
+
+| Engine | Setup | Pros |
+|--------|-------|------|
+| **playwright** (default) | `npm install` | No extension needed |
+| **bb-browser** (recommended) | `npm install -g bb-browser` + Chrome extension | Real browser, invisible to anti-bot, no Cloudflare/OAuth issues |
+
+```yaml
+# config.yaml
+browser:
+  engine: bb    # or: playwright
+
+bb_browser:
+  auto_update: true
+  update_interval_hours: 24
+```
+
+### Commands
+
+```bash
+# Scout a site
+node src/cli.js scout https://new-site.com --deep
+
+# Submit to known site
+node src/cli.js submit submitaitools
+node src/cli.js submit submitaitools --engine bb    # use real Chrome
+
+# Generic submit to ANY directory (bb-browser)
+node src/cli.js submit https://any-directory.com/submit
+
+# Awesome-list Issue
+node src/cli.js awesome awesome-cloudflare
+
+# Ping search engines
+node src/cli.js indexnow https://your-site.com
+
+# Batch blog comments
+node src/batch-submit.js --limit 10
+node src/batch-submit.js --limit 10 --engine bb     # use real Chrome
+
+# Check status
+node src/cli.js status
+
+# Update bb-browser community adapters
+node src/cli.js bb-update
+```
+
+### Project Structure
+
+```
+backlink-pilot/
+├── config.example.yaml
+├── SKILL.md              ← Agent skill definition
+├── adapters.md            ← Site adapters & awesome-list targets
+├── TROUBLESHOOTING.md     ← 20+ site debugging notes
+├── src/
+│   ├── cli.js             ← CLI entry point
+│   ├── browser.js         ← Dual-engine: playwright + bb-browser
+│   ├── bb.js              ← bb-browser wrapper (BbPage API)
+│   ├── bb-update.js       ← Auto-update bb-browser adapters
+│   ├── submit.js          ← Submission dispatcher
+│   ├── batch-submit.js    ← Batch blog comment submitter
+│   ├── config.js          ← Config loader + UTM
+│   ├── tracker.js         ← Submission tracking
+│   ├── captcha.js         ← CAPTCHA solvers
+│   ├── indexnow.js        ← Search engine ping
+│   ├── sites/             ← Site adapters
+│   │   ├── generic.js     ← Universal adapter (bb-browser)
+│   │   ├── submitaitools.js
+│   │   ├── toolverto.js
+│   │   └── ...
+│   ├── scout/
+│   │   └── discover.js    ← Form field discovery
+│   └── awesome/
+│       └── templates.js   ← Awesome-list Issue generator
+```
+
+### Writing a new adapter
+
+1. Scout: `node src/cli.js scout https://new-site.com --deep`
+2. Create `src/sites/newsite.js`:
+
+```javascript
+import { withBrowser, delay } from '../browser.js';
+
+export default {
+  name: 'new-site.com',
+  url: 'https://new-site.com/submit',
+  auth: 'none',
+  captcha: 'none',
+  engine: 'bb',  // optional: force bb-browser
+
+  async submit(product, config) {
+    return withBrowser(config, async ({ page }) => {
+      await page.goto('https://new-site.com/submit', { waitUntil: 'networkidle' });
+      await page.fill('input[name="tool_name"]', product.name);
+      await page.fill('input[name="tool_url"]', product.utm_url);
+      await page.click('button[type="submit"]');
+      await delay(3000);
+      return { url: page.url(), confirmation: 'Submitted' };
+    });
+  },
+};
+```
+
+3. Run: `node src/cli.js submit newsite`
+
+Or skip the adapter entirely — use generic submission:
+
+```bash
+node src/cli.js submit https://new-site.com/submit --engine bb
+```
+
+### Technical notes
+
+- **rebrowser-playwright** patches `navigator.webdriver` at Chromium compile level. 69% success rate across 13 sites.
+- **bb-browser** uses your real Chrome — 100% invisible, no fingerprint issues.
+- Hard walls (playwright): Cloudflare Challenge/Turnstile, Reddit network block → use `--engine bb` or skip.
+- Color CAPTCHA solved via text extraction + button matching (100% success rate).
+
+---
+
+## Contributing
+
+PRs welcome:
+- New site adapters
+- CAPTCHA solver improvements
+- Bug fixes
+
+## License
+
+MIT
+
+## Credits
+
+Built with [OpenClaw](https://openclaw.ai). Browser automation by [rebrowser-playwright](https://github.com/nickthecoder/rebrowser-playwright) and [bb-browser](https://github.com/epiral/bb-browser).
+
+---
+
+<a id="中文"></a>
+
+# 中文版
+
 **一条命令提交外链的自动化工具。**
 
 给独立开发者用的。配置一次你的产品信息，然后自动提交到目录站、awesome-list、搜索引擎。
 
-> 这个工具是 AI Agent（[OpenClaw](https://openclaw.ai)）在实际外链推广中写出来的，30+ 个站点实战验证，8 个站点适配器。
+**v2.0：支持 [bb-browser](https://github.com/epiral/bb-browser) 执行引擎 — 用你的真实 Chrome 浏览器，绕过反爬、Cloudflare、OAuth 问题。**
 
----
+> 这个工具是 AI Agent（[OpenClaw](https://openclaw.ai)）在实际外链推广中写出来的，30+ 个站点实战验证。
 
 ## 这个工具适合谁？
 
 | 你是谁 | 怎么用 | 看哪部分 |
 |--------|--------|---------|
-| 🎯 不写代码，想了解外链策略 | 直接看策略篇，手动提交也能用 | [策略篇](#-策略篇不写代码也能用) |
-| 🤖 有 OpenClaw，想让 Agent 自动提交 | 装好 skill，跟 Agent 说话就行 | [Agent 篇](#-agent-篇openclaw-用户) |
-| 🔧 会写代码，想定制或贡献 | 改源码，写新站点适配器 | [开发者篇](#-开发者篇改源码) |
+| 🎯 不写代码，想了解外链策略 | 直接看策略篇，手动提交也能用 | [策略篇](#策略篇) |
+| 🤖 有 OpenClaw，想让 Agent 自动提交 | 装好 skill，跟 Agent 说话就行 | [Agent 篇](#agent-篇) |
+| 🔧 会写代码，想定制或贡献 | 改源码，写新站点适配器 | [开发者篇](#开发者篇) |
 
 ---
 
-# 🎯 策略篇（不写代码也能用）
+<a id="策略篇"></a>
 
-## 外链是什么？为什么要做？
+## 策略篇
+
+### 外链是什么？为什么要做？
 
 Google 排名的底层逻辑：**别的网站链接到你 = 给你投票**。票越多、来源越权威，排名越高。
 
-"外链"就是让别的网站放上你的链接。
+### 值得提交的渠道
 
-## 值得提交的渠道（按投入产出比排序）
+#### 🥇 GitHub awesome-list — 最高效
 
-### 🥇 GitHub awesome-list —— 最高效
-
-GitHub 上有很多"awesome-xxx"仓库（精选资源列表）。比如 awesome-cloudflare 有 12k stars，awesome-indie 有 10k stars。
-
-**做法：** 去仓库提一个 Issue，说"请把我的项目加上"。维护者审核通过就永久收录。
+GitHub 上有很多"awesome-xxx"仓库（精选资源列表）。提一个 Issue，维护者审核通过就永久收录。
 
 **成本：** 0 元。每个 5 分钟。
 
-### 🥈 免费目录站
-
-AI 工具目录、SaaS 目录、独立开发者导航站。填个表就能提交。
-
-**实测好用的：**
+#### 🥈 免费目录站
 
 | 站点 | 说明 | 审核速度 | 适配器 |
 |------|------|---------|--------|
@@ -48,18 +281,11 @@ AI 工具目录、SaaS 目录、独立开发者导航站。填个表就能提交
 | submitaitools.org | AI 工具目录 (DA 73) | 1-3 天 | ✅ `submitaitools` |
 | toolverto.com | 工具目录 | 1-3 天 | ✅ `toolverto` |
 | uneed.best | 工具目录 (DR 72) | 排队中 | ✅ `uneed` |
-| bai.tools | AI 工具目录 | ~30 天 | ✅ `baitools` |
 | 600.tools | 工具目录，3 dofollow | 1-3 天 | ✅ `600tools` |
 | Dang.ai | AI 目录 (DA 35) | 3-4 周 | ✅ `dangai` |
 | Startup88 | 创业目录 (DA 34) | 1-2 周 | ✅ `startup88` |
-| StartupStash | 创业资源目录 | 1-2 周 | ⚡ Typeform |
-| CurateClick | 精选工具目录 | 1 周 | ⚡ 手动 |
 
-### 🥉 社区（必须手动）
-
-Hacker News (Show HN)、Reddit、V2EX。**不能自动化**，只能自己发。
-
-### ❌ 避坑
+#### ❌ 避坑
 
 | 站点 | 坑 |
 |------|-----|
@@ -68,176 +294,78 @@ Hacker News (Show HN)、Reddit、V2EX。**不能自动化**，只能自己发。
 | toolify.ai | 提交要 $99 |
 | Product Hunt | 有反爬机制，只能手动 |
 
-## 提交节奏
+### 提交节奏
 
 - 不同站点之间隔 1-3 分钟
 - 一天提 5-10 个就够了
 - **同一产品不要重复提交到同一站点**
 
-**核心原则：先看看站点要不要钱，再注册账号。**
-
 ---
 
-# 🤖 Agent 篇（OpenClaw 用户）
+<a id="agent-篇"></a>
 
-**前置条件：你已经跑起了 [OpenClaw](https://openclaw.ai)。**
+## Agent 篇
 
-## 第 1 步：安装
-
-在 OpenClaw 所在机器上跑：
+### 安装
 
 ```bash
 cd ~/Downloads
 git clone https://github.com/s87343472/backlink-pilot.git
-cd backlink-pilot
-npm install
-```
-
-> ⚠️ 首次 `npm install` 会下载 Chromium（~150MB）。中国大陆可能需要代理。
-
-## 第 2 步：链接到 OpenClaw
-
-```bash
+cd backlink-pilot && npm install
 ln -s ~/Downloads/backlink-pilot ~/.openclaw/skills/backlink-pilot
 ```
 
-重启 OpenClaw，它会自动发现这个 skill。
-
-## 第 3 步：配置你的产品
+### 配置
 
 ```bash
-cd ~/Downloads/backlink-pilot
 cp config.example.yaml config.yaml
+# 编辑 config.yaml 填入产品信息
 ```
 
-编辑 `config.yaml`：
+### 跟 Agent 说话
 
-```yaml
-product:
-  name: "你的产品名"
-  url: "https://你的网站.com"
-  description: "一句话描述，160 字以内"
-  long_description: |
-    详细描述，给需要长文本的站点用。
-  email: "你的邮箱@example.com"
-  categories:
-    - developer-tools
-  pricing: free
-
-# 需要登录的站点（可选）
-credentials:
-  saashub:
-    email: "注册邮箱"
-    password: "密码"
-```
-
-> ⚠️ config.yaml 包含密码，已被 .gitignore 排除，不会上传到 git。
-
-## 第 4 步：跟 Agent 说话
-
-现在你可以直接用中文指挥 Agent：
-
-**侦察站点：**
-> "帮我看看 https://some-directory.com 能不能自动提交"
-
-**提交：**
-> "帮我提交到 submitaitools"
-
-**批量提交（Agent 会自己控制节奏）：**
-> "帮我提交到 submitaitools、toolverto、saashub，每个隔 2 分钟"
-
-**生成 awesome-list Issue：**
-> "生成 awesome-cloudflare 的提交内容"
-
-**查看进度：**
-> "外链提交情况怎么样了"
-
-**就这样。你说中文，Agent 执行。**
-
-## 批量博客评论提交
-
-除了目录站，还支持批量在博客评论区留下网站链接（通过评论表单的 Website 字段）。
-
-### 原理
-
-很多博客（WordPress 等）的评论表单有 4 个字段：名字、邮箱、网站、评论内容。
-**网站字段** 会被渲染成评论者名字的超链接 —— 这就是外链。
-
-### 准备资源文件
-
-把目标 URL 放到 `resources/backlink-resources.json`：
-
-```json
-[
-  {
-    "type": "blog_comment",
-    "url": "https://some-blog.com/great-article/",
-    "has_captcha": false,
-    "has_url_field": true,
-    "link_strategy": "url_field"
-  }
-]
-```
-
-> 💡 可以用 Ahrefs/Semrush 导出竞品外链，筛选 blog_comment 类型，批量导入。
-
-### 运行
-
-```bash
-# 试跑（不真正提交）
-node src/batch-submit.js --dry-run --limit 5
-
-# 真跑 10 条，指定站点（0=第一个, 1=第二个...）
-node src/batch-submit.js --limit 10 --site 0
-
-# 随机站点（不传 --site 就随机）
-node src/batch-submit.js --limit 10
-```
-
-### 设计要点
-
-- **URL 放 Website 字段**，不放评论正文 —— 评论看起来更自然
-- **20 条评论模板随机轮换** —— 避免千篇一律被识别
-- **5 个 Persona 轮换** —— 不同名字和邮箱
-- **全局去重** —— 同一 URL 不会重复提交（`logs/global-history.json`）
-- **优先级排序** —— tech/game/education 类博客优先
-- **自动跳过** —— 有验证码、评论已关闭、找不到表单的自动跳过
-
-### 配合 Cron 定时跑
-
-```bash
-# 示例：每天 10:00 提交 10 条
-# 在 OpenClaw 里配 cron，或系统 crontab：
-0 10 * * * cd ~/Downloads/backlink-pilot && node src/batch-submit.js --limit 10
-```
-
-### 效果预期
-
-老实说，博客评论外链是 **量产低质量策略**。单条价值不高，但：
-- 零成本
-- 全自动
-- 积少成多
-- 早期项目做 domain authority 基础够用
-
-**不要指望靠这个排名，只是外链多样性的补充。真正有价值的还是目录站和 awesome-list。**
+- "帮我提交到 submitaitools" → 自动提交
+- "帮我看看 https://some-directory.com 能不能自动提交" → 侦察站点
+- "生成 awesome-cloudflare 的提交内容" → 生成 Issue
+- "外链提交情况怎么样了" → 查看进度
 
 ---
 
-## 也可以手动跑命令
+<a id="开发者篇"></a>
 
-不想通过 Agent 也行，直接跑 CLI：
+## 开发者篇
+
+### 引擎选择 (v2.0)
+
+| 引擎 | 安装 | 优势 |
+|------|------|------|
+| **playwright** (默认) | `npm install` | 不需要浏览器插件 |
+| **bb-browser** (推荐) | `npm install -g bb-browser` + Chrome 插件 | 真实浏览器，反爬无感，无 Cloudflare/OAuth 问题 |
+
+```yaml
+# config.yaml
+browser:
+  engine: bb    # 或 playwright
+
+bb_browser:
+  auto_update: true
+  update_interval_hours: 24
+```
+
+### 命令速查
 
 ```bash
-cd ~/Downloads/backlink-pilot
-
 # 侦察
 node src/cli.js scout https://new-site.com --deep
 
-# 提交
+# 提交到已有适配器
 node src/cli.js submit submitaitools
-node src/cli.js submit toolverto
+node src/cli.js submit submitaitools --engine bb    # 用真实 Chrome
 
-# 生成 awesome-list Issue
+# 通用提交（任何目录站，需要 bb-browser）
+node src/cli.js submit https://any-directory.com/submit
+
+# awesome-list Issue
 node src/cli.js awesome awesome-cloudflare
 
 # 通知搜索引擎
@@ -245,127 +373,52 @@ node src/cli.js indexnow https://你的网站.com
 
 # 批量博客评论
 node src/batch-submit.js --limit 10
+node src/batch-submit.js --limit 10 --engine bb
 
-# 看提交记录
+# 查看记录
 node src/cli.js status
+
+# 更新 bb-browser 社区适配器
+node src/cli.js bb-update
 ```
 
----
+### 批量博客评论
 
-# 🔧 开发者篇（改源码）
+除了目录站，还支持批量在博客评论区留下网站链接（通过评论表单的 Website 字段）。
 
-## 项目结构
-
-```
-backlink-pilot/
-├── config.example.yaml    ← 配置模板
-├── SKILL.md               ← OpenClaw 调用指南
-├── TROUBLESHOOTING.md     ← 20+ 站点踩坑记录
-├── resources/
-│   └── sites.json         ← 你的站点列表（批量提交用）
-├── src/
-│   ├── cli.js             ← CLI 入口
-│   ├── batch-submit.js    ← 批量博客评论提交（v2）
-│   ├── browser.js         ← 隐身浏览器（rebrowser-playwright）
-│   ├── captcha.js         ← 验证码自动解
-│   ├── config.js          ← 配置加载 + UTM 生成
-│   ├── submit.js          ← 提交调度（自动匹配适配器）
-│   ├── tracker.js         ← 提交记录（YAML）
-│   ├── indexnow.js        ← 搜索引擎通知
-│   ├── sites/             ← 站点适配器（每站一个文件）
-│   │   ├── submitaitools.js   ← 带颜色验证码自动解
-│   │   ├── toolverto.js       ← 最简单的，3 个字段
-│   │   ├── saashub.js         ← 需要登录
-│   │   ├── uneed.js           ← 需要登录
-│   │   └── baitools.js        ← Google OAuth
-│   ├── scout/
-│   │   └── discover.js    ← 站点侦察
-│   └── awesome/
-│       └── templates.js   ← awesome-list Issue 生成（10 个仓库）
-```
-
-## 给新站点写适配器：3 步
-
-### 1. 侦察表单字段
+**设计要点：**
+- URL 放 Website 字段，不放评论正文
+- 20 条评论模板随机轮换
+- 5 个 Persona 轮换
+- 全局去重（`logs/global-history.json`）
+- 自动跳过有验证码、评论已关闭的页面
 
 ```bash
-node src/cli.js scout https://new-site.com --deep
+# 试跑
+node src/batch-submit.js --dry-run --limit 5
+
+# 真跑
+node src/batch-submit.js --limit 10 --site 0
 ```
 
-输出示例：
-```
-📝 Form 1 (4 fields):
-  * [text] tool_name
-  * [url] tool_url
-    [textarea] tool_desc
-    [email] contact
-```
+### 写新适配器
 
-### 2. 写适配器
+1. 侦察：`node src/cli.js scout https://new-site.com --deep`
+2. 创建 `src/sites/newsite.js`（参考 adapters.md 模板）
+3. 运行：`node src/cli.js submit newsite`
 
-创建 `src/sites/newsite.js`：
-
-```javascript
-import { withBrowser, delay } from '../browser.js';
-import { solveColorCaptcha } from '../captcha.js';
-
-export default {
-  name: 'new-site.com',
-  url: 'https://new-site.com/submit',
-  auth: 'none',    // none | email | oauth
-  captcha: 'none', // none | color
-
-  async submit(product, config) {
-    return withBrowser(config, async ({ page }) => {
-      await page.goto('https://new-site.com/submit', {
-        waitUntil: 'networkidle',
-        timeout: 30000,
-      });
-      await delay(1500);
-
-      // 字段名从 scout 拿到的
-      await page.fill('input[name="tool_name"]', product.name);
-      await page.fill('input[name="tool_url"]', product.utm_url);
-      await page.fill('textarea[name="tool_desc"]', product.description);
-      await page.fill('input[name="contact"]', product.email);
-
-      await solveColorCaptcha(page); // 有验证码就解
-      await page.click('button[type="submit"]');
-      await delay(3000);
-
-      const body = await page.textContent('body');
-      return {
-        url: page.url(),
-        confirmation: /thank|success/i.test(body) ? '成功' : '需手动确认',
-      };
-    });
-  },
-};
-```
-
-### 3. 用
+或者直接用通用适配器，不用写代码：
 
 ```bash
-node src/cli.js submit newsite
+node src/cli.js submit https://new-site.com/submit --engine bb
 ```
 
-## 技术要点
+### 技术要点
 
-### 为什么用 rebrowser 不用普通 Playwright？
-
-普通 Playwright 的 `navigator.webdriver = true`，一查就知道是机器人。rebrowser 在 Chromium 编译层面改掉了。13 个站测试 69% 通过率。
-
-### 验证码怎么解的？
-
-一些站用颜色验证码："点击 **teal** 颜色的按钮"。不是 AI 识图，就是字符串匹配：读文字 → 提取颜色 → 点按钮。100% 成功率。
-
-### 什么过不去？
-
-- **Cloudflare Challenge**（"正在检查您的浏览器"）—— 硬墙
-- **Cloudflare Turnstile** —— 硬墙
-- **Reddit 网络层封杀** —— 无解
-
-遇到就跳过，标记手动。
+- **rebrowser-playwright** 在 Chromium 编译层面改掉 `navigator.webdriver`，13 个站测试 69% 通过率
+- **bb-browser** 用你的真实 Chrome，100% 隐身
+- Cloudflare Challenge/Turnstile 对 playwright 是硬墙 → 用 `--engine bb` 或跳过
+- 颜色验证码：文字提取 + 按钮匹配，100% 成功率
 
 > 完整踩坑记录：[TROUBLESHOOTING.md](TROUBLESHOOTING.md)
 
@@ -373,10 +426,7 @@ node src/cli.js submit newsite
 
 ## Contributing
 
-欢迎 PR：
-- 新站点适配器
-- 验证码解法改进
-- Bug 修复
+欢迎 PR：新站点适配器、验证码解法改进、Bug 修复。
 
 ## License
 
@@ -384,4 +434,4 @@ MIT
 
 ## Credits
 
-Built with [OpenClaw](https://openclaw.ai). Browser automation by [rebrowser-playwright](https://github.com/nickthecoder/rebrowser-playwright).
+Built with [OpenClaw](https://openclaw.ai). Browser automation by [rebrowser-playwright](https://github.com/nickthecoder/rebrowser-playwright) and [bb-browser](https://github.com/epiral/bb-browser).
