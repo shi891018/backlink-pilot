@@ -36,17 +36,29 @@ export class BbPage {
   constructor(config = {}) {
     this._config = config;
     this._tabId = null;
+    this._openedTabs = []; // track tabs for cleanup
   }
 
   async goto(url, _opts = {}) {
-    const result = bb('open', url);
-    // Extract tabId if returned
-    try {
-      const data = JSON.parse(result);
-      if (data.tabId) this._tabId = data.tabId;
-    } catch {}
+    const result = bb('open', url, '--tab');
+    // Extract tabId from output like "Tab ID: XXXX"
+    const tabMatch = result.match(/Tab ID:\s*(\S+)/);
+    if (tabMatch) {
+      this._tabId = tabMatch[1];
+      this._openedTabs.push(this._tabId);
+    }
     // Wait for page to settle (no networkidle equivalent)
     await new Promise(r => setTimeout(r, 2000));
+  }
+
+  /**
+   * Close all tabs opened during this session
+   */
+  async cleanup() {
+    for (const tabId of this._openedTabs) {
+      try { bb('tab', 'close', tabId); } catch {}
+    }
+    this._openedTabs = [];
   }
 
   async fill(selectorOrRef, value) {

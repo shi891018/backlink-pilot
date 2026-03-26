@@ -98,18 +98,51 @@ cp config.example.yaml config.yaml
 
 ### Engine Options (v2.0)
 
-| Engine | Setup | Pros |
-|--------|-------|------|
-| **playwright** (default) | `npm install` | No extension needed |
-| **bb-browser** (recommended) | `npm install -g bb-browser` + Chrome extension | Real browser, invisible to anti-bot, no Cloudflare/OAuth issues |
+| Engine | Setup | Pros | Cons |
+|--------|-------|------|------|
+| **playwright** (default) | `npm install` | No extra setup | Detected by anti-bot, blocked by Cloudflare |
+| **bb-browser** (recommended) | See below | Real Chrome, invisible, Google OAuth works | Requires Chrome setup |
+
+### bb-browser Setup (Step by Step)
+
+```bash
+# 1. Install bb-browser globally
+npm install -g bb-browser
+
+# 2. Verify installation
+bb-browser --version    # should show 0.10.x+
+
+# 3. First run — bb-browser will auto-launch a managed Chrome instance
+bb-browser status       # should show "浏览器运行中" or "Browser running"
+
+# 4. If you see "No page target found", create an initial tab:
+curl -s -X PUT "http://localhost:19825/json/new?about:blank"
+
+# 5. Test it works
+bb-browser open https://example.com
+bb-browser snapshot -i
+bb-browser tab close 0
+```
+
+**For sites requiring Google login** (600.tools, bai.tools, etc.):
+
+bb-browser uses its own Chrome profile at `~/.bb-browser/browser/user-data`. You need to log in to Google once in this browser:
+
+```bash
+bb-browser open https://accounts.google.com
+# Manually log in with your Google account in the browser window that opens
+# After that, all Google OAuth sites will work automatically
+```
+
+### Config
 
 ```yaml
 # config.yaml
 browser:
-  engine: bb    # or: playwright
+  engine: bb    # bb | playwright (default: playwright)
 
 bb_browser:
-  auto_update: true
+  auto_update: true            # auto-update community adapters
   update_interval_hours: 24
 ```
 
@@ -340,7 +373,38 @@ cp config.example.yaml config.yaml
 | 引擎 | 安装 | 优势 |
 |------|------|------|
 | **playwright** (默认) | `npm install` | 不需要浏览器插件 |
-| **bb-browser** (推荐) | `npm install -g bb-browser` + Chrome 插件 | 真实浏览器，反爬无感，无 Cloudflare/OAuth 问题 |
+| **bb-browser** (推荐) | 见下方安装指南 | 真实浏览器，反爬无感，无 Cloudflare/OAuth 问题 |
+
+### bb-browser 安装指南（新人必看）
+
+```bash
+# 1. 全局安装 bb-browser
+npm install -g bb-browser
+
+# 2. 验证安装
+bb-browser --version    # 应显示 0.10.x+
+
+# 3. 首次启动 — bb-browser 会自动启动一个托管的 Chrome 实例
+bb-browser status       # 应显示 "浏览器运行中" 或 "Browser running"
+
+# 4. 如果看到 "No page target found"，手动创建初始标签页：
+curl -s -X PUT "http://localhost:19825/json/new?about:blank"
+
+# 5. 测试是否正常
+bb-browser open https://example.com
+bb-browser snapshot -i
+bb-browser tab close 0
+```
+
+**需要 Google 登录的站点**（600.tools、bai.tools 等）：
+
+bb-browser 使用独立的 Chrome 配置文件（`~/.bb-browser/browser/user-data`），不共享你日常浏览器的登录态。需要手动登录一次 Google：
+
+```bash
+bb-browser open https://accounts.google.com
+# 在打开的浏览器窗口中手动登录 Google 账号
+# 登录后，所有需要 Google OAuth 的站点都会自动工作
+```
 
 ```yaml
 # config.yaml

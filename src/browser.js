@@ -45,7 +45,11 @@ export async function withBrowser(config, fn) {
     const { maybeUpdateBbSites } = await import('./bb-update.js');
     await maybeUpdateBbSites(config);
     const page = new BbPage(config);
-    return await fn({ browser: null, context: null, page });
+    try {
+      return await fn({ browser: null, context: null, page });
+    } finally {
+      await page.cleanup(); // close all tabs opened during this session
+    }
   }
 
   // Default: rebrowser-playwright
@@ -72,7 +76,8 @@ export async function createSession(config = {}) {
     }
     const { maybeUpdateBbSites } = await import('./bb-update.js');
     await maybeUpdateBbSites(config);
-    return { page: new BbPage(config), close: async () => {} };
+    const page = new BbPage(config);
+    return { page, close: async () => page.cleanup() };
   }
 
   const { browser, context, page } = await launchBrowser(config);
