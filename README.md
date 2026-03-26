@@ -6,6 +6,10 @@
 
 > Built by an AI Agent ([OpenClaw](https://openclaw.ai)) during real-world link building — battle-tested on 30+ sites.
 
+**259 target sites** included in [`targets.yaml`](targets.yaml) — 226 auto-submittable with bb-browser.
+
+**259 个目标站点**收录在 [`targets.yaml`](targets.yaml) — 226 个可用 bb-browser 自动提交。
+
 ---
 
 ## Quick Start / 快速开始
@@ -201,6 +205,7 @@ node src/cli.js bb-update
 ```
 backlink-pilot/
 ├── config.example.yaml       ← Config template / 配置模板
+├── targets.yaml               ← 259 submission targets / 目标站点列表
 ├── SKILL.md                   ← Agent skill definition
 ├── adapters.md                ← Site adapters & awesome-list targets
 ├── TROUBLESHOOTING.md         ← 20+ site debugging notes / 踩坑记录
