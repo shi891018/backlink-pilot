@@ -1,12 +1,12 @@
 # Backlink Pilot v2.1
 
+**[中文文档](README.zh.md)**
+
 <p align="center">
   <img src="docs/overview.svg" alt="Backlink Pilot v2.1 Overview" width="100%"/>
 </p>
 
 **One config, one command. Automated backlink submission for indie products.**
-
-一条命令提交外链的自动化工具。配置一次产品信息，自动提交到目录站、awesome-list、搜索引擎。
 
 > Built by an AI Agent ([OpenClaw](https://openclaw.ai)) during real-world link building — battle-tested on 30+ sites.
 
@@ -14,23 +14,23 @@
 
 ---
 
-## Quickest Start — Claude Code（推荐）
+## Quickest Start — Claude Code (Recommended)
 
-> 有 Claude Code？**不需要看下面任何文档**。三步搞定：
+> Have Claude Code? **You don't need to read any docs.** Three steps:
 
 ```bash
 git clone https://github.com/s87343472/backlink-pilot.git
 cd backlink-pilot && npm install
-claude    # 打开 Claude Code，直接说「帮我提交外链」
+claude    # Open Claude Code, just say "submit my product to free directories"
 ```
 
-Claude 自动读取 `CLAUDE.md`，引导你配置、安装 bb-browser、开始提交。
+Claude automatically reads `CLAUDE.md`, guides you through config, installs bb-browser, and starts submitting.
 
-详细教程：[docs/tutorial.md](docs/tutorial.md) | 完整指南：[docs/guide.md](docs/guide.md)
+Detailed tutorial: [docs/tutorial.md](docs/tutorial.md) | Full guide: [docs/guide.md](docs/guide.md)
 
 ---
 
-## Manual Quick Start / 手动快速开始
+## Manual Quick Start
 
 ```bash
 # 1. Clone & install
@@ -51,7 +51,7 @@ node src/cli.js submit https://any-site.com --engine bb
 
 ---
 
-## Engine Comparison / 引擎对比
+## Engine Comparison
 
 | Engine | Setup | Pros | Cons |
 |--------|-------|------|------|
@@ -60,7 +60,7 @@ node src/cli.js submit https://any-site.com --engine bb
 
 ---
 
-## Commands / 命令
+## Commands
 
 ```bash
 node src/cli.js submit <site-or-url>     # Submit to directory
@@ -74,9 +74,9 @@ node src/batch-submit.js --limit N       # Batch blog comments
 
 ---
 
-## Strategy / 外链策略
+## Strategy
 
-**Why?** Google ranking = other sites linking to you = votes. More quality votes → higher ranking.
+**Why backlinks?** Google ranking = other sites linking to you = votes. More quality votes = higher ranking.
 
 ### Best channels by ROI
 
@@ -104,7 +104,7 @@ node src/batch-submit.js --limit N       # Batch blog comments
 
 ### Claude Code
 
-Clone → `claude` → talk. `CLAUDE.md` is the instruction manual.
+Clone the repo, run `claude`, and talk. `CLAUDE.md` is the instruction manual — Claude reads it automatically.
 
 ### OpenClaw
 
@@ -112,15 +112,16 @@ Clone → `claude` → talk. `CLAUDE.md` is the instruction manual.
 ln -s ~/path/to/backlink-pilot ~/.openclaw/skills/backlink-pilot
 ```
 
-Then: "Submit to free directories" / "帮我提交外链"
+Then just say: "Submit to free directories"
 
 ---
 
-## Project Structure / 项目结构
+## Project Structure
 
 ```
 backlink-pilot/
 ├── README.md                  ← You are here
+├── README.zh.md               ← Chinese docs
 ├── CLAUDE.md                  ← Claude Code agent instructions
 ├── LICENSE
 ├── package.json
@@ -129,8 +130,9 @@ backlink-pilot/
 │
 ├── docs/                      ← Documentation
 │   ├── index.md               ← Docs home (VitePress)
-│   ├── tutorial.md            ← Step-by-step tutorial / 上手教程
-│   ├── troubleshooting.md     ← 20+ debugging notes / 排错
+│   ├── guide.md               ← Complete usage guide
+│   ├── tutorial.md            ← Step-by-step tutorial
+│   ├── troubleshooting.md     ← 20+ debugging notes
 │   ├── adapters.md            ← Site adapters reference
 │   ├── contributing.md        ← PR guidelines
 │   └── skill.md               ← OpenClaw skill definition
@@ -162,7 +164,7 @@ backlink-pilot/
 
 ---
 
-## Developer / 开发者
+## Developer
 
 ### Writing a new adapter
 
