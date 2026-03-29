@@ -53,6 +53,31 @@ export async function submit(site, opts) {
     return;
   }
 
+  // Pre-flight HTTP check — catch dead sites before launching browser
+  const checkUrl = adapter._targetUrl || adapter.url;
+  if (checkUrl) {
+    try {
+      const res = await fetch(checkUrl, {
+        method: 'HEAD',
+        redirect: 'follow',
+        signal: AbortSignal.timeout(10000),
+      }).catch(() => null);
+      if (res) {
+        if (res.status === 404) {
+          console.error(`❌ ${checkUrl} returned 404 — submit page no longer exists.`);
+          console.log('   Try visiting the site root to find the new submit URL.');
+          recordSubmission(site, 'failed', { error: '404 — submit page gone' });
+          return;
+        }
+        if (res.status >= 500) {
+          console.error(`❌ ${checkUrl} returned ${res.status} — site appears down.`);
+          recordSubmission(site, 'failed', { error: `HTTP ${res.status}` });
+          return;
+        }
+      }
+    } catch {}
+  }
+
   try {
     const result = await adapter.submit(product, config);
     recordSubmission(site, 'submitted', {

@@ -3,14 +3,34 @@
 
 import { execFileSync } from 'child_process';
 
+let _bbTimeout = 30000;
+
+function setBbTimeout(ms) {
+  if (ms && ms > 0) _bbTimeout = ms;
+}
+
 function bb(...args) {
   try {
     return execFileSync('bb-browser', args, {
       encoding: 'utf-8',
-      timeout: 30000,
+      timeout: _bbTimeout,
     }).trim();
   } catch (e) {
     const msg = e.stderr?.trim() || e.message;
+    if (msg.includes('ECONNREFUSED') || msg.includes('No page target') || msg.includes('connect')) {
+      throw new Error(
+        `bb-browser cannot connect to Chrome. Make sure it is running:\n` +
+        `  1. Run: bb-browser status\n` +
+        `  2. If no Chrome is running: bb-browser open about:blank\n` +
+        `  3. Try again`
+      );
+    }
+    if (msg.includes('超时') || msg.includes('timeout') || msg.includes('ETIMEDOUT') || e.killed) {
+      throw new Error(
+        `bb-browser command timed out (${args.join(' ')}). Chrome may be unresponsive.\n` +
+        `  Try: kill the Chrome process and restart with bb-browser open about:blank`
+      );
+    }
     throw new Error(`bb-browser ${args[0]}: ${msg}`);
   }
 }
@@ -37,6 +57,31 @@ export class BbPage {
     this._config = config;
     this._tabId = null;
     this._openedTabs = []; // track tabs for cleanup
+
+    // Apply timeout from config
+    if (config.browser?.timeout) setBbTimeout(config.browser.timeout);
+
+    // Verify Chrome is reachable — use 'tab list' instead of 'status'
+    // because 'status' can return "running" even when commands timeout
+    try {
+      bb('tab', 'list');
+    } catch (e) {
+      const msg = e.message || '';
+      if (msg.includes('超时') || msg.includes('timeout') || msg.includes('Timeout')) {
+        throw new Error(
+          `bb-browser Chrome is not responding (commands timeout).\n` +
+          `  Try restarting Chrome:\n` +
+          `    1. Kill the managed Chrome: kill $(cat ~/.bb-browser/browser/cdp-port 2>/dev/null && lsof -ti :19825)\n` +
+          `    2. Relaunch: bb-browser open about:blank\n` +
+          `    3. Retry your command.`
+        );
+      }
+      throw new Error(
+        `bb-browser Chrome is not running.\n` +
+        `  Start it with: bb-browser open about:blank\n` +
+        `  Then retry your command.`
+      );
+    }
   }
 
   async goto(url, _opts = {}) {
@@ -76,9 +121,9 @@ export class BbPage {
     if (selectorOrRef.startsWith('@')) {
       bb('click', selectorOrRef);
     } else {
-      const ref = await this._resolveRef(selectorOrRef);
-      if (ref) bb('click', ref);
-      else throw new Error(`Element not found: ${selectorOrRef}`);
+      // CSS selector — use evalClick with full user-event simulation
+      // This dispatches mousedown/mouseup/click to work with React/Vue components
+      await this.evalClickReal(selectorOrRef);
     }
   }
 
@@ -176,6 +221,25 @@ export class BbPage {
     bb('eval', `document.querySelector('${escapeJs(selector)}')?.click()`);
   }
 
+  /**
+   * Click with full user-event simulation (mousedown → mouseup → click)
+   * Required for React/Vue components that don't respond to .click()
+   */
+  async evalClickReal(selector) {
+    bb('eval', `(() => {
+      const el = document.querySelector('${escapeJs(selector)}');
+      if (!el) return;
+      el.dispatchEvent(new MouseEvent('mousedown', {bubbles:true,cancelable:true}));
+      el.dispatchEvent(new MouseEvent('mouseup', {bubbles:true,cancelable:true}));
+      el.dispatchEvent(new MouseEvent('click', {bubbles:true,cancelable:true}));
+      if (el.type === 'radio' || el.type === 'checkbox') {
+        el.checked = el.type === 'radio' ? true : !el.checked;
+        el.dispatchEvent(new Event('change', {bubbles:true}));
+        el.dispatchEvent(new Event('input', {bubbles:true}));
+      }
+    })()`);
+  }
+
   async evalClickByText(tag, text) {
     bb('eval', `Array.from(document.querySelectorAll('${tag}')).find(el => el.textContent.includes('${escapeJs(text)}'))?.click()`);
   }
@@ -232,7 +296,7 @@ export class BbElementHandle {
     if (this._tag && this._text) {
       await this._page.evalClickByText(this._tag, this._text);
     } else {
-      await this._page.evalClick(this._selector);
+      await this._page.evalClickReal(this._selector);
     }
   }
 
@@ -286,6 +350,6 @@ export class BbLocator {
   }
 
   async click() {
-    await this._page.evalClick(this._selector);
+    await this._page.evalClickReal(this._selector);
   }
 }

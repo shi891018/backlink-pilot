@@ -60,7 +60,28 @@ export default {
       // 1. Navigate to submission page
       console.log(`  📄 Opening ${targetUrl}`);
       await page.goto(targetUrl);
-      await delay(1000);
+      await delay(2000);
+
+      // 1.5. Validate page — check for dead/login/paid pages
+      const pageUrl = typeof page.url === 'function' ? page.url() : '';
+      const pageTitle = await page.textContent('title').catch(() => '');
+      const bodyText = await page.textContent('body').catch(() => '');
+      const bodySnippet = bodyText.substring(0, 500).toLowerCase();
+
+      if (/404|not found|page not found/.test(bodySnippet) || /404/.test(pageTitle)) {
+        throw new Error(`Page returned 404 — submit URL may have changed. Check the site root.`);
+      }
+      if (/500|server error|internal error/.test(bodySnippet)) {
+        throw new Error(`Page returned 500 Server Error — site may be down.`);
+      }
+      if (/login|sign.?in|log.?in|create.?account/.test(pageUrl.toLowerCase()) ||
+          (/login|sign.?in/.test(bodySnippet) && !/submit|add.*tool|description/.test(bodySnippet))) {
+        throw new Error(`Page redirected to login — this site now requires an account.`);
+      }
+      if (/stripe\.com|checkout|payment|pricing|buy now|\$\d+/.test(bodySnippet) &&
+          !/free/.test(bodySnippet)) {
+        throw new Error(`Page appears to be a payment page — this site may no longer be free.`);
+      }
 
       // 2. Take interactive snapshot
       console.log('  🔍 Scanning form fields...');

@@ -1,6 +1,6 @@
 {
   "name": "backlink-pilot",
-  "version": "0.2.0",
+  "version": "2.1.0",
   "type": "module",
   "description": "Automated backlink submission toolkit for indie hackers",
   "main": "src/cli.js",
@@ -9,9 +9,12 @@
   },
   "scripts": {
     "start": "node src/cli.js",
-    "test": "node --test tests/",
+    "test": "node --test tests/*.test.js",
     "batch": "node src/batch-submit.js",
-    "daily": "bash scripts/daily-backlinks.sh"
+    "daily": "bash scripts/daily-backlinks.sh",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
     "backlinks",

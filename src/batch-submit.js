@@ -50,6 +50,18 @@ function pickRandom(arr) {
 
 // Load resources — supports both flat array and { profiles, blog_comments } format
 function loadResources() {
+  if (!existsSync('resources/backlink-resources.json')) {
+    console.error('❌ resources/backlink-resources.json not found.');
+    console.error('   Copy the example file and add your target blogs:');
+    console.error('   cp resources/backlink-resources.example.json resources/backlink-resources.json');
+    process.exit(1);
+  }
+  if (!existsSync('resources/sites.json')) {
+    console.error('❌ resources/sites.json not found.');
+    console.error('   Create it with your product info. See resources/ for format.');
+    process.exit(1);
+  }
+
   const raw = JSON.parse(readFileSync('resources/backlink-resources.json', 'utf-8'));
   const sites = JSON.parse(readFileSync('resources/sites.json', 'utf-8'));
 

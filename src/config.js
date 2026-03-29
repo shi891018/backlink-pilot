@@ -42,6 +42,10 @@ export async function loadConfig(customPath) {
 
 export function utmUrl(config, source) {
   const base = config.utm?.base_url || config.product.url;
+
+  // Allow disabling UTM parameters entirely
+  if (config.utm?.enabled === false) return base;
+
   const medium = config.utm?.medium || 'directory';
   const campaign = config.utm?.campaign || 'backlink';
   return `${base}?utm_source=${source}&utm_medium=${medium}&utm_campaign=${campaign}`;

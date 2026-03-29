@@ -28,9 +28,10 @@ overseas_ai_directories:
   - name: Futurepedia
     submit_url: https://www.futurepedia.io/basic
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: Best AI tools, GPTs and apps
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: There's An AI For That
     submit_url: https://theresanaiforthat.com/launch/
@@ -42,9 +43,10 @@ overseas_ai_directories:
   - name: dang.ai
     submit_url: https://dang.ai/
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: AI directory, DA 35
+    status: paid
+    notes: "Paid $29, no longer free"
 
   - name: AI Valley
     submit_url: https://aivalley.ai/submit-tool/
@@ -134,9 +136,10 @@ overseas_ai_directories:
   - name: Aitoolnet
     submit_url: https://www.aitoolnet.com/submit
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: 10,000+ AI tools, daily updates
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: AI-Hunter.io
     submit_url: https://ai-hunter.io/submit-ai-tool/
@@ -154,8 +157,10 @@ overseas_ai_directories:
   - name: AI News Guru
     submit_url: https://ainews.guru/ai-app-submission/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: AILib
     submit_url: https://ailib.ru/en/add-ai/
@@ -167,15 +172,18 @@ overseas_ai_directories:
   - name: AiToolkit
     submit_url: https://www.aitoolkit.org/submit
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: 7750+ curated AI tools
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: AffordHunt
     submit_url: https://www.affordhunt.com/onesubmitai
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: AIWikiTools
     submit_url: https://aiwikitools.com/submit-a-tool/
@@ -186,14 +194,18 @@ overseas_ai_directories:
   - name: AI Worthy
     submit_url: https://aiworthy.org/submit-tool/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "500 as of 2026-03"
 
   - name: Ai pedia Hub
     submit_url: https://aipediahub.com/submit/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: AI Tools Up
     submit_url: https://aitoolsup.com/submit-tool/
@@ -204,9 +216,10 @@ overseas_ai_directories:
   - name: AI Mojo
     submit_url: https://aimojo.pro/submit/
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: 1850+ AI tools
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Apps and Websites
     submit_url: https://landing.mycloudmedia.co.uk/apps-and-websites-submit-ai-or-saas-tool/new-submission.html
@@ -217,8 +230,10 @@ overseas_ai_directories:
   - name: chatgptdemo
     submit_url: https://chatgptdemo.com/submit-new-ai-tool/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: ChatGPTDemo.pro
     submit_url: https://chatgptdemo.pro/submit-tool/
@@ -241,9 +256,10 @@ overseas_ai_directories:
   - name: Design Tools AI
     submit_url: https://designtools.ai/submit/
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: Design-focused AI tools
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Draeno.io
     submit_url: https://draeno.io/submit-a-tool/
@@ -254,8 +270,10 @@ overseas_ai_directories:
   - name: Every AI
     submit_url: https://every-ai.com/submit-tool/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Future AGI Tools
     submit_url: https://www.futureagitools.com/submit-a-site
@@ -272,8 +290,10 @@ overseas_ai_directories:
   - name: fastpedia.io
     submit_url: https://fastpedia.io/submit-tool/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: findcool.tools
     submit_url: https://www.findcool.tools/submit-tool
@@ -344,8 +364,10 @@ overseas_ai_directories:
   - name: SEOFAI
     submit_url: https://seofai.com/submit-tool/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: SpotTheAI
     submit_url: https://www.spottheai.com/submit
@@ -393,8 +415,10 @@ overseas_ai_directories:
   - name: Toolbase AI
     submit_url: https://www.toolbase.ai/toolbase/submit-tool
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: ToolsAI.net
     submit_url: https://toolsai.net/add-listing/
@@ -417,8 +441,10 @@ overseas_ai_directories:
   - name: TheToolBus.ai
     submit_url: https://www.thetoolbus.ai/submit-tools
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: tools-ai.online
     submit_url: https://www.tools-ai.online/tool-submit
@@ -435,8 +461,10 @@ overseas_ai_directories:
   - name: VTeam
     submit_url: https://vteam.ai/submit-tool
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Interested In AI
     submit_url: https://www.interestedinai.com/submit-tool
@@ -447,9 +475,10 @@ overseas_ai_directories:
   - name: Neil Patel AI Tools
     submit_url: https://aitools.neilpatel.com/submit/
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: High authority — Neil Patel
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: NextGenTools
     submit_url: https://nextgentools.me/submit-your-tool
@@ -460,8 +489,10 @@ overseas_ai_directories:
   - name: YourAITool
     submit_url: https://youraitool.com/submit-tool
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Super AI Tools
     submit_url: https://www.superaitools.io/submit-a-tool
@@ -498,14 +529,18 @@ overseas_ai_directories:
   - name: AI Scout
     submit_url: https://aiscout.net/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "520 as of 2026-03"
 
   - name: Stork
     submit_url: https://www.stork.ai/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "429 as of 2026-03"
 
   - name: aitoolhunt
     submit_url: https://www.aitoolhunt.com/
@@ -649,9 +684,10 @@ overseas_general:
   - name: OpenAlternative
     submit_url: https://airtable.com/appcN6nvv5iyo3x/pagzZyGl6fEI2RWDq/form
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: Open source alternatives, Airtable form
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Joinly
     submit_url: https://www.joinly.xyz/
@@ -711,14 +747,18 @@ overseas_general:
   - name: Launching Next
     submit_url: https://www.launchingnext.com/submit/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: LibHunt
     submit_url: https://www.libhunt.com/repo/submit
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: Startup Collections
     submit_url: https://startupcollections.com/submit-product/
@@ -735,9 +775,10 @@ overseas_general:
   - name: Startup Stash
     submit_url: https://startupstash.com/add-listing/
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: One of the largest startup tool directories
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: StartupBase
     submit_url: https://startupbase.io/
@@ -755,9 +796,10 @@ overseas_general:
   - name: PayOnceApps
     submit_url: https://payonceapps.com/add-your-app/
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: One-time payment apps only
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: techdirectory.io
     submit_url: https://www.techdirectory.io/get-listed
@@ -775,8 +817,10 @@ overseas_general:
   - name: Tool Finder
     submit_url: https://toolfinder.co/submit-your-tool
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: TechFaster
     submit_url: http://techfaster.com/submit-your-company/
@@ -806,14 +850,18 @@ overseas_general:
   - name: No Code Family
     submit_url: https://nocodefamily.com/submit-tool
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "503 as of 2026-03"
 
   - name: SpotSaaS
     submit_url: https://www.spotsaas.com/get-listed
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: MakerPeak
     submit_url: https://makerpeak.com/sign-up?redirect=/profile/products/submit
@@ -849,8 +897,10 @@ overseas_general:
   - name: Top10
     submit_url: https://top10.now/submit
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: WhatLaunched.Today
     submit_url: https://www.whatlaunched.today
@@ -900,8 +950,10 @@ overseas_general:
   - name: AddictiveTips
     submit_url: https://www.addictivetips.com/tip-us/
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "405 as of 2026-03"
 
   - name: insanelycooltools
     submit_url: https://www.insanelycooltools.com/submit
@@ -912,9 +964,10 @@ overseas_general:
   - name: findatool
     submit_url: https://www.findatool.io/add-a-tool
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: 6000+ tools
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: 700.tools
     submit_url: https://700.tools/add
@@ -938,8 +991,10 @@ overseas_directories:
   - name: Sitelike
     submit_url: https://www.sitelike.org/add-site
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: Dizila
     submit_url: https://www.dizila.com/submit
@@ -950,21 +1005,26 @@ overseas_directories:
   - name: DesignRush
     submit_url: https://www.designrush.com/submit/agency
     type: form
-    auto: yes
+    auto: no
     lang: en
-    notes: B2B marketplace
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: Good Design Tools
     submit_url: https://www.gooddesign.tools/submit
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: Webwiki
     submit_url: https://www.webwiki.com/info/add-website.html
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: Viesearch
     submit_url: https://viesearch.com/submit
@@ -1115,8 +1175,10 @@ overseas_directories:
   - name: Info-Listings
     submit_url: https://info-listings.com/submit.php
     type: form
-    auto: yes
+    auto: no
     lang: en
+    status: dead
+    notes: "500 as of 2026-03"
 
   - name: TXTLinks
     submit_url: https://www.txtlinks.com/sug_url.php?cat_id=0
@@ -1187,8 +1249,10 @@ chinese_ai_directories:
   - name: AIHub
     submit_url: https://www.aihub.cn/write
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: ai-bot.cn
     submit_url: https://tally.so/r/wkeKz1
@@ -1242,8 +1306,10 @@ chinese_ai_directories:
   - name: 一起用AI
     submit_url: https://17yongai.com/submit-website
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: 懂AI
     submit_url: https://www.dongaiapp.com/sub
@@ -1290,8 +1356,10 @@ chinese_ai_directories:
   - name: AI导航猫
     submit_url: https://www.h1z1tmc.com/submit
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "500 as of 2026-03"
 
   - name: AIGC工具导航
     submit_url: https://www.aigc.cn/submit
@@ -1302,8 +1370,10 @@ chinese_ai_directories:
   - name: AiTime.Space
     submit_url: https://aitime.space/submit
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: AI导航网 (94kan)
     submit_url: https://ai.94kan.cn/submit
@@ -1321,8 +1391,10 @@ chinese_ai_directories:
   - name: Jay的资源库
     submit_url: https://www.lovejay.top/%e7%bd%91%e7%ab%99%e6%8a%95%e7%a8%bf
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: 知否Box AI导航
     submit_url: https://www.zhifoubox.com/submission
@@ -1333,14 +1405,18 @@ chinese_ai_directories:
   - name: 牛牛导航
     submit_url: https://aoh.cc/contribute
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "404 as of 2026-03"
 
   - name: 乐易AI导航
     submit_url: https://leiydz.com/contribute
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "502 as of 2026-03"
 
   - name: 海外导航网
     submit_url: https://www.hhlink.com/%E6%8F%90%E4%BA%A4%E6%96%B0%E7%BD%91%E7%AB%99
@@ -1370,8 +1446,10 @@ chinese_ai_directories:
   - name: AI驿站
     submit_url: https://www.51aiyz.com/about
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "403 as of 2026-03"
 
   - name: AI导航网 (aiopenminds)
     submit_url: https://jinshuju.net/f/BhEFyJ
@@ -1459,8 +1537,10 @@ chinese_general:
   - name: IT桔子
     submit_url: https://www.itjuzi.com/addcompany
     type: form
-    auto: yes
+    auto: no
     lang: zh
+    status: dead
+    notes: "412 as of 2026-03"
 
   - name: 笛卡
     submit_url: https://dizkaz.com/

@@ -38,20 +38,26 @@ credentials:
 
 # UTM tracking (auto-appended to submitted URLs)
 utm:
+  enabled: true        # set to false to disable UTM params (some sites reject URLs with query params)
   base_url: "https://mycoolapp.com"
   medium: "directory"
   campaign: "backlink"
 
+# IndexNow — ping search engines when you publish new pages
+indexnow:
+  key: ""              # your IndexNow API key (or pass --key on CLI)
+
 # Browser settings
 browser:
-  engine: playwright   # bb | playwright (bb = real Chrome via bb-browser)
-  headless: true       # playwright only
+  engine: bb           # bb (recommended) | playwright — bb uses real Chrome, invisible to anti-bot
+  headless: true       # playwright only (bb always uses visible Chrome)
   slow_mo: 100         # ms between actions (playwright only)
-  timeout: 30000       # page load timeout (ms)
+  timeout: 30000       # page load timeout (ms) — applies to both engines
   screenshot_dir: "./screenshots"
 
 # bb-browser settings (only used when engine: bb)
-# Requires: npm install -g bb-browser + Chrome extension loaded
+# Requires: npm install -g bb-browser
+# First run: bb-browser open about:blank
 bb_browser:
   auto_update: true            # auto-run 'bb-browser site update' on startup
   update_interval_hours: 24    # how often to pull new community adapters

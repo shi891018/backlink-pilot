@@ -1,7 +1,11 @@
 // indexnow.js — Ping search engines about new/updated pages
 
 export async function pingIndexNow(url, opts = {}) {
-  const key = opts.key || 'default-key';
+  const key = opts.key || opts.config?.indexnow?.key || 'default-key';
+
+  if (key === 'default-key') {
+    console.warn('⚠️  No IndexNow key configured. Set it in config.yaml under indexnow.key or pass --key <key>');
+  }
 
   console.log(`\n🔔 Pinging IndexNow for: ${url}\n`);
 

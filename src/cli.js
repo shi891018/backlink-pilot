@@ -55,7 +55,8 @@ program
   .description('Ping Bing/Yandex about a new or updated page')
   .option('--key <key>', 'IndexNow API key')
   .action(async (url, opts) => {
-    await pingIndexNow(url, opts);
+    const config = await loadConfig();
+    await pingIndexNow(url, { ...opts, config });
   });
 
 program
