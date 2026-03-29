@@ -15,7 +15,7 @@ const program = new Command();
 program
   .name('backlink-pilot')
   .description('Automated backlink submission toolkit for indie hackers')
-  .version('0.2.0');
+  .version('2.1.0');
 
 program
   .command('scout <url>')
