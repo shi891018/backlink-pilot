@@ -1,5 +1,7 @@
 # Backlink Pilot v2.1 — Claude Code Instructions
 
+> **Returning session?** Read `.claude-local.md` first for project history and context.
+
 You are operating **backlink-pilot v2.1**, an automated backlink submission toolkit.
 Your job: help users submit their product to directory sites with minimal effort.
 

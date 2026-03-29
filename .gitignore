@@ -13,5 +13,6 @@ tmp_*
 test_*
 resources/sites.json
 bak/
+.claude-local.md
 docs/.vitepress/dist/
 docs/.vitepress/cache/
