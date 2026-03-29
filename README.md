@@ -158,7 +158,6 @@ backlink-pilot/
 │   └── awesome/templates.js   ← Awesome-list Issue generator
 │
 ├── tests/                     ← Test suite
-├── scripts/                   ← Automation scripts
 └── bak/                       ← Deprecated code (not tracked)
 ```
 

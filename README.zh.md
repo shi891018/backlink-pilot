@@ -158,7 +158,6 @@ backlink-pilot/
 │   └── awesome/templates.js   ← Awesome-list Issue 生成器
 │
 ├── tests/                     ← 测试
-├── scripts/                   ← 自动化脚本
 └── bak/                       ← 废弃代码（不上传）
 ```
 

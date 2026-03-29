@@ -11,10 +11,6 @@
     "start": "node src/cli.js",
     "test": "node --test tests/*.test.js",
     "batch": "node src/batch-submit.js",
-    "daily": "bash scripts/daily-submit.sh",
-    "health": "bash scripts/health-check.sh",
-    "stats": "bash scripts/stats.sh",
-    "setup": "bash scripts/setup.sh",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
