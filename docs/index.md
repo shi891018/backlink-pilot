@@ -28,6 +28,7 @@ features:
 
 | Doc | Description |
 |-----|-------------|
+| [Usage Guide / 使用指南](./guide.md) | Complete guide — Claude Code, CLI, OpenClaw |
 | [Tutorial / 上手教程](./tutorial.md) | 3-step quickstart with Claude Code |
 | [Adapters / 适配器](./adapters.md) | Site adapters and awesome-list targets |
 | [Troubleshooting / 排错](./troubleshooting.md) | 20+ site-specific debugging notes |

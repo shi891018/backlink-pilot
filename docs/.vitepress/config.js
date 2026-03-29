@@ -14,6 +14,7 @@ export default defineConfig({
     siteTitle: 'Backlink Pilot v2.1',
 
     nav: [
+      { text: 'Guide', link: '/guide' },
       { text: 'Tutorial', link: '/tutorial' },
       { text: 'Troubleshooting', link: '/troubleshooting' },
       { text: 'GitHub', link: 'https://github.com/s87343472/backlink-pilot' },
@@ -24,6 +25,7 @@ export default defineConfig({
         text: 'Getting Started',
         items: [
           { text: 'Home', link: '/' },
+          { text: 'Usage Guide / 使用指南', link: '/guide' },
           { text: 'Tutorial / 上手教程', link: '/tutorial' },
         ],
       },

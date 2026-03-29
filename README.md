@@ -1,5 +1,9 @@
 # Backlink Pilot v2.1
 
+<p align="center">
+  <img src="docs/overview.svg" alt="Backlink Pilot v2.1 Overview" width="100%"/>
+</p>
+
 **One config, one command. Automated backlink submission for indie products.**
 
 一条命令提交外链的自动化工具。配置一次产品信息，自动提交到目录站、awesome-list、搜索引擎。
@@ -22,7 +26,7 @@ claude    # 打开 Claude Code，直接说「帮我提交外链」
 
 Claude 自动读取 `CLAUDE.md`，引导你配置、安装 bb-browser、开始提交。
 
-详细教程：[docs/tutorial.md](docs/tutorial.md)
+详细教程：[docs/tutorial.md](docs/tutorial.md) | 完整指南：[docs/guide.md](docs/guide.md)
 
 ---
 
