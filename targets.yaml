@@ -428,7 +428,8 @@ overseas_general:
   type: form
   auto: manual
   lang: en
-  notes: Major alternative software directory
+  notes: 'Major alternative software directory; 🆓/💰 freemium: free listing; paid Pro
+    features'
 - name: Alternative.me
   submit_url: https://alternative.me/how-to/submit-software/
   type: form
@@ -454,7 +455,7 @@ overseas_general:
   type: form
   auto: manual
   lang: en
-  notes: Requires login; submit URL updated
+  notes: Requires login; submit URL updated; ✅ free
 - name: BufferApps
   submit_url: https://bufferapps.com/beta-listing/new
   type: form
@@ -487,6 +488,7 @@ overseas_general:
   type: form
   auto: true
   lang: en
+  notes: '🆓/💰 freemium: free launch; paid featured/boost options'
 - name: Fiddy
   submit_url: https://fiddy.co/
   type: form
@@ -1193,7 +1195,7 @@ communities_manual:
   type: listing
   auto: manual
   lang: en
-  notes: Anti-bot, manual only
+  notes: Anti-bot, manual only; ✅ free
 - name: Dev Hunt
   submit_url: https://devhunt.org/
   type: listing
@@ -1204,22 +1206,25 @@ communities_manual:
   type: form
   auto: true
   lang: en
-  notes: Free but queued
+  notes: 'Free but queued; 🆓/💰 freemium: free submission; paid $29.99 to skip queue'
 - name: Indie Hackers
   submit_url: https://www.indiehackers.com/products
   type: listing
   auto: manual
   lang: en
+  notes: ✅ free
 - name: dev.to
   submit_url: https://dev.to/
   type: article
   auto: manual
   lang: en
+  notes: ✅ free
 - name: Hashnode
   submit_url: https://hashnode.com/discussions
   type: article
   auto: manual
   lang: en
+  notes: ✅ free
 - name: HackerNoon
   submit_url: https://hackernoon.com/
   type: article
@@ -1251,28 +1256,32 @@ communities_manual:
   type: listing
   auto: manual
   lang: zh
+  notes: ✅ free
 awesome_lists:
 - name: 中国独立开发者项目列表
   submit_url: https://github.com/1c7/chinese-independent-developer/issues
   type: github
   auto: manual
   lang: zh
+  notes: ✅ free
 - name: Best App
   submit_url: https://github.com/hzlzh/Best-App/issues
   type: github
   auto: manual
   lang: zh
+  notes: ✅ free
 - name: 科技爱好者周刊
   submit_url: https://github.com/ruanyf/weekly/issues
   type: github
   auto: manual
   lang: zh
-  notes: Ruanyifeng's weekly, high influence
+  notes: Ruanyifeng's weekly, high influence; ✅ free
 - name: 独立开发变现周刊
   submit_url: https://github.com/ljinkai/weekly/issues
   type: github
   auto: manual
   lang: zh
+  notes: ✅ free
 reddit:
 - name: r/SideProject
   submit_url: https://reddit.com/r/sideproject
@@ -1331,7 +1340,8 @@ awesome_seo_directories:
   type: form
   auto: manual
   lang: en
-  notes: Business directory; create an organization and embed website link. AS~52
+  notes: 'Business directory; create an organization and embed website link. AS~52;
+    🆓/💰 freemium: free basic; paid Pro $29/mo'
 - name: Free Stuff Dev
   submit_url: https://freestuff.dev/submit
   type: form
@@ -1450,25 +1460,28 @@ awesome_free_seo_backlinks:
   type: article
   auto: manual
   lang: en
-  notes: Write and publish an article with backlink. DR94
+  notes: Write and publish an article with backlink. DR94; ✅ free
 - name: G2
   submit_url: https://www.g2.com/add_product_requests/new
   type: form
   auto: manual
   lang: en
-  notes: B2B software review platform; requires company info. DR91
+  notes: 'B2B software review platform; requires company info. DR91; 🆓/💰 freemium:
+    free basic listing; paid for leads/reviews'
 - name: Gartner Digital Markets
   submit_url: https://www.gartner.com/en/digital-markets/claim-profile
   type: listing
   auto: manual
   lang: en
-  notes: Claim/create software product profile. DR91
+  notes: 'Claim/create software product profile. DR91; 💰 PAID: pay-per-click via Gartner
+    Digital Markets'
 - name: Finances Online
   submit_url: https://financesonline.com/add-product/
   type: form
   auto: true
   lang: en
-  notes: Software review directory. DR87
+  notes: 'Software review directory. DR87; 🆓/💰 freemium: free basic; paid premium
+    badge ~$599/yr'
 - name: Geekwire
   submit_url: https://www.geekwire.com/submit-startup/
   type: form
@@ -1492,7 +1505,8 @@ awesome_free_seo_backlinks:
   type: listing
   auto: manual
   lang: en
-  notes: Tech stack listing platform. DR80
+  notes: 'Tech stack listing platform. DR80; 🆓/💰 freemium: free listing; paid Business
+    plan'
 - name: Hotfrog
   submit_url: https://admin.hotfrog.com/
   type: listing
@@ -1744,7 +1758,7 @@ awesome_free_seo_backlinks:
   type: form
   auto: true
   lang: en
-  notes: Product launch directory. DR38
+  notes: Product launch directory. DR38; ✅ free
 - name: Crazy About Startups
   submit_url: https://crazyaboutstartups.com/share-your-startup/
   type: form
@@ -2063,7 +2077,8 @@ community_directories:
   type: listing
   auto: manual
   lang: en
-  notes: Major software marketplace. Requires vendor account + review.
+  notes: 'Major software marketplace. Requires vendor account + review.; 🆓/💰 freemium:
+    free to list; revenue share model on sales'
 - name: Crozdesk
   submit_url: https://crozdesk.com/
   type: listing
@@ -2454,7 +2469,8 @@ excel_directories:
   type: form
   auto: manual
   lang: en
-  notes: DA93, Review Site
+  notes: 'DA93, Review Site; 🆓/💰 freemium: free basic business page; paid premium
+    features'
 - name: Softonic
   submit_url: https://en.softonic.com/android
   type: form
@@ -2466,7 +2482,7 @@ excel_directories:
   type: form
   auto: manual
   lang: en
-  notes: DA88, Directory
+  notes: 'DA88, Directory; 💰 PAID: company profile requires paid plan'
 - name: CodeProject
   submit_url: https://www.codeproject.com
   type: form
@@ -2478,25 +2494,26 @@ excel_directories:
   type: form
   auto: manual
   lang: en
-  notes: DA78, Review site
+  notes: 'DA78, Review site; 💰 PAID: pay-per-click/lead model, no free listing'
 - name: SmartCustomer (ex-Sitejabber)
   submit_url: https://www.smartcustomer.com
   type: form
   auto: manual
   lang: en
-  notes: DA74, Review Site, rebranded from Sitejabber
+  notes: 'DA74, Review Site, rebranded from Sitejabber; 🆓/💰 freemium: free business
+    profile; paid premium'
 - name: Vccircle
   submit_url: https://www.vccircle.com/company/directory
   type: form
   auto: manual
   lang: en
-  notes: DA73, Directory
+  notes: 'DA73, Directory; 💰 PAID: paid company directory'
 - name: TrustRadius
   submit_url: https://www.trustradius.com
   type: form
   auto: manual
   lang: en
-  notes: DA70, Review Site
+  notes: 'DA70, Review Site; 🆓/💰 freemium: free vendor profile; paid for analytics'
 - name: All Top
   submit_url: https://alltop.com
   type: form
@@ -2508,7 +2525,7 @@ excel_directories:
   type: form
   auto: manual
   lang: en
-  notes: DA69, Review site
+  notes: 'DA69, Review site; 🆓/💰 freemium: free basic listing; paid sponsored placement'
 - name: Similar Sites
   submit_url: https://www.similarsites.com
   type: form
@@ -2520,13 +2537,13 @@ excel_directories:
   type: form
   auto: manual
   lang: en
-  notes: DA66, MarketPlace
+  notes: 'DA66, MarketPlace; 💰 PAID: pay-per-lead model'
 - name: Tidy Repo
   submit_url: https://tidyrepo.com
   type: form
   auto: manual
   lang: en
-  notes: DA59, Review site
+  notes: 'DA59, Review site; 💰 PAID: paid review listing'
 - name: Startupxplore
   submit_url: https://startupxplore.com/en/startups
   type: form
@@ -2538,13 +2555,13 @@ excel_directories:
   type: form
   auto: true
   lang: en
-  notes: DA55, Directory
+  notes: 'DA55, Directory; 💰 PAID: sponsored listing required for visibility'
 - name: Tracxn
   submit_url: https://tracxn.com
   type: form
   auto: true
   lang: en
-  notes: DA53, Startup platform
+  notes: 'DA53, Startup platform; 💰 PAID: free basic profile, premium features paid'
 - name: Snap Munk
   submit_url: https://startups.snapmunk.com
   type: form
@@ -2556,7 +2573,7 @@ excel_directories:
   type: form
   auto: true
   lang: en
-  notes: DA48, Launch Platform
+  notes: DA48, Launch Platform; ✅ free
 - name: Thingtesting
   submit_url: https://thingtesting.com/submit-brand
   type: form
@@ -2574,7 +2591,7 @@ excel_directories:
   type: form
   auto: true
   lang: en
-  notes: DA41, Directory
+  notes: 'DA41, Directory; 🆓/💰 freemium: free listing; paid featured placement'
 - name: buildspace
   submit_url: https://buildspace.so
   type: form
@@ -2616,25 +2633,25 @@ excel_directories:
   type: form
   auto: true
   lang: en
-  notes: DA33, Directory
+  notes: DA33, Directory; ✅ free
 - name: Peerlist
   submit_url: https://peerlist.io
   type: form
   auto: true
   lang: en
-  notes: DA32, Directory
+  notes: 'DA32, Directory; 🆓/💰 freemium: free profile; paid Pro plan'
 - name: Hive Index
   submit_url: https://thehiveindex.com/submit
   type: form
   auto: true
   lang: en
-  notes: DA31, Directory
+  notes: DA31, Directory; ✅ free
 - name: Inspiration gallery for startups
   submit_url: https://startupinspire.com/startups
   type: form
   auto: true
   lang: en
-  notes: DA29, Directory
+  notes: DA29, Directory; ✅ free
 - name: Startuptabs
   submit_url: https://www.startuptabs.com
   type: form
@@ -2652,7 +2669,7 @@ excel_directories:
   type: form
   auto: true
   lang: en
-  notes: DA29, Directory
+  notes: DA29, Directory; ✅ free
 - name: Startups.watch
   submit_url: https://startups.watch
   type: form
@@ -2713,3 +2730,270 @@ excel_directories:
   auto: true
   lang: en
   notes: DA6, Directory
+feishu_directories:
+- name: Behance
+  submit_url: https://www.behance.net
+  type: form
+  auto: manual
+  lang: en
+  notes: DR94, Feishu list
+- name: Dribbble
+  submit_url: https://dribbble.com
+  type: form
+  auto: manual
+  lang: en
+  notes: DR93, Feishu list
+- name: Issuu
+  submit_url: https://issuu.com
+  type: form
+  auto: manual
+  lang: en
+  notes: DR93, Feishu list
+- name: Substack
+  submit_url: https://substack.com
+  type: form
+  auto: manual
+  lang: en
+  notes: DR93, Feishu list; ✅ free
+- name: Gumroad
+  submit_url: https://gumroad.com
+  type: form
+  auto: manual
+  lang: en
+  notes: DR92, Feishu list
+- name: ProvenExpert
+  submit_url: https://www.provenexpert.com
+  type: form
+  auto: manual
+  lang: en
+  notes: 'DR91, Feishu list; 🆓/💰 freemium: free basic; paid premium features'
+- name: Wellfound
+  submit_url: https://wellfound.com/company/new
+  type: form
+  auto: manual
+  lang: en
+  notes: 'DR86, Feishu list; 🆓/💰 freemium: free company profile; paid for talent features'
+- name: DZone
+  submit_url: https://dzone.com
+  type: form
+  auto: manual
+  lang: en
+  notes: DR84, Feishu list
+- name: Startup Fame
+  submit_url: https://startupfa.me/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: 'DR83, Feishu list; 🆓/💰 freemium: free listing; paid featured boost'
+- name: Vocal
+  submit_url: https://vocal.media
+  type: form
+  auto: manual
+  lang: en
+  notes: DR82, Feishu list
+- name: Turbo0
+  submit_url: https://turbo0.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR79, Feishu list; ✅ free
+- name: Findly.tools
+  submit_url: https://findly.tools/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR78, Feishu list; ✅ free
+- name: PeerPush
+  submit_url: https://peerpush.net
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR73, Feishu list; ✅ free
+- name: FrogDR
+  submit_url: https://frogdr.com
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: 'DR72, Feishu list; 🆓/💰 freemium: free basic DR tracking; paid plans for
+    more domains'
+- name: TinyLaunch
+  submit_url: https://tinylaunch.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR71, Feishu list; ✅ free
+- name: Startup Fast
+  submit_url: https://startupfa.st/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: 'DR69, Feishu list; 🆓/💰 freemium: free listing; paid featured options'
+- name: IndiePage
+  submit_url: https://indiepa.ge/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: 'DR67, Feishu list; 🆓/💰 freemium: free to start; paid lifetime $45'
+- name: FoundrList
+  submit_url: https://foundrlist.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: 'DR64, Feishu list; 🆓/💰 freemium: free listing; paid featured placement'
+- name: NewTool.site
+  submit_url: https://newtool.site/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR61, Feishu list; ✅ free
+- name: ToolDirs
+  submit_url: https://tooldirs.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR60, Feishu list; ✅ free
+- name: DeepLaunch
+  submit_url: https://deeplaunch.io/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR59, Feishu list; ✅ free
+- name: FirstLook.tools
+  submit_url: https://firstlook.tools/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: 'DR54, Feishu list; 🆓/💰 freemium: free basic listing; paid pro with dofollow
+    backlink'
+- name: RankInPublic
+  submit_url: https://rankinpublic.xyz
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR46, Feishu list; ✅ free
+- name: ShipGrowth
+  submit_url: https://shipgrowth.dev/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR42, Feishu list; ✅ free
+- name: AI Boom.tools
+  submit_url: https://aiboom.tools/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR40, Feishu list; ✅ free
+- name: OpenClawDir
+  submit_url: https://openclawdir.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR40, Feishu list; ✅ free
+- name: AllGPTs
+  submit_url: https://allgpts.co/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR37, Feishu list; ✅ free
+- name: Gets.tools
+  submit_url: https://gets.tools/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR37, Feishu list; ✅ free
+- name: TopAIHubs
+  submit_url: https://topaihubs.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR33, Feishu list; ✅ free
+- name: aiindex.tools
+  submit_url: https://aiindex.tools/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR30, Feishu list; ✅ free
+- name: TinyHunt
+  submit_url: https://tinyhunt.dev/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR27, Feishu list; ✅ free
+- name: AI41
+  submit_url: https://ai41.org/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR13, Feishu list
+- name: Next Launch
+  submit_url: https://nextlaunch.io/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR12, Feishu list
+- name: Browse AI Tools
+  submit_url: https://browse-ai.tools/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR10, Feishu list
+- name: Interesting Startups
+  submit_url: https://interestingstartups.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR7, Feishu list
+- name: Yizhan
+  submit_url: https://yizhan.club
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR7, Feishu list
+- name: AgentWise
+  submit_url: https://agentwise.org
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
+- name: Aindexc
+  submit_url: https://aindexc.com
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
+- name: DevSuite
+  submit_url: https://devsuite.co
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
+- name: Faceless Directory
+  submit_url: https://faceless.directory/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
+- name: FindAIDir
+  submit_url: https://findaidir.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
+- name: OGimage.gallery
+  submit_url: https://ogimage.gallery
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
+- name: SaaSHub
+  submit_url: https://www.saashub.com/submit-product
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list; ✅ free
+- name: Startup88
+  submit_url: https://startup88.com/submit
+  type: form
+  auto: 'yes'
+  lang: en
+  notes: DR0, Feishu list
