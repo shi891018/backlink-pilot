@@ -44,7 +44,9 @@ function escapeJs(str) {
  */
 export function isBbAvailable() {
   try {
-    execFileSync('which', ['bb-browser'], { encoding: 'utf-8' });
+    // 'where' on Windows, 'which' on Unix/macOS
+    const cmd = process.platform === 'win32' ? 'where' : 'which';
+    execFileSync(cmd, ['bb-browser'], { encoding: 'utf-8' });
     return true;
   } catch { return false; }
 }
@@ -254,23 +256,24 @@ export class BbElementHandle {
     this._selector = selector;
     this._tag = opts.tag;
     this._text = opts.text;
+    this._index = opts.index; // set by BbLocator.all() for nth-element access
+  }
+
+  // Returns a JS expression that resolves to the DOM element
+  _elExpr() {
+    if (this._index !== undefined) {
+      return `document.querySelectorAll('${escapeJs(this._selector)}')[${this._index}]`;
+    }
+    if (this._tag && this._text) {
+      return `Array.from(document.querySelectorAll('${this._tag}')).find(e => e.textContent.includes('${escapeJs(this._text)}'))`;
+    }
+    return `document.querySelector('${escapeJs(this._selector)}')`;
   }
 
   async isVisible() {
-    if (this._tag && this._text) {
-      const result = this._page._config;
-      return bb('eval',
-        `(() => {
-          const el = Array.from(document.querySelectorAll('${this._tag}')).find(e => e.textContent.includes('${escapeJs(this._text)}'));
-          if (!el) return false;
-          const r = el.getBoundingClientRect();
-          return r.width > 0 && r.height > 0;
-        })()`
-      ) === 'true';
-    }
     return bb('eval',
       `(() => {
-        const el = document.querySelector('${escapeJs(this._selector)}');
+        const el = ${this._elExpr()};
         if (!el) return false;
         const r = el.getBoundingClientRect();
         return r.width > 0 && r.height > 0;
@@ -279,35 +282,45 @@ export class BbElementHandle {
   }
 
   async textContent() {
-    if (this._tag && this._text) {
-      return bb('eval',
-        `Array.from(document.querySelectorAll('${this._tag}')).find(e => e.textContent.includes('${escapeJs(this._text)}'))?.textContent || ''`);
-    }
-    return bb('eval',
-      `document.querySelector('${escapeJs(this._selector)}')?.textContent || ''`);
+    return bb('eval', `${this._elExpr()}?.textContent || ''`);
   }
 
   async getAttribute(attr) {
-    return bb('eval',
-      `document.querySelector('${escapeJs(this._selector)}')?.getAttribute('${escapeJs(attr)}') || null`);
+    return bb('eval', `${this._elExpr()}?.getAttribute('${escapeJs(attr)}') || null`);
   }
 
   async click() {
-    if (this._tag && this._text) {
+    if (this._tag && this._text && this._index === undefined) {
       await this._page.evalClickByText(this._tag, this._text);
     } else {
-      await this._page.evalClickReal(this._selector);
+      bb('eval', `(() => {
+        const el = ${this._elExpr()};
+        if (!el) return;
+        el.dispatchEvent(new MouseEvent('mousedown', {bubbles:true,cancelable:true}));
+        el.dispatchEvent(new MouseEvent('mouseup', {bubbles:true,cancelable:true}));
+        el.dispatchEvent(new MouseEvent('click', {bubbles:true,cancelable:true}));
+        if (el.type === 'radio' || el.type === 'checkbox') {
+          el.checked = el.type === 'radio' ? true : !el.checked;
+          el.dispatchEvent(new Event('change', {bubbles:true}));
+          el.dispatchEvent(new Event('input', {bubbles:true}));
+        }
+      })()`);
     }
   }
 
   async fill(value) {
-    await this._page.evalFill(this._selector, value);
+    bb('eval', `(() => {
+      const el = ${this._elExpr()};
+      if (!el) return;
+      el.focus();
+      el.value = '${escapeJs(value)}';
+      el.dispatchEvent(new Event('input', {bubbles: true}));
+      el.dispatchEvent(new Event('change', {bubbles: true}));
+    })()`);
   }
 
   async evaluate(fn) {
-    // Simple evaluate — runs fn as string with el as argument
-    return bb('eval',
-      `(${fn.toString()})(document.querySelector('${escapeJs(this._selector)}'))`);
+    return bb('eval', `(${fn.toString()})(${this._elExpr()})`);
   }
 }
 
@@ -329,8 +342,7 @@ export class BbLocator {
       `document.querySelectorAll('${escapeJs(this._selector)}').length`);
     const count = parseInt(countStr, 10) || 0;
     return Array.from({ length: count }, (_, i) =>
-      new BbElementHandle(this._page,
-        `document.querySelectorAll('${escapeJs(this._selector)}')[${i}]`)
+      new BbElementHandle(this._page, this._selector, { index: i })
     );
   }
 

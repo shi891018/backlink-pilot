@@ -142,6 +142,11 @@ async function submitBlogComment(page, resource, site) {
   await page.goto(norm.url, { waitUntil: 'domcontentloaded', timeout: TIMEOUT_MS });
   await delay(2000); // let lazy-loaded comment forms appear
 
+  // Detect captcha or closed comments before attempting to fill fields
+  const blocker = await checkBlockers(page);
+  if (blocker === 'captcha') throw new Error('captcha detected');
+  if (blocker === 'comments_closed') throw new Error('comments closed');
+
   // Find comment textarea
   const commentSelectors = [
     'textarea[name="comment"]',
@@ -314,6 +319,10 @@ async function processResource(resource, site, page, log) {
       result.status = 'skipped';
       result.reason = 'timeout';
       console.log(`    ⏭️  Skipped (timeout/network)`);
+    } else if (msg === 'captcha detected' || msg === 'comments closed') {
+      result.status = 'skipped';
+      result.reason = msg.replace(' ', '_');
+      console.log(`    ⏭️  Skipped (${msg})`);
     } else if (msg.includes('No comment field') || msg.includes('No submit button')) {
       result.status = 'skipped';
       result.reason = msg;
