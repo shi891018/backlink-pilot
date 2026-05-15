@@ -64,6 +64,7 @@ node src/cli.js submit https://any-site.com --engine bb
 
 ```bash
 node src/cli.js submit <站点名或URL>     # 提交到目录站
+node src/cli.js spy <竞品URL>            # 抓取竞品外链，发现新目标站点
 node src/cli.js scout <URL> --deep       # 侦察站点表单
 node src/cli.js awesome <仓库名>          # 生成 awesome-list Issue
 node src/cli.js indexnow <URL>           # 通知搜索引擎
@@ -71,6 +72,31 @@ node src/cli.js status                   # 查看提交记录
 node src/cli.js bb-update                # 更新 bb-browser 适配器
 node src/batch-submit.js --limit N       # 批量博客评论
 ```
+
+### spy — 竞品外链分析
+
+```bash
+# 抓取所有来源，自动合并新站点到 targets.yaml
+node src/cli.js spy https://competitor.com --merge
+
+# 过滤：DR ≥ 30，只保留 dofollow，使用 bb-browser
+node src/cli.js spy https://competitor.com --min-dr 30 --dofollow-only --engine bb
+
+# 指定单一来源
+node src/cli.js spy https://competitor.com --source ahrefs
+
+# 保存结果到文件（不合并）
+node src/cli.js spy https://competitor.com --output spy-results.yaml
+```
+
+| 参数 | 默认值 | 说明 |
+|------|--------|------|
+| `--source` | `all` | `ahrefs` \| `openlinkprofiler` \| `ubersuggest` \| `moz` \| `all` |
+| `--min-dr` | `20` | 最低 DR 分数 |
+| `--limit` | `50` | 过滤后最多保留条数 |
+| `--dofollow-only` | 关 | 只保留 dofollow 链接 |
+| `--merge` | 关 | 追加到 `targets.yaml` |
+| `--output <文件>` | — | 保存为 YAML 或 JSON 文件 |
 
 ---
 
@@ -155,6 +181,15 @@ backlink-pilot/
 │   │   ├── baitools.js
 │   │   └── startup88.js
 │   ├── scout/discover.js      ← 表单字段发现
+│   ├── spy/                   ← 竞品外链分析
+│   │   ├── index.js           ← 主入口
+│   │   ├── filter.js          ← DR/dofollow/去重过滤
+│   │   ├── merge.js           ← 写入 targets.yaml
+│   │   └── sources/           ← 各平台抓取器
+│   │       ├── ahrefs.js
+│   │       ├── openlinkprofiler.js
+│   │       ├── ubersuggest.js
+│   │       └── moz.js
 │   └── awesome/templates.js   ← Awesome-list Issue 生成器
 │
 ├── tests/                     ← 测试

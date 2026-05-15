@@ -54,6 +54,7 @@ node src/cli.js submit futuretools --engine bb
 |---------|-------------|
 | `node src/cli.js submit <site>` | Submit to a known site adapter |
 | `node src/cli.js submit <url>` | Generic submission to any directory URL |
+| `node src/cli.js spy <url>` | Fetch competitor backlinks → discover new targets |
 | `node src/cli.js scout <url> --deep` | Discover form fields on a new site |
 | `node src/cli.js awesome <repo>` | Generate awesome-list GitHub Issue body |
 | `node src/cli.js indexnow <url>` | Ping Bing/Yandex about new pages |
@@ -110,6 +111,7 @@ node src/cli.js submit https://some-directory.com/submit --engine bb
 | "这个站能提交吗" / "can I submit to this site?" | Run `scout <url> --deep` to check |
 | "提交情况" / "status" | Run `node src/cli.js status` |
 | "外链策略" / "backlink strategy" | Read Strategy section in README.md, give advice |
+| "帮我找竞品外链" / "spy on competitor" | Run `node src/cli.js spy <url> --merge` to fetch backlinks and add to targets.yaml |
 
 ## Config Reference
 
@@ -146,4 +148,9 @@ src/submit.js            ← Submission dispatcher + pre-flight checks
 src/bb.js                ← bb-browser wrapper (BbPage API)
 src/sites/generic.js     ← Universal form-filling adapter
 src/sites/*.js           ← Site-specific adapters
+src/scout/discover.js    ← Form field discovery
+src/spy/index.js         ← Competitor backlink spy (main entry)
+src/spy/sources/*.js     ← Scrapers: ahrefs, openlinkprofiler, ubersuggest, moz
+src/spy/filter.js        ← DR/dofollow/dedup filtering
+src/spy/merge.js         ← Writes discovered sites to targets.yaml
 ```

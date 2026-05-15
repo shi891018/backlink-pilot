@@ -9,6 +9,7 @@ import { generateAwesomeIssue } from './awesome/templates.js';
 import { pingIndexNow } from './indexnow.js';
 import { showStatus } from './tracker.js';
 import { forceUpdate } from './bb-update.js';
+import { spy } from './spy/index.js';
 
 const program = new Command();
 
@@ -65,6 +66,30 @@ program
   .option('--json', 'Output as JSON')
   .action(async (opts) => {
     await showStatus(opts);
+  });
+
+program
+  .command('spy <competitor-url>')
+  .description('Fetch backlinks of a competitor site and find new submission targets')
+  .option('--source <source>', 'Data source: ahrefs | openlinkprofiler | ubersuggest | moz | all (default: all)')
+  .option('--limit <n>', 'Max results to keep after filtering', parseInt)
+  .option('--min-dr <n>', 'Minimum DR score to include (default: 20)', parseInt)
+  .option('--dofollow-only', 'Only include dofollow links')
+  .option('--output <file>', 'Save results to YAML or JSON file (e.g. spy-results.yaml)')
+  .option('--merge', 'Append discovered sites to targets.yaml')
+  .option('--engine <engine>', 'Browser engine: bb or playwright')
+  .action(async (competitorUrl, opts) => {
+    const config = await loadConfig();
+    if (opts.engine) config._engine = opts.engine;
+    await spy(competitorUrl, {
+      source: opts.source || 'all',
+      limit: opts.limit || 50,
+      minDr: opts.minDr !== undefined ? opts.minDr : 20,
+      dofollowOnly: opts.dofollowOnly || false,
+      output: opts.output,
+      merge: opts.merge || false,
+      config,
+    });
   });
 
 program

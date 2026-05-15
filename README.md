@@ -64,6 +64,7 @@ node src/cli.js submit https://any-site.com --engine bb
 
 ```bash
 node src/cli.js submit <site-or-url>     # Submit to directory
+node src/cli.js spy <competitor-url>     # Fetch competitor backlinks → find new targets
 node src/cli.js scout <url> --deep       # Discover form fields
 node src/cli.js awesome <repo>           # Generate awesome-list Issue
 node src/cli.js indexnow <url>           # Ping search engines
@@ -71,6 +72,31 @@ node src/cli.js status                   # Check submission history
 node src/cli.js bb-update                # Update bb-browser adapters
 node src/batch-submit.js --limit N       # Batch blog comments
 ```
+
+### spy — Competitor Backlink Analysis
+
+```bash
+# Fetch all sources, merge new sites into targets.yaml
+node src/cli.js spy https://competitor.com --merge
+
+# Filter: DR ≥ 30, dofollow only, use bb-browser
+node src/cli.js spy https://competitor.com --min-dr 30 --dofollow-only --engine bb
+
+# Use a specific source
+node src/cli.js spy https://competitor.com --source ahrefs
+
+# Save results to file without merging
+node src/cli.js spy https://competitor.com --output spy-results.yaml
+```
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `--source` | `all` | `ahrefs` \| `openlinkprofiler` \| `ubersuggest` \| `moz` \| `all` |
+| `--min-dr` | `20` | Minimum DR score |
+| `--limit` | `50` | Max results after filtering |
+| `--dofollow-only` | off | Only keep dofollow links |
+| `--merge` | off | Append to `targets.yaml` |
+| `--output <file>` | — | Save to YAML or JSON file |
 
 ---
 
@@ -155,6 +181,15 @@ backlink-pilot/
 │   │   ├── baitools.js
 │   │   └── startup88.js
 │   ├── scout/discover.js      ← Form field discovery
+│   ├── spy/                   ← Competitor backlink analysis
+│   │   ├── index.js           ← Main entry
+│   │   ├── filter.js          ← DR/dofollow/dedup filtering
+│   │   ├── merge.js           ← Write to targets.yaml
+│   │   └── sources/           ← Scrapers
+│   │       ├── ahrefs.js
+│   │       ├── openlinkprofiler.js
+│   │       ├── ubersuggest.js
+│   │       └── moz.js
 │   └── awesome/templates.js   ← Awesome-list Issue generator
 │
 ├── tests/                     ← Test suite

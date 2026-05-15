@@ -177,6 +177,10 @@ node src/batch-submit.js --limit 10 --engine bb
 ### 6. Other Commands
 
 ```bash
+# Spy on a competitor — fetch their backlinks, find new targets
+node src/cli.js spy https://competitor.com --merge
+node src/cli.js spy https://competitor.com --source ahrefs --min-dr 30
+
 # Scout a new site — discover form fields
 node src/cli.js scout https://new-site.com --deep
 
@@ -307,6 +311,10 @@ src/browser.js           ← Dual-engine manager (bb + playwright)
 src/sites/generic.js     ← Universal adapter for any directory
 src/sites/*.js           ← Site-specific adapters
 src/scout/discover.js    ← Form field discovery
+src/spy/index.js         ← Competitor backlink spy (main entry)
+src/spy/sources/*.js     ← Scrapers: ahrefs, openlinkprofiler, ubersuggest, moz
+src/spy/filter.js        ← DR/dofollow/dedup filtering
+src/spy/merge.js         ← Writes discovered sites to targets.yaml
 src/captcha.js           ← CAPTCHA solvers
 src/tracker.js           ← Submission dedup tracking
 src/indexnow.js          ← Search engine ping
@@ -324,8 +332,8 @@ docs/                    ← Documentation site (VitePress)
 # Morning — check what's been submitted
 node src/cli.js status
 
-# Find 5 new sites from targets.yaml to submit today
-# 从 targets.yaml 找 5 个今天要提交的站
+# (Optional) Spy on a competitor to expand your target list
+node src/cli.js spy https://competitor.com --min-dr 20 --merge --engine bb
 
 # Start Chrome
 bb-browser open about:blank
@@ -346,6 +354,9 @@ Or with Claude Code:
 ```
 你：今天帮我提交 5 个免费站，从上次没提交过的开始
 Claude：好的，让我查看提交记录... 找到 5 个新站点，开始提交...
+
+你：帮我找竞品 https://competitor.com 的外链，发现新目标站点
+Claude：好的，正在抓取竞品外链，过滤 DR ≥ 20 的站点...
 ```
 
 ---
