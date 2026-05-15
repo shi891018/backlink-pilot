@@ -14,18 +14,29 @@ const FIELD_PATTERNS = {
 const SUBMIT_PATTERNS = /submit|send|add|post|create|list|suggest|save/i;
 
 /**
- * Parse bb-browser snapshot output to find interactive elements
- * Snapshot format: lines like "@3 [textbox] Name ..." or "@7 [button] Submit"
+ * Parse bb-browser snapshot output to find interactive elements.
+ * Actual format: "role [ref=N] \"label\"" e.g. "textbox [ref=27] \"OWNER_NAME\""
+ * Legacy format: "@N [role] label" (kept for compatibility)
  */
 function parseSnapshot(snapshot) {
   const fields = { name: null, url: null, email: null, description: null, submit: null };
   const lines = snapshot.split('\n');
 
   for (const line of lines) {
-    const refMatch = line.match(/^.*?(@\d+)\s+\[(\w+)\]\s*(.*)$/);
-    if (!refMatch) continue;
+    let ref, role, label;
 
-    const [, ref, role, label] = refMatch;
+    // Current format: "textbox [ref=27] \"OWNER_NAME\""
+    const newFmt = line.match(/^\s*(\w+)\s+\[ref=(\d+)\]\s*"?([^"]*)"?\s*$/);
+    if (newFmt) {
+      [, role, ref, label] = newFmt;
+      ref = `@${ref}`;  // normalise to @N for fill/click calls
+    } else {
+      // Legacy format: "@3 [textbox] Name ..."
+      const oldFmt = line.match(/^.*?(@\d+)\s+\[(\w+)\]\s*(.*)$/);
+      if (!oldFmt) continue;
+      [, ref, role, label] = oldFmt;
+    }
+
     const labelLower = label.toLowerCase();
 
     // Match input/textarea fields

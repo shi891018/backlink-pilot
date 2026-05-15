@@ -2,6 +2,7 @@
 // Wraps bb-browser CLI as subprocess calls, exposes Playwright-like page API
 
 import { execFileSync } from 'child_process';
+import { existsSync } from 'fs';
 
 let _bbTimeout = 30000;
 
@@ -9,8 +10,31 @@ function setBbTimeout(ms) {
   if (ms && ms > 0) _bbTimeout = ms;
 }
 
+// On Windows, execFileSync can't run .cmd files (EINVAL).
+// Find bb-browser's actual cli.js and invoke via node, or fall back to execSync.
+function resolveBbCliPath() {
+  if (process.platform !== 'win32') return null;
+  const candidates = [
+    process.env.APPDATA && `${process.env.APPDATA}\\npm\\node_modules\\bb-browser\\dist\\cli.js`,
+    // npm prefix -g fallback
+  ].filter(Boolean);
+  for (const c of candidates) {
+    if (existsSync(c)) return c;
+  }
+  return null;
+}
+
+const BB_CLI_PATH = resolveBbCliPath();
+
 function bb(...args) {
   try {
+    if (BB_CLI_PATH) {
+      // Windows: invoke bb-browser cli.js via node directly (avoids .cmd EINVAL issue)
+      return execFileSync(process.execPath, [BB_CLI_PATH, ...args], {
+        encoding: 'utf-8',
+        timeout: _bbTimeout,
+      }).trim();
+    }
     return execFileSync('bb-browser', args, {
       encoding: 'utf-8',
       timeout: _bbTimeout,
@@ -43,8 +67,8 @@ function escapeJs(str) {
  * Check if bb-browser is available on the system
  */
 export function isBbAvailable() {
+  if (BB_CLI_PATH) return true;
   try {
-    // 'where' on Windows, 'which' on Unix/macOS
     const cmd = process.platform === 'win32' ? 'where' : 'which';
     execFileSync(cmd, ['bb-browser'], { encoding: 'utf-8' });
     return true;
@@ -57,8 +81,8 @@ export function isBbAvailable() {
 export class BbPage {
   constructor(config = {}) {
     this._config = config;
-    this._tabId = null;
-    this._openedTabs = []; // track tabs for cleanup
+    this._tabIdx = null;
+    this._openedTabs = []; // track tab indices for cleanup
 
     // Apply timeout from config
     if (config.browser?.timeout) setBbTimeout(config.browser.timeout);
@@ -86,15 +110,33 @@ export class BbPage {
     }
   }
 
-  async goto(url, _opts = {}) {
-    const result = bb('open', url, '--tab');
-    // Extract tabId from output like "Tab ID: XXXX"
-    const tabMatch = result.match(/Tab ID:\s*(\S+)/);
-    if (tabMatch) {
-      this._tabId = tabMatch[1];
-      this._openedTabs.push(this._tabId);
+  /** Run bb-browser command, automatically targeting this session's tab via --tab */
+  _bb(...args) {
+    if (this._tabIdx !== null && this._tabIdx !== undefined) {
+      return bb('--tab', String(this._tabIdx), ...args);
     }
-    // Wait for page to settle (no networkidle equivalent)
+    return bb(...args);
+  }
+
+  /** Count current open tabs */
+  _tabCount() {
+    const list = bb('tab', 'list');
+    const matches = list.match(/\[\d+\]/g);
+    return matches ? matches.length : 0;
+  }
+
+  async goto(url, _opts = {}) {
+    // Record tab count before opening so we can derive the new tab's index
+    let tabsBefore = 0;
+    try { tabsBefore = this._tabCount(); } catch {}
+
+    bb('open', url, '--tab');
+
+    // New tab index = previous count (tabs are appended)
+    this._tabIdx = tabsBefore;
+    this._openedTabs.push(this._tabIdx);
+
+    // Wait for page to settle
     await new Promise(r => setTimeout(r, 2000));
   }
 
@@ -102,26 +144,27 @@ export class BbPage {
    * Close all tabs opened during this session
    */
   async cleanup() {
-    for (const tabId of this._openedTabs) {
-      try { bb('tab', 'close', tabId); } catch {}
+    // Close in reverse order to avoid index shifting
+    for (const tabIdx of [...this._openedTabs].reverse()) {
+      try { bb('tab', 'close', String(tabIdx)); } catch {}
     }
     this._openedTabs = [];
   }
 
   async fill(selectorOrRef, value) {
     if (selectorOrRef.startsWith('@')) {
-      bb('fill', selectorOrRef, value);
+      this._bb('fill', selectorOrRef, value);
     } else {
       // CSS selector — find element via eval, then use ref from snapshot
       const ref = await this._resolveRef(selectorOrRef);
-      if (ref) bb('fill', ref, value);
+      if (ref) this._bb('fill', ref, value);
       else throw new Error(`Element not found: ${selectorOrRef}`);
     }
   }
 
   async click(selectorOrRef) {
     if (selectorOrRef.startsWith('@')) {
-      bb('click', selectorOrRef);
+      this._bb('click', selectorOrRef);
     } else {
       // CSS selector — use evalClick with full user-event simulation
       // This dispatches mousedown/mouseup/click to work with React/Vue components
@@ -135,27 +178,27 @@ export class BbPage {
   }
 
   async textContent(selector) {
-    return bb('eval', `document.querySelector('${escapeJs(selector)}')?.textContent || ''`);
+    return this._bb('eval', `document.querySelector('${escapeJs(selector)}')?.textContent || ''`);
   }
 
   async content() {
-    return bb('eval', 'document.documentElement.outerHTML');
+    return this._bb('eval', 'document.documentElement.outerHTML');
   }
 
   url() {
-    return bb('eval', 'window.location.href');
+    return this._bb('eval', 'window.location.href');
   }
 
   async screenshot(path) {
-    if (path) bb('screenshot', path);
-    else bb('screenshot');
+    if (path) this._bb('screenshot', path);
+    else this._bb('screenshot');
   }
 
   /**
    * Get interactive snapshot — returns parsed accessibility tree text
    */
   async snapshot() {
-    return bb('snapshot', '-i');
+    return this._bb('snapshot', '-i');
   }
 
   /**
@@ -185,7 +228,7 @@ export class BbPage {
     // Take snapshot and find matching element ref
     const snap = await this.snapshot();
     // Try direct eval to check existence first
-    const exists = bb('eval',
+    const exists = this._bb('eval',
       `!!document.querySelector('${escapeJs(selector)}')`);
     if (exists !== 'true') return null;
 
@@ -199,7 +242,7 @@ export class BbPage {
     const match = selector.match(/^(\w+):has-text\(["'](.+?)["']\)$/);
     if (!match) return null;
     const [, tag, text] = match;
-    const exists = bb('eval',
+    const exists = this._bb('eval',
       `!!Array.from(document.querySelectorAll('${tag}')).find(el => el.textContent.includes('${escapeJs(text)}'))`);
     if (exists === 'true') return new BbElementHandle(this, selector, { tag, text });
     return null;
@@ -209,7 +252,7 @@ export class BbPage {
    * Execute JS directly in page and fill/click by CSS selector
    */
   async evalFill(selector, value) {
-    bb('eval', `(() => {
+    this._bb('eval', `(() => {
       const el = document.querySelector('${escapeJs(selector)}');
       if (!el) return;
       el.focus();
@@ -220,7 +263,7 @@ export class BbPage {
   }
 
   async evalClick(selector) {
-    bb('eval', `document.querySelector('${escapeJs(selector)}')?.click()`);
+    this._bb('eval', `document.querySelector('${escapeJs(selector)}')?.click()`);
   }
 
   /**
@@ -228,7 +271,7 @@ export class BbPage {
    * Required for React/Vue components that don't respond to .click()
    */
   async evalClickReal(selector) {
-    bb('eval', `(() => {
+    this._bb('eval', `(() => {
       const el = document.querySelector('${escapeJs(selector)}');
       if (!el) return;
       el.dispatchEvent(new MouseEvent('mousedown', {bubbles:true,cancelable:true}));
@@ -243,7 +286,7 @@ export class BbPage {
   }
 
   async evalClickByText(tag, text) {
-    bb('eval', `Array.from(document.querySelectorAll('${tag}')).find(el => el.textContent.includes('${escapeJs(text)}'))?.click()`);
+    this._bb('eval', `Array.from(document.querySelectorAll('${tag}')).find(el => el.textContent.includes('${escapeJs(text)}'))?.click()`);
   }
 }
 
@@ -271,7 +314,7 @@ export class BbElementHandle {
   }
 
   async isVisible() {
-    return bb('eval',
+    return this._page._bb('eval',
       `(() => {
         const el = ${this._elExpr()};
         if (!el) return false;
@@ -282,18 +325,18 @@ export class BbElementHandle {
   }
 
   async textContent() {
-    return bb('eval', `${this._elExpr()}?.textContent || ''`);
+    return this._page._bb('eval', `${this._elExpr()}?.textContent || ''`);
   }
 
   async getAttribute(attr) {
-    return bb('eval', `${this._elExpr()}?.getAttribute('${escapeJs(attr)}') || null`);
+    return this._page._bb('eval', `${this._elExpr()}?.getAttribute('${escapeJs(attr)}') || null`);
   }
 
   async click() {
     if (this._tag && this._text && this._index === undefined) {
       await this._page.evalClickByText(this._tag, this._text);
     } else {
-      bb('eval', `(() => {
+      this._page._bb('eval', `(() => {
         const el = ${this._elExpr()};
         if (!el) return;
         el.dispatchEvent(new MouseEvent('mousedown', {bubbles:true,cancelable:true}));
@@ -309,7 +352,7 @@ export class BbElementHandle {
   }
 
   async fill(value) {
-    bb('eval', `(() => {
+    this._page._bb('eval', `(() => {
       const el = ${this._elExpr()};
       if (!el) return;
       el.focus();
@@ -320,7 +363,7 @@ export class BbElementHandle {
   }
 
   async evaluate(fn) {
-    return bb('eval', `(${fn.toString()})(${this._elExpr()})`);
+    return this._page._bb('eval', `(${fn.toString()})(${this._elExpr()})`);
   }
 }
 
@@ -338,7 +381,7 @@ export class BbLocator {
   }
 
   async all() {
-    const countStr = bb('eval',
+    const countStr = this._page._bb('eval',
       `document.querySelectorAll('${escapeJs(this._selector)}').length`);
     const count = parseInt(countStr, 10) || 0;
     return Array.from({ length: count }, (_, i) =>
@@ -347,7 +390,7 @@ export class BbLocator {
   }
 
   async isVisible() {
-    return bb('eval',
+    return this._page._bb('eval',
       `(() => {
         const el = document.querySelector('${escapeJs(this._selector)}');
         if (!el) return false;
