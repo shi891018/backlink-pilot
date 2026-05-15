@@ -118,26 +118,34 @@ export class BbPage {
     return bb(...args);
   }
 
-  /** Count current open tabs */
-  _tabCount() {
-    const list = bb('tab', 'list');
-    const matches = list.match(/\[\d+\]/g);
-    return matches ? matches.length : 0;
-  }
-
   async goto(url, _opts = {}) {
-    // Record tab count before opening so we can derive the new tab's index
-    let tabsBefore = 0;
-    try { tabsBefore = this._tabCount(); } catch {}
-
     bb('open', url, '--tab');
+    // Wait for page to settle before querying tab list
+    await new Promise(r => setTimeout(r, 2500));
 
-    // New tab index = previous count (tabs are appended)
-    this._tabIdx = tabsBefore;
-    this._openedTabs.push(this._tabIdx);
+    // Find the new tab's index from the live tab list
+    // Output format: "* [2] https://example.com - Page Title"  (* = active/current)
+    const list = bb('tab', 'list');
 
-    // Wait for page to settle
-    await new Promise(r => setTimeout(r, 2000));
+    // 1. Active tab (marked with *) is always the newly opened tab
+    const activeLine = list.split('\n').find(l => l.trimStart().startsWith('*'));
+    if (activeLine) {
+      const m = activeLine.match(/\[(\d+)\]/);
+      if (m) {
+        const tabIdx = parseInt(m[1]);
+        this._tabIdx = tabIdx;
+        if (!this._openedTabs.includes(tabIdx)) this._openedTabs.push(tabIdx);
+        return;
+      }
+    }
+
+    // 2. Fallback: highest index (newest tab)
+    const entries = [...list.matchAll(/\[(\d+)\]/g)];
+    if (entries.length) {
+      const tabIdx = Math.max(...entries.map(m => parseInt(m[1])));
+      this._tabIdx = tabIdx;
+      if (!this._openedTabs.includes(tabIdx)) this._openedTabs.push(tabIdx);
+    }
   }
 
   /**
@@ -169,6 +177,30 @@ export class BbPage {
       // CSS selector — use evalClick with full user-event simulation
       // This dispatches mousedown/mouseup/click to work with React/Vue components
       await this.evalClickReal(selectorOrRef);
+    }
+  }
+
+  /**
+   * Check a checkbox/radio by ref or CSS selector.
+   * Uses JavaScript to force-set checked=true and dispatch change event,
+   * which is more reliable than a synthetic click for some form frameworks.
+   */
+  async check(selectorOrRef) {
+    let js;
+    if (selectorOrRef.startsWith('@')) {
+      // bb-browser click works for most checkboxes; if not checked yet, force via eval
+      this._bb('click', selectorOrRef);
+      await new Promise(r => setTimeout(r, 200));
+    } else {
+      js = `(function(){
+        var el = document.querySelector('${escapeJs(selectorOrRef)}');
+        if (el && !el.checked) {
+          el.checked = true;
+          el.dispatchEvent(new Event('change', {bubbles:true}));
+          el.dispatchEvent(new Event('click', {bubbles:true}));
+        }
+      })()`;
+      this._bb('eval', js);
     }
   }
 

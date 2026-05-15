@@ -24,7 +24,10 @@
 
 | 状态 | 站点 | 提交链接 | 备注 |
 |------|------|----------|------|
-| ⬜ | SourceForge | https://sourceforge.net/software/vendors/new | 2000万月访问，auto |
+| ⏭ | SourceForge | https://sourceforge.net/software/vendors/new | ❌ 需要登录账号，标记为 manual |
+| ⏭ | Alternative.me | https://alternative.me/how-to/submit-software/ | ❌ SPA 表单无法检测，需手动 |
+| ⏭ | App Rater | https://apprater.net/add/ | ❌ 500 服务器错误，站点暂停 |
+| ⏭ | Startup Collections | https://startupcollections.com/submit-product/ | ❌ SPA 表单无法检测，需手动 |
 | ⬜ | business-software.com | https://www.business-software.com/add-your-product/ | 400万科技买家/年，auto |
 | ⬜ | Alternative.me | https://alternative.me/how-to/submit-software/ | 替代软件目录，auto |
 | ⬜ | StartupRanking | https://www.startupranking.com/ | auto |
@@ -45,7 +48,7 @@
 | ⬜ | TechPluto | https://www.techpluto.com/submit-a-startup/ | auto |
 | ⬜ | The Startup Pitch | https://thestartuppitch.com/post-a-pitch/ | auto |
 | ⬜ | Startup Collections | https://startupcollections.com/submit-product/ | auto |
-| ⬜ | Twelve.tools | https://twelve.tools/submit-your-tool | auto |
+| ⏭ | Twelve.tools | https://twelve.tools/submit-your-tool | ❌ 需付费/OAuth，无免费表单 |
 | ⬜ | Indie Tools | https://indietools.co/ | auto |
 | ⬜ | WebsiteHunt | https://www.websitehunt.co/ | auto |
 | ⬜ | Simple Lister | https://simplelister.com/ | auto |
@@ -108,7 +111,12 @@
 
 | 日期 | 站点 | 结果 | 备注 |
 |------|------|------|------|
-| 2026-05-15 | Viesearch | ✅ 提交成功 | 通用 adapter，含表单字段自动填写 |
+| 2026-05-15 | SourceForge | ⏭ 跳过 | 需要登录注册账号 |
+| 2026-05-15 | Alternative.me | ⏭ 跳过 | SPA，无法自动填表 |
+| 2026-05-15 | App Rater | ⏭ 跳过 | 站点 500 错误 |
+| 2026-05-15 | Startup Collections | ⏭ 跳过 | SPA，无法自动填表 |
+| 2026-05-15 | Twelve.tools | ⏭ 跳过 | 需付费，无免费提交 |
+| 2026-05-15 | Viesearch | ✅ 提交成功 | 通用 adapter，表单自动填写 |
 
 ---
 
