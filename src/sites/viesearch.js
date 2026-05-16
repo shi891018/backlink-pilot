@@ -1,14 +1,108 @@
 // viesearch.js — Viesearch adapter
-// Flow: register account → auto-verify email via Gmail IMAP → submit site
+// Flow: register (HTTP POST) → auto-verify email (Gmail IMAP) → submit site (browser)
 // Requires config.credentials.viesearch.{username, password}
 // Requires config.credentials.gmail.app_password  (for email verification)
 
+import zlib from 'zlib';
+import { promisify } from 'util';
 import { withBrowser, delay } from '../browser.js';
 import { waitForVerificationLink } from '../email-verify.js';
 
 const SUBMIT_URL = 'https://viesearch.com/submit';
-const JOIN_URL = 'https://viesearch.com/join';
 const SIGNIN_URL = 'https://viesearch.com/signin';
+const JOIN_URL   = 'https://viesearch.com/join';
+const RESEND_URL = 'https://viesearch.com/resend';
+
+const deflate = promisify(zlib.deflate);
+
+/**
+ * Generate a minimal valid 200x200 PNG (solid blue) — required by Viesearch avatar upload.
+ */
+async function makeAvatar200() {
+  const W = 200, H = 200;
+  const rows = [];
+  for (let y = 0; y < H; y++) {
+    const row = Buffer.alloc(1 + W * 3);
+    row[0] = 0; // filter None
+    for (let x = 0; x < W; x++) { row[1+x*3]=70; row[2+x*3]=130; row[3+x*3]=200; }
+    rows.push(row);
+  }
+  const compressed = await deflate(Buffer.concat(rows));
+
+  function crc32(buf) {
+    let c = 0xFFFFFFFF;
+    for (const b of buf) { c ^= b; for (let i=0;i<8;i++) c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1); }
+    return (c ^ 0xFFFFFFFF) >>> 0;
+  }
+  function chunk(type, data) {
+    const tb = Buffer.from(type,'ascii');
+    const len = Buffer.alloc(4); len.writeUInt32BE(data.length);
+    const crcBuf = Buffer.alloc(4); crcBuf.writeUInt32BE(crc32(Buffer.concat([tb,data])));
+    return Buffer.concat([len, tb, data, crcBuf]);
+  }
+  const ihdr = Buffer.alloc(13);
+  ihdr.writeUInt32BE(W,0); ihdr.writeUInt32BE(H,4); ihdr[8]=8; ihdr[9]=2;
+
+  return Buffer.concat([
+    Buffer.from('89504e470d0a1a0a','hex'),
+    chunk('IHDR', ihdr),
+    chunk('IDAT', compressed),
+    chunk('IEND', Buffer.alloc(0)),
+  ]);
+}
+
+/**
+ * Register a new Viesearch account via direct HTTP POST (no browser needed).
+ * Returns { ok: true } on success, { ok: false, reason } on failure.
+ */
+async function httpRegister(username, password, email, displayName = 'Unit Converter') {
+  const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36';
+  // Step 1: get session cookie
+  const r1 = await fetch(JOIN_URL, { headers: { 'User-Agent': UA } });
+  const sessionCookie = r1.headers.get('set-cookie')?.split(';')[0] || '';
+
+  // Step 2: build multipart form with 200x200 PNG avatar
+  const avatarBytes = await makeAvatar200();
+  const fd = new FormData();
+  fd.set('join_username',         username);
+  fd.set('join_password',         password);
+  fd.set('join_password_confirm', password);
+  fd.set('join_name',             displayName);
+  fd.set('join_email',            email);
+  fd.set('join_about_me',         'Scientific unit converter for science and engineering.');
+  fd.set('join_terms',            '1');
+  fd.set('join_picture', new Blob([avatarBytes], { type: 'image/png' }), 'avatar.png');
+
+  const r2 = await fetch(JOIN_URL, {
+    method: 'POST',
+    headers: { 'User-Agent': UA, 'Cookie': sessionCookie, 'Referer': JOIN_URL, 'Origin': 'https://viesearch.com' },
+    body: fd,
+    redirect: 'manual',
+  });
+
+  const location = r2.headers.get('location') || '';
+  if (r2.status === 302 && location.includes('/joined')) return { ok: true };
+
+  // Parse error from response body
+  const html = await r2.text();
+  const errDivs = [...html.matchAll(/<(?:div|p)[^>]*(?:class|id)="[^"]*error[^"]*"[^>]*>([\s\S]*?)<\/(?:div|p)>/gi)]
+    .map(m => m[1].replace(/<[^>]+>/g,'').trim())
+    .filter(s => s.length > 3 && !/javascript.*browser/i.test(s)); // filter out the generic JS notice
+  return { ok: false, reason: errDivs.join('; ') || `HTTP ${r2.status}` };
+}
+
+/**
+ * Request resend of verification email via HTTP POST.
+ */
+async function httpResend(usernameOrEmail) {
+  const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124.0';
+  const body = new URLSearchParams({ resend_for: usernameOrEmail });
+  await fetch(RESEND_URL, {
+    method: 'POST',
+    headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded', 'Referer': RESEND_URL, 'Origin': 'https://viesearch.com' },
+    body: body.toString(),
+  });
+}
 
 export default {
   name: 'viesearch',
@@ -30,171 +124,119 @@ export default {
       );
     }
 
+    // ── Step 1: Register via HTTP (fast, reliable) ──────────────────────────
+    const regEmail = creds.email || product.email;
+    // Use a proper display name (no underscores) — Viesearch validates name format
+    const displayName = creds.display_name || product.name.split(' ').slice(0, 2).join(' ') || 'Unit Converter';
+    console.log('  📝 Registering account via HTTP POST...');
+    const regResult = await httpRegister(creds.username, creds.password, regEmail, displayName);
+    if (regResult.ok) {
+      console.log('  ✅ Registration succeeded!');
+    } else if (/taken|already|exist|duplicate/i.test(regResult.reason)) {
+      console.log(`  ℹ️  Username/email already registered — skipping to verification`);
+    } else {
+      console.log(`  ⚠️  Registration returned: ${regResult.reason}`);
+      console.log('      Will attempt to continue (account may already exist)...');
+    }
+
+    // ── Step 2: Request/resend verification email ───────────────────────────
+    console.log('  📧 Requesting verification email...');
+    await httpResend(regEmail);
+    await delay(2000);
+
+    // ── Step 3: Auto-verify via Gmail IMAP (best-effort, 60s timeout) ─────────────
+    const gmailCreds = config.credentials?.gmail;
+    if (gmailCreds?.app_password) {
+      try {
+        const verifyLink = await waitForVerificationLink({
+          email: product.email,  // Gmail receives alias emails in same inbox
+          appPassword: gmailCreds.app_password,
+          fromFilter: 'viesearch',
+          linkPattern: /https?:\/\/viesearch\.com\/confirm\/[a-f0-9]+/gi,
+          timeoutMs: 60000,      // only wait 60s — if already verified, skip gracefully
+          pollMs: 8000,
+          searchWindowMs: 5 * 60 * 1000,  // only look at emails from last 5 min
+        });
+        console.log('  🔗 Confirming verification link...');
+        const vr = await fetch(verifyLink, { redirect: 'follow', headers: { 'User-Agent': 'Mozilla/5.0 Chrome/124.0' } });
+        console.log(`  ✅ Email verified! (status ${vr.status})`);
+      } catch (e) {
+        if (/timed out/i.test(e.message)) {
+          console.log('  ℹ️  No new verification email found — account may already be verified, continuing...');
+        } else {
+          throw e;
+        }
+      }
+    } else {
+      console.log('  ⚠️  No Gmail App Password — cannot auto-verify. Add credentials.gmail.app_password to config.yaml');
+      console.log('      Continuing anyway (submission may fail if verification is required)...');
+    }
+
+    // ── Step 4: Submit site via browser (requires login session) ───────────
     return withBrowser({ ...config, _engine: 'bb' }, async ({ page }) => {
-      // Step 1: Try to sign in first (account may already exist)
-      console.log('  🔐 Attempting sign in...');
+      // Sign in
+      console.log('  🔐 Signing in...');
       await page.goto(SIGNIN_URL);
       await delay(2000);
-
       const signinSnap = await page.snapshot();
       const signinFields = parseFields(signinSnap);
-
-      let signedIn = false;
+      console.log(`  🔍 Snapshot fields: user=${signinFields.username} pass=${signinFields.password} submit=${signinFields.submit}`);
       if (signinFields.username && signinFields.password) {
         await page.fill(signinFields.username, creds.username);
-        await delay(300);
+        await delay(500);
         await page.fill(signinFields.password, creds.password);
-        await delay(300);
-        if (signinFields.submit) {
-          await page.click(signinFields.submit);
-          await delay(3000);
-        }
-        // Check if login succeeded (no longer on signin page)
-        const currentUrl = page.url();
-        if (!currentUrl.includes('/signin') && !currentUrl.includes('/join')) {
-          signedIn = true;
-          console.log('  ✅ Signed in successfully');
-        } else {
-          console.log('  ℹ️  Sign in failed — will attempt registration');
-        }
+        await delay(500);
+        // evalSubmitForm uses native btn.click() which reliably triggers form submission
+        await page.evalSubmitForm('form[method="post"]');
+        await delay(5000); // wait for redirect
       }
-
-      // Step 2: Register if not signed in
-      if (!signedIn) {
-        console.log('  📝 Registering new account...');
-        await page.goto(JOIN_URL);
-        await delay(2000);
-
-        const joinSnap = await page.snapshot();
-        const joinFields = parseJoinFields(joinSnap);
-
-        if (!joinFields.username) {
-          throw new Error('Could not find Viesearch registration form fields');
-        }
-
-        await page.fill(joinFields.username, creds.username);
-        await delay(300);
-        await page.fill(joinFields.password, creds.password);
-        await delay(300);
-        if (joinFields.passwordConfirm) {
-          await page.fill(joinFields.passwordConfirm, creds.password);
-          await delay(300);
-        }
-        if (joinFields.name) {
-          await page.fill(joinFields.name, creds.username);
-          await delay(300);
-        }
-        if (joinFields.email) {
-          await page.fill(joinFields.email, product.email);
-          await delay(300);
-        }
-        if (joinFields.about) {
-          await page.fill(joinFields.about, product.description || '');
-          await delay(300);
-        }
-        // Accept terms — use JavaScript eval since bb-browser click doesn't reliably toggle checkboxes
-        if (joinFields.terms) {
-          await page._bb('eval',
-            `(function(){var el=document.querySelector('[name="join_terms"]');` +
-            `if(el){el.checked=true;el.dispatchEvent(new Event('change',{bubbles:true}));}})()` 
-          );
-          await delay(500);
-        }
-
-        // Screenshot before submitting registration
-        try {
-          const screenshotDir = config.browser?.screenshot_dir || './screenshots';
-          const ts = new Date().toISOString().replace(/[:.]/g, '-');
-          await page.screenshot(`${screenshotDir}/viesearch-register-${ts}.png`);
-        } catch {}
-
-        if (joinFields.submit) {
-          console.log('  🚀 Submitting registration...');
-          await page.click(joinFields.submit);
-          await delay(4000);
-        }
-
-        const afterReg = page.url();
-        if (afterReg.includes('/join') || afterReg.includes('error')) {
-          throw new Error('Registration may have failed — check screenshot');
-        }
-        console.log('  ✅ Registration submitted — waiting for verification email...');
-
-        // Step 2b: Trigger resend via /resend page (handles rate-limited or duplicate-email cases)
-        try {
-          console.log('  📧 Requesting verification email via /resend...');
-          await page.goto('https://viesearch.com/resend');
-          await delay(2000);
-          const resendSnap = await page.snapshot();
-          const resendInputLine = resendSnap.split('\n').find(l => /resend_for/i.test(l));
-          const resendBtnLine  = resendSnap.split('\n').find(l => /button.*send.it/i.test(l));
-          const inputRef = resendInputLine?.match(/\[ref=(\d+)\]/)?.[1];
-          const btnRef   = resendBtnLine?.match(/\[ref=(\d+)\]/)?.[1];
-          if (inputRef && btnRef) {
-            await page.fill(`@${inputRef}`, product.email);
-            await delay(500);
-            await page.click(`@${btnRef}`);
-            await delay(2000);
-            console.log('  ✉️  Resend request submitted');
-          }
-        } catch (e) {
-          console.log('  ⚠️  Resend step failed:', e.message);
-        }
-
-        // Step 2c: Auto-verify email via Gmail IMAP
-        const gmailCreds = config.credentials?.gmail;
-        if (gmailCreds?.app_password) {
-          const verifyLink = await waitForVerificationLink({
-            email: product.email,
-            appPassword: gmailCreds.app_password,
-            fromFilter: 'viesearch',
-            linkPattern: /https?:\/\/viesearch\.com\/[^\s"<>\r\n]+/gi,
-            timeoutMs: 300000,
-            pollMs: 8000,
-          });
-          console.log('  🔗 Clicking verification link...');
-          await page.goto(verifyLink);
-          await delay(3000);
-          console.log('  ✅ Email verified!');
-        } else {
-          console.log('  ⚠️  No Gmail App Password in config — skipping auto-verify.');
-          console.log('     Add credentials.gmail.app_password to config.yaml to enable auto-verify.');
-          console.log('     Continuing anyway (submission may fail if verification required)...');
-        }
+      // Take screenshot so we can diagnose issues
+      const dir = config.browser?.screenshot_dir || './screenshots';
+      await page.screenshot(`${dir}/viesearch-signin-result.png`).catch(() => {});
+      const postSigninUrl = page.url();
+      if (postSigninUrl.includes('/signin')) {
+        throw new Error('Sign in failed — account may not be verified yet. Check your email.');
       }
+      console.log('  ✅ Signed in!');
 
-      // Step 3: Submit site
+      // Open submission form
       console.log('  📄 Opening submission form...');
       await page.goto(SUBMIT_URL);
       await delay(2500);
 
       const submitSnap = await page.snapshot();
       const submitFields = parseSubmitFields(submitSnap);
+      console.log(`  🔍 Submit form fields: url=${submitFields.url} title=${submitFields.title} submit=${submitFields.submit}`);
+      // Debug: print first 10 lines of snapshot
+      const snapLines = submitSnap.split('\n').filter(l => l.trim()).slice(0, 20);
+      console.log('  📋 Snapshot preview:', snapLines.join(' | ').substring(0, 300));
+      await page.screenshot(`${config.browser?.screenshot_dir || './screenshots'}/viesearch-submit-page.png`).catch(() => {});
 
       if (!submitFields.url && !submitFields.title) {
         throw new Error('Could not find Viesearch site submission form (may need email verification first)');
       }
 
-      if (submitFields.ownerName) {
-        await page.fill(submitFields.ownerName, creds.username);
-        await delay(300);
-      }
-      if (submitFields.ownerEmail) {
-        await page.fill(submitFields.ownerEmail, product.email);
-        await delay(300);
-      }
-      if (submitFields.title) {
-        await page.fill(submitFields.title, product.name);
-        await delay(300);
-      }
-      if (submitFields.description) {
-        await page.fill(submitFields.description, product.description || product.long_description || '');
-        await delay(300);
-      }
-      if (submitFields.url) {
-        await page.fill(submitFields.url, product.url);
-        await delay(300);
-      }
+      if (submitFields.ownerName)  { await page.fill(submitFields.ownerName, creds.username); await delay(300); }
+      if (submitFields.ownerEmail) { await page.fill(submitFields.ownerEmail, product.email); await delay(300); }
+      if (submitFields.title)      { await page.fill(submitFields.title, product.name); await delay(300); }
+      if (submitFields.description){ await page.fill(submitFields.description, product.description || product.long_description?.split('\n')[0] || ''); await delay(300); }
+      if (submitFields.url)        { await page.fill(submitFields.url, product.url); await delay(300); }
+
+      // Select the FREE listing type (last radio = "Text Only Listing - No Thumbnail Image - Free")
+      await page.evalRun(`Array.from(document.querySelectorAll('input[type="radio"]')).at(-1)?.click()`);
+      await delay(300);
+
+      // Select a category matching product keywords
+      await page.evalRun(`
+        (function() {
+          var sel = document.querySelector('select');
+          if (!sel) return;
+          var opt = Array.from(sel.options).find(o => /science|tools|education|utilities/i.test(o.text));
+          if (!opt) opt = Array.from(sel.options).find(o => o.value && o.value !== '');
+          if (opt) { sel.value = opt.value; sel.dispatchEvent(new Event('change', {bubbles: true})); }
+        })()
+      `);
+      await delay(300);
 
       // Screenshot before submit
       try {
@@ -205,15 +247,15 @@ export default {
 
       if (submitFields.submit) {
         console.log('  🚀 Submitting site...');
-        // Re-snapshot to get fresh refs after form fills (page may have re-rendered)
-        const freshSnap = await page.snapshot();
-        const freshFields = parseSubmitFields(freshSnap);
-        const submitRef = freshFields.submit || submitFields.submit;
-        await page.click(submitRef);
-        await delay(3000);
+        // Use evalSubmitForm — ref-click doesn't trigger form submission
+        await page.evalSubmitForm('form');
+        await delay(4000);
       }
 
       const finalUrl = page.url();
+      const screenshotDir2 = config.browser?.screenshot_dir || './screenshots';
+      const ts2 = new Date().toISOString().replace(/[:.]/g, '-');
+      await page.screenshot(`${screenshotDir2}/viesearch-result-${ts2}.png`).catch(() => {});
       return {
         url: finalUrl,
         confirmation: 'Viesearch site submitted — awaiting review',
@@ -237,32 +279,6 @@ function parseFields(snapshot) {
       else if (!fields.password && /password/i.test(l)) fields.password = r;
     }
     if (role === 'button' && /sign.?in|log.?in/i.test(l)) fields.submit = r;
-  }
-  return fields;
-}
-
-function parseJoinFields(snapshot) {
-  const fields = {
-    username: null, password: null, passwordConfirm: null,
-    name: null, email: null, about: null, terms: null, submit: null,
-  };
-  for (const line of snapshot.split('\n')) {
-    const m = line.match(/^\s*(\w+)\s+\[ref=(\d+)\]\s*"?([^"]*)"?/);
-    if (!m) continue;
-    const [, role, ref, label] = m;
-    const r = `@${ref}`;
-    const l = label.toLowerCase();
-    if (role === 'textbox') {
-      if (l.includes('join_username') || (!fields.username && /^username/.test(l))) fields.username = r;
-      else if (l === 'join_password' || l === 'join_password_confirm') {
-        if (!fields.password) fields.password = r;
-        else if (!fields.passwordConfirm) fields.passwordConfirm = r;
-      } else if (l.includes('join_name') || (!fields.name && /^(name|full.?name)/.test(l))) fields.name = r;
-      else if (l.includes('join_email') || (!fields.email && /email/.test(l))) fields.email = r;
-      else if (l.includes('join_about') || (!fields.about && /about/.test(l))) fields.about = r;
-    }
-    if (role === 'checkbox' && /terms/i.test(l)) fields.terms = r;
-    if (role === 'button' && /join|register|sign.?up|submit/i.test(l)) fields.submit = r;
   }
   return fields;
 }

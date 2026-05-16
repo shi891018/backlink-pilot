@@ -37,6 +37,7 @@ export async function waitForVerificationLink(opts) {
     linkPattern,
     timeoutMs = 120000,
     pollMs = 5000,
+    searchWindowMs = 10 * 60 * 1000,  // how far back to search (default 10 min)
   } = opts;
 
   if (!email || !appPassword) {
@@ -50,7 +51,7 @@ export async function waitForVerificationLink(opts) {
   }
 
   const deadline = Date.now() + timeoutMs;
-  const searchedSince = new Date(Date.now() - 30 * 60 * 1000); // last 30 min
+  const searchedSince = new Date(Date.now() - searchWindowMs);
 
   console.log(`  📬 Waiting for verification email from "${fromFilter}"...`);
 
@@ -82,38 +83,61 @@ async function checkInbox({ email, appPassword, fromFilter, linkPattern, since }
 
   try {
     await client.connect();
-    await client.mailboxOpen('INBOX');
 
-    // Search for recent emails from the sender
-    const searchCriteria = { since };
-    if (fromFilter) {
-      searchCriteria.from = typeof fromFilter === 'string' ? fromFilter : undefined;
+    // Discover all mailboxes and find spam/junk folders to check in addition to INBOX
+    const allBoxes = await client.list();
+    const spamKeywords = /spam|junk|迷惑|垃圾/i;
+    const foldersToCheck = ['INBOX'];
+    for (const box of allBoxes) {
+      if (spamKeywords.test(box.name) || spamKeywords.test(box.path)) {
+        foldersToCheck.push(box.path);
+      }
     }
 
-    const messages = await client.search(searchCriteria);
-    if (!messages.length) return null;
-
-    // Check most recent messages first
-    for (const uid of messages.reverse().slice(0, 10)) {
-      const msg = await client.fetchOne(uid, { source: true });
-      if (!msg?.source) continue;
-
-      const body = msg.source.toString('utf-8');
-
-      // Filter by sender if fromFilter is provided
-      if (fromFilter && typeof fromFilter === 'string') {
-        if (!body.toLowerCase().includes(fromFilter.toLowerCase())) continue;
+    for (const folder of foldersToCheck) {
+      try {
+        await client.mailboxOpen(folder);
+      } catch {
+        continue; // folder not accessible, skip
       }
 
-      // Extract verification link
-      const pattern = linkPattern || /https?:\/\/[^\s"<>]+verif[^\s"<>]*/gi;
-      const matches = body.match(pattern);
-      if (matches?.length) {
-        // Clean up encoded URLs (e.g. =3D → =, line breaks)
-        const link = matches[0]
-          .replace(/=\r?\n/g, '')  // quoted-printable line continuations
-          .replace(/=3D/g, '=');   // quoted-printable =
-        return link;
+      // Search for recent emails from the sender
+      const searchCriteria = { since };
+      if (fromFilter && typeof fromFilter === 'string') {
+        searchCriteria.from = fromFilter;
+      }
+
+      const messages = await client.search(searchCriteria).catch(() => []);
+      if (!messages.length) continue;
+
+      // Check most recent messages first, with envelope to filter by exact time
+      for (const uid of messages.reverse().slice(0, 10)) {
+        const msg = await client.fetchOne(uid, { source: true, envelope: true });
+        if (!msg?.source) continue;
+
+        // IMAP SINCE only has day granularity — filter by exact timestamp here
+        const msgDate = msg.envelope?.date;
+        if (msgDate && new Date(msgDate) < since) continue;
+
+        const body = msg.source.toString('utf-8');
+
+        // Filter by sender if fromFilter is provided
+        if (fromFilter && typeof fromFilter === 'string') {
+          if (!body.toLowerCase().includes(fromFilter.toLowerCase())) continue;
+        }
+
+        // Extract verification link
+        const pattern = linkPattern || /https?:\/\/[^\s"<>]+verif[^\s"<>]*/gi;
+        const matches = body.match(pattern);
+        if (matches?.length) {
+          // Clean up encoded URLs (e.g. =3D → =, line breaks)
+          const link = matches[0]
+            .replace(/=\r?\n/g, '')  // quoted-printable line continuations
+            .replace(/=3D/g, '=')    // quoted-printable =
+            .replace(/[)\]>'"]+$/, ''); // strip trailing punctuation
+          if (folder !== 'INBOX') console.log(`  📁 Found in folder: ${folder}`);
+          return link;
+        }
       }
     }
 

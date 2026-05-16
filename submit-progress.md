@@ -116,7 +116,7 @@
 | 2026-05-15 | App Rater | ⏭ 跳过 | 站点 500 错误 |
 | 2026-05-15 | Startup Collections | ⏭ 跳过 | SPA，无法自动填表 |
 | 2026-05-15 | Twelve.tools | ⏭ 跳过 | 需付费，无免费提交 |
-| 2026-05-15 | Viesearch | ✅ 提交成功 | 通用 adapter，表单自动填写 |
+| 2026-05-16 | Viesearch | ✅ 提交成功 | 专用 adapter，账号 unitconv_sci，[查看提交](https://viesearch.com/26lc1/feature)，等待审核 |
 
 ---
 
@@ -138,4 +138,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-05-15*
+*最后更新: 2026-05-16*

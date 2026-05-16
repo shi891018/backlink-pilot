@@ -119,32 +119,32 @@ export class BbPage {
   }
 
   async goto(url, _opts = {}) {
-    bb('open', url, '--tab');
-    // Wait for page to settle before querying tab list
-    await new Promise(r => setTimeout(r, 2500));
+    if (this._tabIdx === null || this._tabIdx === undefined) {
+      // First navigation — open a new tab and track its index
+      bb('open', url, '--tab');
+      await new Promise(r => setTimeout(r, 2500));
 
-    // Find the new tab's index from the live tab list
-    // Output format: "* [2] https://example.com - Page Title"  (* = active/current)
-    const list = bb('tab', 'list');
-
-    // 1. Active tab (marked with *) is always the newly opened tab
-    const activeLine = list.split('\n').find(l => l.trimStart().startsWith('*'));
-    if (activeLine) {
-      const m = activeLine.match(/\[(\d+)\]/);
-      if (m) {
-        const tabIdx = parseInt(m[1]);
-        this._tabIdx = tabIdx;
-        if (!this._openedTabs.includes(tabIdx)) this._openedTabs.push(tabIdx);
-        return;
+      // Active tab (marked with *) is always the newly opened tab
+      const list = bb('tab', 'list');
+      const activeLine = list.split('\n').find(l => l.trimStart().startsWith('*'));
+      if (activeLine) {
+        const m = activeLine.match(/\[(\d+)\]/);
+        if (m) {
+          this._tabIdx = parseInt(m[1]);
+          this._openedTabs.push(this._tabIdx);
+          return;
+        }
       }
-    }
-
-    // 2. Fallback: highest index (newest tab)
-    const entries = [...list.matchAll(/\[(\d+)\]/g)];
-    if (entries.length) {
-      const tabIdx = Math.max(...entries.map(m => parseInt(m[1])));
-      this._tabIdx = tabIdx;
-      if (!this._openedTabs.includes(tabIdx)) this._openedTabs.push(tabIdx);
+      // Fallback: highest index
+      const entries = [...list.matchAll(/\[(\d+)\]/g)];
+      if (entries.length) {
+        this._tabIdx = Math.max(...entries.map(m => parseInt(m[1])));
+        this._openedTabs.push(this._tabIdx);
+      }
+    } else {
+      // Subsequent navigation — reuse the same tab
+      this._bb('open', url);
+      await new Promise(r => setTimeout(r, 2500));
     }
   }
 
@@ -299,6 +299,14 @@ export class BbPage {
   }
 
   /**
+   * Run arbitrary JavaScript in the page context.
+   * Returns the string result of the expression.
+   */
+  async evalRun(js) {
+    return this._bb('eval', js);
+  }
+
+  /**
    * Click with full user-event simulation (mousedown → mouseup → click)
    * Required for React/Vue components that don't respond to .click()
    */
@@ -314,6 +322,21 @@ export class BbPage {
         el.dispatchEvent(new Event('change', {bubbles:true}));
         el.dispatchEvent(new Event('input', {bubbles:true}));
       }
+    })()`);
+  }
+
+  /**
+   * Submit a form by calling requestSubmit() on the first matching form,
+   * or by calling native .click() on the submit button.
+   * More reliable than mouse event dispatch for form submission.
+   */
+  async evalSubmitForm(formSelector = 'form') {
+    this._bb('eval', `(() => {
+      const form = document.querySelector('${escapeJs(formSelector)}');
+      if (!form) return;
+      const btn = form.querySelector('button[type="submit"], input[type="submit"]');
+      if (btn) { btn.click(); return; }
+      if (form.requestSubmit) { form.requestSubmit(); } else { form.submit(); }
     })()`);
   }
 
