@@ -95,7 +95,7 @@
 | 状态 | 站点 | 提交链接 |
 |------|------|----------|
 | ✅ | Viesearch | https://viesearch.com/submit |
-| ⬜ | OnToplist.com | https://www.ontoplist.com/join/ |
+| ✅ | OnToplist.com | https://www.ontoplist.com/join/ |
 | ⬜ | Dizila | https://www.dizila.com/submit |
 | ⬜ | 01webdirectory | https://www.01webdirectory.com/frmPreSubmit.aspx |
 | ⬜ | 247WebDirectory | https://www.247webdirectory.com/ |
@@ -118,6 +118,8 @@
 | 2026-05-15 | Twelve.tools | ⏭ 跳过 | 需付费，无免费提交 |
 | 2026-05-16 | Viesearch | ✅ 提交成功 | 专用 adapter，账号 unitconv_sci，[查看提交](https://viesearch.com/26lc1/feature)，等待审核 |
 | 2026-05-17 | Viesearch | ✅ 二次确认 | 浏览器自动化提交，profile 页 Pending 状态确认收录 |
+| 2026-05-17 | Sonic Run | ✅ 提交成功 | 通用 adapter，无 CAPTCHA |
+| 2026-05-17 | OnToplist.com | ✅ 提交成功 | 通用 adapter，无 CAPTCHA |
 
 ---
 
