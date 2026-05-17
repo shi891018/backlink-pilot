@@ -18,6 +18,16 @@
 
 ---
 
+## 🔖 待处理（需要手动步骤）
+
+| 站点 | 状态 | 待操作 |
+|------|------|--------|
+| Crunchbase | 🔄 账号已创建，等待授权 | 打开 Chrome → https://www.crunchbase.com/add-new → 点 **Register with Google**（用 shijm1989@gmail.com）→ 完成后告知 AI 自动填 Organization 资料 |
+| Uneed.best | ⬜ 未提交 | 免费提交排队，或 $29.99 立即上首页；https://www.uneed.best/promote-your-tool |
+| BetaList | ⬜ 未提交 | 免费排队 2-3 个月，或 $129 立即推送；https://betalist.com/submit |
+
+---
+
 ## Tier 1 — 高价值通用目录（优先提交）
 
 > 流量大，收录权威，优先处理
