@@ -78,23 +78,23 @@
 
 | 状态 | 站点 | 提交链接 | 备注 |
 |------|------|----------|------|
-| ⬜ | Future Tools | https://www.futuretools.io/submit-a-tool | 知名工具目录，auto |
-| ⬜ | SpotTheAI | https://www.spottheai.com/submit | 5000+ 产品，auto |
-| ⬜ | Free AI Tool | https://freeaitool.ai/submit | 24h 快速审核，auto |
+| ✅ | Future Tools | https://www.futuretools.io/submit-a-tool | ✅ 已提交，"Tool Submitted!" |
+| ⏭ | SpotTheAI | https://www.spottheai.com/submit | ❌ 域名已售出 |
+| ⏭ | Free AI Tool | https://freeaitool.ai/submit | ❌ 无表单 |
 | ⬜ | ToolPilot | https://www.toolpilot.ai/pages/submit-your-ai-tool | auto |
-| ⬜ | ToolScout | https://toolscout.ai/submit | auto |
-| ⬜ | ToolHunter.ai | https://www.toolhunter.ai/submit-a-tool | auto |
-| ⬜ | findcool.tools | https://www.findcool.tools/submit-tool | auto |
-| ⬜ | TopApps.Ai | https://topapps.ai/submit | auto |
-| ⬜ | Supertools | https://supertools.therundown.ai/submit | auto |
-| ⬜ | Nextool AI | https://www.nextool.ai/submit-a-tool | auto |
-| ⬜ | DropYourAI | https://www.dropyourai.com/submit-tool | auto |
+| ⏭ | ToolScout | https://toolscout.ai/submit | ❌ 需要 Google 登录 |
+| ✅ | ToolHunter.ai | https://www.toolhunter.ai/submit-a-tool | ✅ 已提交，ID #1665，直接 API 调用成功 |
+| ⏭ | findcool.tools | https://www.findcool.tools/submit-tool | ❌ 无表单 |
+| ⏭ | TopApps.Ai | https://topapps.ai/submit | ❌ 无表单 |
+| ⏭ | Supertools | https://supertools.therundown.ai/submit | ❌ 链接已跳转 |
+| ⏭ | Nextool AI | https://www.nextool.ai/submit-a-tool | ❌ 付费 $45+ |
+| ⏭ | DropYourAI | https://www.dropyourai.com/submit-tool | ❌ 需要图片上传（必填） |
 | ⬜ | The AI Warehouse | https://www.thewarehouse.ai/product-submission | auto |
 | ⬜ | Interested In AI | https://www.interestedinai.com/submit-tool | auto |
 | ⬜ | ToolsAI.net | https://toolsai.net/add-listing/ | auto |
 | ⬜ | OpenFuture AI | https://openfuture.ai/zh/submit-tool | 多语言，auto |
 | ⬜ | Gate2AI | https://www.gate2ai.com/zh-cn/submit-tool | 多语言，auto |
-| ⬜ | Tap4 AI | https://tap4.ai/cn/submit | 支持中文，auto |
+| ⏭ | Tap4 AI | https://tap4.ai/cn/submit | ❌ 付费 $10 |
 
 ---
 
@@ -112,8 +112,8 @@
 | ⬜ | ABC Directory | https://www.abc-directory.com/submiturl |
 | ✅ | ASR | https://www.activesearchresults.com/addwebsite.php |
 | ✅ | Sonic Run | https://www.sonicrun.com/freelisting.html |
-| ⬜ | Jayde | https://www.jayde.com/submit.html |
-| ⬜ | Free Directory | https://www.directory-free.com/submit/submit.php |
+| ✅ | Jayde | https://www.jayde.com/submit.html |
+| ✅ | Free Directory | https://www.directory-free.com/submit/submit.php |
 
 ---
 
@@ -134,7 +134,31 @@
 | 2026-05-17 | Active Search Results | ✅ 提交成功 | 通用 adapter，仅需 URL+邮箱，已确认收录页 |
 | 2026-05-17 | SyncedReview (博客留言) | ✅ 提交成功 | WordPress 评论，comment-503593，待博主审核；Website 字段留 unitconv.top 外链 |
 | 2026-05-17 | 批量博客留言 ×13 | ✅ 提交成功 | batch-blog-comments.mjs，20条中13条成功，9条跳过(CAPTCHA/login)，详见 logs/blog-comments-2026-05-17.json |
-| 2026-05-17 | 批量博客留言 ×42 | ✅ 提交成功 | 三轮批量运行，累计 55 条博客留言（脚本新增 tab 超时自动恢复 + captcha/timeout 站永久标记），0 失败 |
+| 2026-05-17 | FutureTools | ✅ 提交成功 | React 表单，native setter + real mouse events，"Tool Submitted!" |
+| 2026-05-17 | ToolHunter.ai | ✅ 提交成功 | 直接 API 调用 POST /api/submissions，categorySuggestions:[23]，ID #1665 |
+| 2026-05-17 | ToolScout | ⏭ 跳过 | 需要 Google 登录 |
+| 2026-05-17 | DropYourAI | ⏭ 跳过 | 需要图片上传（必填字段） |
+| 2026-05-17 | Nextool AI | ⏭ 跳过 | 付费 $45+ |
+| 2026-05-17 | Tap4 AI | ⏭ 跳过 | 付费 $10 |
+| 2026-05-17 | Jayde.com | ✅ 提交成功 | 通用目录，表单自动填写 |
+| 2026-05-17 | directory-free.com | ✅ 提交成功 | 通用目录 |
+| 2026-05-17 | once.tools | ✅ 提交成功 | AI 工具目录 |
+| 2026-05-17 | AI Library (phygital.plus) | ✅ 提交成功 | AI 工具目录 |
+| 2026-05-18 | Insidr.ai | ✅ 提交成功 | 专用脚本 submit-insidr.mjs，"Your submission was successful." |
+| 2026-05-18 | HumanOrNot | ✅ 提交成功 | 极简表单 Email+URL，"Thank you! Your submission has been received!" |
+| 2026-05-18 | MyCloudMedia | ✅ 提交成功 | Apps and Websites Directory，重定向至 /thank-you.html |
+| 2026-05-18 | NextTool.ai | ✅ 提交成功 | 免费表单（页面下方），"Submitted! Thanks for submitting..." |
+| 2026-05-18 | AILib.ru | ⏭ 跳过 | reCAPTCHA 阻挡 |
+| 2026-05-18 | ToolsFine | ⏭ 跳过 | 2026-01-01 起免费提交已暂停，需付费 |
+| 2026-05-18 | FindCoolTools | ⏭ 跳过 | "Not accepting new tools" |
+| 2026-05-18 | NextGenTools | ⏭ 跳过 | Airtable+Uppy 文件上传无法自动化 |
+| 2026-05-18 | AIToolsMasters | ⏭ 跳过 | CF7 后端 SMTP 错误，提交无响应 |
+| 2026-05-18 | AIWith.me | ⏭ 跳过 | 付费 $19.9 |
+| 2026-05-18 | SpotTheAI | ⏭ 跳过 | 域名已售出 |
+| 2026-05-18 | SaaSBaba | ⏭ 跳过 | DNS 解析失败 |
+| 2026-05-18 | DigiProToolz | ⏭ 跳过 | 域名已过期 |
+| 2026-05-18 | FreeAITool | ⏭ 跳过 | "Submissions Paused" |
+| 2026-05-18 | SuperAITools | ✅ 提交成功 | Softr 表单，JS eval 填写+dropdown，成功消息："Thank you for submitting your tool. We will send you an email..." |
 
 ---
 
@@ -166,4 +190,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-05-17 (博客留言累计 55 条)*
+*最后更新: 2026-05-18 (博客留言 55条 + 目录站 11条 ✅: FutureTools, ToolHunter.ai, Jayde, directory-free.com, once.tools, AI Library, Insidr.ai, HumanOrNot, MyCloudMedia, NextTool.ai, SuperAITools)*
