@@ -43,7 +43,7 @@
 
 | 状态 | 站点 | 提交链接 | 备注 |
 |------|------|----------|------|
-| ⬜ | Launched! | https://launched.io/ | auto |
+| ✅ | Launched! | https://launched.io/ | auto |
 | ⬜ | KillerStartups | https://www.killerstartups.com/submit-startup/ | auto |
 | ⬜ | TechPluto | https://www.techpluto.com/submit-a-startup/ | auto |
 | ⬜ | The Startup Pitch | https://thestartuppitch.com/post-a-pitch/ | auto |
@@ -100,8 +100,8 @@
 | ⬜ | 01webdirectory | https://www.01webdirectory.com/frmPreSubmit.aspx |
 | ⬜ | 247WebDirectory | https://www.247webdirectory.com/ |
 | ⬜ | ABC Directory | https://www.abc-directory.com/submiturl |
-| ⬜ | ASR | https://www.activesearchresults.com/addwebsite.php |
-| ⬜ | Sonic Run | https://www.sonicrun.com/freelisting.html |
+| ✅ | ASR | https://www.activesearchresults.com/addwebsite.php |
+| ✅ | Sonic Run | https://www.sonicrun.com/freelisting.html |
 | ⬜ | Jayde | https://www.jayde.com/submit.html |
 | ⬜ | Free Directory | https://www.directory-free.com/submit/submit.php |
 
@@ -120,6 +120,8 @@
 | 2026-05-17 | Viesearch | ✅ 二次确认 | 浏览器自动化提交，profile 页 Pending 状态确认收录 |
 | 2026-05-17 | Sonic Run | ✅ 提交成功 | 通用 adapter，无 CAPTCHA |
 | 2026-05-17 | OnToplist.com | ✅ 提交成功 | 通用 adapter，无 CAPTCHA |
+| 2026-05-17 | Launched.io | ✅ 提交成功 | 专用 adapter，无需注册，自动填表 |
+| 2026-05-17 | Active Search Results | ✅ 提交成功 | 通用 adapter，仅需 URL+邮箱，已确认收录页 |
 
 ---
 
@@ -141,4 +143,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-05-17*
+*最后更新: 2026-05-17 (第二批)*
