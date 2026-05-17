@@ -122,6 +122,7 @@
 | 2026-05-17 | OnToplist.com | ✅ 提交成功 | 通用 adapter，无 CAPTCHA |
 | 2026-05-17 | Launched.io | ✅ 提交成功 | 专用 adapter，无需注册，自动填表 |
 | 2026-05-17 | Active Search Results | ✅ 提交成功 | 通用 adapter，仅需 URL+邮箱，已确认收录页 |
+| 2026-05-17 | SyncedReview (博客留言) | ✅ 提交成功 | WordPress 评论，comment-503593，待博主审核；Website 字段留 unitconv.top 外链 |
 
 ---
 
