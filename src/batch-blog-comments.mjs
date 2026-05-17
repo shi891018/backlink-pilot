@@ -7,6 +7,7 @@
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { resolve } from 'path';
+import { execFileSync, execSync } from 'child_process';
 import { BbPage } from './bb.js';
 
 const ROOT          = new URL('..', import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1');
@@ -53,6 +54,45 @@ const PERSONAS = [
 
 function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 function delay(ms) { return new Promise(r => setTimeout(r, ms)); }
+
+// --- Tab recovery: open fresh tab, close stuck old tab ---
+async function recoverTab(page) {
+  try {
+    // Open a fresh about:blank tab
+    const out = execSync('bb-browser open about:blank', { encoding: 'utf-8', timeout: 15000 }).trim();
+    await delay(1500);
+    // New tab is now the last tab; get current tab list
+    const list = execSync('bb-browser tab list', { encoding: 'utf-8', timeout: 10000 }).trim();
+    const lines = list.split('\n');
+    // Close old stuck tab (the one page was on)
+    const oldIdx = page._tabIdx;
+    if (oldIdx !== null && oldIdx !== undefined) {
+      try {
+        execSync(`bb-browser tab close ${oldIdx}`, { encoding: 'utf-8', timeout: 10000 });
+        await delay(1000);
+      } catch {}
+    }
+    // Re-read tab list, find active tab
+    const list2 = execSync('bb-browser tab list', { encoding: 'utf-8', timeout: 10000 }).trim();
+    const activeLine = list2.split('\n').find(l => l.trimStart().startsWith('*'));
+    if (activeLine) {
+      const m = activeLine.match(/\[(\d+)\]/);
+      if (m) {
+        page._tabIdx = parseInt(m[1]);
+        return true;
+      }
+    }
+    // Fallback: use highest index
+    const entries = [...list2.matchAll(/\[(\d+)\]/g)];
+    if (entries.length) {
+      page._tabIdx = Math.max(...entries.map(m => parseInt(m[1])));
+      return true;
+    }
+  } catch (e) {
+    // ignore recovery errors
+  }
+  return false;
+}
 
 // --- Read product config ---
 function readConfig() {
@@ -176,7 +216,8 @@ async function main() {
     r.type === 'blog_comment' &&
     !r.submitted &&
     !r.has_captcha &&
-    r.has_url_field &&
+    r.status !== 'timeout' &&
+    r.has_url_field !== false &&
     !doneTodayUrls.has(r.url)
   );
 
@@ -208,6 +249,8 @@ async function main() {
         resources[idx].submitted_at = new Date().toISOString();
       } else if (result.status === 'skip') {
         resources[idx].status = result.reason;
+        // Permanently mark captcha sites so they're never visited again
+        if (result.reason === 'captcha') resources[idx].has_captcha = true;
       }
     }
 
@@ -228,6 +271,15 @@ async function main() {
     } else {
       console.log(`    ❌ Err  — ${result.reason}`);
       failed++;
+      // Recover tab after timeout to unblock subsequent submissions
+      if (result.reason?.includes('timed out') || result.reason?.includes('timeout')) {
+        // Mark this site as permanently unreachable so it's never retried
+        if (idx !== -1) resources[idx].status = 'timeout';
+        process.stdout.write('    🔄 Recovering tab...');
+        const recovered = await recoverTab(page);
+        console.log(recovered ? ' OK' : ' failed');
+        await delay(2000);
+      }
     }
 
     saveResources(resources);

@@ -190,7 +190,7 @@
     "type": "blog_comment",
     "url": "https://joaniesimon.com/grilled-lemon-garlic-potato-kabobs/grilled-potato-kabobs-with-lemon-and-garlic/",
     "discovered_from": "ahrefs:leveldevilgame.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -339,7 +339,7 @@
     "type": "blog_comment",
     "url": "https://www.beautythroughimperfection.com/reindeer-donuts/",
     "discovered_from": "ahrefs:leveldevilgame.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -372,7 +372,7 @@
     "type": "blog_comment",
     "url": "https://holdtoreset.com/where-is-the-shipwreck-today-in-gta-online/",
     "discovered_from": "ahrefs:quordle-wordle.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -395,7 +395,7 @@
     "type": "blog_comment",
     "url": "https://www.browneyedbaker.com/how-to-make-pate-a-choux-fill-eclairs-and-cream-puffs/",
     "discovered_from": "ahrefs:quordle-wordle.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -417,7 +417,7 @@
     "type": "blog_comment",
     "url": "https://www.completelydelicious.com/tips/make-brownies-shiny-crackly-crust/",
     "discovered_from": "ahrefs:quordle-wordle.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -461,7 +461,7 @@
     "type": "blog_comment",
     "url": "https://www.learnalanguage.com/blog/italian-greetings-how-are-you-in-italian/",
     "discovered_from": "ahrefs:quordle-wordle.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
@@ -528,7 +528,7 @@
     "type": "blog_comment",
     "url": "https://soccernet.ng/2024/03/were-looking-forward-to-it-atalantas-lookman-pumped-ahead-of-nigerias-jollof-derby-against-ghana.html",
     "discovered_from": "ahrefs:geometrydash-subzero.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -573,7 +573,7 @@
     "type": "blog_comment",
     "url": "https://happyhealthymama.com/air-fryer-apples-healthy.html",
     "discovered_from": "ahrefs:geometrydash-subzero.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
@@ -676,22 +676,22 @@
     "type": "blog_comment",
     "url": "https://chayagrossberg.com/diagnosis-versus-you/",
     "discovered_from": "ahrefs:level-devil.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://proofreadanywhere.com/get-paid-to-proofread/",
     "discovered_from": "ahrefs:level-devil.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -702,8 +702,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:01:45.030Z"
   },
   {
     "type": "profile",
@@ -724,8 +725,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:02:37.311Z"
   },
   {
     "type": "blog_comment",
@@ -735,8 +737,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:03:13.737Z"
   },
   {
     "type": "blog_comment",
@@ -746,18 +749,19 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:03:40.024Z"
   },
   {
     "type": "blog_comment",
     "url": "https://diythrill.com/2018/09/23/orange-citrus-poo-pourri-recipe/",
     "discovered_from": "ahrefs:level-devil.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -768,8 +772,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:04:20.053Z"
   },
   {
     "type": "blog_comment",
@@ -779,8 +784,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:04:47.534Z"
   },
   {
     "type": "blog_comment",
@@ -790,8 +796,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:05:15.807Z"
   },
   {
     "type": "profile",
@@ -823,8 +830,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:05:39.521Z"
   },
   {
     "type": "blog_comment",
@@ -834,7 +842,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
@@ -845,7 +853,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
@@ -856,7 +864,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
@@ -867,7 +875,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
@@ -878,18 +886,18 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://sharonsantoni.com/2023/05/making-strawberry-jam-2/",
     "discovered_from": "ahrefs:www.sprunkipyramixed.org",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -900,7 +908,7 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
@@ -933,7 +941,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false
   },
   {
@@ -955,8 +963,9 @@
     "link_strategy": "both",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:42:55.956Z"
   },
   {
     "type": "blog_comment",
@@ -966,8 +975,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:43:28.692Z"
   },
   {
     "type": "profile",
@@ -988,18 +998,19 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:44:00.890Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.ginjfo.com/actualites/logiciels/jeux-video-logiciels/les-sims-4-fetent-leur-25e-anniversaire-avec-du-nouveau-contenu-massif-20250227",
     "discovered_from": "ahrefs:crazy-cattle-3d.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1021,18 +1032,19 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:44:41.433Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.reneeroaming.com/new-england-fall-road-trip",
     "discovered_from": "ahrefs:crazy-cattle-3d.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1043,8 +1055,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:45:26.125Z"
   },
   {
     "type": "blog_comment",
@@ -1054,8 +1067,9 @@
     "link_strategy": "url_field",
     "link_format": "bbcode",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:45:58.178Z"
   },
   {
     "type": "profile",
@@ -1076,8 +1090,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:46:31.277Z"
   },
   {
     "type": "blog_comment",
@@ -1087,51 +1102,52 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:47:00.426Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.yourcupofcake.com/banana-bread-coffee-cake/",
     "discovered_from": "ahrefs:leveldevilgame.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://lovestrategies.com/are-you-a-walking-red-flag-7-habits-that-might-be-sabotaging-your-love-life/",
     "discovered_from": "ahrefs:blue-prince.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "both",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.reneeroaming.com/kimberley-australia-luxury-expedition-cruise-seabourn",
     "discovered_from": "ahrefs:blue-prince.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.dinnerwithjulie.com/2021/11/03/plant-based-deep-n-delicious-chocolate-cake/",
     "discovered_from": "ahrefs:blue-prince.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1142,18 +1158,19 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:48:27.400Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.repeatcrafterme.com/2025/02/crochet-furry-friends-book.html",
     "discovered_from": "ahrefs:blue-prince.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1164,8 +1181,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:49:01.917Z"
   },
   {
     "type": "blog_comment",
@@ -1193,11 +1211,11 @@
     "type": "blog_comment",
     "url": "https://www.fitlivingeats.com/a-festive-holiday-sangria-recipe-tips-for-a-healthier-cocktail/",
     "discovered_from": "ahrefs:cheesechompers3d.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1215,22 +1233,22 @@
     "type": "blog_comment",
     "url": "https://www.paleorunningmomma.com/garlic-tuscan-shrimp-paleo-whole30",
     "discovered_from": "ahrefs:cheesechompers3d.cc",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.fitlivingeats.com/7-easy-everyday-gluten-free-swaps/",
     "discovered_from": "ahrefs:cheesechompers3d.cc",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1263,8 +1281,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:58:54.033Z"
   },
   {
     "type": "profile",
@@ -1292,11 +1311,11 @@
     "type": "blog_comment",
     "url": "https://www.yourcupofcake.com/candy-cane-muddy-buddies/",
     "discovered_from": "ahrefs:geometrydash-subzero.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1336,11 +1355,11 @@
     "type": "blog_comment",
     "url": "https://notsowimpyteacher.com/2024/01/5-reasons-why-teaching-grammar-is-still-important.html",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1351,62 +1370,63 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:50:39.531Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.reneeroaming.com/mexico-city-itinerary-the-best-things-to-do-in-4-days",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://joaniesimon.com/94f737822923f4567e1a7ce9681e5b9a-2/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.yourcupofcake.com/pineapple-mango-bruschetta/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.fitlivingeats.com/how-to-make-homemade-oat-milk/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://bevcooks.com/2019/06/creamy-chicken-and-asparagus-casserole/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1417,8 +1437,9 @@
     "link_strategy": "both",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:52:06.219Z"
   },
   {
     "type": "blog_comment",
@@ -1428,29 +1449,30 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T14:59:17.843Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.certifiedpastryaficionado.com/nutella-cream-pie/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://brownbagteacher.com/what-im-reading/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1461,8 +1483,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:00:07.468Z"
   },
   {
     "type": "blog_comment",
@@ -1472,29 +1495,30 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:00:40.829Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.dinnerwithjulie.com/2019/12/23/kaiserschmarrn-torn-shredded-pancake/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://thenerdswife.com/happy-sisters-day-with-frozen-and-disney.html",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1505,8 +1529,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:01:31.808Z"
   },
   {
     "type": "blog_comment",
@@ -1516,51 +1541,51 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "login_required",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://jonnegroni.com/2017/11/20/cinemaholics-review-justice-league-punisher/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://blankitinerary.com/santana-fall.html",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.repeatcrafterme.com/2013/02/barn-card-for-sprout-tv.html",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "http://godchild.keenspot.com/comic/evolution-of-maggie/",
     "discovered_from": "ahrefs:loklokhd.app",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1571,8 +1596,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:02:53.182Z"
   },
   {
     "type": "blog_comment",
@@ -1582,18 +1608,18 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://global21.oceansconference.org/2019/04/01/join-5000-ocean-technology-experts-at-ocean-business/",
     "discovered_from": "ahrefs:wackyflip.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1604,8 +1630,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:03:54.163Z"
   },
   {
     "type": "blog_comment",
@@ -1615,51 +1642,52 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:04:25.159Z"
   },
   {
     "type": "blog_comment",
     "url": "https://happyhourprojects.com/snake-bracelet/",
     "discovered_from": "ahrefs:www.sprunkipyramixed.org",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://chayagrossberg.com/how-do-you-know-if-youre-receiving-informed-consent/",
     "discovered_from": "ahrefs:crazy-cattle-3d.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://cartoonresearch.com/index.php/forgotten-anime-57-kirara-2000",
     "discovered_from": "ahrefs:scrandle.net",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "http://www.superstore.co.jp/wp-includes/fonts/diary.cgi?mode=comment&no=116",
     "discovered_from": "ahrefs:99nightsintheforestscript.org",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1670,8 +1698,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:05:40.886Z"
   },
   {
     "type": "blog_comment",
@@ -1681,18 +1710,19 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:06:07.577Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.fitlivingeats.com/qa-founders-motion-matcha-one-go-energy-boosters/",
     "discovered_from": "ahrefs:99nightsintheforestscript.org",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1703,8 +1733,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:08:19.539Z"
   },
   {
     "type": "blog_comment",
@@ -1714,18 +1745,18 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "timeout",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://ride.guru/content/newsroom/finding-your-fare-with-rideguru-a-how-to-guide",
     "discovered_from": "ahrefs:ageofwargame.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1747,8 +1778,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:07:29.358Z"
   },
   {
     "type": "profile",
@@ -1787,11 +1819,11 @@
     "type": "blog_comment",
     "url": "https://www.pv-magazine.com/2022/01/15/the-weekend-read/",
     "discovered_from": "ahrefs:ageofwargame.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1802,18 +1834,19 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:08:57.812Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.papertraildesign.com/football-water-bottle-labels-free-printable/",
     "discovered_from": "ahrefs:ageofwargame.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1835,7 +1868,7 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "comments_closed",
     "submitted": false
   },
   {
@@ -1846,7 +1879,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false
   },
   {
@@ -1857,29 +1890,30 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:13:02.847Z"
   },
   {
     "type": "blog_comment",
     "url": "https://fashionablefoods.com/2014/10/20/roasted-butternut-squash-and-apple-soup/",
     "discovered_from": "ahrefs:ageofwargame.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
     "type": "blog_comment",
     "url": "https://www.everythingetsy.com/2013/02/10-social-media-tips-to-make-you-a-rock-star/",
     "discovered_from": "ahrefs:ageofwargame.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1890,8 +1924,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:10:42.509Z"
   },
   {
     "type": "blog_comment",
@@ -1901,18 +1936,19 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:11:16.664Z"
   },
   {
     "type": "blog_comment",
     "url": "https://poppyandgrace.com/2017/09/raleys-lilo-and-stitch-birthday-luau/",
     "discovered_from": "ahrefs:99nightsintheforestscript.org",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1923,8 +1959,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:13:33.892Z"
   },
   {
     "type": "blog_comment",
@@ -1934,8 +1971,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:14:01.183Z"
   },
   {
     "type": "profile",
@@ -1967,18 +2005,19 @@
     "link_strategy": "both",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:14:36.725Z"
   },
   {
     "type": "blog_comment",
     "url": "https://www.yourcupofcake.com/easy-to-make-snowman-cupcakes/",
     "discovered_from": "ahrefs:retrogamesonline.io",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -1989,7 +2028,7 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false
   },
   {
@@ -2000,8 +2039,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:15:25.274Z"
   },
   {
     "type": "profile",
@@ -2022,18 +2062,19 @@
     "link_strategy": "both",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:15:55.423Z"
   },
   {
     "type": "blog_comment",
     "url": "https://loveandmarriageblog.com/beach-water-cocktail/",
     "discovered_from": "ahrefs:purbleplaceonline.com",
-    "has_captcha": false,
+    "has_captcha": true,
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -2044,8 +2085,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T15:16:34.757Z"
   },
   {
     "type": "blog_comment",
