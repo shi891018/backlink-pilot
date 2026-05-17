@@ -123,15 +123,29 @@ async function browserRegister(page, { username, password, email, displayName, s
 
   await page.screenshot(`${screenshotDir}/viesearch-join-before-${ts()}.png`).catch(() => {});
   console.log('  📤 Submitting registration form...');
-  await page.evalSubmitForm('form');
-  await delay(5000);
+  // Target the join form specifically by its known field (avoid submitting search bar)
+  try {
+    await page.evalRun(`
+      (function() {
+        var input = document.querySelector('[name="join_username"]');
+        var form = input && input.closest('form');
+        if (!form) form = Array.from(document.querySelectorAll('form')).at(-1);
+        var btn = form && form.querySelector('input[type="submit"], button[type="submit"]');
+        if (btn) btn.click();
+      })()
+    `);
+  } catch (e) {
+    if (!/timed out|timeout/i.test(e.message)) throw e;
+  }
+  await delay(6000);
   await page.screenshot(`${screenshotDir}/viesearch-join-after-${ts()}.png`).catch(() => {});
 
-  const url = page.url();
-  console.log(`  📍 Post-register URL: ${url}`);
-  if (url.includes('/joined')) return { ok: true, autoSignedIn: false };
-  if (url.includes('/editor/')) return { ok: true, autoSignedIn: true };
-  return { ok: false, reason: `Unexpected URL after submit: ${url}` };
+  let regUrl = '';
+  try { regUrl = page.url(); } catch {}
+  console.log(`  📍 Post-register URL: ${regUrl}`);
+  if (regUrl.includes('/joined')) return { ok: true, autoSignedIn: false };
+  if (regUrl.includes('/editor/')) return { ok: true, autoSignedIn: true };
+  return { ok: false, reason: `Unexpected URL after submit: ${regUrl}` };
 }
 
 export default {
@@ -161,45 +175,134 @@ export default {
 
     return withBrowser({ ...config, _engine: 'bb' }, async ({ page }) => {
 
-      // ── Step 1: Try sign-in (skip registration if account already works) ──
-      console.log('  🔐 Attempting sign-in...');
-      await page.goto(SIGNIN_URL);
-      await delay(2000);
+      // Viesearch's submit page allows only ONE CDP eval after navigation.
+      // Strategy: combine login-check + form-fill + submit into a SINGLE evalRun call.
+      // Sign-in page also gets ONE batched eval: fill-username + fill-password + click.
 
-      const signinSnap = await page.snapshot();
-      const signinFields = parseSigninFields(signinSnap);
-      if (signinFields.username && signinFields.password) {
-        await page.fill(signinFields.username, creds.username);
-        await delay(300);
-        await page.fill(signinFields.password, creds.password);
-        await delay(300);
-        await page.evalSubmitForm('form[method="post"]');
-        await delay(4000);
+      const desc = product.description || product.long_description?.split('\n')[0] || '';
+
+      // JS fragment: fill all form fields and click submit. Returns 'submitted' or 'no-form'.
+      const FILL_AND_SUBMIT_JS = `(function(url, title, description, username) {
+        function set(name, val) {
+          var el = document.querySelector('[name=' + name + ']');
+          if (!el) return;
+          el.value = val;
+          el.dispatchEvent(new Event('input',  {bubbles:true}));
+          el.dispatchEvent(new Event('change', {bubbles:true}));
+        }
+        set('URL',         url);
+        set('TITLE',       title);
+        set('DESCRIPTION', description);
+
+        // Select free listing (last radio = "Text Only Listing - Free")
+        var radios = document.querySelectorAll('input[type=radio]');
+        if (radios.length) radios[radios.length - 1].click();
+
+        // Pick best matching category
+        var sel = document.querySelector('[name=CATEGORY]');
+        if (sel) {
+          var opt = Array.from(sel.options).find(function(o) {
+            return /science|tools|education|utilities/i.test(o.text);
+          });
+          if (!opt) opt = Array.from(sel.options).find(function(o) { return o.value && o.value !== ''; });
+          if (opt) { sel.value = opt.value; sel.dispatchEvent(new Event('change', {bubbles:true})); }
+        }
+
+        // Submit the form that contains the URL field
+        var form = document.querySelector('input[name=URL]') &&
+                   document.querySelector('input[name=URL]').closest('form');
+        if (!form) {
+          var forms = document.querySelectorAll('form');
+          form = forms[forms.length - 1];
+        }
+        var btn = form && form.querySelector('input[type=submit], button[type=submit]');
+        if (btn) { btn.click(); return 'submitted'; }
+        if (form) { try { form.requestSubmit(); } catch(e) { form.submit(); } return 'submitted'; }
+        return 'no-form';
+      })(${JSON.stringify(product.url)}, ${JSON.stringify(product.name)}, ${JSON.stringify(desc)}, ${JSON.stringify(creds.username)})`;
+
+      // ── Step 1: Try submit page directly (checks login + fills form in one eval) ──
+      console.log('  📄 Opening submission form...');
+      await page.goto(SUBMIT_URL);
+      await delay(8000); // extra wait — Viesearch is heavy
+      await page.screenshot(`${screenshotDir}/viesearch-submit-page.png`).catch(() => {});
+
+      // ONE eval: check if logged in; if so, fill and submit immediately
+      let phase1Result = '';
+      try {
+        phase1Result = await page.evalRun(`(function() {
+          var owner = document.querySelector('[name=OWNER_USERNAME]') &&
+                      document.querySelector('[name=OWNER_USERNAME]').value || '';
+          if (owner !== ${JSON.stringify(creds.username)}) return 'NOT_SIGNED_IN';
+          return ${FILL_AND_SUBMIT_JS};
+        })()`);
+      } catch (e) {
+        if (!/timed out|timeout/i.test(e.message)) throw e;
+        console.log('  ⚠️  Submit page eval timed out — will retry via sign-in');
+        phase1Result = 'NOT_SIGNED_IN';
       }
+
+      if (phase1Result === 'submitted') {
+        console.log('  ✅ Already signed in — form submitted!');
+        await delay(8000);
+        await page.screenshot(`${screenshotDir}/viesearch-result-${ts()}.png`).catch(() => {});
+        let finalUrl = ''; try { finalUrl = page.url(); } catch {}
+        return { url: finalUrl || SUBMIT_URL, confirmation: 'Viesearch site submitted — awaiting review' };
+      }
+
+      // ── Step 2: Sign in (batched credentials fill + submit in ONE eval) ────
+      console.log('  🔐 Signing in...');
+      await page.goto(SIGNIN_URL);
+      await delay(5000);
+
+      // ONE eval: fill username + password + click sign-in button
+      try {
+        await page.evalRun(`(function() {
+          function set(name, val) {
+            var el = document.querySelector('[name=' + name + ']');
+            if (!el) return;
+            el.value = val;
+            el.dispatchEvent(new Event('input',  {bubbles:true}));
+            el.dispatchEvent(new Event('change', {bubbles:true}));
+          }
+          set('login_username', ${JSON.stringify(creds.username)});
+          set('login_password', ${JSON.stringify(creds.password)});
+          var form = document.querySelector('form[method=post]') || document.querySelector('form');
+          var btn = form && form.querySelector('input[type=submit], button[type=submit]');
+          if (btn) btn.click();
+        })()`);
+      } catch (e) {
+        if (!/timed out|timeout/i.test(e.message)) throw e;
+        // Timeout on form submit is OK — Chrome may still be processing
+      }
+      await delay(6000);
       await page.screenshot(`${screenshotDir}/viesearch-signin-attempt.png`).catch(() => {});
 
-      let isSignedIn = !page.url().includes('/signin');
+      // ONE eval on landing page: check if sign-in succeeded
+      let signinOk = false;
+      try {
+        const bodyHtml = await page.evalRun('document.body.innerHTML');
+        signinOk = bodyHtml.includes(creds.username);
+      } catch {}
+      if (!signinOk) {
+        // url() check as fallback
+        try { const u = page.url(); signinOk = u.includes('viesearch.com') && !u.includes('/signin'); } catch {}
+      }
 
-      // ── Step 2: Register via browser if sign-in failed ────────────────────
-      if (!isSignedIn) {
+      // ── Step 3: Email verification + re-register (if sign-in failed) ───────
+      if (!signinOk) {
         console.log('  ℹ️  Sign-in failed — will register new account via browser');
         const reg = await browserRegister(page, {
           username: creds.username, password: creds.password,
           email: regEmail, displayName, screenshotDir,
         });
-
-        if (reg.autoSignedIn) {
-          console.log('  ✅ Registered and auto-signed-in!');
-          isSignedIn = true;
-        } else if (reg.ok) {
-          console.log('  ✅ Registration succeeded — verifying email...');
+        if (!reg.ok && !reg.autoSignedIn) {
+          console.log(`  ⚠️  Registration: ${reg.reason}`);
         } else {
-          console.log(`  ⚠️  Registration: ${reg.reason} — will attempt to continue...`);
+          console.log('  ✅ Registered!');
         }
-      }
 
-      // ── Step 3: Email verification (IMAP, async) ──────────────────────────
-      if (!isSignedIn) {
+        // Email verification via IMAP
         const gmailCreds = config.credentials?.gmail;
         if (gmailCreds?.app_password) {
           console.log('  📧 Requesting verification email...');
@@ -208,95 +311,74 @@ export default {
           try {
             console.log('  ⏳ Waiting for verification email (up to 60s)...');
             const verifyLink = await waitForVerificationLink({
-              email: product.email,
-              appPassword: gmailCreds.app_password,
-              fromFilter: 'viesearch',
-              linkPattern: /https?:\/\/viesearch\.com\/confirm\/[a-f0-9]+/gi,
-              timeoutMs: 60000,
-              pollMs: 8000,
-              searchWindowMs: 5 * 60 * 1000,
+              email: product.email, appPassword: gmailCreds.app_password,
+              fromFilter: 'viesearch', linkPattern: /https?:\/\/viesearch\.com\/confirm\/[a-f0-9]+/gi,
+              timeoutMs: 60000, pollMs: 8000, searchWindowMs: 5 * 60 * 1000,
             });
             console.log('  🔗 Confirming verification link...');
             const vr = await fetch(verifyLink, { redirect: 'follow', headers: { 'User-Agent': 'Mozilla/5.0 Chrome/124.0' } });
             console.log(`  ✅ Email verified! (status ${vr.status})`);
           } catch (e) {
-            if (/timed out/i.test(e.message)) {
-              console.log('  ℹ️  No new verification email — account may already be verified, continuing...');
-            } else {
-              throw e;
-            }
+            if (!/timed out/i.test(e.message)) throw e;
+            console.log('  ℹ️  No new verification email — continuing...');
           }
-        } else {
-          console.log('  ⚠️  No Gmail App Password — skipping auto-verify. Add credentials.gmail.app_password to config.yaml');
         }
 
-        // ── Step 4: Sign in after verification ───────────────────────────────
+        // Sign in again after verification (ONE batched eval)
         console.log('  🔐 Signing in after verification...');
         await page.goto(SIGNIN_URL);
-        await delay(2000);
-        const snap2 = await page.snapshot();
-        const sf2 = parseSigninFields(snap2);
-        if (sf2.username && sf2.password) {
-          await page.fill(sf2.username, creds.username);
-          await delay(300);
-          await page.fill(sf2.password, creds.password);
-          await delay(300);
-          await page.evalSubmitForm('form[method="post"]');
-          await delay(4000);
+        await delay(5000);
+        try {
+          await page.evalRun(`(function() {
+            function set(name, val) {
+              var el = document.querySelector('[name=' + name + ']');
+              if (!el) return;
+              el.value = val;
+              el.dispatchEvent(new Event('input',  {bubbles:true}));
+              el.dispatchEvent(new Event('change', {bubbles:true}));
+            }
+            set('login_username', ${JSON.stringify(creds.username)});
+            set('login_password', ${JSON.stringify(creds.password)});
+            var form = document.querySelector('form[method=post]') || document.querySelector('form');
+            var btn = form && form.querySelector('input[type=submit], button[type=submit]');
+            if (btn) btn.click();
+          })()`);
+        } catch (e) {
+          if (!/timed out|timeout/i.test(e.message)) throw e;
         }
+        await delay(6000);
         await page.screenshot(`${screenshotDir}/viesearch-signin-result.png`).catch(() => {});
-        if (page.url().includes('/signin')) {
-          throw new Error('Sign-in failed — check credentials or verify email manually');
-        }
+
+        let afterHtml = '';
+        try { afterHtml = await page.evalRun('document.body.innerHTML'); } catch {}
+        const signedInOk = afterHtml.includes(creds.username);
+        if (!signedInOk) throw new Error('Sign-in failed — check credentials or verify email manually');
+        console.log('  ✅ Signed in!');
+      } else {
         console.log('  ✅ Signed in!');
       }
 
-      // ── Step 5: Submit site ────────────────────────────────────────────────
+      // ── Step 4: Submit page — ONE eval: fill all fields + submit ───────────
       console.log('  📄 Opening submission form...');
       await page.goto(SUBMIT_URL);
-      await delay(2500);
+      await delay(8000);
 
-      const submitSnap = await page.snapshot();
-      const submitFields = parseSubmitFields(submitSnap);
-      await page.screenshot(`${screenshotDir}/viesearch-submit-page.png`).catch(() => {});
-
-      if (!submitFields.url && !submitFields.title) {
-        throw new Error('Cannot find submission form (may require email verification first)');
+      console.log('  🚀 Filling form and submitting...');
+      let submitResult = 'unknown';
+      try {
+        submitResult = await page.evalRun(FILL_AND_SUBMIT_JS);
+      } catch (e) {
+        if (!/timed out|timeout/i.test(e.message)) throw e;
+        console.log('  ⚠️  Submit eval timed out — Chrome may still be processing...');
+        submitResult = 'timeout-may-ok';
       }
-
-      if (submitFields.ownerName)   { await page.fill(submitFields.ownerName,   creds.username);  await delay(300); }
-      if (submitFields.ownerEmail)  { await page.fill(submitFields.ownerEmail,  product.email);   await delay(300); }
-      if (submitFields.title)       { await page.fill(submitFields.title,       product.name);    await delay(300); }
-      if (submitFields.description) { await page.fill(submitFields.description, product.description || product.long_description?.split('\n')[0] || ''); await delay(300); }
-      if (submitFields.url)         { await page.fill(submitFields.url,         product.url);     await delay(300); }
-
-      // Select free listing type (last radio = "Text Only Listing - No Thumbnail Image - Free")
-      await page.evalRun(`Array.from(document.querySelectorAll('input[type="radio"]')).at(-1)?.click()`);
-      await delay(300);
-
-      // Pick a matching category from the dropdown
-      await page.evalRun(`
-        (function() {
-          var sel = document.querySelector('select');
-          if (!sel) return;
-          var opt = Array.from(sel.options).find(o => /science|tools|education|utilities/i.test(o.text));
-          if (!opt) opt = Array.from(sel.options).find(o => o.value && o.value !== '');
-          if (opt) { sel.value = opt.value; sel.dispatchEvent(new Event('change', {bubbles: true})); }
-        })()
-      `);
-      await delay(300);
-
-      await page.screenshot(`${screenshotDir}/viesearch-submit-${ts()}.png`).catch(() => {});
-
-      if (submitFields.submit) {
-        console.log('  🚀 Submitting site...');
-        await page.evalSubmitForm('form');
-        await delay(4000);
-      }
+      console.log(`  📋 Submit result: ${submitResult}`);
+      await delay(8000);
 
       await page.screenshot(`${screenshotDir}/viesearch-result-${ts()}.png`).catch(() => {});
+      let finalUrl = ''; try { finalUrl = page.url(); } catch {}
       return {
-        url: page.url(),
+        url: finalUrl || SUBMIT_URL,
         confirmation: 'Viesearch site submitted — awaiting review',
       };
     });

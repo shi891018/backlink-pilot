@@ -87,17 +87,17 @@ export class BbPage {
     // Apply timeout from config
     if (config.browser?.timeout) setBbTimeout(config.browser.timeout);
 
-    // Verify Chrome is reachable — use 'tab list' instead of 'status'
-    // because 'status' can return "running" even when commands timeout
+    // Verify Chrome is reachable and detect active tab index
+    let tabListOutput = '';
     try {
-      bb('tab', 'list');
+      tabListOutput = bb('tab', 'list');
     } catch (e) {
       const msg = e.message || '';
       if (msg.includes('超时') || msg.includes('timeout') || msg.includes('Timeout')) {
         throw new Error(
           `bb-browser Chrome is not responding (commands timeout).\n` +
           `  Try restarting Chrome:\n` +
-          `    1. Kill the managed Chrome: kill $(cat ~/.bb-browser/browser/cdp-port 2>/dev/null && lsof -ti :19825)\n` +
+          `    1. Kill Chrome and bb-browser daemon\n` +
           `    2. Relaunch: bb-browser open about:blank\n` +
           `    3. Retry your command.`
         );
@@ -107,6 +107,20 @@ export class BbPage {
         `  Start it with: bb-browser open about:blank\n` +
         `  Then retry your command.`
       );
+    }
+
+    // Close broken/frozen tabs that have NO URL at all (e.g. "(无标题)" empty tabs).
+    // These cause all subsequent CDP eval commands to hang/timeout.
+    // Tab list format: "[N] <url> - <title>"  (valid)
+    //                  "[N]  - <title>"        (broken — URL section is empty)
+    // Detection: extract the URL section between "[N] " and " - "; if empty → broken.
+    for (const line of tabListOutput.split('\n')) {
+      // Extract: tab index + everything between [N] and the first " - " separator
+      const m = line.match(/\*?\s*\[(\d+)\]\s*(.*?)\s+-\s+/);
+      if (m && m[2].trim() === '') {
+        // URL section is empty — broken tab, close it
+        try { bb('tab', 'close', m[1]); } catch {}
+      }
     }
   }
 
@@ -120,11 +134,8 @@ export class BbPage {
 
   async goto(url, _opts = {}) {
     if (this._tabIdx === null || this._tabIdx === undefined) {
-      // First navigation — open a new tab and track its index
-      bb('open', url, '--tab');
-      await new Promise(r => setTimeout(r, 2500));
-
-      // Active tab (marked with *) is always the newly opened tab
+      // First navigation: latch onto the current active tab (preserves session cookies,
+      // avoids opening a new tab which may itself cause a CDP timeout waiting for load).
       const list = bb('tab', 'list');
       const activeLine = list.split('\n').find(l => l.trimStart().startsWith('*'));
       if (activeLine) {
@@ -132,20 +143,27 @@ export class BbPage {
         if (m) {
           this._tabIdx = parseInt(m[1]);
           this._openedTabs.push(this._tabIdx);
-          return;
         }
       }
-      // Fallback: highest index
-      const entries = [...list.matchAll(/\[(\d+)\]/g)];
-      if (entries.length) {
-        this._tabIdx = Math.max(...entries.map(m => parseInt(m[1])));
-        this._openedTabs.push(this._tabIdx);
+      if (this._tabIdx === null || this._tabIdx === undefined) {
+        // Fallback: highest tab index
+        const entries = [...list.matchAll(/\[(\d+)\]/g)];
+        if (entries.length) {
+          this._tabIdx = Math.max(...entries.map(m => parseInt(m[1])));
+          this._openedTabs.push(this._tabIdx);
+        }
       }
-    } else {
-      // Subsequent navigation — reuse the same tab
-      this._bb('open', url);
-      await new Promise(r => setTimeout(r, 2500));
     }
+
+    // Navigate via JS eval (instant CDP command — doesn't wait for load event,
+    // so it won't timeout even on slow pages). Chrome will load asynchronously.
+    try {
+      this._bb('eval', `window.location.href = ${JSON.stringify(url)}`);
+    } catch (e) {
+      // Even if eval times out, Chrome may still be navigating
+      if (!/timed out|timeout|超时/i.test(e.message)) throw e;
+    }
+    await new Promise(r => setTimeout(r, 5000)); // wait for navigation + page load
   }
 
   /**
