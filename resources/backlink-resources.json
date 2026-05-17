@@ -194,7 +194,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -205,8 +205,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:26:22.004Z"
   },
   {
     "type": "blog_comment",
@@ -216,8 +217,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:26:48.867Z"
   },
   {
     "type": "blog_comment",
@@ -227,8 +229,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:27:17.628Z"
   },
   {
     "type": "profile",
@@ -260,8 +263,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:27:49.394Z"
   },
   {
     "type": "blog_comment",
@@ -271,8 +275,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:28:22.105Z"
   },
   {
     "type": "blog_comment",
@@ -282,7 +287,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "login_required",
     "submitted": false
   },
   {
@@ -326,8 +331,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:29:07.859Z"
   },
   {
     "type": "blog_comment",
@@ -337,7 +343,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -370,7 +376,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -381,8 +387,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:30:08.490Z"
   },
   {
     "type": "blog_comment",
@@ -392,7 +399,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -414,7 +421,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -458,7 +465,7 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -469,8 +476,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:31:12.738Z"
   },
   {
     "type": "profile",
@@ -524,7 +532,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -535,8 +543,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:31:59.520Z"
   },
   {
     "type": "profile",
@@ -568,7 +577,7 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
+    "status": "captcha",
     "submitted": false
   },
   {
@@ -579,8 +588,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:32:42.478Z"
   },
   {
     "type": "profile",
@@ -601,8 +611,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:33:11.288Z"
   },
   {
     "type": "profile",
@@ -623,8 +634,9 @@
     "link_strategy": "url_field",
     "link_format": "unknown",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:33:37.268Z"
   },
   {
     "type": "blog_comment",
@@ -634,8 +646,9 @@
     "link_strategy": "url_field",
     "link_format": "html",
     "has_url_field": true,
-    "status": "pending",
-    "submitted": false
+    "status": "submitted",
+    "submitted": true,
+    "submitted_at": "2026-05-17T12:34:05.603Z"
   },
   {
     "type": "profile",
