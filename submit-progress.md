@@ -159,6 +159,7 @@
 | 2026-05-18 | DigiProToolz | ⏭ 跳过 | 域名已过期 |
 | 2026-05-18 | FreeAITool | ⏭ 跳过 | "Submissions Paused" |
 | 2026-05-18 | SuperAITools | ✅ 提交成功 | Softr 表单，JS eval 填写+dropdown，成功消息："Thank you for submitting your tool. We will send you an email..." |
+| 2026-05-18 | webkit.dti.ne.jp BBS ×10 | ✅ 提交成功 | 日本免费留言板，curl 绕过弱 DH SSL，10/10 全部成功：mariko/bbs, kazuf/001, apakabar/apakabar, art-space/artall, ookami/1ookami, yanack/567, ozachou/1, yato/21bbs, pony/250, jtnews/1 |
 
 ---
 
@@ -166,7 +167,7 @@
 
 | 项目 | 数量 |
 |------|------|
-| ✅ 已提交博客 | **55** |
+| ✅ 已提交博客/留言板 | **65** |
 | ⏭ 已标记 captcha（永久跳过） | ~50 |
 | 🔄 待提交（剩余干净目标） | ~38 |
 
@@ -190,4 +191,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-05-18 (博客留言 55条 + 目录站 11条 ✅: FutureTools, ToolHunter.ai, Jayde, directory-free.com, once.tools, AI Library, Insidr.ai, HumanOrNot, MyCloudMedia, NextTool.ai, SuperAITools)*
+*最后更新: 2026-05-18 (博客留言 65条 ✅ [含 webkit BBS ×10] + 目录站 11条 ✅: FutureTools, ToolHunter.ai, Jayde, directory-free.com, once.tools, AI Library, Insidr.ai, HumanOrNot, MyCloudMedia, NextTool.ai, SuperAITools)*

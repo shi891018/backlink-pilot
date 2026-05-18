@@ -257,6 +257,88 @@ overseas_ai_directories:
   type: form
   auto: true
   lang: en
+
+japanese_bbs_boards:
+  # webkit.dti.ne.jp — DTI free BBS service (Japan)
+  # Submit: GET form to get xcode, then POST to /bbs/write.do
+  # Use script: node submit-webkit-bbs.mjs
+- name: Mekahouse BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=mekahouse&bbsid=mekag
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=mekahouse&bbsid=mekag&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "67 pages, very active backlink board (2026)"
+- name: Mariko BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=mariko&bbsid=bbs
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=mariko&bbsid=bbs&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "34 pages, active backlink board (2026)"
+- name: Kazuf BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=kazuf&bbsid=001
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=kazuf&bbsid=001&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "Active backlink board (2024)"
+- name: Apakabar BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=apakabar&bbsid=apakabar
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=apakabar&bbsid=apakabar&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "92 pages, large board (2020)"
+- name: Art-Space BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=art-space&bbsid=artall
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=art-space&bbsid=artall&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "74 pages, general open board"
+- name: Ookami BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=ookami&bbsid=1ookami
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=ookami&bbsid=1ookami&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "Open DTI BBS board"
+- name: Yanack BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=yanack&bbsid=567
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=yanack&bbsid=567&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "8 pages, open DTI BBS"
+- name: Ozachou BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=ozachou&bbsid=1
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=ozachou&bbsid=1&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "Open DTI BBS board"
+- name: Yato BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=yato&bbsid=21bbs
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=yato&bbsid=21bbs&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "Open DTI BBS board"
+- name: Pony BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=pony&bbsid=250
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=pony&bbsid=250&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "Open DTI BBS board"
+- name: JTNews BBS
+  list_url: https://webkit.dti.ne.jp/bbs/list.do?userid=jtnews&bbsid=1
+  submit_url: https://webkit.dti.ne.jp/bbs/write.do?cmd=write_form&userid=jtnews&bbsid=1&page=1
+  type: bbs
+  auto: true
+  lang: ja
+  notes: "Open DTI BBS board"
 - name: SEOFAI
   submit_url: https://seofai.com
   type: form
