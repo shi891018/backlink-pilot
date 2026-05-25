@@ -1,0 +1,10 @@
+import { BbPage } from './src/bb.js';
+const p = new BbPage();
+await p.goto('https://alternativeto.net/account/login/');
+await new Promise(r=>setTimeout(r,5000));
+const url = p.url();
+const body = p._bb('eval', 'document.body.innerText.substring(0,600)');
+const buttons = p._bb('eval', `JSON.stringify(Array.from(document.querySelectorAll('button,a')).filter(el => /google|facebook|github|twitter|login|sign/i.test(el.textContent) || /google|oauth/i.test(el.href||'')).map(el=>({text:el.textContent.trim(),href:(el.href||'').substring(0,80)})).slice(0,10))`);
+console.log('URL:', url.substring(0,80));
+console.log('Buttons:', buttons);
+console.log('Body:', body.substring(0,300));

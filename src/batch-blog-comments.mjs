@@ -212,18 +212,37 @@ async function main() {
   // Already submitted today
   const doneTodayUrls = new Set(log.results.filter(r => r.status === 'submitted').map(r => r.url));
 
-  const candidates = resources.filter(r =>
-    r.type === 'blog_comment' &&
-    !r.submitted &&
-    !r.has_captcha &&
-    r.status !== 'timeout' &&
-    r.has_url_field !== false &&
-    !doneTodayUrls.has(r.url)
+  // All-time submitted domains (one submission per domain ever)
+  const submittedDomains = new Set(
+    resources
+      .filter(r => r.submitted)
+      .map(r => { try { return new URL(r.url).hostname; } catch { return ''; } })
+      .filter(Boolean)
   );
 
-  console.log(`📋 Eligible: ${candidates.length} targets → will submit ${Math.min(candidates.length, limitVal)}\n`);
+  const candidates = resources.filter(r => {
+    if (r.type !== 'blog_comment') return false;
+    if (r.submitted || r.has_captcha) return false;
+    const badStatus = new Set(['timeout','no_comment_field','login_required','comments_closed','no_form','error','submitted']);
+    if (badStatus.has(r.status) || r.has_url_field === false) return false;
+    if (doneTodayUrls.has(r.url)) return false;
+    try { return !submittedDomains.has(new URL(r.url).hostname); } catch { return false; }
+  });
 
-  const queue = candidates.slice(0, limitVal);
+  // Further deduplicate within candidates: one URL per domain
+  const seenDomains = new Set();
+  const dedupedCandidates = candidates.filter(r => {
+    try {
+      const host = new URL(r.url).hostname;
+      if (seenDomains.has(host)) return false;
+      seenDomains.add(host);
+      return true;
+    } catch { return false; }
+  });
+
+  console.log(`📋 Eligible (unique domains): ${dedupedCandidates.length} → will submit ${Math.min(dedupedCandidates.length, limitVal)}\n`);
+
+  const queue = dedupedCandidates.slice(0, limitVal);
   let ok = 0, skipped = 0, failed = 0;
 
   for (let i = 0; i < queue.length; i++) {

@@ -17,20 +17,32 @@ export default {
     }
 
     return withBrowser(config, async ({ page }) => {
-      // Login
-      console.log('  🔐 Logging into Uneed...');
-      await page.goto('https://www.uneed.best/login', { waitUntil: 'networkidle' });
-      await delay(1000);
-
-      await page.fill('input[type="email"]', creds.email);
-      await page.fill('input[type="password"]', creds.password);
-      await page.click('button[type="submit"]');
-      await delay(3000);
-
-      // Navigate to submit page
-      console.log('  📝 Loading submit page...');
+      // Check if already logged in by visiting the submit page
+      console.log('  🔍 Checking session...');
       await page.goto('https://www.uneed.best/submit-a-tool', { waitUntil: 'networkidle' });
-      await delay(1500);
+      await delay(2000);
+
+      const currentUrl = page.url();
+      const isLoginPage = /login|signup/i.test(currentUrl);
+
+      if (isLoginPage) {
+        // Login
+        console.log('  🔐 Logging into Uneed...');
+        await page.goto('https://www.uneed.best/login', { waitUntil: 'networkidle' });
+        await delay(1000);
+
+        await page.fill('input[type="email"]', creds.email);
+        await page.fill('input[type="password"]', creds.password);
+        await page.click('button[type="submit"]');
+        await delay(3000);
+
+        // Navigate to submit page
+        console.log('  📝 Loading submit page...');
+        await page.goto('https://www.uneed.best/submit-a-tool', { waitUntil: 'networkidle' });
+        await delay(1500);
+      } else {
+        console.log('  ✅ Already logged in, proceeding to submit...');
+      }
 
       // Fill form (name + URL, minimal)
       console.log('  📝 Filling form...');

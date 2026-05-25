@@ -1,0 +1,10 @@
+import { BbPage } from './src/bb.js';
+const p = new BbPage();
+await p.goto('https://aitoolguru.com/submit-ai-tool');
+await new Promise(r=>setTimeout(r,5000));
+const url = p.url();
+const inputs = p._bb('eval', `JSON.stringify(Array.from(document.querySelectorAll('input,textarea,select')).filter(i=>i.type!=='hidden').map(i=>({type:i.type,name:i.name,ph:i.placeholder,id:i.id.substring(0,30)})))`);
+const body = p._bb('eval', 'document.body.innerText.substring(0,400)');
+console.log('URL:', url);
+console.log('Inputs:', inputs);
+console.log('Body:', body.substring(0,300));

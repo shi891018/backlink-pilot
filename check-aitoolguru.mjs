@@ -1,0 +1,10 @@
+import { BbPage } from './src/bb.js';
+const p = new BbPage();
+await p.goto('https://aitoolguru.com/');
+await new Promise(r=>setTimeout(r,5000));
+const url = p.url();
+const body = p._bb('eval', 'document.body.innerText.substring(0,400)');
+const links = p._bb('eval', `JSON.stringify(Array.from(document.querySelectorAll('a')).filter(a=>/submit|add|list/i.test(a.textContent)).map(a=>({text:a.textContent.trim(),href:a.href})).slice(0,10))`);
+console.log('URL:', url);
+console.log('Links:', links);
+console.log('Body:', body);

@@ -40,6 +40,7 @@ const ALL_BOARDS = [
   { name: 'yato/21bbs',        userid: 'yato',        bbsid: '21bbs' },
   { name: 'pony/250',          userid: 'pony',        bbsid: '250' },
   { name: 'jtnews/1',          userid: 'jtnews',      bbsid: '1' },
+  { name: 'mekahouse/mekag',   userid: 'mekahouse',   bbsid: 'mekag' },
 ];
 
 // ─── Message content ──────────────────────────────────────────────────────────
