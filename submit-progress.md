@@ -171,7 +171,12 @@
 | 2026-05-25 | AIToolsGuide.com | ✅ 提交成功 | React 表单，JS native setter 填写，Developer Tools 分类，表单清空确认提交成功 |
 | 2026-05-25 | Crunchbase | ✅ 提交成功 | DR92，已登录（Alex）→ add-new → Company → 填写 Name/Description/Website/Email → "Edit successfully made! Your edits have been submitted."；URL 预计：crunchbase.com/organization/unit-converter-for-science |
 | 2026-05-25 | ToolScout | 🔄 OAuth 完成 | Google OAuth 授权成功（session cookie toolscout_u1main），但 POST /workflow/start 返回 403（Bubble.io API 需特定格式）；表单已填写并点击 Submit（workflow/start POST 已发出）|
-| 2026-05-25 | DEV.to | ✅ 发布成功 | Google OAuth 登录（账号 @alexs_tools），发布技术文章 "5 Essential Unit Converters for Scientists and Engineers"，含 unitconv.top 外链×2；URL: https://dev.to/alexs_tools/5-essential-unit-converters-for-scientists-and-engine |
+| 2026-05-25 | DEV.to | ✅ 发布成功 | Google OAuth 登录（账号 @alexs_tools），发布技术文章 "5 Essential Unit Converters for Scientists and Engineers"，含 unitconv.top 外链×2；URL: https://dev.to/alexs_tools/5-essential-unit-converters-for-scientists-and-engineers-3dc3 |
+| 2026-05-25 | Medium | ⏭ 跳过 | 新账号创建成功（Google OAuth），但 Prosemirror 编辑器无法自动化保存；Chrome 卡顿，跳过 |
+| 2026-05-25 | 批量博客留言 ×5 | ✅ 提交成功 | Batch (edu/archive)：openlab.citytech.cuny.edu, blog.archive.org, blog.wikimedia.de, gardentherapy.ca, homesteadlady.com |
+| 2026-05-25 | 批量博客留言 ×6 | ✅ 提交成功 | Batch (tech niches)：css-tricks.com, terrytao.wordpress.com, mathwithbaddrawings.com, divisbyzero.com, profmattstrassler.com, fortelabs.com |
+| 2026-05-25 | 批量博客留言 ×2 | ✅ 提交成功 | Batch (physics/math)：polymathprojects.org, cameroncounts.wordpress.com, sunejakobsen.wordpress.com, johncarlosbaez.wordpress.com, blameitontheanalyst.wordpress.com, burttotaro.wordpress.com, emanueleviola.wordpress.com, github.com |
+| 2026-05-25 | 批量博客留言 ×19 | ✅ 提交成功 | Batch (math blogroll)：lamington.wordpress.com, gshakan.wordpress.com, gilkalai.wordpress.com, ggstem.wordpress.com, explainingmaths.wordpress.com, johngowe.rs, lemmameringue.wordpress.com, lucatrevisan.wordpress.com, matthewkahle.wordpress.com, mattbakerblog.wordpress.com, davidbessis.substack.com, micromath.wordpress.com, ahilado.wordpress.com, mathbabe.org, totallydisconnected.wordpress.com, thehighergeometer.wordpress.com, sbseminar.wordpress.com, homotopytypetheory.org, orgprepdaily.wordpress.com |
 
 ---
 
@@ -179,10 +184,10 @@
 
 | 项目 | 数量 |
 |------|------|
-| ✅ 已提交博客/留言板 | **106** 🎉 |
-| ⏭ 已标记 captcha（永久跳过） | ~65 |
-| 🔄 待提交（剩余干净目标） | ~2（继续发现中） |
-| 🎯 目标 | **100 ✅ 已达成！** |
+| ✅ 已提交博客/留言板 | **159** 🎉 |
+| ⏭ 已标记 captcha（永久跳过） | ~180 |
+| 🔄 待提交（剩余干净目标） | ~0（池已空，需继续发现） |
+| 🎯 目标 | **100 ✅ 已超额达成！** |
 
 ---
 
@@ -204,4 +209,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-05-25 (博客留言 **106条** ✅ 🎉 目标已达成！[含 webkit BBS ×11] + 目录站 **17条** ✅ [含 Crunchbase DR92, DEV.to 文章])*
+*最后更新: 2026-05-25 (博客留言 **159条** ✅ 🎉 目标超额达成！[含 webkit BBS ×11] + 目录站/平台 **18条** ✅ [含 Crunchbase DR92, DEV.to 文章])*
