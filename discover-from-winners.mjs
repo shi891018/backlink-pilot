@@ -63,28 +63,53 @@ function looksLikeBlog(url, html) {
     || h.includes('post a comment') || h.includes('disqus')) && html.length > 5000;
 }
 
-// Seeds: blogs that DID accept comments + blogs known to have blogrolls
+// Seeds: fresh blogs that accepted comments — crawl THEIR blogrolls
 const SEEDS = [
-  { url: 'https://terrytao.wordpress.com/', name: 'Terence Tao' },
-  { url: 'https://mathwithbaddrawings.com/', name: 'Math With Bad Drawings' },
-  { url: 'https://divisbyzero.com/', name: 'Division by Zero' },
-  { url: 'https://profmattstrassler.com/', name: 'Matt Strassler' },
-  { url: 'https://fortelabs.com/blog/', name: 'Forte Labs' },
-  // Blogs known to have blogrolls in sidebar
-  { url: 'https://terrytao.wordpress.com/links/', name: 'Tao Links' },
-  { url: 'https://divisbyzero.com/links/', name: 'DivByZero Links' },
-  { url: 'https://gowers.wordpress.com/', name: 'Gowers Blog' },
-  { url: 'https://profmattstrassler.com/blogroll/', name: 'Strassler Blogroll' },
-  { url: 'https://backreaction.blogspot.com/', name: 'Backreaction' },
-  // More personal/academic blogs with blogrolls
-  { url: 'https://www.math.columbia.edu/~woit/wordpress/', name: 'Woit Blog' },
-  { url: 'https://golem.ph.utexas.edu/category/', name: 'n-Category Cafe' },
-  { url: 'https://www.physicsbuzz.com/', name: 'Physics Buzz' },
-  { url: 'https://www.cosmicvariance.com/', name: 'Cosmic Variance' },
-  { url: 'https://scienceblogs.com/', name: 'ScienceBlogs Hub' },
-  { url: 'https://chemjobber.blogspot.com/', name: 'ChemJobber' },
-  { url: 'https://www.christoph-schwemmer.de/', name: 'Schwemmer' },
-  { url: 'https://www.labnol.org/', name: 'Labnol' },
+  // Math/academic WordPress blogs that accepted comments
+  { url: 'http://johncarlosbaez.wordpress.com/', name: 'John Baez' },
+  { url: 'http://gilkalai.wordpress.com/', name: 'Gil Kalai' },
+  { url: 'http://lucatrevisan.wordpress.com/', name: 'Luca Trevisan' },
+  { url: 'http://lamington.wordpress.com/', name: 'Lamington' },
+  { url: 'http://matthewkahle.wordpress.com/', name: 'Matthew Kahle' },
+  { url: 'http://mattbakerblog.wordpress.com/', name: 'Matt Baker' },
+  { url: 'http://sbseminar.wordpress.com/', name: 'SB Seminar' },
+  { url: 'http://mathbabe.org/', name: 'Mathbabe' },
+  { url: 'https://polymathprojects.org/', name: 'Polymath Projects' },
+  { url: 'http://blameitontheanalyst.wordpress.com/', name: 'Blame it on the Analyst' },
+  { url: 'http://burttotaro.wordpress.com/', name: 'Burt Totaro' },
+  { url: 'https://homotopytypetheory.org/', name: 'HoTT' },
+  { url: 'http://orgprepdaily.wordpress.com/', name: 'OrgPrepDaily' },
+  { url: 'http://cameroncounts.wordpress.com/', name: 'Cameron Counts' },
+  // Philosophy/general intellectual blogs with blogrolls
+  { url: 'https://crookedtimber.org/', name: 'Crooked Timber' },
+  { url: 'https://www.languagehat.com/', name: 'Language Hat' },
+  { url: 'https://andrewgelman.com/', name: 'Andrew Gelman' },
+  { url: 'https://statmodeling.stat.columbia.edu/', name: 'Statistical Modeling' },
+  // Math education blogs
+  { url: 'https://danmeyer.wordpress.com/', name: 'Dan Meyer' },
+  { url: 'https://samjshah.com/', name: 'Sam Shah' },
+  // Chemistry/bio blogs with blogrolls
+  { url: 'https://pipeline.corante.com/', name: 'In the Pipeline' },
+  { url: 'https://www.chemistryworld.com/blogs', name: 'Chemistry World Blogs' },
+  { url: 'https://scienceblogs.com/thescientificactivist/', name: 'Scientific Activist' },
+  // Stats & data
+  { url: 'https://www.fharrell.com/', name: 'Frank Harrell' },
+  { url: 'https://www.statisticshowto.com/', name: 'Statistics How To' },
+  // 2026-05-28 fresh successes
+  { url: 'https://ratiobound.wordpress.com/', name: 'Ratio Bound' },
+  { url: 'https://ifwisdomwereteachable.wordpress.com/', name: 'If Wisdom Were Teachable' },
+  { url: 'https://sylvyanscombe.wordpress.com/', name: 'Sylvy Anscombe' },
+  { url: 'https://symomega.wordpress.com/', name: 'Symomega' },
+  { url: 'https://johnquiggin.com/', name: 'John Quiggin' },
+  { url: 'https://emersonj.wordpress.com/', name: 'Emerson J' },
+  { url: 'https://faroutliers.wordpress.com/', name: 'Far Outliers' },
+  { url: 'https://abadguide.wordpress.com/', name: 'A Bad Guide' },
+  { url: 'https://xixvek.wordpress.com/', name: 'Xixvek' },
+  { url: 'https://bdralyuk.wordpress.com/', name: 'Bdralyuk' },
+  { url: 'https://justinlanier.org/', name: 'Justin Lanier' },
+  { url: 'https://thelondoncolumn.com/', name: 'The London Column' },
+  { url: 'https://apt11d.com/', name: 'Apt11d' },
+  { url: 'https://quicklatex.com/', name: 'QuickLaTeX' },
 ];
 
 const confirmed = [];
