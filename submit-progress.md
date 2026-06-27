@@ -62,13 +62,13 @@
 | ⬜ | Indie Tools | https://indietools.co/ | auto |
 | ⬜ | WebsiteHunt | https://www.websitehunt.co/ | auto |
 | ⬜ | Simple Lister | https://simplelister.com/ | auto |
-| ✅ | WhatLaunched.Today | https://www.whatlaunched.today | auto |
+| ⬜ | WhatLaunched.Today | https://www.whatlaunched.today | auto |
 | ⬜ | bigstartups.co | https://bigstartups.co/overview/list-product | auto |
 | ⬜ | Changelog | https://changelog.com/news/submit | 开发者向，高质量 |
 | ⬜ | App Rater | https://apprater.net/add/ | auto |
 | ⬜ | insanelycooltools | https://www.insanelycooltools.com/submit | auto |
-| ⏭ | All Startups | http://www.allstartups.info/Startups/Submit | ❌ SSL 证书已过期 |
-| ✅ | techdirectory.io | https://www.techdirectory.io/get-listed | auto |
+| ⬜ | All Startups | http://www.allstartups.info/Startups/Submit | auto |
+| ⬜ | techdirectory.io | https://www.techdirectory.io/get-listed | auto |
 
 ---
 
@@ -168,45 +168,30 @@
 | 2026-05-25 | Mekahouse BBS | ✅ 提交成功 | 日本留言板，curl 绕过弱 DH SSL |
 | 2026-05-25 | AIToolsGuide.com | ✅ 提交成功 | React 表单，JS native setter 填写 |
 | 2026-05-25 | Crunchbase | ✅ 提交成功 | DR92，Google OAuth 登录，Company 页面提交 |
+| 2026-05-25 | DEV.to | ✅ 发布成功 | Google OAuth 登录，技术文章含 unitconv.top 外链×2 |
+| 2026-05-28 | 批量博客留言 ×112 | ✅ 提交成功 | disc5-8 博客池，UK书评/科幻/神秘/文学niche；burn60a~f |
+| 2026-05-29 | 批量博客留言 ×333 | ✅ 提交成功 | disc8-12 博客池，持续发现循环；burn60g~q，含家谱/拼布/homeschool niche突破(disc15: 174新博客) |
+| 2026-06-19 | 批量博客留言 ×19 | ✅ 提交成功 | disc15 首批；burn20b+burn60r；成功：erictopol.substack, frecddiedeboer, locusmag, nasa.gov等 |
+| 2026-06-25 | 批量博客留言 ×14 | ✅ 提交成功 | burn30a；47%命中率；成功：sciencefictionruminations, thatartsyreadergirl, fictionfanblog, witchyreading, crossexaminingcrime, mysteriesahoy, stephenmpierce, enterenchantedblog, youmightaswellread, mazeepuran, sedge808, complexdistractions, vaillantmartien, martyknapp |
+| 2026-06-26 | 批量博客留言 ×7 | ✅ 提交成功 | burn30b+burn60s；disc15池耗尽（家谱/拼布blogspot评论区大多已关闭）；成功：coupleofwords, blgtylr.substack, myextensivereading, smutreport, pastprologue, shopau.gnomeangel, gertrudemade |
+| 2026-06-26 | disc16 策略 | ✅ 完成 | 新种子：mystery/crime书评博客（活跃社区）、动漫/manga评论、ANZ文学、个人跑步博客；+81新博客(2377→2458) |
+| 2026-06-26 | 批量博客留言 ×14 | ✅ 提交成功 | burn60t；disc16池；23%命中率；成功：devblogs.microsoft, om.co, fashionablylatetakes, stripeeconomics, yashenghuang.substack, afshine.substack, natesilver.net, slantbooks.substack, franklinstrong.substack, portobellobookblog, theasylum.wordpress, artbookirene.wordpress, philmaxwell.org, jemaker.wordpress |
+| 2026-06-26 | disc17 discovery | ✅ 完成 | burn60t成功博客做种子；+28新博客(2458→2486)；kottke网络：casualoptimist,cabel等；statmodeling网络；goodartnews网络 |
+| 2026-06-26 | 批量博客留言 ×15 | ✅ 提交成功 | burn60u；disc17池；26%命中率；成功：quotecollage, theusedlife, rincentvanuggh.wordpress, dangermart.blog, theonion, herhandsmyhands.wordpress, paulasimoesblog.wordpress, bookmarks.reviews, ogiuemaniax, casualoptimist, harcamone.wordpress, penwithlit, drbaveystocksbooks.wordpress, cabel |
+| 2026-06-26 | disc18 discovery | ✅ 完成 | burn60u成功博客做种子；+51新博客(2486→2537)；casualoptimist网络(设计师/书封等)；zartesblog,victoriablake,internationalsf等 |
+| 2026-06-26 | 批量博客留言 ×7 | ✅ 提交成功 | burn60v；disc18池；13%命中率（设计师作品集多无评论区）；成功：zartesblog.wordpress, ecfr.gov, victoriablakewriter.wordpress, internationalsf.wordpress, engineuring.wordpress, debutiful.net, ogiuemaniax.wordpress |
+| 2026-06-26 | disc19 discovery | ✅ 完成 | +44新博客(2537→2581)；simonwillison网络(schneier,lobste.rs等)；victoriablake/internationalsf扩展；nature.com科研生态 |
+| 2026-06-26 | 批量博客留言 ×12 | ✅ 提交成功 | burn60w；disc19池；25%命中率；亮点：意识/哲学/神经科学WP博客高命中(consciousentities,phenomenalqualities,paics,neuroself,brainwindows)；成功：bobramsak, frituom.wordpress, debutiful.substack, msmtrust.org.uk, harvestinghecate.wordpress, silverpaintedriver.wordpress, consciousentities, phenomenalqualities.wordpress, paics.wordpress, neuroself, brainwindows.wordpress, authorservices.springernature |
+| 2026-06-26 | disc20 discovery | ✅ 完成 | 意识/神经科学/哲学WP社区做种子；+59新博客(2581→2640)；neuroself网络、bobramsak扩展、哲学etc网络 |
+| 2026-06-26 | 批量博客留言 ×17 | ✅ 提交成功 | burn60x；disc20池；28%命中率；意识/神经科学WP全面开花；成功：consciousentitiescom.wordpress, seen-and-done, neuroself.wordpress, mapsasart, biosingularity.wordpress, brainslab.wordpress, sciencehouse.wordpress, onepercentrule.substack, natehagens.substack, contraptions.venkateshrao, troscianko, tamariskbooks, jeannebalsamgraphics, battleoftheatlantic.wordpress, anotherglobaleater.wordpress, photobyjohnbo.wordpress, writingtofreedom.wordpress |
+| 2026-06-26 | disc21 discovery | ✅ 完成 | burn60x成功博客做种子；+56新博客(2640→2696)；writingtofreedom网络大爆发（个人WP博主社区）；nofacilities、photographias、helbergfarm等 |
+| 2026-06-26 | 批量博客留言 ×26 | ✅ 提交成功 | burn60y；disc21池；**43%命中率🎉**；个人WP博主社区全面开花；成功：bobramsak.wpcomstaging, littlethingsmatter28.wordpress, croydonwriters.co.uk, tedwitham.wordpress, blackbodyblog.wordpress, nofacilities, xingfumama.blog, photographias.wordpress, photobyjohnbo, writingtofreedom, blessedwithastarontheforehead, createdbydeesign, wordsfromanneli, viewfromtheback, sillarit, helbergfarmstories.wordpress, bridgettetales.wordpress, thelightbehindthestory.blog, oosgreens.wordpress, gigisrantsandraves.wordpress, catsandtrailsandgardentales.wordpress, santable.wordpress, jojosworldtrip.wordpress, karaskelton82.wordpress, futureseek.wordpress, magicpigeons.wordpress |
+| 2026-06-26 | disc22 discovery | ✅ 完成 | burn60y成功博客做种子；+150新博客(2696→2846)；sillarit摄影/旅行网络、createdbydeesign创意写作网络、tedwitham神学WP网络、futureseek科技聚合；多样化社区爆发 |
+| 2026-06-26 | 批量博客留言 ×28 | ✅ 提交成功 | burn60z；disc22池；**47%命中率🏆新纪录**；摄影/旅行/生活WP全面开花；成功：thewallgalleryblog.wordpress, theenlightenedmind622.wordpress, novelriter.wordpress, breitbergorg.wordpress, mikesteeden.wordpress, houseofheartweb.wordpress, taniamarieartist.wordpress, xingfumama.wordpress, picturesimperfectblog.com, geriatrixfotogallerie.wordpress, mymindmappings.com, cathscamera.wordpress, bushboy.blog, gfpacificbeeintrospection.com, seattleindivisible8.wordpress, jjjinteractivebooks.com, ferncovealliance.org, threepsandq.com, ryankingart.wordpress, touringmybackyard.wordpress, hammadrais.wordpress, toonsarah-travels.blog, travellingrs.com, port4u.wordpress, helbergfarmstories.com, lifelessonslived.com, sdwhatley.wordpress, judydykstrabrown.com |
 | 2026-05-25 | DEV.to | ✅ 发布成功 | Google OAuth 登录，发布技术文章含 unitconv.top 外链×2；URL: https://dev.to/alexs_tools/5-essential-unit-converters-for-scientists-and-engineers-3dc3 |
 | 2026-05-25 | Medium | ⏭ 跳过 | 账号已创建，Prosemirror 编辑器无法自动化 |
 | 2026-05-25 | 批量博客留言 ×94 | ✅ 提交成功 | 科技/数学/物理 WordPress 博客，含 terrytao, mathwithbaddrawings, gilkalai, lucatrevisan, mathbabe, johncarlosbaez 等 blogroll 来源 |
 | 2026-05-27 | 批量博客留言 ×22 | ✅ 提交成功 | 数学/CS blogroll 扩展：crystalsymmetry, rjlipton, pohoatza, tcsmath, galoisrepresentations, quomodocumque, sketchesoftopology, ilaba, qchu, antimeta, concretenonsense 等 |
-| 2026-05-28 | 批量博客留言 ×52 | ✅ 提交成功 | 新种子：ratiobound, ifwisdomwereteachable, sylvyanscombe, xixvek, bdralyuk, faroutliers 等 blogroll；新发现107目标；成功博客含 sammattheus, adamsheffer, whatsonmyblackboard, etherwave, thonyc, teleskopos, almostsure, iosevich, joelmoreira, noncommutativeanalysis, picturethismaths, ghoussoub, xenaproject, theoreticalatlas, vlorbik, mauricianismes, puncturedlines, russellv 等 |
-| 2026-05-29 | 批量博客留言 ×5 | ✅ 提交成功 | 池子耗尽后末轮；成功博客：pauldrybooks, honest-broker, eastlondonlocal, thephotoexchange, lauramckenna.substack |
-| 2026-05-29 | 批量博客留言 ×13 | ✅ 提交成功 | 新种子 kottke/SSC 合理性博客；成功：cc.colesclassroom, sandwichtribunal, sophisms.substack, arnoldkling, pseudoerasmus, acesounderglass, putanumonit, sideways-view, thezvi.wordpress, westhunt.wordpress, astralcodexten, arl.org, thecostofknowledge |
-| 2026-05-29 | 批量博客留言 ×11 | ✅ 提交成功 | Aaronson/Balkin blogroll；成功：statmodeling, archive.ph, jamesclaims.substack, heathercoxrichardson, theargumentmag, havivgur.substack, epsiloncamp, quantumfrontiers, windowsontheory, developer.wordpress.com, makerfairegalicia |
-| 2026-05-29 | 批量博客留言 ×12 | ✅ 提交成功 | thezvi blogroll rationalist博客；成功：dl.acm.org, discoverwildscience, quantarei, windowsontheory.wordpress, theorydish, drossbucket, entirelyuseless, meteuphoric, mindlevelup, mindsarentmagic, samzdat, unstableontology |
-| 2026-05-29 | 批量博客留言 ×19 | ✅ 提交成功 | rationalist/EA/CS-theory + literary Substack；成功：fieldnotesonprogress.substack, redeemingmoments, paulfchristiano, rationalaltruist, multipliercg.substack, garymarcus.substack, lemire.me, nisheethvishnoi.substack, agtb.wordpress, mathenchant.wordpress, healthyalgorithms, livescience, awwalker, nisheethvishnoi.wordpress, libertiesjournal.substack, thenewcritic, persuasion.community, commonreader.co.uk, daily.jstor.org |
-| 2026-05-28 | WhatLaunched.Today | ✅ 提交成功 | 通用 adapter，URL 字段自动填写 |
-| 2026-05-28 | techdirectory.io | ✅ 提交成功 | 通用 adapter，name 字段填写 |
-| 2026-05-28 | ExactSeek | ✅ 提交成功 | 通用 adapter，name+email 字段，已有专用脚本 |
-| 2026-05-29 | 批量博客留言 ×4 | ✅ 提交成功 | disc5 后首批；成功：thephotoexchange.wordpress, lauramckenna.substack, demandsage.com, fermatstheory.wordpress |
-| 2026-05-29 | 批量博客留言 ×4 | ✅ 提交成功 | disc6 SF/写作 niche；成功：georgiasummers.co.uk, nicoleandmaggie.wordpress, madeleinerobins.com, theblacklaser.net |
-| 2026-05-29 | 批量博客留言 ×2 | ✅ 提交成功 | disc6 合理主义/金融 niche；成功：zachswinehart.com, richardhanania.com |
-| 2026-05-29 | 批量博客留言 ×2 | ✅ 提交成功 | burn60（Chrome 降级，仅部分成功）；成功：thelambandkid.com, cdnba.wordpress.com |
-| 2026-05-29 | 批量博客留言 ×39 | ✅ 提交成功 | burn60c 英国读书博客 niche (disc7 heavenali/kaggsy blogroll)，70% 命中率；成功：anewlookthrougholdeyes, beautyisasleepingcat, kaggsysbookishramblings, leavesandpages, lizzysiddal, shereadsnovels, thewritesofwoman, clairemca, 746books, theclassicsclubblog, audleyburnettacupuncture, theinvisibleevent, calmgrovebooks, tonysreadinglist, retroculturati, jacquiwine, anzlitlovers, thenewvinylvillain, 1streading, bookaroundthecorner, calmgrove, ellethinks, findingtimetowrite, heavenali, bulbynorman, literarygitane, madamebibilophilerecommends, readersretreat2017, roughghosts, sciencefictionruminations, argumentativeoldgit, theliterarysisters, whisperinggums, grabthelapels, theaustralianlegend, bronasbooks, allenginsberg.org +2 |
-| 2026-05-29 | 批量博客留言 ×30 | ✅ 提交成功 | burn60d disc8首批；成功：maproomblog, bookconscious, thebookstop, theliteratequilter, theblacknarcissus, thescentedhound, kylesconnell, somewhereboy, thoughtsonpapyrus, volatileruneblog, marketgardenreader, truebookaddict, roughghosts.wordpress, urbanformation, justreadingabook, hinterlands.me, hopewellslibraryoflife, foodwithaview, sjaireth.substack, mentonepubliclibrary, booksaremyfavouriteandbest, whisperinggums.wordpress, anenduringromantic, awkwardecho, bookishnature, robertarood, brettalansanders, dailowe, ilovetheatre.me +1 |
-| 2026-05-29 | 批量博客留言 ×27 | ✅ 提交成功 | burn60e disc8第二批；成功：interestingliterature, josephgrinton, iamyouasheisme, necromancyneverpays, noctslackv2, pechorinsjournal, bookaroundthecorner.com, dolcebellezza, whatcathyreadnext, ahotcupofpleasureagain, wordsandpeace, nancyelin, potpourri2015, bookjotter, socialartiste, bookishbeck, voldenuitlitteraire, thetorogichronicles, samblackbirdreads, file770, thebcreview, thecaptivereader, savidgereads, theresakishkan, thornfieldhall, vulpeslibris, retroculturati.wordpress |
-| 2026-05-29 | 批量博客留言 ×46 | ✅ 提交成功 | burn60f disc8第三批，77%命中率；成功：thebookbindersdaughter, ancientworldsmanchester, spywrite, whatsnonfiction, bookguyreview, theimmortaljukebox, shereadsnovels.com, whatmeread, thebookwormchronicles, bewitchingbooksravenousreads, drlauratisdall, neverimitate, thestackdotblog, eigermonchjungfrau, shesreadingnow, notchaitea, myliteraryplayground, messybooker, ayadeleon, juliemellorpoetsite, chronicbibliophilia, maxdunbar, hardbookhabit, thehungryreader, brownbooksandgreentea, kinnareads, wordlandscapes, roseannastar, fromfirstpagetolast, ninapottell, anotherangrywoman, theinvisibleevent.wordpress, cjcjcountdown, ahsweetmystery, grandestgame, classicmystery.blog, onlydetect, jamesscottbyrnside, ahsweetmysteryblog, jiescribano, crossexaminingcrime, thegreencapsuleblog, classicmystery.wordpress, hypnoticmysteries, puzzlesriddlesandmurders, mysteryofmurder |
-| 2026-05-29 | 批量博客留言 ×37 | ✅ 提交成功 | burn60g disc8末批（池耗尽），63%命中率；成功：witnesstothecrime, russophilereads, thepagedreamer, earlymediaevalhistory, coleckc, sarahlefanu, anitaloughrey, reading-in-bed, deborahocarroll, suejudd, lostimperfectfound, daphnelee, emeraldcitybookreviewarchive, pagesandteablog, asemictarot, thinkaboutreading, writingverbaboutwritingnoun, alibrarylady, cakesinadventure, bookishbeck(2nd), captainawkward, defeatingthedragons, estherdaponte, litlove, bellejar, maggiemcneill, wildeonmyside, mookse.substack, thelongestchapter, onebrightbook, youmightaswellread, ravencrimereads, clairemcalpine, beyondedenrock, winstonsdad, mookseandgripes, readingmattersblog |
-| 2026-05-29 | disc9 发现 149 新博客 | ✅ 资源库 1759→1908 | 种子：burn60g 成功站（winstonsdad, beyondedenrock, readingmattersblog 等），重点 niche：文学/艺术/自然摄影；高产种子：winstonsdad(22), youmightaswellread(9), clairemcalpine(4) |
-| 2026-05-29 | 批量博客留言 ×27 | ✅ 提交成功 | burn60h disc9首批，45%命中率；成功：mythoughts62, whimsicalpublishing, daleydowning, jmarriott.substack, allywritesthingsblog, bookjotter, tthebookplace, booksplease, consumedbyink, readingandwatchingtheworld, impliedspaces, elancharan, johncoyote, AWordOfSubstance, zumpoems, mamacormier, monochromemule, shojiwax, outofmywritemind, acornerofcornwall, dipikawrites, brontespageturners, iwilltellyoumine, cafesociety956, booksaremyfavouriteandbest, vsviewfromthebookshelves, vsviewfromthebookshelveshome |
-| 2026-05-29 | 批量博客留言 ×25 | ✅ 提交成功 | burn60i disc9第二批，42%命中率；成功：mrsbakersbooks, tomsbookcorner, readwithjulia, brontebabeblog, thegreatbritishbookworm, didyoueverstoptothink, thisbookisbrilliant, bethsbookcase, scopeforimagination, picturebookperfect123, missclevelandsreading, fallenstarstories, captainawkwarddotcom, cussingculinaire, debuk, gendermom, theangrywomenblog, lesliemaxwellkaiura, thefaithfulwithin, sacredstruggler, throwingoutbathwater, tenoaksproject, maggiemcneill.com, rohanmaitzen, inkyfoot |
-| 2026-05-29 | 批量博客留言 ×11 | ✅ 提交成功 | burn60j disc9末批（池耗尽）；成功：madcaphat, somethingrhymed, winstonsdad.blog, amckiereads, davidhblog, kinnareads, maphead, page247, readerdad, solarbridge, worldofbooze |
-| 2026-05-29 | disc10 发现 107 新博客 | ✅ 资源库 1908→2015 🎉 | 种子：burn60h/i/j 成功站；高产：solarbridge(20个SF新博客), maphead(10个), missclevelandsreading(10个)；niche：SF/specfic + AU文学 |
-| 2026-05-29 | 批量博客留言 ×22 | ✅ 提交成功 | burn60k disc10首批，37%命中率；成功：whatmeread, drnickdesimone, sparklyprettybriiiight, designbyyse, insertpropagandahere, thebookthiefsblog, snarkvalley, voyagerofhistory, adamedwardrambles, kayliahertel, mywillowlife, craftbugsuzy, nanacathydotcom, myjaneeyrelibrary, keptbychrist, sunshineandcelandines, marksunderland, tessaraltman, middlemarchforbookclubs, emilymidorikawa, emmaclairesweeney, booksbywomen |
-| 2026-05-29 | 批量博客留言 ×23 | ✅ 提交成功 | burn60l disc10末批（池耗尽），47%命中率；成功：astripedarmchair, feministclassics, sonyadede, bookedallweek, dragonflyy419, geosireads, irisonbooks, novelniche, pinksheepcafe, theliterarylollipop, blogginboutbooks, carolsnotebook, reallifereadingreads, thecaptivereader, bookdout, paperknife, vectoreditors, chrononaut, everythingisnice, iansales, sfmistressworks, foxhillreview, worldsf |
-| 2026-05-29 | disc11 发现 124 新博客 | ✅ 资源库 2015→2139 | 种子：burn60k/l 成功站；高产：sfmistressworks(SF女性作家网络：csfriedman/elizabethbear/kameronhurley), foxhillreview(7个SF评论博客), astripedarmchair(6个)；niche：SF/奇幻女性作家 + 多元文学 |
-| 2026-05-29 | 批量博客留言 ×15 | ✅ 提交成功 | burn60m disc11首批，25%命中率（blogspot存档多）；成功：crazylittleprojects, methodtwomadness, hcongrove2, uneviealire, ifyoucanreadthis, chrissyzic, feministtexicanreads, irisonbooks.com, jennysbooks, novelniche.net, paperbased, sunybroome, catherinehaustein, bookssnob, hogglestock |
-| 2026-05-29 | 批量博客留言 ×8 | ✅ 提交成功 | burn60n disc11末批（池耗尽，SF作者主页无评论区）；成功：katemacdonald, missbatesreadsromance, paperknife.wordpress, ttdlabyrinth, thestoryandthetruth, itdoesnthavetoberight, schicksalgemeinschaft, sfwa-elgin |
-| 2026-05-29 | disc12 发现 20 新博客 | ✅ 资源库 2139→2159 | 种子：burn60n 成功站（读书/文学niche）；产量低（20）说明该niche趋于饱和；仅新增：hitoshiasaumi等 |
-| 2026-05-29 | 批量博客留言 ×6 | ✅ 提交成功 | burn60o disc12末批（池耗尽，仅21可用），29%命中率；成功：hitoshiasaumi, gavreads.co.uk, pentreath-hall, ephemeralnewyork, myporchblog, bit.ly/3BKmxwf |
-| 2026-05-29 | disc13 发现 17 新博客 | ✅ 资源库 2159→2176 | 种子：burn60o 成功站（art/NYC niche）；产量低（17）；新增：bobulate, benpentreath, hyperallergic, untappedcities, openculture, villagepreservation, gothamcenter, boweryboyswalks 等 |
-| 2026-05-29 | 批量博客留言 ×3 | ✅ 提交成功 | burn60p disc13末批（池耗尽，仅18可用），17%命中率；NYC机构类网站无评论区；成功：dark-mountain.net, openculture, villagepreservation |
-| 2026-05-29 | disc14 发现 27 新博客 | ✅ 资源库 2176→2203 | 种子：30个全新niche（美食/园艺/旅游/DIY/育儿/健身/摄影）；新增：damninteresting, petapixel, jamesclear, remodelista, cornflowerbooks, blog.historians, fragments.consc, onceuponafarm 等 |
-| 2026-05-29 | 批量博客留言 ×2 | ✅ 提交成功 | burn60q disc14末批（池耗尽，仅29可用），7%命中率；商业大站链接CDN非博客；成功：brooklyntweed.zendesk, eepurl |
-| 2026-05-29 | disc15 策略转变 | 🔄 运行中 | 新种子：家谱(genealogy)/拼布(quilting)/个人园艺/跑步/家庭教育——个人博主社区，有blogroll，用WordPress |
 
 ---
 
@@ -214,10 +199,10 @@
 
 | 项目 | 数量 |
 |------|------|
-| ✅ 已提交博客/留言板 | **626** |
-| ⏭ 已标记 captcha（永久跳过） | ~345 |
-| 🔄 待提交（剩余干净目标） | 0（disc14 池耗尽，disc15 运行中） |
-| 📦 资源库总量 | **2203** |
+| ✅ 已提交博客/留言板 | **785** |
+| ⏭ 已标记 captcha（永久跳过） | ~540 |
+| 🔄 待提交（剩余干净目标） | ~100（disc22 池 2846，多数新鲜） |
+| 📦 资源库总量 | **2846** |
 
 ---
 
@@ -239,4 +224,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-05-29 (博客留言 **615条** 🎉 + 目录站/平台 **18条** ✅ — disc11 池耗尽，准备运行 disc12)*
+*最后更新: 2026-06-26 (博客留言 **785条** ✅ 🏆 + 目录站/平台 **18条** ✅ [含 Crunchbase DR92, DEV.to 文章])*
