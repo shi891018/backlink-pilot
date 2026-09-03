@@ -1,0 +1,23 @@
+product:
+  name: Black & White Baby Cards
+  url: https://www.blackwhitecards.top
+  listing_url: https://www.blackwhitecards.top
+  guide_url: https://www.blackwhitecards.top/en/guide
+  ai_url: https://www.blackwhitecards.top/en/ai
+  audience: Parents and caregivers of newborns aged 0-6 months
+  categories:
+    - Parenting
+    - Education
+    - Family
+    - Baby Activities
+    - Free Printables
+  description: >-
+    Free high-contrast black-and-white baby cards for calm, supervised newborn
+    visual play (0-6 months), with printable downloads, age-based guidance,
+    and an optional AI card creator.
+
+submission_policy:
+  default_url: homepage
+  ai_directories_url: ai_url
+  skip_paid_placements: true
+  skip_reciprocal_footer_links: true

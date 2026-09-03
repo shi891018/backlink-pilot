@@ -235,6 +235,49 @@ export class BbPage {
     return this._bb('eval', 'document.documentElement.outerHTML');
   }
 
+  /**
+   * Playwright-compatible wait for a CSS selector.  bb-browser evaluates in the
+   * live Chrome tab, so poll instead of relying on a Playwright page object.
+   */
+  async waitForSelector(selector, opts = {}) {
+    const timeout = opts.timeout ?? _bbTimeout;
+    const startedAt = Date.now();
+
+    while (Date.now() - startedAt < timeout) {
+      try {
+        const exists = this._bb(
+          'eval',
+          `!!document.querySelector(${JSON.stringify(selector)})`
+        );
+        if (exists === 'true') return new BbElementHandle(this, selector);
+      } catch {
+        // A page can replace its document while it is loading; retry shortly.
+      }
+      await new Promise(resolve => setTimeout(resolve, 250));
+    }
+
+    throw new Error(`Timed out waiting for selector: ${selector}`);
+  }
+
+  /**
+   * Run a serializable page function and return its JSON value, matching the
+   * subset of Playwright's page.evaluate used by the discovery sources.
+   */
+  async evaluate(pageFunction, ...args) {
+    if (typeof pageFunction !== 'function') {
+      throw new TypeError('BbPage.evaluate expects a function');
+    }
+
+    const expression = `JSON.stringify((${pageFunction.toString()})(...${JSON.stringify(args)}))`;
+    const result = this._bb('eval', expression);
+    if (result === 'undefined' || result === '') return undefined;
+    try {
+      return JSON.parse(result);
+    } catch {
+      return result;
+    }
+  }
+
   url() {
     return this._bb('eval', 'window.location.href');
   }

@@ -493,6 +493,8 @@ japanese_bbs_boards:
   type: form
   auto: true
   lang: multi
+  status: paid
+  notes: $10 required for a 48-hour listing; no free submission option as of 2026-07-26.
   notes: Supports Chinese
 - name: aiwith.me
   submit_url: https://aiwith.me/zh/submit
@@ -535,7 +537,7 @@ overseas_general:
   auto: true
   lang: en
 - name: Betalist
-  submit_url: https://betalist.com/startups/new
+  submit_url: https://betalist.com/submit
   type: form
   auto: manual
   lang: en

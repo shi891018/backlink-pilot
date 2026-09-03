@@ -28956,27 +28956,29 @@
     "name": "apetcher.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-viewfromtheback.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:18:36.484Z"
   },
   {
     "url": "https://wordsfromanneli.wordpress.com",
     "name": "wordsfromanneli.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:19:01.972Z"
   },
   {
     "url": "http://flyinglizardixxi.wordpress.com",
     "name": "flyinglizardixxi.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
     "discovered_at": "2026-06-26"
@@ -28986,37 +28988,40 @@
     "name": "mermaidspen.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:19:36.499Z"
   },
   {
     "url": "http://londonchat2.wordpress.com",
     "name": "londonchat2.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:20:03.557Z"
   },
   {
     "url": "http://nishalmitha.wordpress.com",
     "name": "nishalmitha.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:20:36.518Z"
   },
   {
     "url": "http://reliancecapitalfinacelimited.wordpress.com",
     "name": "reliancecapitalfinacelimited.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
     "discovered_at": "2026-06-26"
@@ -29026,7 +29031,7 @@
     "name": "meditationbody.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
     "discovered_at": "2026-06-26"
@@ -29036,47 +29041,51 @@
     "name": "lvphotoblog.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:21:28.817Z"
   },
   {
     "url": "https://scottabroad.com",
     "name": "scottabroad.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:22:04.668Z"
   },
   {
     "url": "http://www.dgkayewriter.com",
     "name": "dgkayewriter.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:22:31.833Z"
   },
   {
     "url": "http://goalsandgoodvibes.blog",
     "name": "goalsandgoodvibes.blog",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "captcha",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "has_captcha": true
   },
   {
     "url": "http://hase956.wordpress.com",
     "name": "hase956.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
     "discovered_at": "2026-06-26"
@@ -29086,77 +29095,84 @@
     "name": "stepsofpurposeblog.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:23:22.021Z"
   },
   {
     "url": "https://physmuse.blog",
     "name": "physmuse.blog",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:23:45.507Z"
   },
   {
     "url": "http://amorentreestrellas.wordpress.com",
     "name": "amorentreestrellas.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:24:12.281Z"
   },
   {
     "url": "http://narasimhansrikanth.wordpress.com",
     "name": "narasimhansrikanth.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:24:39.681Z"
   },
   {
     "url": "http://peterklopp.wordpress.com",
     "name": "peterklopp.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:25:14.473Z"
   },
   {
     "url": "http://loiadotblog.wordpress.com",
     "name": "loiadotblog.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:25:38.541Z"
   },
   {
     "url": "http://weathertomorrows.wordpress.com",
     "name": "weathertomorrows.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:26:13.017Z"
   },
   {
     "url": "http://www.luannecastle.com/",
     "name": "luannecastle.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
     "discovered_at": "2026-06-26"
@@ -29166,7 +29182,7 @@
     "name": "travelxploredotblog.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
+    "status": "no_comment_field",
     "submitted": false,
     "source": "blogroll-wordsfromanneli.com",
     "discovered_at": "2026-06-26"
@@ -29176,20 +29192,22 @@
     "name": "aspholessaria.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:27:05.938Z"
   },
   {
     "url": "http://thechristiannerdtech.wordpress.com",
     "name": "thechristiannerdtech.wordpress.com",
     "type": "blog_comment",
     "niche": "general",
-    "status": "pending",
-    "submitted": false,
+    "status": "submitted",
+    "submitted": true,
     "source": "blogroll-wordsfromanneli.com",
-    "discovered_at": "2026-06-26"
+    "discovered_at": "2026-06-26",
+    "submitted_at": "2026-06-27T13:27:39.556Z"
   },
   {
     "url": "http://healthhappinesshealingnet.wordpress.com",

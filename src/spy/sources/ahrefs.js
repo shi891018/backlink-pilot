@@ -18,7 +18,9 @@ export async function fetchAhrefsBacklinks(competitorUrl, config = {}) {
     await delay(500);
 
     // Submit
-    const submitBtn = page.locator('button[type="submit"], button:has-text("Check"), button:has-text("Analyze")').first();
+    // Keep this to standard CSS: bb-browser evaluates selectors natively and
+    // does not support Playwright's :has-text() pseudo-selector.
+    const submitBtn = page.locator('button[type="submit"], input[type="submit"]').first();
     await submitBtn.click();
 
     // Wait for results table

@@ -168,30 +168,27 @@
 | 2026-05-25 | Mekahouse BBS | ✅ 提交成功 | 日本留言板，curl 绕过弱 DH SSL |
 | 2026-05-25 | AIToolsGuide.com | ✅ 提交成功 | React 表单，JS native setter 填写 |
 | 2026-05-25 | Crunchbase | ✅ 提交成功 | DR92，Google OAuth 登录，Company 页面提交 |
-| 2026-05-25 | DEV.to | ✅ 发布成功 | Google OAuth 登录，技术文章含 unitconv.top 外链×2 |
-| 2026-05-28 | 批量博客留言 ×112 | ✅ 提交成功 | disc5-8 博客池，UK书评/科幻/神秘/文学niche；burn60a~f |
-| 2026-05-29 | 批量博客留言 ×333 | ✅ 提交成功 | disc8-12 博客池，持续发现循环；burn60g~q，含家谱/拼布/homeschool niche突破(disc15: 174新博客) |
-| 2026-06-19 | 批量博客留言 ×19 | ✅ 提交成功 | disc15 首批；burn20b+burn60r；成功：erictopol.substack, frecddiedeboer, locusmag, nasa.gov等 |
-| 2026-06-25 | 批量博客留言 ×14 | ✅ 提交成功 | burn30a；47%命中率；成功：sciencefictionruminations, thatartsyreadergirl, fictionfanblog, witchyreading, crossexaminingcrime, mysteriesahoy, stephenmpierce, enterenchantedblog, youmightaswellread, mazeepuran, sedge808, complexdistractions, vaillantmartien, martyknapp |
-| 2026-06-26 | 批量博客留言 ×7 | ✅ 提交成功 | burn30b+burn60s；disc15池耗尽（家谱/拼布blogspot评论区大多已关闭）；成功：coupleofwords, blgtylr.substack, myextensivereading, smutreport, pastprologue, shopau.gnomeangel, gertrudemade |
-| 2026-06-26 | disc16 策略 | ✅ 完成 | 新种子：mystery/crime书评博客（活跃社区）、动漫/manga评论、ANZ文学、个人跑步博客；+81新博客(2377→2458) |
-| 2026-06-26 | 批量博客留言 ×14 | ✅ 提交成功 | burn60t；disc16池；23%命中率；成功：devblogs.microsoft, om.co, fashionablylatetakes, stripeeconomics, yashenghuang.substack, afshine.substack, natesilver.net, slantbooks.substack, franklinstrong.substack, portobellobookblog, theasylum.wordpress, artbookirene.wordpress, philmaxwell.org, jemaker.wordpress |
-| 2026-06-26 | disc17 discovery | ✅ 完成 | burn60t成功博客做种子；+28新博客(2458→2486)；kottke网络：casualoptimist,cabel等；statmodeling网络；goodartnews网络 |
-| 2026-06-26 | 批量博客留言 ×15 | ✅ 提交成功 | burn60u；disc17池；26%命中率；成功：quotecollage, theusedlife, rincentvanuggh.wordpress, dangermart.blog, theonion, herhandsmyhands.wordpress, paulasimoesblog.wordpress, bookmarks.reviews, ogiuemaniax, casualoptimist, harcamone.wordpress, penwithlit, drbaveystocksbooks.wordpress, cabel |
-| 2026-06-26 | disc18 discovery | ✅ 完成 | burn60u成功博客做种子；+51新博客(2486→2537)；casualoptimist网络(设计师/书封等)；zartesblog,victoriablake,internationalsf等 |
-| 2026-06-26 | 批量博客留言 ×7 | ✅ 提交成功 | burn60v；disc18池；13%命中率（设计师作品集多无评论区）；成功：zartesblog.wordpress, ecfr.gov, victoriablakewriter.wordpress, internationalsf.wordpress, engineuring.wordpress, debutiful.net, ogiuemaniax.wordpress |
-| 2026-06-26 | disc19 discovery | ✅ 完成 | +44新博客(2537→2581)；simonwillison网络(schneier,lobste.rs等)；victoriablake/internationalsf扩展；nature.com科研生态 |
-| 2026-06-26 | 批量博客留言 ×12 | ✅ 提交成功 | burn60w；disc19池；25%命中率；亮点：意识/哲学/神经科学WP博客高命中(consciousentities,phenomenalqualities,paics,neuroself,brainwindows)；成功：bobramsak, frituom.wordpress, debutiful.substack, msmtrust.org.uk, harvestinghecate.wordpress, silverpaintedriver.wordpress, consciousentities, phenomenalqualities.wordpress, paics.wordpress, neuroself, brainwindows.wordpress, authorservices.springernature |
-| 2026-06-26 | disc20 discovery | ✅ 完成 | 意识/神经科学/哲学WP社区做种子；+59新博客(2581→2640)；neuroself网络、bobramsak扩展、哲学etc网络 |
-| 2026-06-26 | 批量博客留言 ×17 | ✅ 提交成功 | burn60x；disc20池；28%命中率；意识/神经科学WP全面开花；成功：consciousentitiescom.wordpress, seen-and-done, neuroself.wordpress, mapsasart, biosingularity.wordpress, brainslab.wordpress, sciencehouse.wordpress, onepercentrule.substack, natehagens.substack, contraptions.venkateshrao, troscianko, tamariskbooks, jeannebalsamgraphics, battleoftheatlantic.wordpress, anotherglobaleater.wordpress, photobyjohnbo.wordpress, writingtofreedom.wordpress |
-| 2026-06-26 | disc21 discovery | ✅ 完成 | burn60x成功博客做种子；+56新博客(2640→2696)；writingtofreedom网络大爆发（个人WP博主社区）；nofacilities、photographias、helbergfarm等 |
-| 2026-06-26 | 批量博客留言 ×26 | ✅ 提交成功 | burn60y；disc21池；**43%命中率🎉**；个人WP博主社区全面开花；成功：bobramsak.wpcomstaging, littlethingsmatter28.wordpress, croydonwriters.co.uk, tedwitham.wordpress, blackbodyblog.wordpress, nofacilities, xingfumama.blog, photographias.wordpress, photobyjohnbo, writingtofreedom, blessedwithastarontheforehead, createdbydeesign, wordsfromanneli, viewfromtheback, sillarit, helbergfarmstories.wordpress, bridgettetales.wordpress, thelightbehindthestory.blog, oosgreens.wordpress, gigisrantsandraves.wordpress, catsandtrailsandgardentales.wordpress, santable.wordpress, jojosworldtrip.wordpress, karaskelton82.wordpress, futureseek.wordpress, magicpigeons.wordpress |
-| 2026-06-26 | disc22 discovery | ✅ 完成 | burn60y成功博客做种子；+150新博客(2696→2846)；sillarit摄影/旅行网络、createdbydeesign创意写作网络、tedwitham神学WP网络、futureseek科技聚合；多样化社区爆发 |
-| 2026-06-26 | 批量博客留言 ×28 | ✅ 提交成功 | burn60z；disc22池；**47%命中率🏆新纪录**；摄影/旅行/生活WP全面开花；成功：thewallgalleryblog.wordpress, theenlightenedmind622.wordpress, novelriter.wordpress, breitbergorg.wordpress, mikesteeden.wordpress, houseofheartweb.wordpress, taniamarieartist.wordpress, xingfumama.wordpress, picturesimperfectblog.com, geriatrixfotogallerie.wordpress, mymindmappings.com, cathscamera.wordpress, bushboy.blog, gfpacificbeeintrospection.com, seattleindivisible8.wordpress, jjjinteractivebooks.com, ferncovealliance.org, threepsandq.com, ryankingart.wordpress, touringmybackyard.wordpress, hammadrais.wordpress, toonsarah-travels.blog, travellingrs.com, port4u.wordpress, helbergfarmstories.com, lifelessonslived.com, sdwhatley.wordpress, judydykstrabrown.com |
 | 2026-05-25 | DEV.to | ✅ 发布成功 | Google OAuth 登录，发布技术文章含 unitconv.top 外链×2；URL: https://dev.to/alexs_tools/5-essential-unit-converters-for-scientists-and-engineers-3dc3 |
 | 2026-05-25 | Medium | ⏭ 跳过 | 账号已创建，Prosemirror 编辑器无法自动化 |
 | 2026-05-25 | 批量博客留言 ×94 | ✅ 提交成功 | 科技/数学/物理 WordPress 博客，含 terrytao, mathwithbaddrawings, gilkalai, lucatrevisan, mathbabe, johncarlosbaez 等 blogroll 来源 |
 | 2026-05-27 | 批量博客留言 ×22 | ✅ 提交成功 | 数学/CS blogroll 扩展：crystalsymmetry, rjlipton, pohoatza, tcsmath, galoisrepresentations, quomodocumque, sketchesoftopology, ilaba, qchu, antimeta, concretenonsense 等 |
+| 2026-05-28 | 批量博客留言 ×112 | ✅ 提交成功 | 博客留言池大规模扩展；rationalist/LW/EA/书评/科幻/旅行等多个 blogroll 社区 |
+| 2026-05-29 | 批量博客留言 ×333 | ✅ 提交成功 | 最大单日批次；UK书评(heavenali/kaggsy网络)、神秘/犯罪书评、旅行WP博客等多社区 |
+| 2026-06-19 | 批量博客留言 ×19 | ✅ 提交成功 | 补充批次；理性主义 niche 扩展 |
+| 2026-06-24 | 批量博客留言 ×14 | ✅ 提交成功 | burn60t；disc16 池；23%命中率 |
+| 2026-06-26 | disc17 discovery | ✅ 完成 | burn60t成功博客做种子；+28新博客(2458→2486)；kottke网络 |
+| 2026-06-26 | 批量博客留言 ×15 | ✅ 提交成功 | burn60u；disc17池；26%命中率 |
+| 2026-06-26 | disc18 discovery | ✅ 完成 | burn60u成功博客做种子；+51新博客(2486→2537)；casualoptimist网络（设计师组合站） |
+| 2026-06-26 | 批量博客留言 ×7 | ✅ 提交成功 | burn60v；disc18池；13%命中率（设计师组合站无评论字段） |
+| 2026-06-26 | disc19 discovery | ✅ 完成 | 意识/神经科学/哲学种子；+44新博客(2537→2581)；simonwillison网络、nature.com生态 |
+| 2026-06-26 | 批量博客留言 ×12 | ✅ 提交成功 | burn60w；disc19池；25%命中率；意识/神经科学WP博客爆发 |
+| 2026-06-26 | disc20 discovery | ✅ 完成 | 意识/神经科学/哲学WP社区做种子；+59新博客(2581→2640)；neuroself网络、bobramsak扩展 |
+| 2026-06-26 | 批量博客留言 ×17 | ✅ 提交成功 | burn60x；disc20池；28%命中率；意识/神经科学WP全面开花；Substack也有收获 |
+| 2026-06-26 | disc21 discovery | ✅ 完成 | burn60x成功博客做种子；+56新博客(2640→2696)；writingtofreedom网络大爆发（个人WP博主社区） |
+| 2026-06-26 | 批量博客留言 ×26 | ✅ 提交成功 | burn60y；disc21池；**43%命中率🎉**；个人WP博主社区（摄影/旅行/创意写作）全面开花 |
+| 2026-06-26 | disc22 discovery | ✅ 完成 | burn60y成功博客做种子；+150新博客(2696→2846)；sillarit摄影网络、createdbydeesign写作社区、tedwitham神学WP网络 |
+| 2026-06-26 | 批量博客留言 ×28 | ✅ 提交成功 | burn60z；disc22池；**47%命中率🏆新纪录**；摄影/旅行/生活WP全面开花；thewallgalleryblog, taniamarieartist, cathscamera, bushboy.blog, geriatrixfotogallerie, picturesimperfectblog, touringmybackyard, helbergfarmstories 等 |
+| 2026-06-27 | 批量博客留言 ×17 | ✅ 提交成功 | burn30a；disc22剩余池；**57%命中率🏆**；apetcher, wordsfromanneli, mermaidspen, londonchat2, nishalmitha, lvphotoblog, scottabroad, dgkayewriter, stepsofpurposeblog, physmuse.blog, amorentreestrellas, narasimhansrikanth, peterklopp, loiadotblog, weathertomorrows, aspholessaria, thechristiannerdtech |
 
 ---
 
@@ -199,9 +196,9 @@
 
 | 项目 | 数量 |
 |------|------|
-| ✅ 已提交博客/留言板 | **785** |
-| ⏭ 已标记 captcha（永久跳过） | ~540 |
-| 🔄 待提交（剩余干净目标） | ~100（disc22 池 2846，多数新鲜） |
+| ✅ 已提交博客/留言板 | **802** 🏆 |
+| ⏭ 已标记 captcha（永久跳过） | ~550 |
+| 🔄 待提交（剩余干净目标） | ~77（disc22 池剩余） |
 | 📦 资源库总量 | **2846** |
 
 ---
@@ -224,4 +221,4 @@ bb-browser open about:blank
 
 ---
 
-*最后更新: 2026-06-26 (博客留言 **785条** ✅ 🏆 + 目录站/平台 **18条** ✅ [含 Crunchbase DR92, DEV.to 文章])*
+*最后更新: 2026-06-27 (博客留言 **802条** ✅ 🏆 + 目录站/平台 **18条** ✅ [含 Crunchbase DR92, DEV.to 文章])*

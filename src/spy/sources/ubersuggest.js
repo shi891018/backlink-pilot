@@ -14,7 +14,8 @@ export async function fetchUbersuggestBacklinks(competitorUrl, config = {}) {
     await delay(3000);
 
     // Handle cookie / popup
-    const closeBtn = page.locator('[aria-label="Close"], [class*="close"], button:has-text("Close"), button:has-text("Got it")').first();
+    // Standard CSS only; :has-text() is a Playwright extension, not CSS.
+    const closeBtn = page.locator('[aria-label="Close"], [class*="close"]').first();
     const hasCookieBtn = await closeBtn.isVisible().catch(() => false);
     if (hasCookieBtn) {
       await closeBtn.click().catch(() => {});

@@ -65,6 +65,7 @@ node src/cli.js submit https://any-site.com --engine bb
 ```bash
 node src/cli.js submit <site-or-url>     # Submit to directory
 node src/cli.js spy <competitor-url>     # Fetch competitor backlinks → find new targets
+node src/cli.js discover-similar <url>   # Find similar directories from public tech/form signals
 node src/cli.js scout <url> --deep       # Discover form fields
 node src/cli.js awesome <repo>           # Generate awesome-list Issue
 node src/cli.js indexnow <url>           # Ping search engines

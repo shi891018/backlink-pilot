@@ -10,6 +10,7 @@ import { pingIndexNow } from './indexnow.js';
 import { showStatus } from './tracker.js';
 import { forceUpdate } from './bb-update.js';
 import { spy } from './spy/index.js';
+import { discoverSimilar } from './discover/similar.js';
 
 const program = new Command();
 
@@ -89,6 +90,22 @@ program
       output: opts.output,
       merge: opts.merge || false,
       config,
+    });
+  });
+
+program
+  .command('discover-similar <seed-url>')
+  .description('Find similar directory sites from public technology and form fingerprints')
+  .option('--limit <n>', 'Maximum reviewable candidates to return (default: 20)', parseInt)
+  .option('--no-search', 'Only inspect submit links found on the seed site')
+  .option('--output <file>', 'Save candidates as YAML or JSON')
+  .option('--merge', 'Add candidates to targets.yaml as manual-review targets')
+  .action(async (seedUrl, opts) => {
+    await discoverSimilar(seedUrl, {
+      limit: opts.limit || 20,
+      search: !opts.noSearch,
+      output: opts.output,
+      merge: opts.merge || false,
     });
   });
 
