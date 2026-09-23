@@ -1,0 +1,55 @@
+# Public product profile for backlink research and outreach.
+
+product:
+  name: Unit Converter for Science
+  url: https://www.unitconv.top
+  listing_url: https://www.unitconv.top
+  about_url: https://www.unitconv.top/en/about
+  logo_url: https://www.unitconv.top/logo.png
+  github_url: https://github.com/shi891018/unit-converter4science-nextjs
+  audience: Students, researchers, engineers, teachers, and everyday users who need clear unit conversions
+  languages:
+    - English
+    - Chinese
+    - Japanese
+    - Korean
+    - German
+    - French
+    - Spanish
+    - Italian
+  categories:
+    - Science
+    - Engineering
+    - Education
+    - Utilities
+    - Productivity
+  supported_categories:
+    - Length
+    - Mass
+    - Time
+    - Velocity
+    - Area
+    - Volume
+    - Temperature
+    - Energy
+    - Force
+    - Pressure
+    - Concentration
+  description: >-
+    Free multilingual unit converter for science and engineering with formulas,
+    conversion steps, and factor explanations across 11 categories.
+  features:
+    - Formula and factor explanations for each conversion
+    - Readable, step-by-step conversion derivations
+    - 11 categories covering metric, imperial, atomic, and specialist units
+    - Eight-language interface with automatic detection and manual switching
+    - Mobile-friendly and PWA-ready with no login or data upload required
+    - Guarded AI explanations on selected high-value conversion pages
+
+submission_policy:
+  default_url: homepage
+  methodology_url: about_url
+  category_url_format: https://www.unitconv.top/en/{category}
+  skip_paid_placements: true
+  skip_reciprocal_footer_links: true
+  use_ai_page_only_when_relevant: true

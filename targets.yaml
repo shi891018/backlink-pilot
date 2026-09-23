@@ -187,9 +187,10 @@ overseas_ai_directories:
 - name: Future AGI Tools
   submit_url: https://www.futureagitools.com
   type: form
-  auto: true
+  auto: false
   lang: en
-  notes: submit URL updated
+  status: dead
+  notes: Domain repurposed to a Vavada online casino as of 2026-09; do not submit.
 - name: Free AI Tools Directory
   submit_url: https://free-ai-tools-directory.com/submit-request/
   type: form
@@ -220,8 +221,10 @@ overseas_ai_directories:
 - name: Paxi
   submit_url: https://paxi.ai/submit
   type: form
-  auto: true
+  auto: false
   lang: en
+  status: dead
+  notes: Submission URL now serves an unrelated PAXI product page; no directory form found as of 2026-09.
 - name: Human Alternative
   submit_url: https://www.humanalternative.com/submit-resource/submit-a-tool
   type: form
@@ -242,8 +245,10 @@ overseas_ai_directories:
   type: form
   auto: true
   lang: multi
+  status: dead
+  notes: Domain is parked with Sedo; submission page is unavailable as of 2026-09.
 - name: Supertools
-  submit_url: https://supertools.therundown.ai/submit
+  submit_url: https://www.therundown.ai/submit
   type: form
   auto: true
   lang: en
@@ -252,11 +257,15 @@ overseas_ai_directories:
   type: form
   auto: true
   lang: en
+  status: paid
+  notes: Listing page charges $6 per AI tool as of 2026-09; excluded from free submissions.
 - name: SaaSBaba
   submit_url: https://saasbaba.com/add-ai-tool/
   type: form
   auto: true
   lang: en
+  status: dead
+  notes: Submit URL returns 404; homepage renders blank and no replacement form was found as of 2026-09.
 
 japanese_bbs_boards:
   # webkit.dti.ne.jp — DTI free BBS service (Japan)
@@ -494,8 +503,7 @@ japanese_bbs_boards:
   auto: true
   lang: multi
   status: paid
-  notes: $10 required for a 48-hour listing; no free submission option as of 2026-07-26.
-  notes: Supports Chinese
+  notes: $10 required for a 48-hour listing; no free submission option as of 2026-07-26. Supports Chinese.
 - name: aiwith.me
   submit_url: https://aiwith.me/zh/submit
   type: form
@@ -1219,16 +1227,18 @@ chinese_general:
   auto: true
   lang: zh
 - name: 挖互联网
-  submit_url: https://tigg.cc/share
+  submit_url: https://tigg.cc/submit
   type: form
   auto: true
   lang: zh
-  notes: Free innovative tools only
+  notes: "Free innovative tools only; Google login required; /share returned 404, official publish entry points to /submit."
 - name: 线圈
   submit_url: https://xquan.net/help?tab=submit-guide
   type: form
   auto: true
   lang: zh
+  status: dead
+  notes: "Domain currently serves unrelated gambling/casino content; no submission attempted."
 - name: 一网一匠
   submit_url: https://ywyj.cn/
   type: form
@@ -3100,3 +3110,2688 @@ feishu_directories:
   auto: 'yes'
   lang: en
   notes: DR0, Feishu list
+sherotree_free_backlink_sources:
+- name: Scout Forge
+  submit_url: https://scoutforge.net/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Review directory. DR40; Tier B; free; nofollow; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: AI Tools Marketer
+  submit_url: https://aitoolsmarketer.com/submit/
+  type: form
+  auto: manual
+  lang: en
+  notes: AI directory with editorial review. DR37; Tier B; free; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: HuntScreens
+  submit_url: https://huntscreens.com/submit
+  type: form
+  auto: manual
+  lang: en
+  waiting: true
+  notes: Launch directory. DR35; Tier B; free; about 30 days wait. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: AI Jet
+  submit_url: https://aijet.cc/pricing
+  type: listing
+  auto: manual
+  lang: en
+  notes: AI directory. Tier C; free submission path on pricing page. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: AIChief
+  submit_url: https://aichief.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: AI directory. Tier C; free. Bot-protected endpoint returned HTTP 403 during automated check. Source sherotree/free-backlink-sources; checked 2026-09-14.
+- name: App Launcher
+  submit_url: https://www.applauncher.io/pricing
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; free; nofollow. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: directree
+  submit_url: https://www.directree.io/docs/submit-a-tool
+  type: listing
+  auto: manual
+  lang: en
+  notes: Structured SaaS directory; submission instructions. Tier C; free. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: List Of Freeware
+  submit_url: https://listoffreeware.com/submit-new-freeware/
+  type: form
+  auto: manual
+  lang: en
+  waiting: true
+  notes: SaaS/freeware directory. Tier C; free; editorial review. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: MossAI
+  submit_url: https://mossai.org/
+  type: listing
+  auto: manual
+  lang: en
+  notes: AI directory. Tier C; free; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: NextGen Tools (nxgntools.com)
+  submit_url: https://www.nxgntools.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: AI directory distinct from nextgentools.me already in the library. Tier C; free. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Shiny Launch
+  submit_url: https://shinylaunch.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; free; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: SimilarLabs
+  submit_url: https://similarlabs.com/submit
+  type: form
+  auto: manual
+  lang: en
+  waiting: true
+  notes: AI directory. Tier C; free; manual review. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: TryLaunch.ai
+  submit_url: https://trylaunch.ai/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; free; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: WebCatalog
+  submit_url: https://webcatalog.io/en/desktop
+  type: listing
+  auto: manual
+  lang: en
+  notes: Tool directory. Tier C; free; source URL redirects to the desktop catalog. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Firsto
+  submit_url: https://firsto.co/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. DR35; Tier B; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: LaunchIgniter
+  submit_url: https://launchigniter.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. DR25; Tier B; freemium. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: AcidTools
+  submit_url: https://acidtools.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: AI directory. Tier C; freemium. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Aura++
+  submit_url: https://auraplusplus.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; freemium; conditional backlink. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Good AI Tools
+  submit_url: https://goodaitools.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: AI directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Launch Llama
+  submit_url: https://tools.launchllama.co/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Neeed Directory
+  submit_url: https://neeed.directory/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Tool directory. Tier C; freemium; badge required. Endpoint returned HTTP 429 during automated check. Source sherotree/free-backlink-sources; checked 2026-09-14.
+- name: Open Alternative
+  submit_url: https://openalternative.co/
+  type: listing
+  auto: manual
+  lang: en
+  notes: SaaS directory. Tier C; freemium. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: OpenHunts
+  submit_url: https://openhunts.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: ProductFame
+  submit_url: https://productfame.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Launch directory. Tier C; freemium. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: SaaSFame
+  submit_url: https://saasfame.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: SaaS directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: ToolFame
+  submit_url: https://toolfame.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Tool directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: ToolFio
+  submit_url: https://toolfio.com/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Tool directory. Tier C; freemium. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: Ufind.best
+  submit_url: https://ufind.best/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Tool directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+- name: yo.directory
+  submit_url: https://yo.directory/
+  type: listing
+  auto: manual
+  lang: en
+  notes: Tool directory. Tier C; freemium; badge required. Source sherotree/free-backlink-sources; live check 2026-09-14.
+awesome_submitlist:
+  - name: Acquire.com
+    submit_url: https://acquire.com/sellers
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR73; 34,900 monthly organic visits; paid; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Affiliate Watch
+    submit_url: https://affiliate.watch/submit-affiliate-program
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR53; 18,800 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: AI Directories
+    submit_url: https://www.aidirectori.es/submit-ai-tool
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR71; 38,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: AI Parabellum
+    submit_url: https://aiparabellum.com/submit-your-ai-tool/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR34; 1,200 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: AI Tools Explorer
+    submit_url: https://aitoolsexplorer.com/submit-ai-tool/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR35; 3,600 monthly organic visits; paid; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: AI Tools
+    submit_url: https://aitools.inc/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR67; 23,200 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Android Central
+    submit_url: https://forums.androidcentral.com/threads/app-and-developer-forum-rules-guidelines.827832/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR83; 391,200 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Android Headlines
+    submit_url: https://www.androidheadlines.com/news-tips
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR77; 142,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Angi
+    submit_url: https://signup.angi.com/pro
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR90; 1,000,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/AppBusiness
+    submit_url: https://www.reddit.com/r/AppBusiness/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 142,168 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/AppGiveaway
+    submit_url: https://www.reddit.com/r/AppGiveaway/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 31,618 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/AppIdeas
+    submit_url: https://www.reddit.com/r/AppIdeas/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 101,450 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Appvizer
+    submit_url: https://help.appvizer.com/en/articles/how-do-i-reference-software-on-appvizer
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR51; 16,100 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Atlassian Marketplace
+    submit_url: https://marketplace.atlassian.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR92; 100,700 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Awwwards
+    submit_url: https://www.awwwards.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR89; 729,000 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: B2B Stack
+    submit_url: https://www.b2bstack.com.br/produto/novo-item
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR59; 21,300 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/B2BSaaS
+    submit_url: https://www.reddit.com/r/B2BSaaS/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 28,691 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: BetaKit
+    submit_url: https://betakit.com/contact-us/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR78; 11,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: BetaTesting
+    submit_url: https://betatesting.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR55; 6,200 monthly organic visits; paid; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/betatests
+    submit_url: https://www.reddit.com/r/betatests/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 16,503 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Better Business Bureau
+    submit_url: https://www.bbb.org/get-listed
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR93; 3,500,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: BiggerPockets
+    submit_url: https://www.biggerpockets.com/signup
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR80; 54,300 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Bing Places for Business
+    submit_url: https://www.bing.com/forbusiness/help/createYourListing
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR93; 17,700,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: BostInno
+    submit_url: https://www.bizjournals.com/boston/nomination/89338/2026/2026-bostinno-the-fire-awards
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR91; 381,400 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Built In
+    submit_url: https://knowledgebase.builtin.com/s/article/How-do-I-create-a-company-profile
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR86; 948,900 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Built In Chicago
+    submit_url: https://knowledgebase.builtin.com/s/article/How-do-I-claim-my-company-profile
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR72; 79,900 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/Business_Ideas
+    submit_url: https://www.reddit.com/r/Business_Ideas/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 470,497 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/BusinessDeconstructed
+    submit_url: https://www.reddit.com/r/BusinessDeconstructed/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 22,026 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: BusinessWith
+    submit_url: https://hub.businesswith.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR48; 1,300 monthly organic visits; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Chrome Web Store
+    submit_url: https://chrome.google.com/webstore/devconsole
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR99; 19,800,000 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: CNET Download.com
+    submit_url: https://download.cnet.com/add-your-software/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR91; 1,200,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: CoFoundersLab
+    submit_url: https://cofounderslab.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR62; 2,300 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Comparably
+    submit_url: https://www.comparably.com/company-tools
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR79; 149,200 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/ContentRich
+    submit_url: https://www.reddit.com/r/ContentRich/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 10,843 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Crunchbase News
+    submit_url: https://about.crunchbase.com/press
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR91; 40,200 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: CSS Design Awards
+    submit_url: https://www.cssdesignawards.com/submit
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR80; 12,700 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Cuspera
+    submit_url: https://www.cuspera.com/vendors
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR49; 4,800 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Dark
+    submit_url: https://www.dark.design/auth/login
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR42; 1,700 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Dark Mode Design
+    submit_url: https://www.darkmodedesign.com/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR40; 1,300 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Dealify
+    submit_url: https://dealify.com/pages/run-a-deal
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR58; 2,900 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Designspiration
+    submit_url: https://www.designspiration.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR78; 35,000 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Index by Dodo Payments
+    submit_url: https://index.dodopayments.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR79; 3,600 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/droidappshowcase
+    submit_url: https://www.reddit.com/r/droidappshowcase/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 14,013 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: e27
+    submit_url: https://e27.co/startup/create/profile/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR76; 22,300 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: eBool
+    submit_url: https://www.ebool.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR51; 1,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Ecomm Design
+    submit_url: https://ecomm.design/submit/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR71; 50,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: eCommerceFuel
+    submit_url: https://www.ecommercefuel.com/saas-software-partnerships/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR72; 1,800 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: eLocal
+    submit_url: https://www.elocal.com/signup/step1/
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR74; 9,300 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Engadget
+    submit_url: https://www.engadget.com/about-faq-194611880.html
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR90; 276,500 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Entrepreneur
+    submit_url: https://www.entrepreneur.com/press-release/about
+    type: article
+    auto: manual
+    lang: en
+    status: paid
+    notes: Citation. DR91; 637,300 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: European Alternatives
+    submit_url: https://european-alternatives.eu/register
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR73; 43,800 monthly organic visits; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Ezilon
+    submit_url: https://www.ezilon.com/general_url_submission.htm
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR54; 32,300 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Fark
+    submit_url: https://www.fark.com/submit/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR73; 17,600 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Fast Company Most Innovative Companies
+    submit_url: https://www.fastcompany.com/apply/most-innovative-companies
+    type: article
+    auto: manual
+    lang: en
+    status: paid
+    notes: Citation. DR91; 275,800 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Feedough
+    submit_url: https://www.feedough.com/submit-your-startup/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR71; 33,800 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Findstack
+    submit_url: https://findstack.com/get-listed
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR77; 3,600 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Firefox Add-ons
+    submit_url: https://extensionworkshop.com/documentation/publish/submitting-an-add-on/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR96; 1,500,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/FlutterDev
+    submit_url: https://www.reddit.com/r/FlutterDev/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 182,222 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Forbes Cloud 100
+    submit_url: https://thecloud100.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR94; 18,100,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Freebie Supply
+    submit_url: https://freebiesupply.com/submit-freebie/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR73; 23,500 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: freeCodeCamp Forum
+    submit_url: https://forum.freecodecamp.org/c/project-feedback/409
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR89; 66,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/gameDevMarketing
+    submit_url: https://www.reddit.com/r/gameDevMarketing/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 9,180 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: GetApp
+    submit_url: https://getapp.com
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR85; 60,100 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Gizmodo
+    submit_url: https://gizmodo.com/how-to-tip-gizmodo-1843880833
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR90; 535,400 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Glassdoor
+    submit_url: https://www.glassdoor.com/employers/sign-up/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR91; 3,400,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Google Workspace Marketplace
+    submit_url: https://developers.google.com/workspace/marketplace/how-to-publish
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR100; 12,700,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Guardian Technology
+    submit_url: https://help.theguardian.com/article/how-do-i-contact-the-newsroom-or-pitch-a-story
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR93; 29,900,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Gust
+    submit_url: https://gust.helpscoutdocs.com/article/211-publishing-your-profile
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR75; 5,900 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: How Brands Are Built
+    submit_url: https://howbrandsarebuilt.com/submit/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR47; 3,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: HubSpot App Marketplace
+    submit_url: https://developers.hubspot.com/docs/apps/developer-platform/list-apps/listing-your-app/app-marketplace-listing-requirements
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR93; 71,100 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: HuffPost
+    submit_url: https://www.huffpost.com/static/how-to-pitch-huffpost
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR92; 1,400,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Hugging Face
+    submit_url: https://huggingface.co/new-space
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR91; 1,500,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Inc42
+    submit_url: https://inc42.com/startup-submission/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR81; 64,200 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/indiegames
+    submit_url: https://www.reddit.com/r/indiegames/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 331,406 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/IndieGaming
+    submit_url: https://www.reddit.com/r/IndieGaming/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 519,366 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/indiehackers
+    submit_url: https://www.reddit.com/r/indiehackers/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 189,657 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/iosapps
+    submit_url: https://www.reddit.com/r/iosapps/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 121,920 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/iOSProgramming
+    submit_url: https://www.reddit.com/r/iOSProgramming/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 204,762 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Jasmine Directory
+    submit_url: https://www.jasminedirectory.com/index.php?a=2070753691
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR67; 4,000 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/javascript
+    submit_url: https://www.reddit.com/r/javascript/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 2,450,107 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Launch Vault
+    submit_url: https://www.launchvault.dev/projects/submit
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Product launch site. DR55; 1,100 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/LaunchMyStartup
+    submit_url: https://www.reddit.com/r/LaunchMyStartup/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 8,359 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: "1440"
+    submit_url: https://join1440.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 3,500,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Alex Hormozi's Newsletter
+    submit_url: https://acquisition.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 500,000 subscribers; 42% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Benedict's Newsletter
+    submit_url: https://www.ben-evans.com/newsletter
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 175,000 subscribers; 42% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: ByteByteGo
+    submit_url: https://blog.bytebytego.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 500,000 subscribers; 42% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: CB Insights
+    submit_url: https://cbinsights.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 800,000 subscribers; 35% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Demand Curve
+    submit_url: https://demandcurve.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 95,000 subscribers; 42% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Dense Discovery
+    submit_url: https://densediscovery.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 42,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Exec Sum
+    submit_url: https://execsum.co
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 180,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Growth in Reverse
+    submit_url: https://growthinreverse.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 42,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Hacker Newsletter
+    submit_url: https://hackernewsletter.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 60,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Jay Clouse's Creator Science
+    submit_url: https://creatorscience.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 55,000 subscribers; 50% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Lenny's Newsletter
+    submit_url: https://lennysnewsletter.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 650,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Morning Brew
+    submit_url: https://morningbrew.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 4,000,000 subscribers; 42% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Nathan Barry's Newsletter
+    submit_url: https://nathanbarry.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 45,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Newcomer
+    submit_url: https://newcomer.co
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 55,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Not Boring
+    submit_url: https://notboring.co
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 225,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Platformer
+    submit_url: https://platformer.news
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 120,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Pointer
+    submit_url: https://pointer.io
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 35,000 subscribers; 40% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Sahil Bloom's Newsletter
+    submit_url: https://sahilbloom.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 700,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Sidebar
+    submit_url: https://sidebar.io
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 50,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Software Lead Weekly
+    submit_url: https://softwareleadweekly.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 38,000 subscribers; 42% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SparkToro Office Hours
+    submit_url: https://sparktoro.com/blog
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 45,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Stratechery
+    submit_url: https://stratechery.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 150,000 subscribers; 55% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Daily Upside
+    submit_url: https://thedailyupside.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 550,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Diff
+    submit_url: https://diff.substack.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 65,000 subscribers; 50% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Generalist
+    submit_url: https://generalist.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 85,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Information
+    submit_url: https://theinformation.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 400,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Pragmatic Engineer
+    submit_url: https://pragmaticengineer.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 550,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Profile
+    submit_url: https://www.readtheprofile.com/
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 110,000 subscribers; 50% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Rebooting
+    submit_url: https://therebooting.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 35,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TLDR
+    submit_url: https://tldr.tech
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 1,250,000 subscribers; 52% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TLDR Design
+    submit_url: https://tldr.tech/design
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 180,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TLDR Founders
+    submit_url: https://tldr.tech/founders
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 150,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TLDR Marketing
+    submit_url: https://tldr.tech/marketing
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 120,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TLDR Web Dev
+    submit_url: https://tldr.tech/webdev
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 220,000 subscribers; 48% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Workweek
+    submit_url: https://workweek.com
+    type: article
+    auto: manual
+    lang: en
+    notes: Newsletter. 200,000 subscribers; 45% open rate; unknown; dofollow; no dedicated submission URL listed. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: LLM Relevance
+    submit_url: https://www.llmrelevance.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR38; 1,000 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: MacStories
+    submit_url: https://www.macstories.net/about/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR77; 17,200 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Made With Vue.js
+    submit_url: https://madewithvuejs.com/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR60; 6,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Make App Directory
+    submit_url: https://www.make.com/en/technology-partners
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR90; 299,900 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: MakeUseOf
+    submit_url: https://www.makeuseof.com/page/press-events/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR87; 289,700 monthly organic visits; unknown; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: MarketingProfs
+    submit_url: https://www.marketingprofs.com/write-for-us
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR83; 18,500 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: MaRS Discovery District
+    submit_url: https://app.marsdd.com/signup
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR75; 22,800 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Mashable
+    submit_url: https://mashable.com/about/contact-us
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR91; 7,500,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Mashable India
+    submit_url: https://mashable.com/about/contact-us
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR91; 126,500 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: MaxiBestOf
+    submit_url: https://maxibestof.one/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR52; 11,500 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Micro SaaS Examples
+    submit_url: https://www.microsaasexamples.com/submit
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR49; 1,800 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/microsaas
+    submit_url: https://www.reddit.com/r/microsaas/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 212,254 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Microsoft Marketplace
+    submit_url: https://learn.microsoft.com/en-us/partner-center/marketplace-offers/submit-to-appsource-via-partner-center
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR96; 375,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Microsoft Store
+    submit_url: https://learn.microsoft.com/en-us/windows/apps/publish/partner-center/open-a-developer-account
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR96; 18,400,000 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: MIT Technology Review
+    submit_url: https://www.technologyreview.com/how-to-pitch-mit-technology-review/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR90; 73,500 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/MobileAppDevelopers
+    submit_url: https://www.reddit.com/r/MobileAppDevelopers/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 16,396 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: n8n Integrations
+    submit_url: https://docs.n8n.io/integrations/creating-nodes/deploy/submit-community-nodes/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR90; 2,000,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Nextdoor
+    submit_url: https://business.nextdoor.com/en-us/getting-started/business-page
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR91; 1,400,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/nextjs
+    submit_url: https://www.reddit.com/r/nextjs/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 174,234 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/nocode
+    submit_url: https://www.reddit.com/r/nocode/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 137,416 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Notion Marketplace
+    submit_url: https://app.notion.com/profile/connections
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR89; 5,200,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/notioncreations
+    submit_url: https://www.reddit.com/r/notioncreations/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 23,694 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: OECD.AI
+    submit_url: https://oecd.ai/en/catalogue/tools/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR81; 34,400 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: One Page Love
+    submit_url: https://onepagelove.com/submit/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR79; 40,300 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Open Collective
+    submit_url: https://opencollective.com/create
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR89; 9,800 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: PCMag
+    submit_url: https://www.pcmag.com/about/contact-pcmag
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR90; 6,200,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Pinterest
+    submit_url: https://help.pinterest.com/en/business/article/get-a-business-account
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR97; 550,100,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: PitchBook
+    submit_url: https://pitchbook.com/request-your-pitchbook-profile
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR84; 582,100 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Pocket-lint
+    submit_url: https://www.pocket-lint.com/page/press-events/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR79; 190,400 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Powerusers AI
+    submit_url: https://powerusers.ai/submit-ai-tool/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR33; 2,300 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Product School Community
+    submit_url: https://productschool.com/slack-community/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR74; 55,400 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/ProductHunters
+    submit_url: https://www.reddit.com/r/ProductHunters/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 59,875 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/promoteMyApp
+    submit_url: https://www.reddit.com/r/promoteMyApp/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 9,299 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Psychology Today
+    submit_url: https://member.psychologytoday.com/us/registration
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR93; 6,000,000 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: PublicAPIs.dev
+    submit_url: https://github.com/marcelscruz/public-apis/blob/main/CONTRIBUTING.md
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR45; 4,400 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/Python
+    submit_url: https://www.reddit.com/r/Python/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 1,509,287 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Quora
+    submit_url: https://www.quora.com/business/create
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR92; 78,300,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/SaaS
+    submit_url: https://www.reddit.com/r/SaaS/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 791,376 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Raindrop.io
+    submit_url: https://help.raindrop.io/public-page
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR76; 8,800 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/reactjs
+    submit_url: https://www.reddit.com/r/reactjs/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 512,717 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SaaS Landing Page
+    submit_url: https://slpads.framer.website/contact
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR53; 29,800 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/SaaSMarketing
+    submit_url: https://www.reddit.com/r/SaaSMarketing/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 34,806 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SaaSPirate
+    submit_url: https://saaspirate.com/submit-saas/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR68; 1,900 monthly organic visits; unknown; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/SaaSSolopreneurs
+    submit_url: https://www.reddit.com/r/SaaSSolopreneurs/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 13,602 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SelectHub
+    submit_url: https://pmo.selecthub.com/claim-your-product/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR74; 16,700 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/seogrowth
+    submit_url: https://www.reddit.com/r/seogrowth/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 80,309 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Shopify App Store
+    submit_url: https://shopify.dev/docs/apps/launch/app-store-review/submit-app-for-review
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR96; 505,200 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Show Me Local
+    submit_url: https://www.showmelocal.com/start-submission.aspx
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR78; 45,300 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/ShowYourApp
+    submit_url: https://www.reddit.com/r/ShowYourApp/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 16,398 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/sideprojects
+    submit_url: https://www.reddit.com/r/sideprojects/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 49,883 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SiliconANGLE
+    submit_url: https://siliconangle.com/about/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR83; 15,300 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SiteInspire
+    submit_url: https://www.siteinspire.com/about
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR76; 62,200 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SitePoint Forums
+    submit_url: https://www.sitepoint.com/community/signup
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR86; 86,100 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Slack App Directory
+    submit_url: https://api.slack.com/apps
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR92; 4,500,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Slate
+    submit_url: https://slate.com/pitch
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR90; 457,800 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Smashing Magazine
+    submit_url: https://www.smashingmagazine.com/contact/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR90; 43,300 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Softpedia
+    submit_url: https://www.softpedia.com/user/submit.shtml
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR86; 235,100 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Stack Overflow
+    submit_url: https://stackoverflow.com/help/promotion
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR92; 6,500,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: StackSocial
+    submit_url: https://www.stackcommerce.com/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR72; 59,400 monthly organic visits; unknown; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: StartupBlink
+    submit_url: https://www.startupblink.com/startups/add
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR72; 12,600 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Startup Grind
+    submit_url: https://startup.startupgrind.com/apply/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR76; 17,000 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Startup Heroes
+    submit_url: https://startupheroes.io/submit/startup/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR14; 1,100 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/startupaccelerator
+    submit_url: https://www.reddit.com/r/startupaccelerator/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 17,598 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/StartupDACH
+    submit_url: https://www.reddit.com/r/StartupDACH/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 20,295 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/Startups_EU
+    submit_url: https://www.reddit.com/r/Startups_EU/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 17,323 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/StartupSoloFounder
+    submit_url: https://www.reddit.com/r/StartupSoloFounder/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 40,268 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Stripe
+    submit_url: https://docs.stripe.com/directory
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR95; 4,200,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: SuperbCrew
+    submit_url: https://www.superbcrew.com/your-voice/
+    type: article
+    auto: manual
+    lang: en
+    status: paid
+    notes: Citation. DR66; 15,700 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Tailkits
+    submit_url: https://tailkits.com/submit-product/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR42; 10,300 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Tapscape
+    submit_url: https://www.tapscape.com/submit-app-review/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR50; 10,000 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Tech.co
+    submit_url: https://tech.co/contact
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR82; 30,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Tech.eu
+    submit_url: https://tech.eu/advertise/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR79; 1,800 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TechCrunch
+    submit_url: https://techcrunch.com/got-a-tip/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR92; 1,200,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Technology Advice
+    submit_url: https://solutions.technologyadvice.com/list-your-product/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR78; 208,800 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TechRadar
+    submit_url: https://www.techradar.com/how-to/how-to-pitch-your-ideas-to-techradar
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR91; 3,800,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Techstars
+    submit_url: https://apply.techstars.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR82; 20,900 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/TestMyApp
+    submit_url: https://www.reddit.com/r/TestMyApp/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 29,312 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: That AI Collection
+    submit_url: https://thataicollection.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR43; 1,000 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Fastlane Forum
+    submit_url: https://www.thefastlaneforum.com/community/threads/self-promotion-post-your-offer-products-or-services-2025-26.106896/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR49; 1,700 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Startup INC
+    submit_url: https://thestartupinc.com/submit-startup/
+    type: form
+    auto: manual
+    lang: en
+    status: paid
+    notes: Directory. DR33; 1,800 monthly organic visits; paid; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Startup Project
+    submit_url: https://startupproject.org/submit-startup/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR21; 1,000 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Verge
+    submit_url: https://www.theverge.com/write-for-the-verge
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR92; 455,300 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TIME Best Inventions
+    submit_url: https://bestinventions.time.com/
+    type: article
+    auto: manual
+    lang: en
+    status: paid
+    notes: Citation. DR92; 2,700,000 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TopTools.ai
+    submit_url: https://toptools.ai/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR30; 1,300 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Trendshift
+    submit_url: https://trendshift.io
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR63; 2,000 monthly organic visits; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Tripadvisor
+    submit_url: https://www.tripadvisor.com/CreateListing.html
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR93; 61,600,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: TrustMRR
+    submit_url: https://trustmrr.com/dashboard
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR71; 11,300 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: VentureBeat
+    submit_url: https://venturebeat.com/guest-posts/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR91; 10,400 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Visual Studio Marketplace
+    submit_url: https://code.visualstudio.com/api/working-with-extensions/publishing-extension
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR92; 211,600 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: r/vuejs
+    submit_url: https://www.reddit.com/r/vuejs/submit
+    type: article
+    auto: manual
+    lang: en
+    notes: Subreddit. 134,892 members; unknown; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: The Wall Street Journal
+    submit_url: https://www.wsj.com/tips
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR92; 4,600,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: We Work Remotely
+    submit_url: https://weworkremotely.com/employers
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Marketplace. DR79; 222,500 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Web Design Inspiration
+    submit_url: https://www.webdesign-inspiration.com/web-design-site/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR66; 3,900 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Web Designer News
+    submit_url: https://webdesignernews.com/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR59; 2,600 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Webrazzi
+    submit_url: https://webrazzi.com/en/startup-form/
+    type: form
+    auto: manual
+    lang: en
+    notes: Product launch site. DR74; 15,600 monthly organic visits; free; unknown. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: What's the Big Data
+    submit_url: https://whatsthebigdata.com/submit-new-ai-tool/
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR74; 95,300 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Wikipedia
+    submit_url: https://en.wikipedia.org/wiki/Wikipedia:Conflict_of_interest
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR97; 2,100,000,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: WIP
+    submit_url: https://wip.co/projects
+    type: listing
+    auto: manual
+    lang: en
+    status: paid
+    notes: Community. DR56; 1,300 monthly organic visits; paid; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: WIRED
+    submit_url: https://www.wired.com/about/how-to-pitch-stories-to-wired/
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR92; 3,400,000 monthly organic visits; free; dofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Yellow Pages
+    submit_url: https://www.yellowpages.com/claim-your-listing
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR90; 1,200,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Yelp
+    submit_url: https://biz.yelp.com/claim
+    type: article
+    auto: manual
+    lang: en
+    notes: Citation. DR94; 109,000,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Zapier App Directory
+    submit_url: https://developer.zapier.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR91; 3,600,000 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Zoom App Marketplace
+    submit_url: https://developers.zoom.us/docs/distribute/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Marketplace. DR94; 35,200 monthly organic visits; free; nofollow. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: Gartner Peer Insights
+    submit_url: https://www.gartner.com/peer-insights/vendor-portal/overview
+    type: form
+    auto: manual
+    lang: en
+    notes: Directory. DR92; 1,600,000 monthly organic visits; free; nofollow. Distinct from Gartner Digital Markets. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+  - name: GitHub Topics
+    submit_url: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics
+    type: listing
+    auto: manual
+    lang: en
+    notes: Community. DR97; 45,500,000 monthly organic visits; free; link type unknown. Distinct from GitHub awesome-list issue submissions. Source alvinunreal/awesome-submitlist; synced 2026-09-14.
+backlink_claude_skill:
+  - name: YourStory
+    submit_url: https://yourstory.com/companies
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: npm
+    submit_url: https://www.npmjs.com/signup
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR94; nofollow; free. JavaScript libraries and SDKs. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Slant
+    submit_url: https://www.slant.co
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR80; nofollow; free. Community-ranked 'best X' recommendation lists. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Android Authority
+    submit_url: https://www.androidauthority.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Apple Insider
+    submit_url: https://appleinsider.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Bing Places
+    submit_url: https://www.bingplaces.com
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR94; nofollow; free. The Bing/Copilot equivalent of a Google profile. Source URL redirects across domains to https://www.bing.com/forbusiness/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: App Spy
+    submit_url: https://www.appspy.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: WordPress Plugin Directory
+    submit_url: https://wordpress.org/plugins/developers/add/
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR94; dofollow; free. Plugins reaching the largest CMS ecosystem. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Appvita
+    submit_url: https://www.appvita.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://onk.io/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Astro Growth
+    submit_url: https://www.astrogrowth.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Agni
+    submit_url: https://signup.angi.com/pro
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: App Entrepreneurs and Market
+    submit_url: https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fappentre
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: GitHub
+    submit_url: https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnew
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR96; dofollow; free. Open-source projects and an authoritative org profile. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Bloombuzz
+    submit_url: https://bloombuzz.in/joinus/
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Android Apps Review
+    submit_url: https://www.androidappsreview.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Business Insider
+    submit_url: https://www.businessinsider.in/contributors
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Angel List
+    submit_url: https://angel.co/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: VS Code Marketplace
+    submit_url: https://app.vssps.visualstudio.com/_signin?realm=marketplace.visualstudio.com&reply_to=https%3A%2F%2Fmarketplace.visualstudio.com%2Fmanage&redirect=1&context=eyJodCI6MywiaGlkIjoiMjY2M2IxM2YtNTBlMy1hNjU1LWExNTktMjJmNmY0NzI1ZmFiIiwicXMiOnt9LCJyciI6IiIsInZoIjoiIiwiY3YiOiIiLCJjcyI6IiJ90
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR93; nofollow; free. Developer tools shipped as VS Code extensions. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: App Listo
+    submit_url: https://appslisto.com/submit-your-app/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Boing Boing
+    submit_url: https://boingboing.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Buzzfeed News
+    submit_url: https://www.buzzfeednews.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: CNET
+    submit_url: https://www.cnet.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Big Startups
+    submit_url: https://biqstartups.co/overview/sub
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Amfibi
+    submit_url: http://www.amfibi.com
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 436; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Appolicious
+    submit_url: https://www.appolicious.com/contact-us/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://newsreports.com/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Compare Software
+    submit_url: https://www.comparasoftware.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Coin Scribble
+    submit_url: http://coinscribble.com/contact/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: ARS Technica
+    submit_url: https://arstechnica.com/contact-us/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Appy Smarts
+    submit_url: https://www.appysmarts.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: All Top Startups
+    submit_url: https://alltopstartups.com/submit-startup/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Digital Trends
+    submit_url: https://www.digitaltrends.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Elpha
+    submit_url: https://elpha.com
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (CERT_HAS_EXPIRED); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Discover Our Town
+    submit_url: http://www.discoverourtown.com/add/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Collaborizm
+    submit_url: https://www.collaborizm.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Cabinet
+    submit_url: https://www.cabinetm.com/information/m
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://cabinetmsd.my.canva.site/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Best App for Kids
+    submit_url: https://www.bestappsforkids.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://www.bestfive.com.au/best-apps-for-kids/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Business to Community
+    submit_url: https://www.business2community.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: American Inno
+    submit_url: https://www.americaninno.com/post-a-star
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Artic Startups
+    submit_url: https://arcticstartup.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: BetaPage
+    submit_url: https://betapage.co/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://pitchwall.co/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Coop Commerce
+    submit_url: https://www.coopcommerce.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://www.disconetwork.com/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Being Guru
+    submit_url: https://beingguru.com/submit-startup/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Buy Me A Coffee
+    submit_url: https://buymeacoffee.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: App Review Central
+    submit_url: https://www.appreviewcentral.net/app-submission/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Coindoo
+    submit_url: https://coindoo.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: American Startups
+    submit_url: https://americanstartups.com/share-your-story/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Apps Mamma
+    submit_url: https://appsmamma.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: AI Tool Hunt
+    submit_url: https://www.aitoolhunt.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Curated set. DR57; dofollow; freemium. Another well-trafficked AI tools index. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Apps Zoom
+    submit_url: http://appszoom.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Next Web
+    submit_url: https://deals.thenextweb.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: TradeIndia
+    submit_url: https://www.tradeindia.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The iPhone App Review
+    submit_url: http://theiphoneappreview.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 200); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Topion Networls
+    submit_url: https://www.topionetworks.com/#new-sitt
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: ToucheArcade
+    submit_url: https://toucharcade.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Web3 Canvas
+    submit_url: http://web3canvas.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Startup Journal
+    submit_url: http://thestartupjournal.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (EAI_AGAIN); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: WhitePages
+    submit_url: https://www.whitepages.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Indianpreneur
+    submit_url: https://theindianpreneur.com/advertise-
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 406; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Young Upstarts
+    submit_url: http://youngupstarts.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: W3 Catalog
+    submit_url: https://www.w3catalog.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Your Stack
+    submit_url: https://yourstack.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: ZDNet
+    submit_url: https://www.zdnet.com/article/blog-and-forum-comments-unethical-means-of-building-links/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: YC Startup School
+    submit_url: https://www.startupschool.org/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Fascination
+    submit_url: https://thefascination.com/lander/stories/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Women Entrepreneurs Portal
+    submit_url: https://wep.gov.in/knowledge-bank/mybl
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Vator News
+    submit_url: https://vator.tv
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://vatortv.substack.com/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Toshilist
+    submit_url: https://toshilist.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Startup Videos
+    submit_url: https://thestartupvideos.com/submit-startup/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Tech Map
+    submit_url: http://thetechmap.com/Account/Login
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://techmap.me/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Unsplash
+    submit_url: https://unsplash.com
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 401; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Popular Apps
+    submit_url: https://www.thepopularapps.com/submit-app/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Viral Indian Diary
+    submit_url: https://www.viralindiandiary.com/submit-here/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Younoodle
+    submit_url: https://www.younoodle.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Valuer
+    submit_url: https://www.valuer.ai/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Trendy Startups
+    submit_url: https://trendystartups.com/register
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Zumvu
+    submit_url: https://zumvu.com/make-profile.zvx
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Webwide
+    submit_url: https://webwide.io/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Up Labs
+    submit_url: https://uplabs.com/up-labs
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: What's new on the net
+    submit_url: https://www.whatsnewonthenet.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Unboxing Startups
+    submit_url: https://unboxingstartups.com/contact/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Tech Blog
+    submit_url: https://thetechblock.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Tool Salad
+    submit_url: https://toolsalad.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Virtual Mojito
+    submit_url: https://virtualmojito.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Web App Rater
+    submit_url: https://webapprater.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Emoji Launch
+    submit_url: https://emojilaunch.com/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: FourSquare
+    submit_url: https://foursquare.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Exact Seek
+    submit_url: https://www.exactseek.com/add.html
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Fintech News iLounge
+    submit_url: https://fintechnews.sq/submit-your-fintec
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: InnMind
+    submit_url: https://innmind.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: India Mart
+    submit_url: https://seller.indiamart.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Finding Startups
+    submit_url: https://findingstartups.com/startups/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (EAI_AGAIN); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Growth Hack List
+    submit_url: https://growthhacklist.com/startup-director
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Growth Junkie
+    submit_url: https://growthiunkie.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Growth Kit
+    submit_url: https://www.growthkit.so/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Inside
+    submit_url: https://community.inside.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: How to buy SaaS
+    submit_url: https://www.howtobuysaas.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: KitDB
+    submit_url: https://kitdb.app/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Letter List
+    submit_url: https://letterlist.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Listly
+    submit_url: https://list.ly/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Local
+    submit_url: https://partners.local.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Life Hack
+    submit_url: https://www.lifehack.org/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Kotaku
+    submit_url: https://kotaku.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Info World
+    submit_url: https://www.infoworld.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Hackerspad
+    submit_url: https://hackerspad.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://badmeubelzhop.nl/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Magnitt
+    submit_url: https://magnitt.com/startups
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: MacTrast
+    submit_url: http://www.mactrast.com/contact/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Freeble
+    submit_url: https://freeble.site/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 436; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Maker Lead
+    submit_url: https://makerlead.com
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: ModDB
+    submit_url: https://www.moddb.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Geekopedia
+    submit_url: https://geekopedia.me/write-for-us
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 526); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Ir/Coupons
+    submit_url: http://reddit.com/r/coupons/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Netted
+    submit_url: https://www.netted.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Next Big Product
+    submit_url: http://nextbigproduct.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: IndieStack
+    submit_url: https://indiestack.co/contribute/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Pando
+    submit_url: https://pando.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Indian Yellow Pages
+    submit_url: https://www.indianyellowpages.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Oye Startups
+    submit_url: https://oyestartups.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Makerpad
+    submit_url: https://www.makerpad.co/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: My Startup Tool
+    submit_url: https://mystartuptool.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Future of Saas
+    submit_url: https://www.futureofsaas.io/contributor-
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 404); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Inbox World
+    submit_url: https://inboxworld.io/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://arcade.now/lp1/play; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Merchant Circle
+    submit_url: https://www.merchantcircle.com/signup/#‹
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Karo Startup
+    submit_url: https://www.karostartup.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Lets Venture
+    submit_url: https://letsventure.com/join/startup
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 404); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Indie Gamer Reviewer
+    submit_url: https://indiegamereviewer.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Fuel Up
+    submit_url: https://fuelup.co/add
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://www.jadeinstitute.com/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Pocket gamer
+    submit_url: https://www.pocketgamer.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Index
+    submit_url: https://index.co/companies?&
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 404); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Online Genuises
+    submit_url: https://onlinegeniuses.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Next Big What
+    submit_url: https://nextbigwhat.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Growing Page
+    submit_url: https://growingpage.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Insur-Tech iPhone Life
+    submit_url: https://insur-tech.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Just Dial
+    submit_url: https://www.justdial.com/Free-Listing
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: New Startups
+    submit_url: https://www.new-startups.com/pron
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (HTTP 523); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Site Jabber
+    submit_url: https://www.siteiabber.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Start Us
+    submit_url: https://www.startus.cc/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Starticorn
+    submit_url: https://starticorn.com/submit/
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Deals
+    submit_url: https://www.startupdeals.tech/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Founders
+    submit_url: https://startupfounders.com.au/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Galaxy
+    submit_url: https://world.startupsgalaxy.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup John
+    submit_url: https://www.startupiohn.com/submit-startu
+    type: form
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Remote Tools
+    submit_url: https://www.remote.tools/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: SaaS Place
+    submit_url: https://saasplace.io/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Beat
+    submit_url: https://startupbeat.com/get-featured/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: ReadWrite
+    submit_url: https://readwrite.com/contributor-guideline
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Slash Dot
+    submit_url: https://slashdot.org/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Prefundia
+    submit_url: https://prefundia.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Savant
+    submit_url: https://startupsavant.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Costs
+    submit_url: https://www.startupcosts.co/signup
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Spoke
+    submit_url: https://spoke.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Space Bandits
+    submit_url: https://www.spacebandits.io/startups
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Submissions Web Directory
+    submit_url: https://www.submissionwebdirectory.cor
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ENOTFOUND); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Side Projects
+    submit_url: https://sideprojects.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startups UK
+    submit_url: https://startups.co.uk/contact-us/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Storyfied
+    submit_url: https://storyfied.com/get-featured/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Project Hatch
+    submit_url: https://www.projecthatch.co/your-story/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ERR_TLS_CERT_ALTNAME_INVALID); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Tech Dirt
+    submit_url: http://techdirt.com/submitstory.php
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Resources
+    submit_url: https://startupresources.io/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup-List
+    submit_url: https://startups-list.com/cities
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: TeachOnline
+    submit_url: https://teachonline.ca/tools-trends/best-pr
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Ready SaaS Go
+    submit_url: http://readysaasgo.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup benchmarks
+    submit_url: https://startupbenchmarks.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Button
+    submit_url: https://www.startupbutton.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 403); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Techli
+    submit_url: https://techli.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Sulekha
+    submit_url: https://www.sulekha.com/local-services/bi
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight HTTP 403; browser/manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup World
+    submit_url: https://startupworld.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Red Ferret
+    submit_url: https://www.redferret.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: That App Show
+    submit_url: https://thatappshow.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Surges
+    submit_url: https://www.surges.co/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Spectacle
+    submit_url: https://spectacle.is/submit
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://startupvideos.com/auth/login?redirectTo=%2Fsubmit; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: swpely.com
+    submit_url: https://www.airtable.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Programmable Web
+    submit_url: https://www.programmableweb.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Tech Hive
+    submit_url: https://www.techhive.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://www.pcworld.com/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startups of London
+    submit_url: https://startupsoflondon.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: State of Tech
+    submit_url: https://stateoftech.net/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source URL redirects across domains to https://techwithjerad.com/; verify ownership and relevance manually. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Similar Site Search
+    submit_url: https://www.similarsitesearch.com/api/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: SpringWise
+    submit_url: https://springwise.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Lister
+    submit_url: https://startuplister.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 404); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Dope
+    submit_url: https://startupdope.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Guys
+    submit_url: https://www.startupguys.net/submit-startup/
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: The Apple Google
+    submit_url: http://theapplegoogle.com/
+    type: listing
+    auto: manual
+    lang: en
+    status: dead
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Domain or endpoint failed preflight (HTTP 410); marked dead. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Smart Money Match
+    submit_url: https://www.smartmoneymatch.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Lift
+    submit_url: http://startuplift.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Source submission path is stale; root domain is live, locate the current submission page. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Startup Wonders
+    submit_url: https://startupwonders.com/submit/star
+    type: form
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
+  - name: Ask Your Android
+    submit_url: http://askyourandroid.com/
+    type: listing
+    auto: manual
+    lang: en
+    notes: Long-tail entry; DR, pricing, and follow type require live verification. Preflight was inconclusive (TimeoutError); manual check required. Source whatsuppiyush/backlink-claude-skill; checked 2026-09-14.
