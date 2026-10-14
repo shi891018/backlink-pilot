@@ -1,0 +1,6 @@
+# Contains the contact email and any site credentials used for submissions.
+config.yaml
+
+# Local runtime artifacts.
+logs/
+screenshots/

@@ -1,0 +1,55 @@
+# Public product profile for backlink research and outreach.
+# Do not put passwords in this file.
+
+product:
+  name: WebテストNavi
+  url: https://webtestnavi.com/
+  listing_url: https://webtestnavi.com/
+  audience: Japanese new-grad job seekers and foreign students job hunting in Japan
+  languages:
+    - Japanese
+    - English
+    - Chinese
+  categories:
+    - 就活対策ツール
+    - Webテスト対策
+  exams:
+    - SPI
+    - 玉手箱
+    - GAB
+    - CAB
+  fields:
+    - 言語
+    - 計数
+    - 英語
+    - 推論
+  description: >-
+    SPI・玉手箱・GAB・CAB対策のための、無料Webテスト練習・解説ツール
+  description_en: >-
+    Free practice and explanation tool for Japanese hiring aptitude tests
+    (SPI, 玉手箱, GAB, and CAB), with field-based practice, worked
+    explanations, image questions, favorites, wrong-answer review, progress
+    tracking, and mock exams. The interface is available in Japanese,
+    English, and Chinese.
+  positioning: >-
+    Practice, explanation, and review tool. Do not describe it as an
+    answer-lookup or 解答速報 site.
+  features:
+    - Field-based practice for 言語, 計数, 英語, and 推論
+    - Worked explanations
+    - Image-question support
+    - Favorites
+    - Wrong-answer review
+    - Progress tracking
+    - Mock exams
+    - Japanese, English, and Chinese UI
+  contact:
+    name: merrick
+    email: shijm1989@gmail.com
+    company: webtestnavi
+
+submission_policy:
+  default_url: homepage
+  skip_paid_placements: true
+  skip_reciprocal_footer_links: true
+  avoid_answer_lookup_framing: true
