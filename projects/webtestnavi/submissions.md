@@ -29,6 +29,33 @@ Dates are JST. Landing URL for this product is the homepage. No passwords are st
 | 2026-10-15 | Wix — Katie Billings | https://ktbillings00.wixsite.com/website/post/linkedin-a-college-senior-s-best-friend | https://webtestnavi.com/ | Free | Pending | Entry 9. Not submitted yet. |
 | 2026-10-15 | Wix — jiahan1 AI & Jobs (1) | https://jiahan1.wixsite.com/my-site-2/post/ai-jobs-1 | https://webtestnavi.com/ | Free | Pending | Entry 10. Not submitted yet. |
 
+## 2026-10-15 directory submissions
+
+Free directories from `targets.yaml`, worked highest DR first. Account email: shijm1989@gmail.com. No passwords are stored in this log. No paid plan was bought.
+
+| Date | Directory | Submission URL | Landing URL | Cost | Status | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-15 | Startup Buffer | https://startupbuffer.com/ | https://webtestnavi.com/ | Free | Submitted — in review | Confirmation "Your submission is in." Listing name "WebテストNavi". No paid package bought. |
+| 2026-10-15 | Turbo0 | https://turbo0.com/item/webtestnavi | https://webtestnavi.com/ | Free (badge) | Submitted — pending review | Badge verified; submitted on the free plan. The Turbo0 badge is on the homepage. |
+| 2026-10-15 | Findly.tools | https://findly.tools/webtestnavi | https://webtestnavi.com/ | Free (badge) | Published | Badge verified and listing live. The Findly badge is on the homepage. |
+| 2026-10-15 | FiveTaco | https://fivetaco.com | https://webtestnavi.com/ | Free | Submitted — under review | URL submitted while logged in. Approval comes by email. |
+| 2026-10-15 | eBool | https://www.ebool.com | https://webtestnavi.com/ | Free | Submitted — review queue | Free listing, Education category. Free queue is about 6 months. Account created with shijm1989@gmail.com. |
+
+### Skipped on 2026-10-15
+
+| Directory | Reason |
+| --- | --- |
+| e27 | Login failed. |
+| F6S | Wrong password. |
+| DevPost | Account suspended by automated flagging; the user chose not to appeal. |
+| Softpedia | Download software only. |
+| Feedough | Needs a LinkedIn profile. |
+| Crozdesk | Needs a phone number and budget. |
+| EzWebDirectory | USA and Canada only. |
+| Laffaz | Paid only. |
+| StackShare | Google sign-in only. |
+| RankInPublic | Google sign-in only. |
+
 ## Planned — not yet submitted
 
 Do not mark these as submitted. Record the result here after each attempt.
