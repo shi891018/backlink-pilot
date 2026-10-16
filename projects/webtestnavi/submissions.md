@@ -56,6 +56,37 @@ Free directories from `targets.yaml`, worked highest DR first. Account email: sh
 | StackShare | Google sign-in only. |
 | RankInPublic | Google sign-in only. |
 
+## 2026-10-16 directory submissions
+
+| Date | Directory | Submission URL | Landing URL | Cost | Status | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-16 | Fazier | https://fazier.com/launches/webtestnavi | https://webtestnavi.com/ | Free | Submitted — launch scheduled 2026-11-15 | Badge added and verified. |
+| 2026-10-16 | Startup Fame | — | https://webtestnavi.com/ | Free | Pending review | Badge added and verified. |
+| 2026-10-16 | MITSUKARU! | https://www.mitsukarusite.jp/2026/10/684/ | https://webtestnavi.com/ | Free | Published |  |
+| 2026-10-16 | 配信問屋 | — | https://webtestnavi.com/ | Free | Contact form sent | Reply expected in 3–5 business days. |
+| 2026-10-16 | Waooh | — | https://webtestnavi.com/ | Free | Request registered |  |
+| 2026-10-16 | AUL Review | — | https://webtestnavi.com/ | Free | Submitted — needs email verification | Verification email sent to shijm1989@gmail.com. |
+| 2026-10-16 | Devoch | https://devoch.jp/p/product-2f479cd0 | https://webtestnavi.com/ | Free | Published | Type: サービス (no education category). |
+| 2026-10-16 | VibeUP | https://vibeup.technophere.com/products/webtestnavi | https://webtestnavi.com/ | Free | Published | 教育 / Webアプリ・サービス. |
+| 2026-10-16 | Tsukutta.net | https://tsukutta.net/service/47c395b6 | https://webtestnavi.com/ | Free | Under review | Webサービス / SaaS. |
+| 2026-10-16 | valuepress | https://www.value-press.com | https://webtestnavi.com/ | Free | Scheduled 2026-10-16 13:00 JST — pending approval | Free press release. Account: support@webtestnavi.com. |
+| 2026-10-16 | Applishow | https://applishow.com/detail/rRWD63XVk4Fr/ | https://webtestnavi.com/ | Free | Registered | 教育, Web. |
+| 2026-10-16 | Solomaker | https://www.solomaker.dev/products/5e7dbbf0-66bc-492a-a81b-43734920c755 | https://webtestnavi.com/ | Free | Published |  |
+| 2026-10-16 | AnyMake | https://anymake.app/products/Z5dbxfG8JmRBkJZbVHs7 | https://webtestnavi.com/ | Free | Published | Required 3 likes before listing; done by the user. |
+| 2026-10-16 | izanami | https://izanami.dev/post/b8abcc2a-728b-401b-9943-30fc0670ad7a | https://webtestnavi.com/ | Free | Published | No images (site upload returned 500). Add later. |
+| 2026-10-16 | tsukutta.app | https://tsukutta.app/en/apps/7138e0fc-e775-43e2-a628-8b6520ef4bd4 | https://webtestnavi.com/ | Free | Published | Education. |
+
+### Skipped on 2026-10-16
+
+| Directory | Reason |
+| --- | --- |
+| e27 | Login failed. |
+| StackShare | Rejected twice: category not supported. |
+| RankInPublic | Tag picker broken. |
+| SaaSマーケット | Dev-mode demo site, low value. |
+| NewLaun-ch | No free submission; paid ad service only. |
+| DevPost | Dropped. |
+
 ## Planned — not yet submitted
 
 Do not mark these as submitted. Record the result here after each attempt.
