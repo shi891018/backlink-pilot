@@ -86,6 +86,27 @@ Free directories from `targets.yaml`, worked highest DR first. Account email: sh
 | SaaSマーケット | Dev-mode demo site, low value. |
 | NewLaun-ch | No free submission; paid ad service only. |
 | DevPost | Dropped. |
+| MicroLaunch | Paid only. |
+| Sprout24 | MarTech products only. |
+| SoftwareWorld | Paid listing ($99). |
+
+## 2026-10-16 extra 10 batch
+
+AI解題 (step-by-step AI solver) launched 2026-10-16. Listings use the English page https://webtestnavi.com/en and the AI copy. Pricing: Freemium (free with limits, Premium paid). No paid plan was bought. No passwords are stored in this log.
+
+| Date | Directory | Submission URL | Landing URL | Cost | Status | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-16 | Findstack | https://findstack.com | https://webtestnavi.com/en | Free | Submitted — free queue (~5 months) | Product id e8a371ec-d944-40f2-8301-97587dc8daa3. |
+| 2026-10-16 | TinyLaunch | https://www.tinylaunch.com/dashboard/launches/25743/success | https://webtestnavi.com/en | Free (badge) | Resubmitted — awaiting approval; free launch 2026-11-16 17:00 JST | First submission rejected (site must load in English). Resubmitted with /en. Badge on site. |
+| 2026-10-16 | SaaSworthy | https://www.saasworthy.com | https://webtestnavi.com/en | Free | Lead form submitted | Contact email support@webtestnavi.com. User must finish vendor portal setup from the email. |
+| 2026-10-16 | NewTool.site | https://newtool.site/item/webtestnavi | https://webtestnavi.com/en | Free (badge) | Under review | AI copy and AI tag. Badge on site. |
+| 2026-10-16 | SaaSHub | https://www.saashub.com/webtestnavi | https://webtestnavi.com/en | Free | Pending approval | URL changed to /en, pricing Freemium. Competitors: PrepCampus, Magoosh, Khan Academy, Preptest. Pricing link still webtestnavi.com/pricing. |
+| 2026-10-16 | Indie Hackers | https://www.indiehackers.com/product/webtestnavi | https://webtestnavi.com/en | Free | Profile filled | Solo, bootstrapped side project. |
+| 2026-10-16 | Future Tools | https://www.futuretools.io | https://webtestnavi.com/en | Free | Submitted | No edit option after submission. |
+| 2026-10-16 | AIToolsDirectory | — | https://webtestnavi.com/en | Free | Submitted | No edit option after submission. |
+| 2026-10-16 | ToolDirs | https://tooldirs.com | https://webtestnavi.com/en | Free (badge) | Pending review | Badge verified. Free plan. |
+| 2026-10-16 | DeepLaunch | https://deeplaunch.io | https://webtestnavi.com/en | Free (badge) | Scheduled free launch 2026-10-25 22:00 JST | Badge verified. |
+| 2026-10-16 | Uneed | https://www.uneed.best/edit/waiting-line/61140 | https://webtestnavi.com/en | Free | Draft in waiting line | Free line full for ~5 months. Category Personal Life; tags Learning, Education, AI. |
 
 ## Planned — not yet submitted
 
@@ -96,8 +117,6 @@ Do not mark these as submitted. Record the result here after each attempt.
 | Zenn article | [article-drafts/zenn.md](article-drafts/zenn.md) | Draft — not published | `published: false`. Contains `[要記入]` placeholders. Fill those before publishing. |
 | note article | [article-drafts/note.md](article-drafts/note.md) | Draft — not published | Account `merrick_wtn` exists. The article itself has not been posted. |
 | Product Hunt | — | Not started | Free listing only unless a paid plan is explicitly approved. |
-| SaaSHub | — | Not started | Free listing only unless a paid plan is explicitly approved. |
-| Indie Hackers | — | Not started | Free listing only unless a paid plan is explicitly approved. |
 | Digmedia | 就活 media outreach | Not started | Outreach not sent. |
 | 就活市場 | 就活 media outreach | Not started | Outreach not sent. |
 | ベンチャー就活ナビ | 就活 media outreach | Not started | Outreach not sent. |
@@ -110,3 +129,4 @@ Do not mark these as submitted. Record the result here after each attempt.
 | Use case | Preferred landing URL |
 | --- | --- |
 | General directories, comments, and editorial outreach | https://webtestnavi.com/ |
+| English-only directories | https://webtestnavi.com/en |
