@@ -108,6 +108,44 @@ AI解題 (step-by-step AI solver) launched 2026-10-16. Listings use the English 
 | 2026-10-16 | DeepLaunch | https://deeplaunch.io | https://webtestnavi.com/en | Free (badge) | Scheduled free launch 2026-10-25 22:00 JST | Badge verified. |
 | 2026-10-16 | Uneed | https://www.uneed.best/edit/waiting-line/61140 | https://webtestnavi.com/en | Free | Draft in waiting line | Free line full for ~5 months. Category Personal Life; tags Learning, Education, AI. |
 
+## 2026-10-16/17 batches A–D
+
+Free directories, five per batch. Listings use https://webtestnavi.com/en. Copy: "Try it without signing up; a free account unlocks the full experience." Pricing: Freemium (free with limits, Premium ¥2,000/year, entered as $13/year where USD was required). No paid plan was bought. No passwords are stored in this log.
+
+Badges currently on webtestnavi.com (/ and /en): tooldirs.com, deeplaunch.io, newtool.site, aidirectori.es, StartupBase, Startup Fast, FoundrList, FirstLook. Keep them; several free listings depend on them.
+
+| Date | Directory | Submission URL | Landing URL | Cost | Status | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-16 | AI Tools (aitools.inc) | — | https://webtestnavi.com/en | Free | Submitted | Batch A. Typeform submission. |
+| 2026-10-16 | AI Infinity | — | https://webtestnavi.com/en | Free | Submitted | Batch A. |
+| 2026-10-16 | PeerPush | https://peerpush.com/p/webtestnavi | https://webtestnavi.com/en | Free | Free queue #6020 (~2.9 months) | Batch A. |
+| 2026-10-16 | AI Directories (aidirectori.es) | https://www.aidirectori.es | https://webtestnavi.com/en | Free (badge) | Pending | Batch A. Backlink badge is live on the site. The dashboard has no verify button; recheck in a few days. |
+| 2026-10-16 | SoftwareSuggest | — | https://webtestnavi.com/en | Free | Submitted — Unapproved (review up to 3 business days) | Batch A. Tagline "AI-powered practice for SPI & Tamatebako web tests". |
+| 2026-10-16 | Dodo Payments Index | — | https://webtestnavi.com/en | Free | Submitted | Batch B. |
+| 2026-10-16 | CompareCamp | — | https://webtestnavi.com/en | Free | Submitted | Batch B. Account: support@webtestnavi.com. |
+| 2026-10-16 | StartupBlink | — | https://webtestnavi.com/en | Free | Pending review | Batch B. |
+| 2026-10-16 | Peerlist | https://peerlist.io/shijm1989/project/webtestnavi | https://webtestnavi.com/en | Free | Project page created — Launchpad blocked | Batch B. Launchpad needs paid identity verification or workplace verification. Decision left to the user. |
+| 2026-10-17 | Launching Next | https://www.launchingnext.com/thanks/?i=162021 | https://webtestnavi.com/en | Free | In queue | Batch C. |
+| 2026-10-17 | Insidr.ai | — | https://webtestnavi.com/en | Free | Submitted | Batch C. The account was also subscribed to the Insidr newsletter. |
+| 2026-10-17 | The Rundown | mailto:support@therundown.ai | https://webtestnavi.com/en | Free | Emailed | Batch C. Sent 2026-10-17 02:42 JST from browser Gmail, subject "Tool Submission: WebTestNavi". Email-only submission. |
+| 2026-10-17 | Alternative.me | https://alternative.me/account/submissions | https://webtestnavi.com/en | Free | Pending Approval | Batch C. Pricing Freemium; pricing URL https://webtestnavi.com/en/pricing. Account email still unverified: verification resent, nothing arrived (Spam checked). |
+| 2026-10-17 | StartupBase | https://startupbase.io/products/webtestnavi | https://webtestnavi.com/en | Free (badge) | Pending Review — free queue | Batch C. "Launched on StartupBase" badge added to the site. The verify click returned "already submitted", so priority-queue status is unconfirmed. |
+| 2026-10-17 | TechnologyAdvice | https://technologyadvice.com/products/webtestnavi/ | https://webtestnavi.com/en | Free | Pending review (up to 48h) | Batch D. Traction vendor portal, free Basic plan. Category HR > LMS Software (no education category). Account: support@webtestnavi.com. |
+| 2026-10-17 | Tiny Startups | https://www.tinystartups.com/startup/webtestnavi | https://webtestnavi.com/en | Free | Free queue #1731 — est. ~2026-10-31 | Batch D. |
+| 2026-10-17 | Startup Fast | https://www.startupfa.st/projects/webtestnavi | https://webtestnavi.com/en | Free (badge) | Free launch scheduled 2026-11-16 17:00 JST | Batch D. "Powered by Startup Fast" badge on site (required). Tech stack: Next.js, React, TypeScript, Tailwind CSS, Cloudflare. |
+| 2026-10-17 | FoundrList | https://www.foundrlist.com/product/webtestnavi | https://webtestnavi.com/en | Free (badge) | Free launch scheduled week of 2026-11-09 17:01 JST | Batch D. Badge on site. Public page wrongly shows "Paid · from $2000"; not editable, needs FoundrList support. |
+| 2026-10-17 | FirstLook.tools | https://firstlook.tools/product/webtestnavi | https://webtestnavi.com/en | Free (badge) | Pending review (~7 days, ~2026-10-24) | Batch D. Badge must stay on site for the link to stay dofollow. |
+
+### Skipped on 2026-10-16/17
+
+| Directory | Reason |
+| --- | --- |
+| AI Valley | Form errored 3 times; submission probably not received. |
+| BetaList | Only paid options; draft #194555 left unsubmitted. |
+| FinancesOnline | No free self-serve path. |
+| Digital Agency Network | No free self-serve path. |
+| SelectHub | No free self-serve path. |
+
 ## Planned — not yet submitted
 
 Do not mark these as submitted. Record the result here after each attempt.
