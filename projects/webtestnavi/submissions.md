@@ -112,7 +112,7 @@ AI解題 (step-by-step AI solver) launched 2026-10-16. Listings use the English 
 
 Free directories, five per batch. Listings use https://webtestnavi.com/en. Copy: "Try it without signing up; a free account unlocks the full experience." Pricing: Freemium (free with limits, Premium ¥2,000/year, entered as $13/year where USD was required). No paid plan was bought. No passwords are stored in this log.
 
-Badges currently on webtestnavi.com (/ and /en): tooldirs.com, deeplaunch.io, newtool.site, aidirectori.es, StartupBase, Startup Fast, FoundrList, FirstLook. Keep them; several free listings depend on them.
+Badges currently on webtestnavi.com (/ and /en): tooldirs.com, deeplaunch.io, newtool.site, aidirectori.es, StartupBase, Startup Fast, FoundrList, FirstLook, What's the Big Data, Twelve.tools, ShipGrowth. Keep them; several free listings depend on them.
 
 | Date | Directory | Submission URL | Landing URL | Cost | Status | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -168,3 +168,22 @@ Do not mark these as submitted. Record the result here after each attempt.
 | --- | --- |
 | General directories, comments, and editorial outreach | https://webtestnavi.com/ |
 | English-only directories | https://webtestnavi.com/en |
+
+## 2026-10-18 batch E
+
+Badges added to webtestnavi.com (/ and /en) for this batch: What's the Big Data, Twelve.tools, ShipGrowth. Keep them; these free listings depend on them.
+
+| Date | Directory | Submission URL | Landing URL | Cost | Status | Notes |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-18 | SourceForge | — | https://webtestnavi.com/en | Free | Request submitted — pending | Batch E. A reCAPTCHA error appeared during submit, so a duplicate request is possible. The required consent box includes a marketing opt-in. |
+| 2026-10-18 | TechPluto | — | https://webtestnavi.com/en | Free | In review queue | Batch E. Free Google Form; confirmation email received. Paid audit upsell ignored. |
+| 2026-10-18 | Twelve.tools | https://twelve.tools/webtestnavi-en | https://webtestnavi.com/en | Free (badge) | Live | Batch E. Twelve.tools badge on site. Owner edit link is kept privately, not in this log. |
+| 2026-10-18 | What's the Big Data | mailto:hello@whatsthebigdata.com | https://webtestnavi.com/en | Free (badge) | Emailed — 2–3 business days | Batch E. Sent 2026-10-18 00:37 JST from browser Gmail, subject "Free listing request — badge added". Badge on site. |
+| 2026-10-18 | ShipGrowth | https://shipgrowth.dev/settings/my-tools | https://webtestnavi.com/en | Free (badge) | Pending review (1–3 business days) | Batch E. Badge verified on first try. The form only had name, URL, icon, and preview image. |
+
+### Skipped on 2026-10-18
+
+| Directory | Reason |
+| --- | --- |
+| Cuspera | Only for sales/marketing software; rejected support@webtestnavi.com as a work email. |
+| Appvizer | Sign-up page is a 404 and the vendor app returns 502. |
