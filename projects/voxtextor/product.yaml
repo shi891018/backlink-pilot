@@ -1,0 +1,61 @@
+# Public product profile for backlink research and outreach.
+# Do not put passwords in this file.
+
+product:
+  name: VoxTextor
+  url: https://voxtextor.com/
+  listing_url: https://voxtextor.com/
+  github: https://github.com/shi891018/stt
+  audience: Creators, podcasters, researchers, and teams who need audio/video transcripts
+  languages:
+    - English
+  categories:
+    - AI
+    - Speech-to-text
+    - Transcription
+    - SaaS
+    - Productivity
+  description: >-
+    Audio and video transcription SaaS: upload a recording, get time-coded text
+    with editable transcripts, and export TXT/SRT (VTT, Markdown, JSON on Pro).
+    Speaker labels, translation, and summaries are available on Pro. Try without
+    signing up; a free account unlocks more minutes.
+  description_short: >-
+    Transcribe audio and video into publishable text — timestamps, speaker labels, and exports.
+  tagline: Transcribe audio & video into publishable text
+  positioning: >-
+    Online-learning-adjacent productivity / AI SaaS for speech-to-text.
+    Frame as AI transcription / speech-to-text tool, not a voice typing desktop app.
+  pricing: Freemium
+  pricing_notes: >-
+    Guest: 10 MB / 15 min / 3 files per day. Free account: larger files and monthly minutes.
+    Pro: speaker labels, translation, more exports and minutes.
+  features:
+    - Audio and video upload
+    - Time-coded transcripts
+    - Inline editing
+    - Speaker labels (Pro)
+    - Translation and summaries (Pro)
+    - Export TXT, SRT; Pro adds VTT, Markdown, JSON
+    - Try without signing up
+  tech_stack:
+    - Next.js
+    - React
+    - TypeScript
+    - Cloudflare
+  contact:
+    name: Merrick Shi
+    first_name: Merrick
+    last_name: S
+    email: shijm1989@gmail.com
+    company: VoxTextor
+    role: CEO / Owner
+    phone: "+817043906000"
+    location: Tokyo, Japan
+    founded: 2026
+
+submission_policy:
+  default_url: homepage
+  skip_paid_placements: true
+  skip_reciprocal_footer_links: true
+  prefer_ai_directories: true
