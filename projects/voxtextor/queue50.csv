@@ -1,0 +1,263 @@
+rank,name,domain,submit_url,ai_only,section,status
+1,AI Directory,aidirectory.org,https://www.aidirectory.org/user-submit/,ai_only,overseas_ai_directories,skipped_broken
+2,AI Library,library.phygital.plus,https://library.phygital.plus/tool-submission,ai_only,overseas_ai_directories,submitted
+3,AI Tools Up,aitoolsup.com,https://aitoolsup.com/submit-tool/,ai_only,overseas_ai_directories,submitted
+4,AI Valley,aivalley.ai,https://aivalley.ai/submit-tool/,ai_only,overseas_ai_directories,uncertain
+5,AILib,ailib.ru,https://ailib.ru/en/add-ai/,ai_only,overseas_ai_directories,uncertain
+6,AIToolMall,aitoolmall.com,https://aitoolmall.com/submit/,ai_only,overseas_ai_directories,emailed
+7,AIToolsDirectory,aitoolsdirectory.com,https://aitoolsdirectory.com/submit-tool,ai_only,overseas_ai_directories,submitted
+8,Ai Business Tool,aibusinesstool.com,https://aibusinesstool.com/,ai_only,overseas_ai_directories,skipped_not_directory
+9,Apps and Websites,landing.mycloudmedia.co.uk,https://landing.mycloudmedia.co.uk/apps-and-websites-submit-ai-or-saas-tool/new-submission.html,ai_only,overseas_ai_directories,uncertain
+10,Full Stack AI,fullstackai.co,https://fullstackai.co/submit-a-tool/,ai_only,overseas_ai_directories,skipped_paid
+11,Future Tools,futuretools.io,https://www.futuretools.io/submit-a-tool,ai_only,overseas_ai_directories,submitted
+12,Human or Not,humanornot.co,https://www.humanornot.co/submit-tool,ai_only,overseas_ai_directories,submitted
+13,Insidr.ai,insidr.ai,https://www.insidr.ai/submit-tools/,ai_only,overseas_ai_directories,submitted
+14,Supertools,therundown.ai,https://www.therundown.ai/submit,ai_only,overseas_ai_directories,emailed
+15,There's An AI For That,theresanaiforthat.com,https://theresanaiforthat.com/launch/,ai_only,overseas_ai_directories,skipped_paid
+16,AIGC便利店,aigclist.com,https://aigclist.com/submit-ai-tools-free/,ai_only,chinese_ai_directories,skipped_needs_account
+17,AI导航网 (aiopenminds),jinshuju.net,https://jinshuju.net/f/BhEFyJ,ai_only,chinese_ai_directories,skipped_dead
+18,Cooltools,backdata.net,https://backdata.net/submit-site.html,ai_only,chinese_ai_directories,uncertain
+19,ai-bot.cn,tally.so,https://tally.so/r/wkeKz1,ai_only,chinese_ai_directories,submitted
+20,iforai,iforai.com,https://iforai.com/submit_website/,ai_only,chinese_ai_directories,submitted
+21,智鹭AI,aiheron.com,https://www.aiheron.com/promote,ai_only,chinese_ai_directories,pending_reciprocal
+22,海外导航网,hhlink.com,https://www.hhlink.com/%E6%8F%90%E4%BA%A4%E6%96%B0%E7%BD%91%E7%AB%99,ai_only,chinese_ai_directories,submitted
+23,AI Awesome,aiawesome.com,https://www.aiawesome.com/,ai_only,awesome_free_seo_backlinks,skipped_dead
+24,AI Marketing Directory,aimarketing.directory,https://www.aimarketing.directory/submit,ai_only,awesome_free_seo_backlinks,submitted
+25,BroUseAI,brouseai.com,https://www.brouseai.com/submission/ai,ai_only,awesome_free_seo_backlinks,skipped_paid
+26,Dokey AI,dokeyai.com,https://dokeyai.com/submit,ai_only,awesome_free_seo_backlinks,pending_reciprocal
+27,GPT Forge,docs.google.com,https://docs.google.com/forms/d/e/1FAIpQLSdttwE4QP8PqoDzh36Q5NUok3BdUe33thDCQ5dT_RNY2goWvQ/viewform,ai_only,awesome_free_seo_backlinks,submitted
+28,LitedAI,listedai.co,https://www.listedai.co/submit,ai_only,awesome_free_seo_backlinks,submitted
+29,Spiff.store,spiff.store,https://spiff.store/submit-tool/,ai_only,awesome_free_seo_backlinks,submitted
+30,The AI Exchange,mailto:hello@theaiexchange.com,mailto:hello@theaiexchange.com,ai_only,awesome_free_seo_backlinks,emailed
+31,TipSeason AI,tipseason.com,https://tipseason.com/ai-tools/submit-free,ai_only,awesome_free_seo_backlinks,submitted
+32,10015,10015.io,https://10015.io/product-finder/submit,general,awesome_free_seo_backlinks,skipped_needs_account
+33,Allmyfaves,allmyfaves.com,https://allmyfaves.com/,general,awesome_free_seo_backlinks,skipped_no_submit
+34,Alpha Digits,alphadigits.com,https://alphadigits.com/submit-app-for-review/,general,awesome_free_seo_backlinks,submitted
+35,Bizhwy,bizhwy.com,https://www.bizhwy.com/addlisting.php,general,awesome_free_seo_backlinks,skipped_needs_account
+36,CompareCamp,comparecamp.com,https://comparecamp.com/request-a-review/,general,awesome_free_seo_backlinks,blocked_captcha
+37,Crowd Reviews,crowdreviews.com,https://www.crowdreviews.com/,general,awesome_free_seo_backlinks,skipped_down
+38,Curated Design,curated.design,https://www.curated.design/,general,awesome_free_seo_backlinks,submitted
+39,Digital Agency Network,digitalagencynetwork.com,https://digitalagencynetwork.com/join-free-listing-tools/,general,awesome_free_seo_backlinks,skipped_needs_account
+40,Featured Customers,featuredcustomers.com,https://www.featuredcustomers.com/,general,awesome_free_seo_backlinks,skipped_paid
+41,FeedMyStartup,feedmystartup.com,https://feedmystartup.com/submit-your-startup/,general,awesome_free_seo_backlinks,skipped_closed
+42,Finances Online,financesonline.com,https://financesonline.com/add-product/,general,awesome_free_seo_backlinks,submitted
+43,FiveTaco,fivetaco.com,https://fivetaco.com/submit,general,awesome_free_seo_backlinks,uncertain
+44,FreeOnline,freeonline.org,https://www.freeonline.org/segnala-un-sito/,general,awesome_free_seo_backlinks,submitted
+45,Geekwire,geekwire.com,https://www.geekwire.com/submit-startup/,general,awesome_free_seo_backlinks,skipped_ineligible
+46,Ismailblogger,ismailblogger.com,https://ismailblogger.com/submit-tools/,general,awesome_free_seo_backlinks,skipped_dead
+47,Lachief,lachief.io,https://www.lachief.io/,general,awesome_free_seo_backlinks,submitted
+48,Laffaz,laffaz.com,https://laffaz.com/submit-startup/,general,awesome_free_seo_backlinks,skipped_paid
+49,Marsx,marsx.dev,https://marsx.dev/ai-startups/,general,awesome_free_seo_backlinks,submitted
+50,Medium,medium.com,https://medium.com/,general,awesome_free_seo_backlinks,skipped_not_directory
+51,SaaSworthy,saasworthy.com,https://www.saasworthy.com/offerings,general,awesome_free_seo_backlinks,skipped_needs_account
+52,Scoot,scoot.co.uk,https://www.scoot.co.uk/add-listing,general,awesome_free_seo_backlinks,skipped_ineligible
+53,SoMuch,somuch.com,https://somuch.com/submit-links/,general,awesome_free_seo_backlinks,submitted
+54,Sprout24,sprout24.com,https://sprout24.com/submit/,general,awesome_free_seo_backlinks,submitted_review_request
+55,Stackshare,stackshare.io,https://stackshare.io/submit/,general,awesome_free_seo_backlinks,skipped_needs_account
+56,Launching Next,launchingnext.com,https://launchingnext.com/submit/,general,batch2_expansion,submitted
+57,No Code Family,nocodefamily.com,https://nocodefamily.com/submit-tool,general,batch2_expansion,skipped_needs_account
+58,Feedough,feedough.com,https://www.feedough.com/submit-your-startup/,general,batch2_expansion,pending_linkedin
+59,Turbo0,turbo0.com,https://turbo0.com/submit,general,batch2_expansion,submitted_pending_badge
+60,Index by Dodo,index.dodopayments.com,https://index.dodopayments.com/submit,general,batch2_expansion,skipped_needs_account
+61,Findly.tools,findly.tools,https://findly.tools/submit,general,batch2_expansion,skipped_needs_account
+62,PeerPush,peerpush.com,https://peerpush.com/submit,general,batch2_expansion,submitted
+63,ToolDirs,tooldirs.com,https://tooldirs.com/submit,general,batch2_expansion,pending_reciprocal
+64,eBool,ebool.com,https://www.ebool.com/submit,general,batch2_expansion,skipped_needs_account
+65,Tiny Startups,tinystartups.com,https://www.tinystartups.com/submit,general,batch2_expansion,skipped_paid
+66,HuntScreens,huntscreens.com,https://huntscreens.com/submit,general,batch2_expansion,skipped_needs_account
+67,Startup Collections,startupcollections.com,https://startupcollections.com/submit-product/,general,batch2_expansion,uncertain
+68,Startup Fame,startupfa.me,https://startupfa.me/submit,general,batch2_expansion,submitted_pending_badge
+69,The Hive Index,thehiveindex.com,https://thehiveindex.com/submit,general,batch2_expansion,skipped_not_fit
+70,Startup Buffer,startupbuffer.com,https://startupbuffer.com/site/submit,general,batch2_expansion,submitted
+71,BufferApps,bufferapps.com,https://bufferapps.com/beta-listing/new,general,batch2_expansion,skipped_broken
+72,TechPluto,techpluto.com,https://www.techpluto.com/submit-a-startup/,general,batch2_expansion,submitted
+73,Twelve.tools,twelve.tools,https://twelve.tools/submit-your-tool,general,batch2_expansion,submitted_pending_badge
+74,01webdirectory,01webdirectory.com,https://www.01webdirectory.com/frmPreSubmit.aspx,general,batch2_expansion,skipped_paid
+75,9Sites.net,9sites.net,https://www.9sites.net/addurl.php,general,batch2_expansion,submitted
+76,ProLinkDirectory,prolinkdirectory.com,https://www.prolinkdirectory.com/submit.php,general,batch2_expansion,submitted
+77,Free Directory,directory-free.com,https://www.directory-free.com/submit/submit.php,general,batch2_expansion,submitted
+78,Free Stuff Dev,freestuff.dev,https://freestuff.dev/submit,general,batch2_expansion,skipped_needs_account
+79,Startupanz,startupanz.com,https://startupanz.com/submit-my-startup-profile/,general,batch2_expansion,emailed
+80,BasedTools,basedtools.ai,https://basedtools.ai/submit,ai_only,batch2_expansion,skipped_needs_account
+81,Toolspedia,toolspedia.io,https://www.toolspedia.io/submit-tool/,general,batch2_expansion,skipped_paid
+83,DeepLaunch,deeplaunch.io,https://deeplaunch.io/submit,general,batch2_expansion,skipped_needs_account
+84,Gets.tools,gets.tools,https://gets.tools/submit,general,batch2_expansion,pending_reciprocal
+85,Faceless Directory,faceless.directory,https://faceless.directory/submit,general,batch2_expansion,emailed
+86,FindAIDir,findaidir.com,https://findaidir.com/submit,ai_only,batch2_expansion,uncertain
+87,AI Tools Marketer,aitoolsmarketer.com,https://aitoolsmarketer.com/submit/,ai_only,batch2_expansion,pending_reciprocal
+89,AI Directories,aidirectori.es,https://www.aidirectori.es/submit-ai-tool,ai_only,batch2_expansion,submitted
+91,LLM Relevance,llmrelevance.com,https://www.llmrelevance.com/submit,general,batch2_expansion,submitted
+92,MaxiBestOf,maxibestof.one,https://maxibestof.one/submit,general,batch2_expansion,skipped_paid
+93,StartupBlink,startupblink.com,https://www.startupblink.com/startups/add,general,batch2_expansion,skipped_needs_account
+94,The Startup Project,startupproject.org,https://startupproject.org/submit-startup/,general,batch2_expansion,submitted
+95,What's the Big Data,whatsthebigdata.com,https://whatsthebigdata.com/submit-new-ai-tool/,general,batch2_expansion,pending_reciprocal
+96,The Startup Videos,thestartupvideos.com,https://thestartupvideos.com/submit-startup/,general,batch2_expansion,skipped_needs_video
+97,Emoji Launch,emojilaunch.com,https://emojilaunch.com/submit,general,batch2_expansion,skipped_paid
+98,Exact Seek,exactseek.com,https://www.exactseek.com/add.html,general,batch2_expansion,submitted
+99,Startup Guys,startupguys.net,https://www.startupguys.net/submit-startup/,general,batch2_expansion,skipped_paid
+100,Top Similar Sites,topsimilarsites.com,https://www.topsimilarsites.com/add.aspx,general,batch2_expansion,submitted_review_request
+101,JoeAnt,joeant.com,https://www.joeant.com/suggest.html,general,batch3_expansion,skipped_paid
+102,Gimpsy,gimpsy.com,https://www.gimpsy.com/gimpsy/searcher/suggest.php,general,batch3_expansion,skipped_closed
+103,Jayde,jayde.com,https://www.jayde.com/submit.html,general,batch3_expansion,submitted
+104,Sonic Run,sonicrun.com,https://www.sonicrun.com/freelisting.html,general,batch3_expansion,submitted
+105,UK Internet Directory,ukinternetdirectory.net,https://www.ukinternetdirectory.net/submit.php,general,batch3_expansion,submitted
+106,All States USA Directory,allstatesusadirectory.com,https://www.allstatesusadirectory.com/submit.php,general,batch3_expansion,submitted
+107,ABC Directory,abc-directory.com,https://www.abc-directory.com/submiturl,general,batch3_expansion,skipped_paid
+108,Sites Web Directory,siteswebdirectory.com,https://www.siteswebdirectory.com/submit.php,general,batch3_expansion,uncertain
+109,High Rank Directory,highrankdirectory.com,https://www.highrankdirectory.com/submit.php,general,batch3_expansion,submitted
+110,Cipinet,cipinet.com,https://www.cipinet.com/submit.php,general,batch3_expansion,skipped_broken
+111,OSALT,osalt.com,https://osalt.com/suggest,general,batch3_expansion,skipped_not_fit
+112,Offpagesavvy,offpagesavvy.com,https://www.offpagesavvy.com/submit-your-site/,general,batch3_expansion,submitted_review_request
+113,AppsThunder,appsthunder.com,https://appsthunder.com/submit-your-app/,general,batch3_expansion,skipped_paid
+114,Being Guru,beingguru.com,https://beingguru.com/submit-startup/,general,batch3_expansion,submitted
+115,AI Trendz,aitrendz.xyz,https://aitrendz.xyz/submit,ai_only,batch3_expansion,skipped_paid
+116,PoweredbyAI,poweredbyai.app,https://poweredbyai.app/submit-tool,ai_only,batch3_expansion,skipped_paid
+117,AITools.inc,aitools.inc,https://aitools.inc/submit,ai_only,batch3_expansion,skipped_closed
+118,Dang.ai,dang.ai,https://dang.ai/submit,ai_only,batch3_expansion,skipped_needs_account
+119,OECD.AI catalogue,oecd.ai,https://oecd.ai/en/catalogue/tools/submit,ai_only,batch3_expansion,submitted
+120,AIToolNet,aitoolnet.com,https://www.aitoolnet.com/submit,ai_only,batch3_expansion,skipped_paid
+121,Free Internet Web Directory,freeinternetwebdirectory.com,https://www.freeinternetwebdirectory.com/submit.php,general,batch3_expansion,submitted
+122,Hot Web URLs,hotweburls.com,https://www.hotweburls.com/submit.php,general,batch3_expansion,submitted
+123,Toolify.ai,toolify.ai,https://www.toolify.ai/submit,ai_only,batch4_expansion,skipped_paid
+124,Easy with AI,easywithai.com,https://easywithai.com/submit-tool/,ai_only,batch4_expansion,skipped_paid
+125,App Rater,apprater.net,https://apprater.net/#submit,general,batch4_expansion,submitted
+126,Business Software,business-software.com,https://www.business-software.com/add-your-product/,general,batch4_expansion,skipped_broken
+127,Active Search Results,activesearchresults.com,https://www.activesearchresults.com/addwebsite.php,general,batch4_expansion,submitted
+128,Viesearch,viesearch.com,https://viesearch.com/submit,general,batch4_expansion,submitted_pending_verify
+129,Thingtesting,thingtesting.com,https://thingtesting.com/submit-brand,general,batch4_expansion,skipped_not_fit
+130,Softpedia,softpedia.com,https://www.softpedia.com/user/submit.shtml,general,batch4_expansion,skipped_not_fit
+131,FirstLook.tools,firstlook.tools,https://firstlook.tools/submit,general,batch4_expansion,pending_reciprocal
+132,aitools.fyi,aitools.fyi,https://aitools.fyi/submit,ai_only,batch4_expansion,skipped_paid
+133,Webrazzi,webrazzi.com,https://webrazzi.com/en/startup-form/,general,batch4_expansion,submitted
+134,Tools.so,tools.so,https://tools.so/submit,general,batch4_expansion,submitted
+135,AI Wizard,aiwizard.ai,https://www.aiwizard.ai/submit-new,ai_only,batch4_expansion,skipped_needs_account
+136,AppsMirror,appsmirror.com,https://appsmirror.com/submit-your-app-for-review,general,batch4_expansion,skipped_paid
+137,List Of Freeware,listoffreeware.com,https://listoffreeware.com/submit-new-freeware/,general,batch4_expansion,skipped_not_fit
+138,Tailkits,tailkits.com,https://tailkits.com/submit-product/,general,batch4_expansion,skipped_not_fit
+139,App Listo,appslisto.com,https://appslisto.com/submit-your-app/,general,batch4_expansion,skipped_paid
+140,Letter List,letterlist.com,https://letterlist.com/submit/,general,batch4_expansion,skipped_not_fit
+141,PitchWall,pitchwall.co,https://pitchwall.co/submit,ai_only,batch4_expansion,skipped_needs_account
+142,Open Tools,opentools.ai,https://opentools.ai/,ai_only,batch4_expansion,skipped_paid
+143,Free AI Apps,freeappsai.com,https://freeappsai.com/,ai_only,batch4_expansion,skipped_paid
+144,Chat AI Apps,chataiapps.com,https://www.chataiapps.com/,ai_only,batch4_expansion,skipped_not_fit
+145,Tool Directory AI,tooldirectory.ai,https://tooldirectory.ai/,ai_only,batch4_expansion,skipped_paid
+146,AI Top Rank,aitoprank.com,https://www.aitoprank.com/,ai_only,batch4_expansion,skipped_dead
+147,How Brands Are Built,howbrandsarebuilt.com,https://howbrandsarebuilt.com/submit/,general,batch4_expansion,skipped_not_fit
+148,小木屋,wechalet.cn,https://wechalet.cn/appstore/add,general,batch4_expansion,uncertain
+149,ABABTOOLS,ababtools.com,https://ababtools.com/?post=1292,general,batch4_expansion,uncertain
+150,Joinly,joinly.xyz,https://www.joinly.xyz/,general,batch4_expansion,skipped_paid
+151,WhatLaunched.Today,whatlaunched.today,https://www.whatlaunched.today/,general,batch4_expansion,skipped_needs_account
+152,10words,10words.io,https://10words.io/,general,batch4_expansion,skipped_needs_account
+153,MicroLaunch,microlaunch.net,https://microlaunch.net/,general,batch4_expansion,skipped_paid
+154,Fiddy,fiddy.co,https://fiddy.co/,general,batch4_expansion,skipped_dead
+155,once.tools,once.tools,https://once.tools/,general,batch4_expansion,submitted
+156,Toools.design,toools.design,https://toools.design/,general,batch4_expansion,skipped_not_fit
+157,Submit.biz,submit.biz,https://www.submit.biz/,general,batch4_expansion,submitted
+158,247WebDirectory,247webdirectory.com,https://www.247webdirectory.com/,general,batch4_expansion,submitted
+159,Tsection,tsection.com,https://www.tsection.com/,general,batch4_expansion,skipped_broken
+160,Storyfied,storyfied.com,https://storyfied.com/get-featured/,general,batch4_expansion,skipped_dead
+161,Aixploria,aixploria.com,https://www.aixploria.com/en/add-ai/,ai_only,batch4_expansion,skipped_paid
+162,ShipGrowth,shipgrowth.dev,https://shipgrowth.dev/submit,ai_only,batch4_expansion,skipped_needs_account
+163,AI Boom Tools,aiboom.tools,https://aiboom.tools/submit,ai_only,batch4_expansion,skipped_needs_account
+164,SimilarLabs,similarlabs.com,https://similarlabs.com/submit,general,batch4_expansion,skipped_paid
+165,Weboworld,weboworld.com,https://weboworld.com/user/create-listing/1,general,batch4_expansion,skipped_needs_account
+166,Unmatched Style,unmatchedstyle.com,https://unmatchedstyle.com/submit,general,batch4_expansion,skipped_not_fit
+167,Made With Vue.js,madewithvuejs.com,https://madewithvuejs.com/submit,general,batch4_expansion,skipped_not_fit
+168,Freebie Supply,freebiesupply.com,https://freebiesupply.com/submit-freebie/,general,batch4_expansion,skipped_not_fit
+169,Ecomm Design,ecomm.design,https://ecomm.design/submit/,general,batch4_expansion,skipped_not_fit
+170,Toolio AI,toolio.ai,https://toolio.ai/,ai_only,batch4_expansion,skipped_paid
+171,One Page Love,onepagelove.com,https://onepagelove.com/submit/,general,batch4_expansion,skipped_not_fit
+172,SelectHub,pmo.selecthub.com,https://pmo.selecthub.com/claim-your-product/,general,batch4_expansion,submitted
+173,Appoid,appiod.com,http://appiod.com/submit-app-for-review/,general,batch4_spare,skipped_paid
+174,Dizila,dizila.com,https://www.dizila.com/submit,general,batch4_spare,skipped_broken
+175,All Business Directory,allbusinessdirectory.biz,https://www.allbusinessdirectory.biz/directory.php?page=submission-guidelines,general,batch4_spare,skipped_not_fit
+176,BusinessSeek.biz,businessseek.biz,https://www.businessseek.biz/page.php?page=submission-policy,general,batch4_spare,skipped_needs_account
+177,Startup Europe,startupeurope.net,https://startupeurope.net/,general,batch4_spare,skipped_needs_account
+178,Crozdesk,crozdesk.com,https://crozdesk.com/,general,batch4_spare,skipped_needs_account
+179,Post Make,postmake.io,https://postmake.io/,general,batch4_spare,pending_reciprocal
+180,Dev Pages,devpages.io,https://www.devpages.io/,general,batch4_spare,submitted
+181,DEV Resources,devresourc.es,https://devresourc.es/,general,batch4_spare,pending
+182,StartupTracker,startuptracker.io,https://startuptracker.io/,general,batch4_spare,pending
+183,SaaS Surf,saassurf.com,https://saassurf.com/,general,batch4_spare,skipped_paid
+184,Appscriber,appscribed.com,https://appscribed.com/,general,batch4_spare,skipped_paid
+185,Startupxplore,startupxplore.com,https://startupxplore.com/en/startups,general,batch4_spare,pending
+186,Snap Munk,startups.snapmunk.com,https://startups.snapmunk.com,general,batch4_spare,pending
+187,Tech Tools Directory,nocode.tech,https://www.nocode.tech/tools,general,batch4_spare,pending
+188,Open Startup List,openstartuplist.com,https://openstartuplist.com,general,batch4_spare,pending
+189,Gumroad,gumroad.com,https://gumroad.com,general,batch4_spare,pending
+190,ProvenExpert,provenexpert.com,https://www.provenexpert.com,general,batch4_spare,pending
+191,IndiePage,indiepa.ge,https://indiepa.ge/submit,general,batch4_spare,skipped_needs_account
+192,RankInPublic,rankinpublic.xyz,https://rankinpublic.xyz,general,batch4_spare,pending
+193,AllGPTs,allgpts.co,https://allgpts.co/submit,ai_only,batch4_spare,skipped_not_fit
+194,Yizhan,yizhan.club,https://yizhan.club,general,batch4_spare,pending
+195,DevSuite,devsuite.co,https://devsuite.co,general,batch4_spare,pending
+196,OGimage.gallery,ogimage.gallery,https://ogimage.gallery,general,batch4_spare,pending
+197,SaaSHub,saashub.com,https://www.saashub.com/services/submit,general,batch4_spare,submitted
+198,Startup88,startup88.com,https://startup88.typeform.com/to/CRjWqM,general,batch4_spare,submitted
+199,Neeed Directory,neeed.directory,https://neeed.directory/,general,batch4_spare,pending
+200,Open Alternative,openalternative.co,https://openalternative.co/,general,batch4_spare,pending
+201,SaaSFame,saasfame.com,https://saasfame.com/,general,batch4_spare,pending
+202,ToolFame,toolfame.com,https://toolfame.com/,general,batch4_spare,pending
+203,yo.directory,yo.directory,https://yo.directory/,general,batch4_spare,pending
+204,Android Headlines,androidheadlines.com,https://www.androidheadlines.com/news-tips,general,batch4_spare,pending
+205,BusinessWith,hub.businesswith.com,https://hub.businesswith.com/,general,batch4_spare,pending
+206,CNET Download.com,download.cnet.com,https://download.cnet.com/add-your-software/,general,batch4_spare,pending
+207,eCommerceFuel,ecommercefuel.com,https://www.ecommercefuel.com/saas-software-partnerships/,general,batch4_spare,pending
+208,GetApp,getapp.com,https://getapp.com,general,batch4_spare,pending
+209,1440,join1440.com,https://join1440.com,general,batch4_spare,pending
+210,Alex Hormozi's Newsletter,acquisition.com,https://acquisition.com,general,batch4_spare,pending
+211,ByteByteGo,blog.bytebytego.com,https://blog.bytebytego.com,general,batch4_spare,pending
+212,CB Insights,cbinsights.com,https://cbinsights.com,general,batch4_spare,pending
+213,TopAI.tools,topai.tools,https://topai.tools/submit,ai_only,batch5_expansion,skipped_paid
+214,Supertools,supertools.therundown.ai,https://www.therundown.ai/submit,ai_only,batch5_expansion,emailed
+215,Toolscout,toolscout.ai,https://toolscout.ai/submit,ai_only,batch5_expansion,skipped_needs_account
+216,StartupBase,startupbase.io,https://startupbase.io/submit,general,batch5_expansion,uncertain
+217,SideProjectors,sideprojectors.com,https://www.sideprojectors.com/project/new,general,batch5_expansion,skipped_needs_account
+218,Startup Inspire,startupinspire.com,https://startupinspire.com/submit,general,batch5_expansion,skipped_needs_account
+219,Directory Index,directory-index.com,https://directory-index.com/,general,batch6_expansion,submitted
+220,MeWebLink,meweblink.com,https://meweblink.com/,general,batch6_expansion,submitted
+221,Zearches,zearches.com,https://zearches.com/submit-website-free.php,general,batch6_expansion,submitted
+222,DevElif,develif.com,https://develif.com/,general,batch6_expansion,submitted
+223,Free Web Submission,freewebsubmission.com,https://www.freewebsubmission.com/,general,batch6_expansion,submitted
+224,W3dot Web Guide,w3dot.org,https://w3dot.org/submit.php,general,batch6_expansion,skipped_paid
+225,Canada Web Dir,canadawebdir.com,https://www.canadawebdir.com/submit.php,general,batch6_expansion,submitted
+226,Gain Web,gainweb.org,https://gainweb.org/submit.php,general,batch6_expansion,submitted
+227,Marketing Internet Directory,marketinginternetdirectory.com,https://www.marketinginternetdirectory.com/submit.php,general,batch6_expansion,submitted
+228,Quality Internet Directory,qualityinternetdirectory.com,https://www.qualityinternetdirectory.com/submit.php,general,batch6_expansion,submitted
+229,Site Promotion Directory,sitepromotiondirectory.com,https://www.sitepromotiondirectory.com/submit.php,general,batch6_expansion,submitted
+230,Free PR Web Directory,freeprwebdirectory.com,https://www.freeprwebdirectory.com/submit.php,general,batch6_expansion,submitted
+231,Link Centre,linkcentre.com,https://www.linkcentre.com/addurl/,general,batch6_expansion,skipped_needs_account
+232,Directory Fire,directoryfire.com,https://directoryfire.com/submit.php,general,batch6_expansion,skipped_paid
+233,Ask Directory,ask-directory.com,https://www.ask-directory.com/submit.php,general,batch6_expansion,submitted
+234,SiteLike,sitelike.org,https://www.sitelike.org/,general,batch6_expansion,submitted
+235,Share Your Startup,shareyourstartup.com,https://shareyourstartup.com/,general,batch6_expansion,submitted
+236,BuildVoyage,buildvoyage.com,https://buildvoyage.com/submit,general,batch6_expansion,submitted
+237,Indie Hustles,indiehustles.com,https://indiehustles.com/submit,general,batch6_expansion,submitted
+238,Find SEO Tools,findseotools.com,https://findseotools.com/submit,general,batch6_expansion,submitted
+239,Startup Stash,startupstash.com,https://startupstash.com/add-listing/,general,batch6_expansion,skipped_not_fit
+240,ToolTrove (ANYFP),tooltrove.net,https://tooltrove.net/submit,general,batch6_expansion,submitted
+241,AI Tools List,aitoolslist.io,https://aitoolslist.io/submit-ai-tool/,ai_only,batch6_expansion,submitted
+242,Ignlab Launch,launch.ignlab.net,https://launch.ignlab.net/,general,batch6_expansion,submitted
+243,Submission Web Directory,directory-index.com,https://www.submissionwebdirectory.com/submit.php,general,batch7_expansion,submitted
+244,Submission Marketing Web Directory,submissionwebdirectory.com,https://www.submissionwebdirectory.com/submit.php,general,batch7_expansion,skipped_not_fit
+245,Web Directory Submit (Global Project),webdirectory-submit.com,http://www.webdirectory-submit.com/submit.php,general,batch7_expansion,uncertain
+246,eSearch.cdon.info,esearch.cdon.info,https://esearch.cdon.info/submit.php,general,batch7_expansion,submitted_pending_verify
+247,Onpaco Free Web Directory,onpaco.com,https://onpaco.com/submit.php,general,batch7_expansion,skipped_broken
+248,FAT64.NET,fat64.net,http://www.fat64.net/submit.php,general,batch7_expansion,skipped_broken
+249,Australia Web Directory,australiawebdirectory.net,https://www.australiawebdirectory.net/submit.php,general,batch7_expansion,submitted
+250,Travel Tourism Directory,traveltourismdirectory.info,https://www.traveltourismdirectory.info/submit.php,general,batch7_expansion,skipped_not_fit
+251,SEO Optimization Directory,seooptimizationdirectory.com,https://seooptimizationdirectory.com/submit.php,general,batch7_expansion,submitted
+252,Ally Web Directory,allydirectory.com,https://www.allydirectory.com/submit.php,general,batch7_expansion,skipped_paid
+253,Business Free Directory,businessfreedirectory.com,https://www.businessfreedirectory.com/submit.php,general,batch7_expansion,skipped_broken
+254,Traffic Directory,trafficdirectory.org,https://www.trafficdirectory.org/submit.php,general,batch7_expansion,submitted
+255,Free WebLink,free-weblink.com,https://www.free-weblink.com/submit.php,general,batch7_expansion,submitted
+256,Medical Health Directory,medicalhealthdirectory.net,https://www.medicalhealthdirectory.net/submit.php,general,batch7_expansion,skipped_not_fit
+257,NetFishy,netfishy.com,https://www.netfishy.com/submit.php,general,batch7_expansion,pending_reciprocal
+258,Promote Business Directory,directory-index.com,https://www.promotebusinessdirectory.com/submit.php,general,batch7_expansion,submitted
+259,Canadian Directory,canadiandirectory.org,https://www.canadiandirectory.org/submit.php,,batch8_expansion,submitted
+260,Fire Directory,fire-directory.com,https://www.fire-directory.com/submit.php,,batch8_expansion,submitted
+261,France Web Directory,francewebdirectory.net,https://www.francewebdirectory.net/submit.php,,batch8_expansion,submitted
+262,Germany Web Directory,germanywebdirectory.com,https://www.germanywebdirectory.com/submit.php,,batch8_expansion,submitted
+263,Italy Web Directory,italywebdirectory.net,https://www.italywebdirectory.net/submit.php,,batch8_expansion,submitted
+264,Turkey Web Directory,turkeywebdirectory.com,https://www.turkeywebdirectory.com/submit.php,,batch8_expansion,submitted_pending_verify
+265,USA Websites Directory,usawebsitesdirectory.com,https://www.usawebsitesdirectory.com/submit.php,,batch8_expansion,submitted

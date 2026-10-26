@@ -57,5 +57,5 @@ product:
 submission_policy:
   default_url: homepage
   skip_paid_placements: true
-  skip_reciprocal_footer_links: true
+  skip_reciprocal_footer_links: false  # user will batch-add reciprocal links at end
   prefer_ai_directories: true
