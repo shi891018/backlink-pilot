@@ -267,6 +267,21 @@ overseas_ai_directories:
   status: dead
   notes: Submit URL returns 404; homepage renders blank and no replacement form was found as of 2026-09.
 
+# Added 2026-10-27 from VoxTextor directory pass (looked-at sites not previously listed)
+- name: Find SEO Tools
+  submit_url: https://findseotools.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: ToolTrove (ANYFP)
+  submit_url: https://tooltrove.net/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+
+
 japanese_bbs_boards:
   # webkit.dti.ne.jp — DTI free BBS service (Japan)
   # Submit: GET form to get xcode, then POST to /bbs/write.do
@@ -1029,6 +1044,233 @@ overseas_directories:
   type: form
   auto: true
   lang: en
+
+# Added 2026-10-27 from VoxTextor directory pass (looked-at sites not previously listed)
+- name: JoeAnt
+  submit_url: https://www.joeant.com/suggest.html
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Gimpsy
+  submit_url: https://www.gimpsy.com/gimpsy/searcher/suggest.php
+  type: form
+  auto: false
+  lang: en
+  status: closed
+  notes: "vox2026-10-26:skipped_closed"
+- name: Hot Web URLs
+  submit_url: https://www.hotweburls.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Directory Index
+  submit_url: https://directory-index.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: MeWebLink
+  submit_url: https://meweblink.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Zearches
+  submit_url: https://zearches.com/submit-website-free.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: DevElif
+  submit_url: https://develif.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Free Web Submission
+  submit_url: https://www.freewebsubmission.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: W3dot Web Guide
+  submit_url: https://w3dot.org/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Canada Web Dir
+  submit_url: https://www.canadawebdir.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Link Centre
+  submit_url: https://www.linkcentre.com/addurl/
+  type: form
+  auto: manual
+  lang: en
+  notes: "vox2026-10-26:skipped_needs_account"
+- name: Directory Fire
+  submit_url: https://directoryfire.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Ask Directory
+  submit_url: https://www.ask-directory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Share Your Startup
+  submit_url: https://shareyourstartup.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: BuildVoyage
+  submit_url: https://buildvoyage.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Indie Hustles
+  submit_url: https://indiehustles.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Ignlab Launch
+  submit_url: https://launch.ignlab.net/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Web Directory Submit (Global Project)
+  submit_url: http://www.webdirectory-submit.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:uncertain"
+- name: eSearch.cdon.info
+  submit_url: https://esearch.cdon.info/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted_pending_verify"
+- name: Onpaco Free Web Directory
+  submit_url: https://onpaco.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: dead
+  notes: "vox2026-10-26:skipped_broken"
+- name: FAT64.NET
+  submit_url: http://www.fat64.net/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: dead
+  notes: "vox2026-10-26:skipped_broken"
+- name: Australia Web Directory
+  submit_url: https://www.australiawebdirectory.net/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Travel Tourism Directory
+  submit_url: https://www.traveltourismdirectory.info/submit.php
+  type: form
+  auto: false
+  lang: en
+  notes: "vox2026-10-26:skipped_not_fit; category/not-fit for VoxTextor"
+- name: SEO Optimization Directory
+  submit_url: https://seooptimizationdirectory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Ally Web Directory
+  submit_url: https://www.allydirectory.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Business Free Directory
+  submit_url: https://www.businessfreedirectory.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: dead
+  notes: "vox2026-10-26:skipped_broken"
+- name: Traffic Directory
+  submit_url: https://www.trafficdirectory.org/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Free WebLink
+  submit_url: https://www.free-weblink.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Medical Health Directory
+  submit_url: https://www.medicalhealthdirectory.net/submit.php
+  type: form
+  auto: false
+  lang: en
+  notes: "vox2026-10-26:skipped_not_fit; category/not-fit for VoxTextor"
+- name: NetFishy
+  submit_url: https://www.netfishy.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:pending_reciprocal"
+- name: Canadian Directory
+  submit_url: https://www.canadiandirectory.org/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Fire Directory
+  submit_url: https://www.fire-directory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: France Web Directory
+  submit_url: https://www.francewebdirectory.net/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Germany Web Directory
+  submit_url: https://www.germanywebdirectory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Italy Web Directory
+  submit_url: https://www.italywebdirectory.net/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Turkey Web Directory
+  submit_url: https://www.turkeywebdirectory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted_pending_verify"
+
 chinese_ai_directories:
 - name: 2AGI
   submit_url: https://2agi.net/zh/submit
@@ -1829,7 +2071,7 @@ awesome_free_seo_backlinks:
   type: form
   auto: true
   lang: en
-  notes: Startup listing via Tally form. DR45
+  notes: "Startup listing via Tally form. DR45; tinystartups.com/submit was paid as of 2026-10-26 VoxTextor pass"
 - name: Ben's Bites
   submit_url: https://news.bensbites.com/submit
   type: form
@@ -2573,6 +2815,15 @@ community_directories:
   auto: manual
   lang: ru
   notes: Russian AI tools directory.
+
+# Added 2026-10-27 from VoxTextor directory pass (looked-at sites not previously listed)
+- name: PeerPush (peerpush.com)
+  submit_url: https://peerpush.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted; distinct from peerpush.net already in targets"
+
 excel_directories:
 - name: Trustpilot
   submit_url: https://www.trustpilot.com
