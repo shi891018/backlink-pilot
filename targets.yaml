@@ -74,7 +74,8 @@ overseas_ai_directories:
 - name: AiSuperSmart
   submit_url: https://www.aisupersmart.com/submit-tool/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Ai Business Tool
   submit_url: https://aibusinesstool.com/
@@ -267,6 +268,21 @@ overseas_ai_directories:
   status: dead
   notes: Submit URL returns 404; homepage renders blank and no replacement form was found as of 2026-09.
 
+# Added 2026-10-27 from VoxTextor directory pass (looked-at sites not previously listed)
+- name: Find SEO Tools
+  submit_url: https://findseotools.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: ToolTrove (ANYFP)
+  submit_url: https://tooltrove.net/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+
+
 japanese_bbs_boards:
   # webkit.dti.ne.jp — DTI free BBS service (Japan)
   # Submit: GET form to get xcode, then POST to /bbs/write.do
@@ -389,7 +405,8 @@ japanese_bbs_boards:
 - name: ToolScout
   submit_url: https://toolscout.ai/submit
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: ToolsAI.net
   submit_url: https://toolsai.net/add-listing/
@@ -527,7 +544,8 @@ overseas_general:
 - name: Alternative.me
   submit_url: https://alternative.me/how-to/submit-software/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: App Rater
   submit_url: https://apprater.net/add/
@@ -559,24 +577,26 @@ overseas_general:
 - name: Changelog
   submit_url: https://changelog.com/news/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Developer-focused, high quality
+  notes: "Developer-focused, high quality | needs_account"
 - name: Digital Stuff We Love
   submit_url: https://digitalstuffwelove.org.nz/submit-tool
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: DataTau
   submit_url: https://datatau.net/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: HN clone for data science
+  notes: "HN clone for data science | needs_account"
 - name: 10words
   submit_url: https://10words.io/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: MicroLaunch
   submit_url: https://microlaunch.net/
@@ -608,7 +628,8 @@ overseas_general:
 - name: PitchWall
   submit_url: https://pitchwall.co/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Prime Indies
   submit_url: https://primeindies.com/
@@ -663,7 +684,8 @@ overseas_general:
 - name: StartupRanking
   submit_url: https://www.startupranking.com/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Startup Stash
   submit_url: https://startupstash.com/add-listing/
@@ -675,7 +697,8 @@ overseas_general:
 - name: StartupBase
   submit_url: https://startupbase.io/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: SourceForge
   submit_url: https://sourceforge.net/software/vendors/new
@@ -693,7 +716,8 @@ overseas_general:
 - name: techdirectory.io
   submit_url: https://www.techdirectory.io/get-listed
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Toolbase.io
   submit_url: https://form.typeform.com/to/LQcTJr
@@ -711,9 +735,9 @@ overseas_general:
 - name: TechFaster
   submit_url: https://techfaster.com
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: submit URL updated
+  notes: "submit URL updated | needs_account"
 - name: Wewaat
   submit_url: https://www.wewaat.com
   type: form
@@ -753,7 +777,8 @@ overseas_general:
 - name: WebsiteHunt
   submit_url: https://www.websitehunt.co/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Twelve.tools
   submit_url: https://twelve.tools/submit-your-tool
@@ -770,12 +795,14 @@ overseas_general:
 - name: WhatLaunched.Today
   submit_url: https://www.whatlaunched.today
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: bigstartups.co
   submit_url: https://bigstartups.co/overview/list-product
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: business-software.com
   submit_url: https://www.business-software.com/add-your-product/
@@ -872,7 +899,8 @@ overseas_directories:
 - name: OnToplist.com
   submit_url: https://www.ontoplist.com/join/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Offpagesavvy
   submit_url: https://www.offpagesavvy.com/submit-your-site/
@@ -918,17 +946,20 @@ overseas_directories:
 - name: BusinessSeek.biz
   submit_url: https://www.businessseek.biz/page.php?page=submission-policy
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Submission Web Directory
   submit_url: https://www.submissionwebdirectory.com/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Highrankdirectory
   submit_url: https://www.highrankdirectory.com/submit.php
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Sonic Run
   submit_url: https://www.sonicrun.com/freelisting.html
@@ -963,7 +994,8 @@ overseas_directories:
 - name: GainWeb.org
   submit_url: https://gainweb.org/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Jayde
   submit_url: https://www.jayde.com/submit.html
@@ -984,7 +1016,8 @@ overseas_directories:
 - name: Free Internet Web Directory
   submit_url: https://www.freeinternetwebdirectory.com/submit.php
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Info-Listings
   submit_url: https://info-listings.com/submit.php
@@ -996,7 +1029,8 @@ overseas_directories:
 - name: TXTLinks
   submit_url: https://www.txtlinks.com/sug_url.php?cat_id=0
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: en
 - name: Tsection
   submit_url: https://www.tsection.com/
@@ -1029,6 +1063,233 @@ overseas_directories:
   type: form
   auto: true
   lang: en
+
+# Added 2026-10-27 from VoxTextor directory pass (looked-at sites not previously listed)
+- name: JoeAnt
+  submit_url: https://www.joeant.com/suggest.html
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Gimpsy
+  submit_url: https://www.gimpsy.com/gimpsy/searcher/suggest.php
+  type: form
+  auto: false
+  lang: en
+  status: closed
+  notes: "vox2026-10-26:skipped_closed"
+- name: Hot Web URLs
+  submit_url: https://www.hotweburls.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Directory Index
+  submit_url: https://directory-index.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: MeWebLink
+  submit_url: https://meweblink.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Zearches
+  submit_url: https://zearches.com/submit-website-free.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: DevElif
+  submit_url: https://develif.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Free Web Submission
+  submit_url: https://www.freewebsubmission.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: W3dot Web Guide
+  submit_url: https://w3dot.org/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Canada Web Dir
+  submit_url: https://www.canadawebdir.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Link Centre
+  submit_url: https://www.linkcentre.com/addurl/
+  type: form
+  auto: manual
+  lang: en
+  notes: "vox2026-10-26:skipped_needs_account"
+- name: Directory Fire
+  submit_url: https://directoryfire.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Ask Directory
+  submit_url: https://www.ask-directory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Share Your Startup
+  submit_url: https://shareyourstartup.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: BuildVoyage
+  submit_url: https://buildvoyage.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Indie Hustles
+  submit_url: https://indiehustles.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Ignlab Launch
+  submit_url: https://launch.ignlab.net/
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Web Directory Submit (Global Project)
+  submit_url: http://www.webdirectory-submit.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:uncertain"
+- name: eSearch.cdon.info
+  submit_url: https://esearch.cdon.info/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted_pending_verify"
+- name: Onpaco Free Web Directory
+  submit_url: https://onpaco.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: dead
+  notes: "vox2026-10-26:skipped_broken"
+- name: FAT64.NET
+  submit_url: http://www.fat64.net/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: dead
+  notes: "vox2026-10-26:skipped_broken"
+- name: Australia Web Directory
+  submit_url: https://www.australiawebdirectory.net/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Travel Tourism Directory
+  submit_url: https://www.traveltourismdirectory.info/submit.php
+  type: form
+  auto: false
+  lang: en
+  notes: "vox2026-10-26:skipped_not_fit; category/not-fit for VoxTextor"
+- name: SEO Optimization Directory
+  submit_url: https://seooptimizationdirectory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Ally Web Directory
+  submit_url: https://www.allydirectory.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: paid
+  notes: "vox2026-10-26:skipped_paid"
+- name: Business Free Directory
+  submit_url: https://www.businessfreedirectory.com/submit.php
+  type: form
+  auto: false
+  lang: en
+  status: dead
+  notes: "vox2026-10-26:skipped_broken"
+- name: Traffic Directory
+  submit_url: https://www.trafficdirectory.org/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Free WebLink
+  submit_url: https://www.free-weblink.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Medical Health Directory
+  submit_url: https://www.medicalhealthdirectory.net/submit.php
+  type: form
+  auto: false
+  lang: en
+  notes: "vox2026-10-26:skipped_not_fit; category/not-fit for VoxTextor"
+- name: NetFishy
+  submit_url: https://www.netfishy.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:pending_reciprocal"
+- name: Canadian Directory
+  submit_url: https://www.canadiandirectory.org/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Fire Directory
+  submit_url: https://www.fire-directory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: France Web Directory
+  submit_url: https://www.francewebdirectory.net/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Germany Web Directory
+  submit_url: https://www.germanywebdirectory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Italy Web Directory
+  submit_url: https://www.italywebdirectory.net/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted"
+- name: Turkey Web Directory
+  submit_url: https://www.turkeywebdirectory.com/submit.php
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted_pending_verify"
+
 chinese_ai_directories:
 - name: 2AGI
   submit_url: https://2agi.net/zh/submit
@@ -1067,12 +1328,14 @@ chinese_ai_directories:
 - name: 工具达人AI导航
   submit_url: http://toolsdar.mikecrm.com/nix44in
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: zh
 - name: 映技派
   submit_url: https://www.yjpoo.com/submit-ai-tool/
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: zh
 - name: 深度AI导航
   submit_url: https://www.deepdhai.com/submit
@@ -1144,9 +1407,9 @@ chinese_ai_directories:
 - name: AIGC便利店
   submit_url: https://aigclist.com/submit-ai-tools-free/
   type: form
-  auto: true
+  auto: manual
   lang: zh
-  notes: 4000+ AI tools
+  notes: "4000+ AI tools | needs_account"
 - name: Jay的资源库
   submit_url: https://www.lovejay.top
   type: form
@@ -1188,12 +1451,14 @@ chinese_ai_directories:
 - name: 老北鼻AI导航
   submit_url: https://lbbai.com/contribute
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: zh
 - name: AI工具箱 (ailookme)
   submit_url: https://www.ailookme.com/%e7%bd%91%e5%9d%80%e6%8f%90%e4%ba%a4
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: zh
 - name: AI驿站
   submit_url: https://www.51aiyz.com/about
@@ -1218,13 +1483,14 @@ chinese_general:
 - name: 新趣集
   submit_url: https://xinquji.com/
   type: form
-  auto: true
+  auto: manual
   lang: zh
-  notes: ProductHunt-like for China
+  notes: "ProductHunt-like for China | needs_account"
 - name: Mergeek
   submit_url: https://mergeek.com/publish_project
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: zh
 - name: 挖互联网
   submit_url: https://tigg.cc/submit
@@ -1257,7 +1523,8 @@ chinese_general:
 - name: 63243网址导航
   submit_url: https://www.63243.com/about/add.html
   type: form
-  auto: true
+  auto: manual
+  notes: needs_account
   lang: zh
 - name: 小木屋
   submit_url: https://wechalet.cn/appstore/add
@@ -1279,9 +1546,9 @@ chinese_general:
 - name: FUUN.FUN
   submit_url: https://fuun.fun/talk.html
   type: form
-  auto: true
+  auto: manual
   lang: zh
-  notes: Fun/quirky web apps only
+  notes: "Fun/quirky web apps only | needs_account"
 communities_manual:
 - name: Show HN (Hacker News)
   submit_url: https://news.ycombinator.com/submit
@@ -1447,9 +1714,9 @@ awesome_seo_directories:
 - name: Free Stuff Dev
   submit_url: https://freestuff.dev/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Free developer tools list; only if your product has a free tier. AS~24
+  notes: "Free developer tools list; only if your product has a free tier. AS~24 | needs_account"
 - name: Open Source Alternatives To
   submit_url: https://www.opensourcealternative.to
   type: form
@@ -1480,9 +1747,9 @@ awesome_seo_directories:
 - name: Unita
   submit_url: https://unita.co/add-community/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Community directory; suitable if product has a community. AS~32
+  notes: "Community directory; suitable if product has a community. AS~32 | needs_account"
 - name: Bento
   submit_url: https://bento.me/signup
   type: listing
@@ -1504,9 +1771,9 @@ awesome_seo_directories:
 - name: Landingfolio
   submit_url: https://www.landingfolio.com/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Web design inspiration directory; submit if your site has great design. AS~34
+  notes: "Web design inspiration directory; submit if your site has great design. AS~34 | needs_account"
 - name: Tiny Alternatives
   submit_url: https://www.tinyalternatives.com
   type: form
@@ -1634,9 +1901,9 @@ awesome_free_seo_backlinks:
 - name: Digital Agency Network
   submit_url: https://digitalagencynetwork.com/join-free-listing-tools/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Agency, AI, and software tools directory. DR77
+  notes: "Agency, AI, and software tools directory. DR77 | needs_account"
 - name: Callupcontact
   submit_url: https://www.callupcontact.com/active/register/register.php
   type: form
@@ -1671,9 +1938,9 @@ awesome_free_seo_backlinks:
 - name: SaaSworthy
   submit_url: https://www.saasworthy.com/offerings
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: SaaS product listing. DR73
+  notes: "SaaS product listing. DR73 | needs_account"
 - name: Allmyfaves
   submit_url: https://allmyfaves.com/
   type: listing
@@ -1719,9 +1986,9 @@ awesome_free_seo_backlinks:
 - name: Land-book
   submit_url: https://land-book.com/websites/new
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Landing page design showcase. DR71
+  notes: "Landing page design showcase. DR71 | needs_account"
 - name: Crowd Reviews
   submit_url: https://www.crowdreviews.com/
   type: listing
@@ -1731,9 +1998,9 @@ awesome_free_seo_backlinks:
 - name: City Local Pro
   submit_url: https://citylocalpro.com/add-your-business
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: US local business directory. DR70
+  notes: "US local business directory. DR70 | needs_account"
 - name: Opendi
   submit_url: https://service.opendi.us/listings
   type: listing
@@ -1749,9 +2016,9 @@ awesome_free_seo_backlinks:
 - name: Bizhwy
   submit_url: https://www.bizhwy.com/addlisting.php
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: US business directory. DR67
+  notes: "US business directory. DR67 | needs_account"
 - name: Sprout24
   submit_url: https://sprout24.com/submit/
   type: form
@@ -1767,9 +2034,9 @@ awesome_free_seo_backlinks:
 - name: USA Listing Directory
   submit_url: https://www.usalistingdirectory.com/submit.php
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: US-only web directory. DR64
+  notes: "US-only web directory. DR64 | needs_account"
 - name: Dokey AI
   submit_url: https://dokeyai.com/submit
   type: form
@@ -1791,9 +2058,9 @@ awesome_free_seo_backlinks:
 - name: SaaS AI Tools
   submit_url: https://saasaitools.com/submit/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: AI tools directory. DR56
+  notes: "AI tools directory. DR56 | needs_account"
 - name: FreeOnline
   submit_url: https://www.freeonline.org/segnala-un-sito/
   type: form
@@ -1815,9 +2082,9 @@ awesome_free_seo_backlinks:
 - name: EzWebDirectory
   submit_url: https://ezwebdirectory.com/item/new
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: General web directory. DR53
+  notes: "General web directory. DR53 | needs_account"
 - name: Marsx
   submit_url: https://marsx.dev/ai-startups/
   type: listing
@@ -1829,7 +2096,7 @@ awesome_free_seo_backlinks:
   type: form
   auto: true
   lang: en
-  notes: Startup listing via Tally form. DR45
+  notes: "Startup listing via Tally form. DR45; tinystartups.com/submit paid as of 2026-10-26"
 - name: Ben's Bites
   submit_url: https://news.bensbites.com/submit
   type: form
@@ -1839,9 +2106,9 @@ awesome_free_seo_backlinks:
 - name: 10015
   submit_url: https://10015.io/product-finder/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Developer tools product finder. DR45
+  notes: "Developer tools product finder. DR45 | needs_account"
 - name: Curated Design
   submit_url: https://www.curated.design/
   type: listing
@@ -1863,9 +2130,9 @@ awesome_free_seo_backlinks:
 - name: Fazier
   submit_url: https://fazier.com/launch
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Product launch directory. DR38; ✅ free
+  notes: "Product launch directory. DR38; ✅ free | needs_account"
 - name: Crazy About Startups
   submit_url: https://crazyaboutstartups.com/share-your-startup/
   type: form
@@ -1875,9 +2142,9 @@ awesome_free_seo_backlinks:
 - name: Discover Cloud
   submit_url: https://www.discovercloud.com/campaign
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Cloud/SaaS product directory. DR38
+  notes: "Cloud/SaaS product directory. DR38 | needs_account"
 - name: Startup Buffer
   submit_url: https://startupbuffer.com/site/submit
   type: form
@@ -1941,15 +2208,15 @@ awesome_free_seo_backlinks:
 - name: Paggu
   submit_url: https://www.paggu.com/submit-your-startup/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Startup directory. DR34
+  notes: "Startup directory. DR34 | needs_account"
 - name: Promote Project
   submit_url: https://www.promoteproject.com/submit-startup
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Startup directory. DR33
+  notes: "Startup directory. DR33 | needs_account"
 - name: Spiff.store
   submit_url: https://spiff.store/submit-tool/
   type: form
@@ -1965,21 +2232,21 @@ awesome_free_seo_backlinks:
 - name: onemilliondirectory
   submit_url: https://www.onemilliondirectory.com/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: General web directory. DR30
+  notes: "General web directory. DR30 | needs_account"
 - name: What the AI
   submit_url: https://whattheai.tech/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: AI tools directory. DR30
+  notes: "AI tools directory. DR30 | needs_account"
 - name: Toolfolio
   submit_url: https://toolfolio.io/submit-suggestion
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Tools directory. DR28
+  notes: "Tools directory. DR28 | needs_account"
 - name: IndieHackers Stacks
   submit_url: https://indiehackerstacks.com/me/products/-1
   type: listing
@@ -2007,15 +2274,15 @@ awesome_free_seo_backlinks:
 - name: Link Directory Listings
   submit_url: https://linkdirectorylistings.org/submit-site/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: General web directory. DR25
+  notes: "General web directory. DR25 | needs_account"
 - name: Bestwebsites
   submit_url: https://bestwebsites.info/en/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: General website directory. DR24
+  notes: "General website directory. DR24 | needs_account"
 - name: Startups.fyi
   submit_url: https://tally.so/r/3lOGLk
   type: form
@@ -2025,9 +2292,9 @@ awesome_free_seo_backlinks:
 - name: AI Gems
   submit_url: https://aigems.net/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: AI tools directory. DR22
+  notes: "AI tools directory. DR22 | needs_account"
 - name: Startup Europe
   submit_url: https://startupeurope.net/
   type: listing
@@ -2067,9 +2334,9 @@ awesome_free_seo_backlinks:
 - name: Awesome Indie
   submit_url: https://awesomeindie.com/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Indie product directory. DR19
+  notes: "Indie product directory. DR19 | needs_account"
 - name: The AI Navigator
   submit_url: https://www.theainavigator.com/submit-an-ai-tool
   type: form
@@ -2097,15 +2364,15 @@ awesome_free_seo_backlinks:
 - name: Taalk
   submit_url: https://taalk.com/submit-startup/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Startup directory. DR12
+  notes: "Startup directory. DR12 | needs_account"
 - name: Victrays
   submit_url: https://victrays.com/submit-ai-tool/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: AI tools directory. DR11
+  notes: "AI tools directory. DR11 | needs_account"
 - name: Growth Boosters
   submit_url: https://growthboosters.com/product/add
   type: form
@@ -2197,9 +2464,9 @@ community_directories:
 - name: Tekpon
   submit_url: https://tekpon.com/get-listed/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Software reviews directory.
+  notes: "Software reviews directory. | needs_account"
 - name: GPTs Hunter
   submit_url: https://www.gptshunter.com/
   type: listing
@@ -2209,9 +2476,9 @@ community_directories:
 - name: EU Startups
   submit_url: https://www.eu-startups.com/submit-your-startup/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: European startup directory.
+  notes: "European startup directory. | needs_account"
 - name: Toolify.ai
   submit_url: https://www.toolify.ai/submit
   type: form
@@ -2234,15 +2501,15 @@ community_directories:
 - name: 1000tools
   submit_url: https://1000.tools
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Curated tools directory.; submit URL updated
+  notes: "Curated tools directory.; submit URL updated | needs_account"
 - name: BasedTools
   submit_url: https://basedtools.ai/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: AI tools directory.
+  notes: "AI tools directory. | needs_account"
 - name: Alternatives.co
   submit_url: https://alternatives.co/submit
   type: form
@@ -2252,9 +2519,9 @@ community_directories:
 - name: Serchen
   submit_url: https://www.serchen.com/submit-listing/
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: Software/SaaS directory.
+  notes: "Software/SaaS directory. | needs_account"
 - name: Toolspedia
   submit_url: https://www.toolspedia.io/submit-tool/
   type: form
@@ -2282,9 +2549,9 @@ community_directories:
 - name: Find My AI Tool
   submit_url: https://findmyaitool.com/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: AI tools search & directory.
+  notes: "AI tools search & directory. | needs_account"
 - name: BestOfAI
   submit_url: https://bestofai.com/
   type: listing
@@ -2573,6 +2840,15 @@ community_directories:
   auto: manual
   lang: ru
   notes: Russian AI tools directory.
+
+# Added 2026-10-27 from VoxTextor directory pass (looked-at sites not previously listed)
+- name: PeerPush (peerpush.com)
+  submit_url: https://peerpush.com/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "vox2026-10-26:submitted; distinct from peerpush.net already in targets"
+
 excel_directories:
 - name: Trustpilot
   submit_url: https://www.trustpilot.com
@@ -2738,9 +3014,9 @@ excel_directories:
 - name: Romanian Startups
   submit_url: https://www.romanianstartups.com
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: DA34, Directory
+  notes: "DA34, Directory | needs_account"
 - name: Promotehour
   submit_url: https://promotehour.com
   type: form
@@ -2762,9 +3038,9 @@ excel_directories:
 - name: Inspiration gallery for startups
   submit_url: https://startupinspire.com/startups
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: DA29, Directory; ✅ free
+  notes: "DA29, Directory; ✅ free | needs_account"
 - name: Startuptabs
   submit_url: https://www.startuptabs.com
   type: form
@@ -2780,9 +3056,9 @@ excel_directories:
 - name: Worm
   submit_url: https://getworm.com/submit-startup
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: DA29, Directory; ✅ free
+  notes: "DA29, Directory; ✅ free | needs_account"
 - name: Startups.watch
   submit_url: https://startups.watch
   type: form
@@ -2822,9 +3098,9 @@ excel_directories:
 - name: AI Depot
   submit_url: https://aidepot.co
   type: form
-  auto: true
+  auto: manual
   lang: en
-  notes: DA17, AI directory
+  notes: "DA17, AI directory | needs_account"
 - name: SaaS Directory
   submit_url: https://www.saasdirectory.com
   type: form
