@@ -1324,15 +1324,15 @@ overseas_directories:
 - name: Online-Webkatalog
   submit_url: https://www.online-webkatalog.com/
   type: form
-  auto: true
+  auto: manual
   lang: de
-  notes: "region: DE; registration: no_account; status: pending; 'Webseite eintragen' via category page; free, no backlink duty; editorial review; added from JP/KR/EU research 2026-10-27"
+  notes: "region: DE; registration: needs_account; status: pending; 'Webseite eintragen' via category page; free, no backlink duty; editorial review; 2026-10-27 reclassified needs_account: login wall on submit; added from JP/KR/EU research 2026-10-27"
 - name: Link4web
   submit_url: https://www.link4web.de/
   type: form
-  auto: true
+  auto: manual
   lang: de
-  notes: "region: DE; registration: no_account; status: pending; 'Eine Seite anmelden' via category; homepage text says free 'gegen einen Backlink' (reciprocal likely required); added from JP/KR/EU research 2026-10-27"
+  notes: "region: DE; registration: needs_account; status: pending; 'Eine Seite anmelden' via category; homepage text says free 'gegen einen Backlink' (reciprocal likely required); 2026-10-27 reclassified needs_account: login wall on submit; added from JP/KR/EU research 2026-10-27"
 - name: Deutscher Index
   submit_url: https://www.deutscher-index.info/en-Website+eintragen.html
   type: form
@@ -2132,6 +2132,457 @@ overseas_directories:
   lang: ko
   notes: "region: KR; registration: unknown; status: skipped_not_directory; skip reason: skipped_not_directory/unknown; portal; added from JP/KR/EU research 2026-10-27"
 
+# Added 2026-10-27 batch5 JP/KR/EU directory research (looked-at sites)
+- name: La Mia Directory
+  submit_url: https://www.lamiadirectory.com/segnala-sito.aspx
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; batch5: ASP.NET guest form (url/email/descrizione/categoria + optional sito_backlink field); 'GRATUITA, link reciproco NON E' OBBLIGATORIO'; paid fast option exists - ignore; confidence high; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: Siti W3C
+  submit_url: https://www.sitiw3c.it/proponi-il-tuo-sito/
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; batch5: Forminator guest form (email/category/excerpt/content); 'non richiede alcuna registrazione'; editorial review; password fields on page are WP login widget only; confidence high; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: KATALOG.PL
+  submit_url: https://katalog.pl/dodaj/wpis
+  type: form
+  auto: true
+  lang: pl
+  notes: "region: PL; registration: no_account; status: pending; batch5: 'Dodaj wpis za darmo bez logowania i rejestracji'; fields title/desc/tags/url/category/email(+optional phone)/code; needs >=2 paragraphs UNIQUE PL text; email confirmation; pick random publish date; confidence high; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: ChipJourney
+  submit_url: https://chipjourney.com/
+  type: form
+  auto: true
+  lang: en
+  notes: "region: INTL; registration: no_account; status: pending; batch5: 'No account required, no reciprocal link'; auto screening; mod_security blocks curl (WebFetch OK); sibling of zearches/meweblink-style auto dirs; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: Katalog www stránek (w-software)
+  submit_url: https://katalog.w-software.com/pridat-odkaz.html
+  type: form
+  auto: true
+  lang: cs
+  notes: "region: CZ; registration: no_account; status: pending; batch5: Same script as katalog-webu.eu: 'Registrace odkazů do katalogu je zdarma'; heslo field = edit password not account; max 2 categories; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: Rakat linkkatalógus
+  submit_url: https://rakat.hu/link-bekuldes
+  type: form
+  auto: true
+  lang: hu
+  notes: "region: HU; registration: no_account; status: pending; batch5: CF7 guest form + captcha; 'regisztráció és visszamutató link sem kötelező' (reciprocal optional); login box is site widget only; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: Bric-a-Brac annuaire
+  submit_url: https://bric-a-brac2.e-monsite.com/annuaire/do/submit/
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; batch5: e-monsite annuaire guest submit (name/email/title/url/content/tags); login box on page is optional member widget; low-authority hobby site; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: Calcioitaliastory Directory Gratis
+  submit_url: https://directory-gratis.calcioitaliastory.it/
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; batch5: CF7 'Segnala il tuo sito' guest form; free; link di ritorno facoltativo; off-topic host (football) but general dir; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: Business Directory Italiana
+  submit_url: https://directoryitaliana.altervista.org/
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; batch5: 'Segnala il tuo sito, nessun obbligo di registrazione, inclusione entro 24 ore'; submit form link not in static HTML - find 'Segnala' page; confidence low; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: AIniche
+  submit_url: https://ainiche.net/p/contact
+  type: form
+  auto: true
+  lang: ko
+  notes: "region: KR; registration: no_account; status: pending; batch5: KR AI tool directory; guest contact form (name/email/message) explicitly accepts '도구 등록 요청' with tool name + URL; reply within 3 business days; site has 로그인 but not needed; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: AIツール案内 (AIスキル検定)
+  submit_url: https://ai-skill-kentei.jp/inquiry/?type=general
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; batch5: Inquiry form choose 区分 'AIツール案内への掲載申請'; 申請無料, 相互リンク・バッジ不要; free listing ~6 months queue (early paid ¥10,000/$49 - skip); listing guide https://tools-guide.ai-skill-kentei.jp/listing/; confidence medium; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: SEO katalog (katalog-seo.webnode.cz)
+  submit_url: https://katalog-seo.webnode.cz/katalog-webovych-stranek/
+  type: form
+  auto: true
+  lang: cs
+  notes: "region: CZ; registration: no_account; status: pending; batch5: 'Internetový katalog bez nutné registrace'; '<< PŘIDAT ODKAZ >>' webnode JS form; sibling of seo-katalog.webnode.cz (rank 185); spammy; confidence low; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: SeekTool
+  submit_url: https://seektool.ai/jp/submit
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: INTL/JP; registration: no_account; status: pending_reciprocal; batch5: JP-localized AI dir; free but requires dofollow backlink to seektool.ai on homepage (RECIPROCAL, auto-detected); page has sign-in strings - may need login; confidence low; researched 2026-10-27; added from JP/KR/EU research 2026-10-27"
+- name: BestOfAI
+  submit_url: https://submit.bestofai.io/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: INTL; registration: needs_account; status: skipped; batch5: submit flow says details pulled 'once you're signed in'; added from JP/KR/EU research 2026-10-27"
+- name: BAI.tools ko
+  submit_url: https://bai.tools/ko/submit-ai-tools
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: no_account; status: duplicate; batch5: already in queue; added from JP/KR/EU research 2026-10-27"
+- name: My-Best.AI
+  submit_url: https://my-best.ai/tool-submit/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: no_account; status: duplicate; batch5: already in queue; added from JP/KR/EU research 2026-10-27"
+- name: MoonLang AI
+  submit_url: https://tools.moonlang.com/submit
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: no_account; status: skipped; batch5: 'draft saved in this browser' only; real request via email soundfury37@gmail.com (manual); added from JP/KR/EU research 2026-10-27"
+- name: OpenAds AI dir
+  submit_url: https://www.openads.co.kr/content/contentDetail?contsId=16284
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: no_account; status: manual; batch5: application = email with attached form to openads@openads.co.kr; added from JP/KR/EU research 2026-10-27"
+- name: AI PICKS
+  submit_url: https://aipicks.jp/for-vendors
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped; batch5: Cloudflare 403, unverified; added from JP/KR/EU research 2026-10-27"
+- name: AIListPrime
+  submit_url: https://ailistprime.com/ja/submit-ai-tool-ja/
+  type: form
+  auto: false
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped; batch5: 404 now; added from JP/KR/EU research 2026-10-27"
+- name: Speartip.eu
+  submit_url: https://speartip.eu/en
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: EU; registration: needs_account; status: manual; batch5: EU software dir; vendor workspace + paid launch (29-39 EUR); free path unclear; added from JP/KR/EU research 2026-10-27"
+- name: AIToolTrek
+  submit_url: https://www.aitooltrek.com/submit
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: INTL; registration: needs_account; status: skipped; batch5: backlink/paid; added from JP/KR/EU research 2026-10-27"
+- name: KI-Tools.de
+  submit_url: https://www.ki-tools.de/tool-einreichen
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped; batch5: no form in HTML (thin page); added from JP/KR/EU research 2026-10-27"
+- name: Free-Directory.info
+  submit_url: https://www.free-directory.info/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: manual; batch5: 'MON COMPTE' flow, tagdirectory network; added from JP/KR/EU research 2026-10-27"
+- name: ABCLink.it
+  submit_url: https://www.abclink.it/suggerisci.php
+  type: form
+  auto: manual
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped; batch5: suggest page broken ('Categoria non trovata'); added from JP/KR/EU research 2026-10-27"
+- name: Svenska Sajter
+  submit_url: https://www.svenskasajter.com/lagg-till
+  type: form
+  auto: manual
+  lang: sv
+  notes: "region: SE; registration: unknown; status: manual; batch5: contact-to-apply, likely paid; added from JP/KR/EU research 2026-10-27"
+- name: Giralarete
+  submit_url: https://www.giralarete.it/
+  type: form
+  auto: false
+  lang: it
+  notes: "region: IT; registration: n/a; status: rejected; batch5: now casino spam site; added from JP/KR/EU research 2026-10-27"
+- name: Room3
+  submit_url: https://www.room3.at/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: AT; registration: n/a; status: rejected; batch5: 'Unsere Website ist geschlossen'; added from JP/KR/EU research 2026-10-27"
+- name: Verzeichnis4you
+  submit_url: https://verzeichnis4you.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: needs_account; status: skipped; batch5: requires user account; added from JP/KR/EU research 2026-10-27"
+- name: Fairlinks / SEO-Webkatalog
+  submit_url: https://www.fairlinks.de/anmelden.php
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped; batch5: identical lead-gen page on both domains (seo-webkatalog.de), not a directory form; added from JP/KR/EU research 2026-10-27"
+- name: Lankcentrum
+  submit_url: https://lankcentrum.se/laggtill.asp?bReg=0&catID=8309
+  type: form
+  auto: false
+  lang: sv
+  notes: "region: SE; registration: n/a; status: rejected; batch5: unreachable; 14-16 week review; added from JP/KR/EU research 2026-10-27"
+- name: Katalogseo 300-dpi
+  submit_url: https://www.katalogseo.300-dpi.pl/
+  type: form
+  auto: false
+  lang: pl
+  notes: "region: PL; registration: n/a; status: rejected; batch5: unreachable; added from JP/KR/EU research 2026-10-27"
+- name: SEOv
+  submit_url: https://seov.pl/
+  type: form
+  auto: false
+  lang: pl
+  notes: "region: PL; registration: n/a; status: rejected; batch5: unreachable; added from JP/KR/EU research 2026-10-27"
+- name: RMT katalog
+  submit_url: http://www.katalog.rmt.pl/
+  type: form
+  auto: false
+  lang: pl
+  notes: "region: PL; registration: n/a; status: rejected; batch5: unreachable; added from JP/KR/EU research 2026-10-27"
+- name: Indexomat
+  submit_url: https://indexomat.pl/
+  type: form
+  auto: false
+  lang: pl
+  notes: "region: PL; registration: n/a; status: rejected; batch5: unreachable; added from JP/KR/EU research 2026-10-27"
+- name: FreeBacklink.org
+  submit_url: http://www.freebacklink.org/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: INTL; registration: n/a; status: rejected; batch5: unreachable; added from JP/KR/EU research 2026-10-27"
+- name: Superannu
+  submit_url: http://www.superannu.com/submit_site.php?id_cat=0
+  type: form
+  auto: false
+  lang: fr
+  notes: "region: FR; registration: n/a; status: rejected; batch5: unreachable; added from JP/KR/EU research 2026-10-27"
+- name: Lizti
+  submit_url: https://www.lizti.nl/website-aanmelden/
+  type: form
+  auto: false
+  lang: nl
+  notes: "region: NL; registration: n/a; status: rejected; batch5: HTTP 500; added from JP/KR/EU research 2026-10-27"
+- name: SEO-AQUA
+  submit_url: https://www.seo-aqua.com/link.html
+  type: form
+  auto: false
+  lang: ja
+  notes: "region: JP; registration: n/a; status: rejected; batch5: 403; added from JP/KR/EU research 2026-10-27"
+- name: 簡単自動リンク集
+  submit_url: http://auto-link.netgamers.jp/
+  type: form
+  auto: false
+  lang: ja
+  notes: "region: JP; registration: n/a; status: rejected; batch5: timeout; auto link farm (spam risk); added from JP/KR/EU research 2026-10-27"
+- name: Sites Directory
+  submit_url: https://www.sitesdirectory.net/submit.php
+  type: form
+  auto: false
+  lang: en
+  notes: "region: INTL; registration: n/a; status: rejected; batch5: redirects to /lander (parked); added from JP/KR/EU research 2026-10-27"
+- name: LaunchDirectories
+  submit_url: https://launchdirectories.com/submit
+  type: form
+  auto: false
+  lang: en
+  notes: "region: INTL; registration: n/a; status: rejected; batch5: paid submission service, not a directory; added from JP/KR/EU research 2026-10-27"
+- name: www.bravo-webkatalog.de
+  submit_url: https://www.bravo-webkatalog.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.webkatalog-fuer-alle.de
+  submit_url: https://www.webkatalog-fuer-alle.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.ausgewaehlte-links.de
+  submit_url: https://www.ausgewaehlte-links.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.webkatalog.li
+  submit_url: https://www.webkatalog.li/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.verzeichnis.org
+  submit_url: https://www.verzeichnis.org/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.linkvz.de
+  submit_url: https://www.linkvz.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.webkatalog-seo.de
+  submit_url: https://www.webkatalog-seo.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.annuaire-seo.fr
+  submit_url: https://www.annuaire-seo.fr/
+  type: form
+  auto: false
+  lang: fr
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.annuaire-info.com
+  submit_url: https://www.annuaire-info.com/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.annuairefrancais.fr
+  submit_url: https://www.annuairefrancais.fr/
+  type: form
+  auto: false
+  lang: fr
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.annuaire-gratuit.fr
+  submit_url: https://www.annuaire-gratuit.fr/
+  type: form
+  auto: false
+  lang: fr
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.lien-annuaire.com
+  submit_url: https://www.lien-annuaire.com/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.directory-free.it
+  submit_url: https://www.directory-free.it/
+  type: form
+  auto: false
+  lang: it
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.seo-directory.it
+  submit_url: https://www.seo-directory.it/
+  type: form
+  auto: false
+  lang: it
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.katalogseo.net.pl
+  submit_url: https://www.katalogseo.net.pl/
+  type: form
+  auto: false
+  lang: pl
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.katalog.webook.pl
+  submit_url: https://www.katalog.webook.pl/
+  type: form
+  auto: false
+  lang: pl
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.webkatalog.cz
+  submit_url: https://www.webkatalog.cz/
+  type: form
+  auto: false
+  lang: cs
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.katalog-stranek.cz
+  submit_url: https://www.katalog-stranek.cz/
+  type: form
+  auto: false
+  lang: cs
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.directoriodeweb.es
+  submit_url: https://www.directoriodeweb.es/
+  type: form
+  auto: false
+  lang: es
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.svenskwebb.se
+  submit_url: https://www.svenskwebb.se/
+  type: form
+  auto: false
+  lang: sv
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.linkdirectory.no
+  submit_url: https://www.linkdirectory.no/
+  type: form
+  auto: false
+  lang: "no"
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.besteinfo.nl
+  submit_url: https://www.besteinfo.nl/
+  type: form
+  auto: false
+  lang: nl
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.linkarena.com
+  submit_url: https://www.linkarena.com/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.aitoolsjapan.com
+  submit_url: https://www.aitoolsjapan.com/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: ai-tool.jp
+  submit_url: https://ai-tool.jp/
+  type: form
+  auto: false
+  lang: ja
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.aitoolhub.kr
+  submit_url: https://www.aitoolhub.kr/
+  type: form
+  auto: false
+  lang: ko
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: ainavi.kr
+  submit_url: https://ainavi.kr/
+  type: form
+  auto: false
+  lang: ko
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.allthingsai.com
+  submit_url: https://www.allthingsai.com/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: aicyclopedia.com
+  submit_url: https://aicyclopedia.com/
+  type: form
+  auto: false
+  lang: en
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.lesoutilsia.fr
+  submit_url: https://www.lesoutilsia.fr/
+  type: form
+  auto: false
+  lang: fr
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.ai-tools.fr
+  submit_url: https://www.ai-tools.fr/
+  type: form
+  auto: false
+  lang: fr
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.ki-verzeichnis.de
+  submit_url: https://www.ki-verzeichnis.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
+- name: www.linkgyujtemeny.hu
+  submit_url: https://www.linkgyujtemeny.hu/
+  type: form
+  auto: false
+  lang: hu
+  notes: "region: ?; registration: n/a; status: rejected; batch5: guessed URL: 404/unreachable/timeout; added from JP/KR/EU research 2026-10-27"
 
 chinese_ai_directories:
 - name: 2AGI
@@ -2414,10 +2865,10 @@ communities_manual:
 - name: Uneed
   submit_url: https://www.uneed.best/promote-your-tool
   type: form
-  auto: true
+  auto: manual
   lang: en
   waiting: true
-  notes: 'Free but queued; 🆓/💰 freemium: free submission; paid $29.99 to skip queue; ⏳ 免费但需排队等待约2-4周，付$29.99可插队立即上线'
+  notes: 'Free but queued; 🆓/💰 freemium: free submission; paid $29.99 to skip queue; ⏳ 免费但需排队等待约2-4周，付$29.99可插队立即上线 | needs_account'
 - name: Indie Hackers
   submit_url: https://www.indiehackers.com/products
   type: listing
@@ -3325,10 +3776,10 @@ community_directories:
 - name: Toolify.ai
   submit_url: https://www.toolify.ai/submit
   type: form
-  auto: true
+  auto: manual
   lang: en
   waiting: true
-  notes: 'High-traffic AI tools directory; ⏳ 免费，提交后人工审核约1-5天上线'
+  notes: 'High-traffic AI tools directory; ⏳ 免费，提交后人工审核约1-5天上线 | needs_account'
 - name: Easy with AI
   submit_url: https://easywithai.com/submit-a-tool/
   type: form
@@ -4220,9 +4671,9 @@ feishu_directories:
 - name: SaaSHub
   submit_url: https://www.saashub.com/submit-product
   type: form
-  auto: 'yes'
+  auto: manual
   lang: en
-  notes: DR0, Feishu list; ✅ free
+  notes: "DR0, Feishu list; ✅ free | needs_account"
 - name: Startup88
   submit_url: https://startup88.com/submit
   type: form
