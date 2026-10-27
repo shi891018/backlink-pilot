@@ -1290,6 +1290,849 @@ overseas_directories:
   lang: en
   notes: "vox2026-10-26:submitted_pending_verify"
 
+# Added 2026-10-27 JP/KR/EU VoxTextor directory research (looked-at sites)
+- name: Engel-Webkatalog
+  submit_url: https://www.engel-webkatalog.de/anmelden.php
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; phpLinx guest form (home_name/home_url/mail); login box only for existing users; no backlink duty; captcha; added from JP/KR/EU research 2026-10-27"
+- name: Linkbomber
+  submit_url: https://www.linkbomber.de/anmelden.php
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; phpLinx guest form; free basic entry, no backlink duty; added from JP/KR/EU research 2026-10-27"
+- name: Link-Joker
+  submit_url: https://www.link-joker.de/anmelden.php
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; phpLinx guest form; free, premium 25 EUR optional; added from JP/KR/EU research 2026-10-27"
+- name: Docomo Europe
+  submit_url: https://www.docomo-europe.de/anmelden.php
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; phpLinx guest form; free/paid options; added from JP/KR/EU research 2026-10-27"
+- name: Webinhalt
+  submit_url: https://www.webinhalt.de/verzeichnis/seite-anmelden.php?id_kategorie=0&eintragen=manuell&anmelder=gast&us=1
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; explicit guest (anmelder=gast) form: name,email,title,url,description; added from JP/KR/EU research 2026-10-27"
+- name: Online-Webkatalog
+  submit_url: https://www.online-webkatalog.com/
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; 'Webseite eintragen' via category page; free, no backlink duty; editorial review; added from JP/KR/EU research 2026-10-27"
+- name: Link4web
+  submit_url: https://www.link4web.de/
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; 'Eine Seite anmelden' via category; homepage text says free 'gegen einen Backlink' (reciprocal likely required); added from JP/KR/EU research 2026-10-27"
+- name: Deutscher Index
+  submit_url: https://www.deutscher-index.info/en-Website+eintragen.html
+  type: form
+  auto: true
+  lang: de,en
+  notes: "region: DE; registration: no_account; status: pending; DE/EN directory; free standard + reciprocal/featured options; added from JP/KR/EU research 2026-10-27"
+- name: Stadt1
+  submit_url: https://www.stadt1.de/webkatalog-eintrag.php
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; free entry, editorial review (slow); paid premium optional; added from JP/KR/EU research 2026-10-27"
+- name: Webfee
+  submit_url: https://www.webfee.de/link-eintragen-seite-anmelden.html
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; free, no backlink duty; added from JP/KR/EU research 2026-10-27"
+- name: Topreflex
+  submit_url: https://www.topreflex.de/
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; free entries ('Website kostenlos eintragen'); ad-financed; added from JP/KR/EU research 2026-10-27"
+- name: Webkatalog24
+  submit_url: https://www.webkatalog24.de/eintrag-in-webkatalog
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; entry via contact form (CF7 + captcha); free, no backlink duty; added from JP/KR/EU research 2026-10-27"
+- name: Seitensuche
+  submit_url: https://seitensuche.info/submit
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; submit form without password field; page also shows Login|Register - verify guest submit at runtime; added from JP/KR/EU research 2026-10-27"
+- name: Oekoportal
+  submit_url: https://oekoportal.de/eintragen/
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; eco-themed; free but backlink duty (reciprocal required); topic fit weak; added from JP/KR/EU research 2026-10-27"
+- name: Hegaulink
+  submit_url: https://hegaulink.de/
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; free URL catalog; submit link JS-rendered - verify at runtime; added from JP/KR/EU research 2026-10-27"
+- name: Klick-It
+  submit_url: https://www.klick-it.de/eintrag-hinzufuegen/anbieter/
+  type: form
+  auto: true
+  lang: de
+  notes: "region: DE; registration: no_account; status: pending; company directory DACH; free entry; recaptcha; may ask to register at end - verify; added from JP/KR/EU research 2026-10-27"
+- name: MesAnnuaires
+  submit_url: https://annuaire.mesprogrammes.net/soumettre.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; free, manual validation, no reciprocal; pick category then 'soumettre un site'; added from JP/KR/EU research 2026-10-27"
+- name: Annuaire Web France
+  submit_url: https://www.annuaire-web-france.com/proposer_site.php?id_categ1=
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; guest form (url,title,desc,email); free, no reciprocal; added from JP/KR/EU research 2026-10-27"
+- name: W3 Annuaire
+  submit_url: https://www.w3-annuaire.com/proposer_site.php?id_categ1=
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; same engine as Annuaire Web France; guest form; login box optional; added from JP/KR/EU research 2026-10-27"
+- name: LiensUtiles
+  submit_url: https://www.liensutiles.org/suggestion.htm
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; suggest page (80k+ links); form likely JS/email - verify; added from JP/KR/EU research 2026-10-27"
+- name: Sites Internationaux
+  submit_url: https://www.sites-internationaux.com/francophone/ajout_site/ajout_site_formulaire.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; guest form; international FR annuaire since 2004; added from JP/KR/EU research 2026-10-27"
+- name: Denicher
+  submit_url: https://denicher.com/referencement.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; URL-first guest form; free; added from JP/KR/EU research 2026-10-27"
+- name: Coodoeil
+  submit_url: https://www.coodoeil.fr/proposer_un_site.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; free no reciprocal; form has SIREN/address fields (business-oriented), long review; added from JP/KR/EU research 2026-10-27"
+- name: Souany
+  submit_url: https://www.souany.com/ajout.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; 'Proposer un site'; free + paid fast-track (paypal); added from JP/KR/EU research 2026-10-27"
+- name: Circle Annuaire
+  submit_url: https://www.circleannuaire.com/ajout.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; same network as Souany (clubannuaire); free option; added from JP/KR/EU research 2026-10-27"
+- name: Tounet
+  submit_url: https://www.tounet.com/details/ajoutez/
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; 'Ajoutez votre site'; free; added from JP/KR/EU research 2026-10-27"
+- name: Tazzaz
+  submit_url: https://annuaire.tazzaz.com/
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; 'sans inscription, sans lien retour'; Proposer un site link; added from JP/KR/EU research 2026-10-27"
+- name: Annuaire Google (FR)
+  submit_url: https://www.annuaire-google.com/
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; FR pro annuaire; submit page to verify; added from JP/KR/EU research 2026-10-27"
+- name: 1two
+  submit_url: https://www.1two.org/soumettre-un-site-0.html
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: FR; registration: no_account; status: pending; free + paid; slow (~1 month); may require 'Mon compte' - verify; added from JP/KR/EU research 2026-10-27"
+- name: Annubel
+  submit_url: https://www.annubel.com/ajouter.html
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: BE; registration: no_account; status: pending; guest form; has url_retour field (reciprocal optional/maybe required); strict quality rules; added from JP/KR/EU research 2026-10-27"
+- name: Meilleurs Liens
+  submit_url: https://www.meilleursliens.be/suggerer.php
+  type: form
+  auto: true
+  lang: fr
+  notes: "region: BE; registration: no_account; status: pending; guest form (title,url,category,desc,email); high spam score; added from JP/KR/EU research 2026-10-27"
+- name: TagDirectorY
+  submit_url: https://www.tagdirectory.info/
+  type: form
+  auto: true
+  lang: fr,en,es,pt
+  notes: "region: FR/EU; registration: no_account; status: pending; free, no reciprocal, multi-language; site returned 500/timeouts at check - retry; added from JP/KR/EU research 2026-10-27"
+- name: InserisciSito
+  submit_url: https://www.inseriscisito.com/add-url-free.asp
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; guest form + captcha; free, no link back; added from JP/KR/EU research 2026-10-27"
+- name: PrimaDirectory
+  submit_url: https://primadirectory.it/suggest-listing.php?cid=0
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; Italian directory; free plan + paid plans; security code; verify free plan doesn't force login; added from JP/KR/EU research 2026-10-27"
+- name: WebTutto
+  submit_url: https://www.webtutto.it/directory/
+  type: form
+  auto: true
+  lang: it
+  notes: "region: IT; registration: no_account; status: pending; automatic free directory; submit form JS - verify; added from JP/KR/EU research 2026-10-27"
+- name: Oerzoek
+  submit_url: https://oerzoek.nl/submit.php
+  type: form
+  auto: true
+  lang: nl
+  notes: "region: NL; registration: no_account; status: pending; guest form (company,url,email); Dutch sites only; added from JP/KR/EU research 2026-10-27"
+- name: Zoekplaza
+  submit_url: https://www.zoekplaza.nl/links/websiteaanmelden/
+  type: form
+  auto: true
+  lang: nl
+  notes: "region: NL; registration: no_account; status: pending; free link submission by email (info@gezinsklik.nl) - family-friendly; added from JP/KR/EU research 2026-10-27"
+- name: Webgidsje
+  submit_url: https://webgidsje.nl/link-aanmelden/
+  type: form
+  auto: true
+  lang: nl
+  notes: "region: NL; registration: no_account; status: pending; link aanmelden form (recaptcha); may require backlink; added from JP/KR/EU research 2026-10-27"
+- name: Expertpagina
+  submit_url: https://expertpagina.nl/link-aanmelden/
+  type: form
+  auto: true
+  lang: nl
+  notes: "region: NL; registration: no_account; status: pending; same network as Webgidsje; may require backlink; added from JP/KR/EU research 2026-10-27"
+- name: Enlineados
+  submit_url: https://enlineados.com/agregarurl.php
+  type: form
+  auto: true
+  lang: es
+  notes: "region: ES; registration: no_account; status: pending; guest form (pais,ciudad,categoria,titulo,url,desc,correo); Spanish content required; added from JP/KR/EU research 2026-10-27"
+- name: WebDir.es
+  submit_url: https://webdir.es/
+  type: form
+  auto: true
+  lang: es
+  notes: "region: ES; registration: no_account; status: pending; 'Agregar sitio web' free; form JS - verify; added from JP/KR/EU research 2026-10-27"
+- name: The Free Directory UK
+  submit_url: https://the-free-directory.co.uk/submit
+  type: form
+  auto: true
+  lang: en
+  notes: "region: UK; registration: no_account; status: pending; free, direct links, no reciprocal; added from JP/KR/EU research 2026-10-27"
+- name: WebLink24
+  submit_url: http://www.weblink24.eu/
+  type: form
+  auto: true
+  lang: en
+  notes: "region: EU; registration: no_account; status: pending; European directory, instant free submission; slow/timeouts from box; added from JP/KR/EU research 2026-10-27"
+- name: directory.clan.su
+  submit_url: https://directory.clan.su/
+  type: form
+  auto: true
+  lang: en
+  notes: "region: EU; registration: no_account; status: pending; free, homepage URL only, manual review; mentions reciprocal optional; added from JP/KR/EU research 2026-10-27"
+- name: Design Link Tree
+  submit_url: https://design-links.net/entry
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; guest entry form (name,email,url,desc,category); free; added from JP/KR/EU research 2026-10-27"
+- name: Waooh
+  submit_url: https://waooh.net/
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; 'どなたでも登録可' form on top page (name,url,description,tags); 1 site 1 category; added from JP/KR/EU research 2026-10-27"
+- name: MITSUKARU!
+  submit_url: https://www.mitsukarusite.jp/post/
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; Web service promo post form, no login; repost interval 1 week; added from JP/KR/EU research 2026-10-27"
+- name: 配信問屋！ Creators & Tools
+  submit_url: https://haishindonya.jp/contact
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; contact form type 'ツール掲載依頼'; added from JP/KR/EU research 2026-10-27"
+- name: AUL Review
+  submit_url: https://beam.jpn.org/register/
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; general web directory since 2004; email verification (no account); 250+ char desc without URL; added from JP/KR/EU research 2026-10-27"
+- name: 被リンク無料君
+  submit_url: http://free-link.razor.jp/
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; auto link list, no review, no reciprocal; sets edit password per entry (not an account); low quality; added from JP/KR/EU research 2026-10-27"
+- name: つくるログ
+  submit_url: https://tsukurulog.com/submit/
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; free 掲載申請 for indie tools; Japanese UI required? (VoxTextor has JA?) - check; added from JP/KR/EU research 2026-10-27"
+- name: Tamago DB
+  submit_url: https://tamago.atombase.app/apply
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; guest apply form; review 3-5 business days; added from JP/KR/EU research 2026-10-27"
+- name: weblist.dev
+  submit_url: https://weblist.dev/submit/
+  type: form
+  auto: true
+  lang: ja,en
+  notes: "region: JP/INTL; registration: no_account; status: pending; guest submit form (turnstile); review ~1 week; added from JP/KR/EU research 2026-10-27"
+- name: Auto-Link (xqbmw)
+  submit_url: https://xqbmw.net/add.php
+  type: form
+  auto: true
+  lang: ja
+  notes: "region: JP; registration: no_account; status: pending; auto mutual link: reciprocal REQUIRED (t_url field); added from JP/KR/EU research 2026-10-27"
+- name: 주소나무 Jusonamu
+  submit_url: https://www.xn--910b64rf5euri.com/submit/
+  type: form
+  auto: true
+  lang: ko
+  notes: "region: KR; registration: no_account; status: pending; site add request (url,name,category,desc,email), review 3-7 days; HTTPS required; added from JP/KR/EU research 2026-10-27"
+- name: Secous
+  submit_url: https://annuaire.secous.com/webmaster-submit-website.html
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; password/register form required; added from JP/KR/EU research 2026-10-27"
+- name: Net-Liens
+  submit_url: https://net-liens.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; pack-annuaire network, login; added from JP/KR/EU research 2026-10-27"
+- name: Yagoort
+  submit_url: https://annuaire.yagoort.org/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; pack-annuaire network, login; added from JP/KR/EU research 2026-10-27"
+- name: Noogle
+  submit_url: https://noogle.fr/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; pack-annuaire network, login; added from JP/KR/EU research 2026-10-27"
+- name: El-Annuaire
+  submit_url: https://el-annuaire.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login form; added from JP/KR/EU research 2026-10-27"
+- name: Faitesvousconnaitre
+  submit_url: https://www.faitesvousconnaitre.com/membre/proposer-un-site.html
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; membre login; added from JP/KR/EU research 2026-10-27"
+- name: Le Bottin
+  submit_url: https://www.le-bottin.com/compte
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; compte; added from JP/KR/EU research 2026-10-27"
+- name: Le-site-de
+  submit_url: https://le-site-de.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; mon-compte/inscription; added from JP/KR/EU research 2026-10-27"
+- name: TopLien
+  submit_url: https://www.toplien.fr/submit_site.html
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; s'inscrire/s'identifier before submit; added from JP/KR/EU research 2026-10-27"
+- name: Supernova Annuaire
+  submit_url: https://www.supernova-annuaire.fr/inscription/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; inscription + packages; added from JP/KR/EU research 2026-10-27"
+- name: Hi SEO
+  submit_url: https://hiseo.fr/membres/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; claims no signup but submit at /membres/; unreachable from box; added from JP/KR/EU research 2026-10-27"
+- name: Webwiki DE
+  submit_url: https://webwiki.de/eintragen
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; email+password; added from JP/KR/EU research 2026-10-27"
+- name: Webwiki FR
+  submit_url: https://webwiki.fr/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login; added from JP/KR/EU research 2026-10-27"
+- name: Webwiki NL
+  submit_url: https://webwiki.nl/
+  type: form
+  auto: manual
+  lang: nl
+  notes: "region: NL; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; password form; added from JP/KR/EU research 2026-10-27"
+- name: Startpagina
+  submit_url: https://startpagina.nl/
+  type: form
+  auto: manual
+  lang: nl
+  notes: "region: NL; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login; added from JP/KR/EU research 2026-10-27"
+- name: Add-Link
+  submit_url: https://www.add-link.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login required for submit; added from JP/KR/EU research 2026-10-27"
+- name: Meilleur du Web
+  submit_url: https://meilleurduweb.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; redirect; ranking site; added from JP/KR/EU research 2026-10-27"
+- name: WebFrance
+  submit_url: https://webfrance.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; no submit form found; added from JP/KR/EU research 2026-10-27"
+- name: Annuaire du commerce
+  submit_url: https://annuaireducommerce.fr/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; redirect; added from JP/KR/EU research 2026-10-27"
+- name: Thesiteoueb
+  submit_url: https://www.thesiteoueb.net/annuaire/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_blocked; skip reason: skipped_blocked/unknown; security check page; added from JP/KR/EU research 2026-10-27"
+- name: Francesurf
+  submit_url: https://francesurf.net/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Netoo
+  submit_url: https://netoo.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Empreintes du Web
+  submit_url: https://annuaire.empreintesduweb.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Best-FR
+  submit_url: https://best-fr.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Ludikreation
+  submit_url: https://annuaire.ludikreation.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Referencement-annuaire-web
+  submit_url: https://referencement-annuaire-web.fr/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Annugratuit
+  submit_url: https://annugratuit.net/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Suprannuaire
+  submit_url: https://vos-communiques.jusseo.com/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; 503; added from JP/KR/EU research 2026-10-27"
+- name: Gralon
+  submit_url: https://gralon.net/
+  type: form
+  auto: manual
+  lang: fr
+  notes: "region: FR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; business local; 403 + account; added from JP/KR/EU research 2026-10-27"
+- name: Bellnet
+  submit_url: https://bellnet.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; TLS error; added from JP/KR/EU research 2026-10-27"
+- name: Suchnase
+  submit_url: https://suchnase.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Webverzeichnis-Deutschland
+  submit_url: https://webverzeichnis-deutschland.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_dead; skip reason: skipped_dead/unknown; no response; added from JP/KR/EU research 2026-10-27"
+- name: Webkatalog-Verzeichnis
+  submit_url: https://webkatalog-verzeichnis.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_dead; skip reason: skipped_dead/unknown; domain for sale; added from JP/KR/EU research 2026-10-27"
+- name: ZAHD
+  submit_url: https://zahd.de/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_dead; skip reason: skipped_dead/unknown; domain for sale; added from JP/KR/EU research 2026-10-27"
+- name: Suchefix
+  submit_url: https://suchefix.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Smarte Werbung
+  submit_url: https://smarte-werbung.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; redirect, local business; added from JP/KR/EU research 2026-10-27"
+- name: Backlinksuche
+  submit_url: https://backlinksuche.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; 503; added from JP/KR/EU research 2026-10-27"
+- name: Tag-a-Site
+  submit_url: https://tag-a-site.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Firmenindex Deutschland
+  submit_url: https://firmenindex-deutschland.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; company directory, backlink duty; added from JP/KR/EU research 2026-10-27"
+- name: Webkatalog-Webverzeichnis
+  submit_url: https://webkatalog-webverzeichnis.com/
+  type: form
+  auto: false
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_dead; skip reason: skipped_dead/unknown; 404; added from JP/KR/EU research 2026-10-27"
+- name: Seitenreport
+  submit_url: https://seitenreport.de/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: DE; registration: unknown; status: skipped_not_directory; skip reason: skipped_not_directory/unknown; SEO tool; added from JP/KR/EU research 2026-10-27"
+- name: Swiss Webkatalog
+  submit_url: https://webkatalog.ch/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: CH; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; search only, no submit found; added from JP/KR/EU research 2026-10-27"
+- name: Webkatalog AT
+  submit_url: https://webkatalog.at/
+  type: form
+  auto: manual
+  lang: de
+  notes: "region: AT; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: XDG
+  submit_url: https://xdg.it/
+  type: form
+  auto: false
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_dead; skip reason: skipped_dead/unknown; domain for sale; added from JP/KR/EU research 2026-10-27"
+- name: Valtolina
+  submit_url: https://valtolina.net/
+  type: form
+  auto: manual
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: DirectoryFree IT
+  submit_url: https://directoryfree.it/
+  type: form
+  auto: manual
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Directory Italia
+  submit_url: https://directory-italia.it/
+  type: form
+  auto: manual
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Elenco Siti
+  submit_url: https://elencositi.it/
+  type: form
+  auto: manual
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Gratis Directory IT
+  submit_url: https://gratisdirectory.it/
+  type: form
+  auto: manual
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Segnalasito
+  submit_url: https://segnalasito.it/
+  type: form
+  auto: false
+  lang: it
+  notes: "region: IT; registration: unknown; status: skipped_dead; skip reason: skipped_dead/unknown; parked; added from JP/KR/EU research 2026-10-27"
+- name: Undirectorio
+  submit_url: http://undirectorio.com/
+  type: form
+  auto: manual
+  lang: es
+  notes: "region: ES; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; 500/timeout (retry later; free reviewed ES directory); added from JP/KR/EU research 2026-10-27"
+- name: Directorio Gratis
+  submit_url: https://directoriogratis.org/
+  type: form
+  auto: manual
+  lang: es
+  notes: "region: ES; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; no form found; added from JP/KR/EU research 2026-10-27"
+- name: Directorio Web ES
+  submit_url: https://directorioweb.es/
+  type: form
+  auto: manual
+  lang: es
+  notes: "region: ES; registration: unknown; status: skipped_unverified; skip reason: skipped_unverified/unknown; no form found; added from JP/KR/EU research 2026-10-27"
+- name: Directorio Hispano
+  submit_url: https://directoriohispano.net/
+  type: form
+  auto: manual
+  lang: es
+  notes: "region: ES; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Elbuscador
+  submit_url: https://elbuscador.es/
+  type: form
+  auto: manual
+  lang: es
+  notes: "region: ES; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Britain4u
+  submit_url: https://britain4u.com/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: UK; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; 503; added from JP/KR/EU research 2026-10-27"
+- name: Web Directory of Europe
+  submit_url: https://web-directory.eu/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: EU; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Search Europe
+  submit_url: https://searcheurope.com/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: EU; registration: unknown; status: skipped_blocked; skip reason: skipped_blocked/unknown; 403; added from JP/KR/EU research 2026-10-27"
+- name: Europages
+  submit_url: https://europages.co.uk/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: EU; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; B2B, account; added from JP/KR/EU research 2026-10-27"
+- name: EU Directory
+  submit_url: https://eu-directory.eu/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: EU; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Skaffe
+  submit_url: https://skaffe.com/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: UK; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login; added from JP/KR/EU research 2026-10-27"
+- name: UK Directory
+  submit_url: https://ukdirectory.co.uk/
+  type: form
+  auto: manual
+  lang: en
+  notes: "region: UK; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Svenska Lankar
+  submit_url: https://svenskalankar.se/
+  type: form
+  auto: manual
+  lang: sv
+  notes: "region: SE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Sitedirectory SE
+  submit_url: https://sitedirectory.se/
+  type: form
+  auto: manual
+  lang: sv
+  notes: "region: SE; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Linkportal DK
+  submit_url: https://linkportal.dk/
+  type: form
+  auto: manual
+  lang: da
+  notes: "region: DK; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Startsiden NO
+  submit_url: https://startsiden.no/
+  type: form
+  auto: manual
+  lang: no
+  notes: "region: NO; registration: unknown; status: skipped_not_directory; skip reason: skipped_not_directory/unknown; portal/search; added from JP/KR/EU research 2026-10-27"
+- name: Linkhub NL
+  submit_url: https://linkhub.nl/
+  type: form
+  auto: manual
+  lang: nl
+  notes: "region: NL; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Hatsu
+  submit_url: https://hatsujp.com/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login required to post; added from JP/KR/EU research 2026-10-27"
+- name: FreeSEO orgfree
+  submit_url: https://freeseo.orgfree.com/regist.php
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_spam; skip reason: skipped_spam/unknown; mutual link required + spammy; added from JP/KR/EU research 2026-10-27"
+- name: Yomi-Search bookmark-point
+  submit_url: https://yomi.bookmark-point.com/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: SEO-link tank
+  submit_url: https://seo-link.tank.jp/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Link-Navi JP
+  submit_url: https://linknavi.jp/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_blocked; skip reason: skipped_blocked/unknown; 403; added from JP/KR/EU research 2026-10-27"
+- name: J-Rank
+  submit_url: https://j-rank.net/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Kensaku
+  submit_url: https://kensaku.com/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Ohayo Link
+  submit_url: https://link-ohayo.com/
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Web Tools Collection
+  submit_url: https://st0z.com/contact
+  type: form
+  auto: manual
+  lang: ja
+  notes: "region: JP; registration: unknown; status: skipped_not_directory; skip reason: skipped_not_directory/unknown; own tools site; added from JP/KR/EU research 2026-10-27"
+- name: LinkWiki
+  submit_url: https://linkwiki.info/directory
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: unknown; status: skipped_no_submit; skip reason: skipped_no_submit/unknown; no public submit form found; added from JP/KR/EU research 2026-10-27"
+- name: Fastjuso
+  submit_url: https://fastjuso.org/
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; membership/회원가입; added from JP/KR/EU research 2026-10-27"
+- name: Jusokm
+  submit_url: https://www.jusokm.com/partner_apply.php
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; 입점 신청 (partner) page; added from JP/KR/EU research 2026-10-27"
+- name: LinkChango
+  submit_url: https://linkchango.com/
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; login then mypage request; added from JP/KR/EU research 2026-10-27"
+- name: OpenWebside
+  submit_url: https://openwebside.com/
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: needs_account; status: skipped_needs_account; skip reason: skipped_needs_account/needs_account; signup + meta verify; added from JP/KR/EU research 2026-10-27"
+- name: Curlie KO
+  submit_url: https://www.curlie.org/docs/ko/add.html
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: unknown; status: skipped_slow; skip reason: skipped_slow/unknown; editor review weeks; often not accepting; added from JP/KR/EU research 2026-10-27"
+- name: Naver Search Advisor
+  submit_url: https://searchadvisor.naver.com/
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: unknown; status: skipped_not_directory; skip reason: skipped_not_directory/unknown; webmaster tool (needs Naver account); added from JP/KR/EU research 2026-10-27"
+- name: Daum Register
+  submit_url: https://register.search.daum.net/
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: unknown; status: skipped_unreachable; skip reason: skipped_unreachable/unknown; timeout; added from JP/KR/EU research 2026-10-27"
+- name: Zum
+  submit_url: https://zum.com/
+  type: form
+  auto: manual
+  lang: ko
+  notes: "region: KR; registration: unknown; status: skipped_not_directory; skip reason: skipped_not_directory/unknown; portal; added from JP/KR/EU research 2026-10-27"
+
+
 chinese_ai_directories:
 - name: 2AGI
   submit_url: https://2agi.net/zh/submit
